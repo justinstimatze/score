@@ -1,0 +1,15 @@
+{
+  "name": "Marcus Chen",
+  "note": "Financial analyst. The arc was designed for him. High O+C, low E, stable. Intrinsic investigator.",
+  "mechanisms": {
+    "curiosity_exploration": 3.0,
+    "achievement_motivation": 2.5,
+    "intrinsic_motivation_sdt": 2.25,
+    "pattern_recognition": 2.0,
+    "cognitive_dissonance_reduction": 1.75
+  },
+  "big_five": {"O": 1, "C": 1, "E": -1, "N": -1, "A": 0},
+  "identity_invite": "seeker_pattern_finder",
+  "avoidance": ["social_exposure", "looking_incompetent"],
+  "sensitivity": "medium"
+}

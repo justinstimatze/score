@@ -1,0 +1,16 @@
+[
+  {"id": "knowledge_frontier_seed",       "day": 0,  "phase": "p"},
+  {"id": "osint_personalization",          "day": 0,  "phase": "p"},
+  {"id": "handler_letter",                 "day": 3,  "phase": "b"},
+  {"id": "distributed_truth_fragment",     "day": 7,  "phase": "b"},
+  {"id": "graduated_reveal",               "day": 10, "phase": "b"},
+  {"id": "false_breakthrough",             "day": 14, "phase": "e"},
+  {"id": "parallel_threads",               "day": 15, "phase": "e"},
+  {"id": "the_false_confirmation",         "day": 17, "phase": "e"},
+  {"id": "the_witness",                    "day": 21, "phase": "e"},
+  {"id": "optional_path",                  "day": 22, "phase": "e"},
+  {"id": "benefactor_capture",             "day": 24, "phase": "t"},
+  {"id": "manufactured_crisis_reveal",     "day": 28, "phase": "c"},
+  {"id": "retroactive_recontextualization","day": 30, "phase": "c"},
+  {"id": "integration_letter",             "day": 35, "phase": "d"}
+]

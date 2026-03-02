@@ -1,0 +1,1426 @@
+[
+  {
+    "id": "certified_mail",
+    "strip": "@certified_mail L\u00b7HA\u00b73d\u00b72\n#SQ\u00b7OA\u00b7CE [ptcr] /\nB\u00b7n\u00b7p\u00b7a\u00b7p\u00b7l\u00b7e\nprm:S\nsyn:wax_seal\u00b7notarized_doc\u00b7informed_delivery_gap\u00b7mailbox_address\u00b7llc_registration\nreq:csh"
+  },
+  {
+    "id": "informed_delivery_gap",
+    "strip": "@informed_delivery_gap F\u00b7HA\u00b72w\u00b71\n#AN\u00b7duality\u00b7PM\u00b7behav_act\u00b7CD\u00b7affec_pri [*] /\nS\u00b7n\u00b7p\u00b7a\u00b7p\u00b7s\u00b7t\nprm:Q"
+  },
+  {
+    "id": "notarized_doc",
+    "strip": "@notarized_doc L\u00b7HA\u00b7sd\u00b72\n#OA\u00b7SQ\u00b7TR [pet] /\nB\u00b7n\u00b7p\u00b7a\u00b7p\u00b7l\u00b7e\nprm:S\nsyn:certified_mail\u00b7llc_registration\u00b7mailbox_address\u00b7classified_doc_aesthetic\nreq:csh"
+  },
+  {
+    "id": "llc_registration",
+    "strip": "@llc_registration H\u00b7HA\u00b73d\u00b71\n#SP\u00b7TR [p] /\nB\u00b7n\u00b7p\u00b7a\u00b7w\u00b7n\u00b7d\nprm:S\u2192ids\nsyn:mailbox_address\u00b7google_maps\u00b7press_release\u00b7notarized_doc\u00b7real_domain\nreq:csh"
+  },
+  {
+    "id": "mailbox_address",
+    "strip": "@mailbox_address $\u00b7HA\u00b73d\u00b71\n#SP\u00b7TR [p] /\nB\u00b7n\u00b7p\u00b7a\u00b7w\u00b7n\u00b7e\nprm:S\nsyn:llc_registration\u00b7google_maps\u00b7notarized_doc\u00b7real_domain\nreq:csh"
+  },
+  {
+    "id": "wax_seal",
+    "strip": "@wax_seal L\u00b7HA\u00b73d\u00b72\n#SQ\u00b7NV\u00b7PM\u00b7CE [ptc] /\nB\u00b7n\u00b7p\u00b7a\u00b7p\u00b7i\u00b7t\nprm:Q\nsyn:certified_mail\u00b7notarized_doc\u00b7handwritten_letter\u00b7informed_delivery_gap\nreq:csh"
+  },
+  {
+    "id": "classified_doc_aesthetic",
+    "strip": "@classified_doc_aesthetic F\u00b7A\u00b7sd\u00b72\n#OA\u00b7SQ\u00b7CE [pbet] /\nB\u00b7n\u00b7l\u00b7a\u00b7p\u00b7m\u00b7t\nprm:S\nsyn:redacted_document\u00b7accidental_transmission\u00b7notarized_doc\u00b7real_domain\nreq:tsk"
+  },
+  {
+    "id": "osint_personalization",
+    "strip": "@osint_personalization F\u00b7HA\u00b7sd\u00b7?\n#HV\u00b7SQ\u00b7CE [p*] /\nS\u00b7n\u00b7p\u00b7i\u00b7p\u00b7s\u00b7e\nprm:S\u2192asr\nreq:tsk"
+  },
+  {
+    "id": "local_area_code",
+    "strip": "@local_area_code $\u00b7A\u00b7sd\u00b71\n#MEE\u00b7TR [p*] /\nB\u00b7n\u00b7p\u00b7a\u00b7p\u00b7m\u00b7t\nprm:S\nsyn:ai_phone_agent\u00b7voicemail_drop\u00b7matched_prefix\nreq:csh"
+  },
+  {
+    "id": "voicemail_drop",
+    "strip": "@voicemail_drop F\u00b7A\u00b7sd\u00b72\n#SQ\u00b7HV\u00b7CE [pbe] /\nS\u00b7n\u00b7l\u00b7a\u00b7e\u00b7i\u00b7t\nprm:S\u2192sct\nsyn:local_area_code\u00b7ai_phone_agent\u00b7implied_prior_relationship\nreq:csh\u00b7tsk"
+  },
+  {
+    "id": "micro_transaction",
+    "strip": "@micro_transaction L\u00b7HA\u00b73d\u00b73\n#RC\u00b7CO\u00b7RT\u00b7CD [bt] /\nC\u00b7n\u00b7p\u00b7a\u00b7e\u00b7i\u00b7d\nprm:Q\nsyn:gift_card\u00b7nomination_framing\u00b7profiling_survey\nreq:csh"
+  },
+  {
+    "id": "matched_prefix",
+    "strip": "@matched_prefix $\u00b7A\u00b7sd\u00b72\n#HV\u00b7UR [et] /\nR\u00b7n\u00b7p\u00b7a\u00b7p\u00b7i\u00b7t\nprm:Q\nsyn:you_ve_been_found_inversion\u00b7ai_phone_agent\nreq:csh"
+  },
+  {
+    "id": "implied_prior_relationship",
+    "strip": "@implied_prior_relationship F\u00b7A\u00b7sd\u00b72\n#HV\u00b7HCG\u00b7CE [pb] /\nR\u00b7n\u00b7l\u00b7i\u00b7p\u00b7s\u00b7t\nprm:S\nsyn:accidental_transmission\u00b7voicemail_drop\u00b7past_tense_timestamp\nreq:tsk"
+  },
+  {
+    "id": "planted_object",
+    "strip": "@planted_object L\u00b7HA\u00b73d\u00b73\n#HV\u00b7SQ\u00b7CE\u00b7TI\u00b7proxe_spa [pe] /\nC\u00b7n\u00b7m\u00b7a\u00b7p\u00b7i\u00b7e\nprm:Q\nsyn:implied_prior_relationship\u00b7past_tense_timestamp\u00b7qr_code\u00b7voicemail_drop\u00b7accidental_transmission\nreq:loc"
+  },
+  {
+    "id": "accidental_transmission",
+    "strip": "@accidental_transmission F\u00b7A\u00b7sd\u00b73\n#CE\u00b7CB\u00b7SQ [ber] /\nC\u00b7n\u00b7l\u00b7a\u00b7e\u00b7s\u00b7t\nprm:S\nsyn:real_domain\u00b7linkedin_character\u00b7parallel_threads\u00b7classified_doc_aesthetic\nreq:tsk"
+  },
+  {
+    "id": "real_domain",
+    "strip": "@real_domain $\u00b7HA\u00b72+\u00b71\n#SP\u00b7TR\u00b7CE [pb] -\nC\u00b7n\u00b7m\u00b7a\u00b7w\u00b7m\u00b7e\nprm:S\nsyn:llc_registration\u00b7press_release\u00b7linkedin_character\u00b7google_maps\u00b7annotation_layer\nreq:csh\u00b7tsk"
+  },
+  {
+    "id": "classified_ad",
+    "strip": "@classified_ad L\u00b7HA\u00b73d\u00b72\n#CE\u00b7SQ [be] /\nB\u00b7n\u00b7m\u00b7a\u00b7w\u00b7l\u00b7e\nprm:Q\nsyn:physical_dead_drop\u00b7incomplete_sequence\u00b7nomination_framing\nreq:csh\u00b7loc"
+  },
+  {
+    "id": "physical_dead_drop",
+    "strip": "@physical_dead_drop ?\u00b7C\u00b73d\u00b73\n#HV\u00b7CE\u00b7you_fou [etc] /\nC\u00b7n\u00b7m\u00b7a\u00b7p\u00b7s\u00b7e\nprm:Q\nsyn:qr_code\u00b7certified_mail\u00b7you_ve_been_found_inversion\u00b7briefed_confederate\nreq:loc"
+  },
+  {
+    "id": "qr_code",
+    "strip": "@qr_code F\u00b7A\u00b7sd\u00b71\n#CE\u00b7CO [*] /\nC\u00b7n\u00b7l\u00b7a\u00b7e\u00b7i\u00b7t\nprm:S\nsyn:physical_dead_drop\u00b7certified_mail\u00b7notarized_doc\u00b7redacted_document\nreq:tsk"
+  },
+  {
+    "id": "annotation_layer",
+    "strip": "@annotation_layer F\u00b7A\u00b7sd\u00b72\n#CE\u00b7SP\u00b7SQ [be] /\nC\u00b7n\u00b7m\u00b7a\u00b7p\u00b7s\u00b7e\nprm:Q\nsyn:real_domain\u00b7accidental_transmission\u00b7parallel_threads\nreq:tsk"
+  },
+  {
+    "id": "linkedin_character",
+    "strip": "@linkedin_character F\u00b7HM\u00b74w\u00b71\n#SP\u00b7TR\u00b7PA [p] /\nB\u00b7n\u00b7p\u00b7a\u00b7w\u00b7n\u00b7d\nprm:S\u2192sct\nsyn:ai_generated_face\u00b7real_domain\u00b7aged_social_media\u00b7press_release\nreq:tsk"
+  },
+  {
+    "id": "google_maps",
+    "strip": "@google_maps F\u00b7HA\u00b74w\u00b71\n#SP\u00b7TR [p] /\nB\u00b7n\u00b7p\u00b7a\u00b7w\u00b7n\u00b7d\nprm:S\nsyn:llc_registration\u00b7mailbox_address\u00b7real_domain\nreq:tsk"
+  },
+  {
+    "id": "press_release",
+    "strip": "@press_release M\u00b7HA\u00b73d\u00b71\n#SP\u00b7illus_eff [pb] /\nB\u00b7n\u00b7p\u00b7a\u00b7sw\u00b7l\u00b7d\nprm:S\u2192sct\nsyn:real_domain\u00b7llc_registration\u00b7linkedin_character\nreq:csh\u00b7tsk"
+  },
+  {
+    "id": "aged_social_media",
+    "strip": "@aged_social_media F\u00b7HM\u00b736\u00b71\n#SP\u00b7PA\u00b7TR [pb] /\nB\u00b7n\u00b7p\u00b7a\u00b7w\u00b7n\u00b7d\nprm:S\nsyn:linkedin_character\u00b7ai_generated_face\u00b7real_domain\nreq:tsk"
+  },
+  {
+    "id": "ai_generated_face",
+    "strip": "@ai_generated_face F\u00b7A\u00b712\u00b71\n#MEE\u00b7TR [p] /\nB\u00b7n\u00b7p\u00b7a\u00b7p\u00b7n\u00b7t\nprm:S\nsyn:linkedin_character\u00b7aged_social_media\u00b7video_message\u00b7real_domain\nreq:tsk"
+  },
+  {
+    "id": "reddit_history",
+    "strip": "@reddit_history M\u00b7HA\u00b74w\u00b71\n#SP\u00b7CE\u00b7PA [pb] /\nR\u00b7n\u00b7m\u00b7a\u00b7w\u00b7l\u00b7d\nprm:S\nsyn:real_domain\u00b7aged_social_media\u00b7linkedin_character\u00b7annotation_layer\nreq:tsk"
+  },
+  {
+    "id": "github_repo",
+    "strip": "@github_repo F\u00b7HA\u00b72+\u00b72\n#CE\u00b7SP\u00b7SQ [pbe] /\nR\u00b7n\u00b7m\u00b7a\u00b7w\u00b7l\u00b7d\nprm:S\nsyn:real_domain\u00b7linkedin_character\u00b7annotation_layer\nreq:tsk"
+  },
+  {
+    "id": "goodreads_profile",
+    "strip": "@goodreads_profile F\u00b7HA\u00b71w\u00b71\n#PA\u00b7CE [be] /\nB\u00b7n\u00b7m\u00b7a\u00b7w\u00b7l\u00b7d\nprm:S\nsyn:linkedin_character\u00b7aged_social_media\u00b7altered_book\nreq:tsk"
+  },
+  {
+    "id": "weather_message",
+    "strip": "@weather_message F\u00b7A\u00b7sd\u00b71\n#HV\u00b7SQ [*] ^\nR\u00b7n\u00b7p\u00b7a\u00b7e\u00b7i\u00b7t\nprm:S\u2192asr\nsyn:past_tense_timestamp\u00b7osint_personalization\nreq:tsk"
+  },
+  {
+    "id": "calendar_invite",
+    "strip": "@calendar_invite F\u00b7A\u00b7sd\u00b72\n#CO\u00b7SQ [etc] ^\nC\u00b7n\u00b7l\u00b7a\u00b7e\u00b7i\u00b7e\nprm:S\nsyn:restaurant_reservation\u00b7fedex_tracking\u00b7real_domain\nreq:tsk"
+  },
+  {
+    "id": "fedex_tracking",
+    "strip": "@fedex_tracking L\u00b7HA\u00b73d\u00b73\n#AN\u00b7SQ\u00b7CE\u00b7behav_act [bec] ^\nR\u00b7n\u00b7l\u00b7a\u00b7p\u00b7s\u00b7e\nprm:S\nsyn:qr_code\u00b7gift_card\u00b7wax_seal\u00b7notarized_doc\u00b7you_ve_been_found_inversion\nreq:csh"
+  },
+  {
+    "id": "past_tense_timestamp",
+    "strip": "@past_tense_timestamp F\u00b7A\u00b7sd\u00b72\n#HV\u00b7HCG\u00b7SQ [pb] ^\nR\u00b7n\u00b7p\u00b7i\u00b7p\u00b7s\u00b7t\nprm:Q\u2192trt\nsyn:weather_message\u00b7osint_personalization\u00b7implied_prior_relationship\nreq:tsk"
+  },
+  {
+    "id": "timed_delivery",
+    "strip": "@timed_delivery F\u00b7A\u00b7sd\u00b71\n#SQ\u00b7HV [*] ^\nR\u00b7n\u00b7p\u00b7a\u00b7e\u00b7i\u00b7t\nprm:Q\u2192asr\nsyn:calendar_invite\u00b7weather_message\u00b7certified_mail\nreq:tsk"
+  },
+  {
+    "id": "restaurant_reservation",
+    "strip": "@restaurant_reservation F\u00b7A\u00b73d\u00b73\n#CO\u00b7RT\u00b7RC\u00b7CD [cd] /\nB\u00b7n\u00b7m\u00b7a\u00b7e\u00b7i\u00b7d\nprm:Q\nsyn:calendar_invite\u00b7briefed_confederate\u00b7certified_mail\nreq:csh\u00b7loc"
+  },
+  {
+    "id": "briefed_confederate",
+    "strip": "@briefed_confederate G\u00b7C\u00b73d\u00b74\n#EC\u00b7SP\u00b7RT\u00b7CD [etc] ^\nC\u00b7n\u00b7m\u00b7a\u00b7s\u00b7i\u00b7d\nprm:Q\nsyn:physical_dead_drop\u00b7restaurant_reservation\u00b7voice_clone\u00b7reference_check_play\nreq:loc"
+  },
+  {
+    "id": "real_ticket",
+    "strip": "@real_ticket H\u00b7HA\u00b7vari\u00b73\n#CO\u00b7RT\u00b7AN\u00b7CD\u00b7behav_act [cd] /\nB\u00b7n\u00b7m\u00b7a\u00b7p\u00b7s\u00b7d\nprm:Q\nsyn:calendar_invite\u00b7certified_mail\u00b7briefed_confederate\nreq:csh\u00b7loc"
+  },
+  {
+    "id": "gift_card",
+    "strip": "@gift_card H\u00b7HA\u00b73d\u00b73\n#RC\u00b7CO\u00b7RT\u00b7CD [btc] /\nB\u00b7n\u00b7l\u00b7a\u00b7p\u00b7i\u00b7e\nprm:S\nsyn:certified_mail\u00b7micro_transaction\u00b7restaurant_reservation\nreq:csh"
+  },
+  {
+    "id": "library_hold",
+    "strip": "@library_hold F\u00b7HA\u00b71w\u00b72\n#RC\u00b7CE\u00b7SQ [be] /\nC\u00b7n\u00b7m\u00b7a\u00b7p\u00b7s\u00b7e\nprm:Q\nsyn:altered_book\u00b7retroactive_meaning\u00b7accidental_transmission\nreq:loc"
+  },
+  {
+    "id": "false_ally",
+    "strip": "@false_ally $\u00b7C\u00b7vari\u00b74\n#PA\u00b7TR\u00b7betrayal\u00b7ED\u00b7EC [bet] /\nS\u00b7n\u00b7h\u00b7+\u00b7p\u00b7n\u00b7d\nprm:Q\nsyn:planted_object\u00b7you_ve_been_found\u00b7ai_phone_agent\u00b7voice_clone\u00b7briefed_confederate"
+  },
+  {
+    "id": "ai_phone_agent",
+    "strip": "@ai_phone_agent $\u00b7A\u00b724\u00b73\n#PA\u00b7TR\u00b7EC [etc] /\nB\u00b7*\u00b7m\u00b7a\u00b7e\u00b7s\u00b7e\nprm:Q\u2192trt\nsyn:local_area_code\u00b7voicemail_drop\u00b7video_message\nreq:csh\u00b7tsk"
+  },
+  {
+    "id": "voice_clone",
+    "strip": "@voice_clone L\u00b7HA\u00b71w\u00b74\n#EC\u00b7RT\u00b7SQ\u00b7CD [c] /\nS\u00b7n\u00b7p\u00b7i\u00b7p\u00b7i\u00b7x\nprm:Q\nsyn:briefed_confederate\u00b7real_ticket\nreq:tsk"
+  },
+  {
+    "id": "ringless_voicemail",
+    "strip": "@ringless_voicemail F\u00b7A\u00b7sd\u00b72\n#SQ\u00b7HV\u00b7CE [pbe] /\nB\u00b7n\u00b7l\u00b7a\u00b7e\u00b7i\u00b7t\nprm:S\u2192sct\nreq:csh\u00b7tsk"
+  },
+  {
+    "id": "video_message",
+    "strip": "@video_message $\u00b7A\u00b7sd\u00b73\n#PA\u00b7EC\u00b7SQ [etc] ^\nC\u00b7n\u00b7p\u00b7i\u00b7p\u00b7s\u00b7e\nprm:Q\u2192trt\nsyn:ai_generated_face\u00b7ai_phone_agent\u00b7linkedin_character\nreq:tsk"
+  },
+  {
+    "id": "deepfake",
+    "strip": "@deepfake ?\u00b7HA\u00b7vari\u00b74\n#RT\u00b7EC\u00b7SQ\u00b7CD [c] ^\nS\u00b7n\u00b7p\u00b7i\u00b7p\u00b7i\u00b7x\nprm:Q\nsyn:voice_clone\u00b7briefed_confederate\nreq:tsk"
+  },
+  {
+    "id": "aged_photograph",
+    "strip": "@aged_photograph L\u00b7HA\u00b73d\u00b73\n#NS\u00b7TR\u00b7SQ [pber] /\nR\u00b7n\u00b7p\u00b7i\u00b7p\u00b7m\u00b7e\nprm:Q\nsyn:torn_journal_page\u00b7handwritten_letter\u00b7altered_book\u00b7retroactive_meaning\nreq:csh\u00b7tsk"
+  },
+  {
+    "id": "polaroid",
+    "strip": "@polaroid L\u00b7HA\u00b73d\u00b73\n#NS\u00b7TR\u00b7SQ [pecr] /\nR\u00b7n\u00b7p\u00b7+\u00b7p\u00b7m\u00b7e\nprm:Q\nsyn:aged_photograph\u00b7torn_journal_page\u00b7handwritten_letter\nreq:csh\u00b7loc"
+  },
+  {
+    "id": "torn_journal_page",
+    "strip": "@torn_journal_page L\u00b7HA\u00b73d\u00b73\n#NS\u00b7CE\u00b7PA [ber] /\nR\u00b7n\u00b7l\u00b7i\u00b7p\u00b7m\u00b7e\nprm:Q\nsyn:aged_photograph\u00b7handwritten_letter\u00b7accidental_transmission\u00b7altered_book\nreq:csh"
+  },
+  {
+    "id": "newspaper_clipping",
+    "strip": "@newspaper_clipping L\u00b7HA\u00b73d\u00b72\n#SP\u00b7SQ\u00b7CE [ber] /\nB\u00b7n\u00b7p\u00b7a\u00b7p\u00b7m\u00b7e\nprm:S\nsyn:real_obituary\u00b7aged_photograph\u00b7accidental_transmission\u00b7classified_doc_aesthetic\nreq:csh\u00b7tsk"
+  },
+  {
+    "id": "redacted_document",
+    "strip": "@redacted_document F\u00b7A\u00b7sd\u00b73\n#CE\u00b7NC\u00b7SQ [bet] /\nS\u00b7n\u00b7m\u00b7a\u00b7p\u00b7s\u00b7t\nprm:Q\nsyn:classified_doc_aesthetic\u00b7accidental_transmission\u00b7parallel_threads\u00b7retroactive_meaning\nreq:tsk"
+  },
+  {
+    "id": "handwritten_letter",
+    "strip": "@handwritten_letter L\u00b7HA\u00b73d\u00b73\n#PA\u00b7NS\u00b7TR\u00b7EC [pecd] /\nB\u00b7n\u00b7l\u00b7+\u00b7p\u00b7m\u00b7e\nprm:Q\nsyn:wax_seal\u00b7certified_mail\u00b7aged_photograph\u00b7torn_journal_page\nreq:csh"
+  },
+  {
+    "id": "altered_book",
+    "strip": "@altered_book H\u00b7HM\u00b72+\u00b73\n#NS\u00b7CE\u00b7SQ\u00b7PA [berd] /\nC\u00b7n\u00b7h\u00b7a\u00b7p\u00b7l\u00b7d\nprm:Q\nsyn:library_hold\u00b7torn_journal_page\u00b7retroactive_meaning\u00b7goodreads_profile\nreq:csh\u00b7loc"
+  },
+  {
+    "id": "wrong_person_contact",
+    "strip": "@wrong_person_contact F\u00b7A\u00b7sd\u00b72\n#CE\u00b7SQ\u00b7HCG [pb] ^\nS\u00b7n\u00b7l\u00b7i\u00b7p\u00b7i\u00b7t\nprm:S\nsyn:implied_prior_relationship\u00b7accidental_transmission\u00b7parallel_threads\nreq:tsk"
+  },
+  {
+    "id": "misdelivered_package",
+    "strip": "@misdelivered_package L\u00b7HA\u00b73d\u00b73\n#CE\u00b7SQ\u00b7CO [be] ^\nS\u00b7n\u00b7m\u00b7a\u00b7p\u00b7i\u00b7e\nprm:Q\nsyn:qr_code\u00b7redacted_document\u00b7torn_journal_page\nreq:csh\u00b7loc"
+  },
+  {
+    "id": "unsolicited_subscription",
+    "strip": "@unsolicited_subscription M\u00b7HA\u00b72w\u00b72\n#SQ\u00b7CE\u00b7CO [pb] ^\nC\u00b7n\u00b7p\u00b7a\u00b7p\u00b7m\u00b7e\nprm:S\u2192ids\nsyn:loyalty_program\u00b7nomination_framing\u00b7implied_prior_relationship\nreq:csh"
+  },
+  {
+    "id": "returned_letter",
+    "strip": "@returned_letter L\u00b7HA\u00b73d\u00b72\n#CE\u00b7NS\u00b7SQ [be] ^\nR\u00b7n\u00b7l\u00b7i\u00b7p\u00b7s\u00b7e\nprm:Q\nsyn:aged_photograph\u00b7torn_journal_page\u00b7accidental_transmission\nreq:csh\u00b7tsk"
+  },
+  {
+    "id": "vanishing_institution",
+    "strip": "@vanishing_institution F\u00b7A\u00b7sd\u00b73\n#HV\u00b7DI\u00b7isolatio\u00b7PE\u00b7CD [ec] ^\nS\u00b7n\u00b7m\u00b7i\u00b7p\u00b7i\u00b7d\nprm:Q\nsyn:llc_registration\u00b7real_domain\u00b7linkedin_character\u00b7google_maps\nreq:tsk"
+  },
+  {
+    "id": "loyalty_program",
+    "strip": "@loyalty_program F\u00b7A\u00b7sd\u00b73\n#SQ\u00b7CO\u00b7CE [pb] -\nB\u00b7n\u00b7l\u00b7a\u00b7p\u00b7s\u00b7t\nprm:S\u2192sct\nsyn:implied_prior_relationship\u00b7nomination_framing\u00b7real_domain\u00b7profiling_survey\nreq:tsk"
+  },
+  {
+    "id": "missed_appointment",
+    "strip": "@missed_appointment F\u00b7A\u00b7sd\u00b73\n#OA\u00b7SQ\u00b7anxiety\u00b7CE [pb] -\nS\u00b7n\u00b7l\u00b7a\u00b7e\u00b7i\u00b7t\nprm:S\nsyn:profiling_survey\u00b7implied_prior_relationship\u00b7accidental_transmission\nreq:tsk"
+  },
+  {
+    "id": "receipt_unknown_purchase",
+    "strip": "@receipt_unknown_purchase F\u00b7A\u00b7sd\u00b73\n#LA\u00b7CE\u00b7SQ [pb] -\nS\u00b7n\u00b7l\u00b7i\u00b7p\u00b7i\u00b7t\nprm:S\nsyn:fedex_tracking\u00b7misdelivered_package\u00b7loyalty_program\nreq:tsk"
+  },
+  {
+    "id": "automated_system_call",
+    "strip": "@automated_system_call F\u00b7A\u00b7sd\u00b72\n#OA\u00b7SQ\u00b7CE [pe] -\nB\u00b7n\u00b7l\u00b7a\u00b7e\u00b7i\u00b7t\nprm:S\u2192sct\nsyn:missed_appointment\u00b7ai_phone_agent\u00b7voicemail_drop\nreq:tsk"
+  },
+  {
+    "id": "you_ve_been_found",
+    "strip": "@you_ve_been_found F\u00b7A\u00b7sd\u00b74\n#HV\u00b7SQ\u00b7fear_rel [et] /\nR\u00b7*\u00b7p\u00b7i\u00b7p\u00b7i\u00b7x\nprm:Q\nsyn:matched_prefix\u00b7physical_dead_drop\u00b7certified_mail\u00b7ai_phone_agent\nreq:tsk"
+  },
+  {
+    "id": "retroactive_meaning",
+    "strip": "@retroactive_meaning F\u00b7A\u00b7sd\u00b73\n#CE\u00b7CB\u00b7SQ [ec] /\nR\u00b7*\u00b7m\u00b7+\u00b7p\u00b7m\u00b7x\nprm:Q\nsyn:torn_journal_page\u00b7redacted_document\u00b7parallel_threads\u00b7incomplete_sequence\nreq:tsk"
+  },
+  {
+    "id": "parallel_threads",
+    "strip": "@parallel_threads F\u00b7A\u00b7sd\u00b73\n#CE\u00b7SQ\u00b7patte_sat [be] -\nC\u00b7n\u00b7h\u00b7i\u00b7p\u00b7m\u00b7e\nprm:Q\nsyn:accidental_transmission\u00b7classified_ad\u00b7real_domain\u00b7retroactive_meaning\nreq:tsk"
+  },
+  {
+    "id": "nomination_framing",
+    "strip": "@nomination_framing F\u00b7A\u00b7sd\u00b72\n#need_uni\u00b7SQ\u00b7CE [p] /\nR\u00b7*\u00b7p\u00b7i\u00b7p\u00b7s\u00b7t\nprm:S\nsyn:osint_personalization\u00b7implied_prior_relationship\u00b7profiling_survey\nreq:tsk"
+  },
+  {
+    "id": "dead_mans_switch",
+    "strip": "@dead_mans_switch F\u00b7A\u00b7sd\u00b73\n#LA\u00b7time_pre\u00b7OA [et] /\nC\u00b7*\u00b7m\u00b7a\u00b7p\u00b7i\u00b7d\nprm:Q\nsyn:incomplete_sequence\u00b7automated_system_call\u00b7calendar_invite\nreq:tsk"
+  },
+  {
+    "id": "incomplete_sequence",
+    "strip": "@incomplete_sequence F\u00b7A\u00b7sd\u00b72\n#NC\u00b7CE\u00b7Zeiga_eff [etc] /\nX\u00b7n\u00b7m\u00b7a\u00b7p\u00b7s\u00b7e\nprm:Q\nsyn:retroactive_meaning\u00b7dead_mans_switch\u00b7parallel_threads\nreq:tsk"
+  },
+  {
+    "id": "profiling_survey",
+    "strip": "@profiling_survey F\u00b7A\u00b7sd\u00b71\n#CO\u00b7complian\u00b7self_per [pt] /\nC\u00b7*\u00b7m\u00b7a\u00b7p\u00b7s\u00b7e\nprm:Q\nsyn:nomination_framing\u00b7missed_appointment\u00b7loyalty_program\nreq:tsk"
+  },
+  {
+    "id": "reference_check_play",
+    "strip": "@reference_check_play F\u00b7C\u00b73d\u00b74\n#SQ\u00b7SP\u00b7HV\u00b7in_fav [be] ^\nC\u00b7n\u00b7p\u00b7i\u00b7p\u00b7s\u00b7d\nprm:Q\nsyn:nomination_framing\u00b7linkedin_character\u00b7you_ve_been_found_inversion"
+  },
+  {
+    "id": "spotify_playlist",
+    "strip": "@spotify_playlist F\u00b7A\u00b7sd\u00b72\n#EC\u00b7PA\u00b7NS\u00b7CE [bed] /\nC\u00b7*\u00b7l\u00b7a\u00b7p\u00b7m\u00b7e\nprm:Q\u2192asr\nsyn:aged_social_media\u00b7video_message\nreq:tsk"
+  },
+  {
+    "id": "rejection_gambit",
+    "strip": "@rejection_gambit F\u00b7A\u00b7sd\u00b71\n#CE\u00b7ambig_tol\u00b7false_clo\u00b7SQ [pb] /\nR\u00b7*\u00b7l\u00b7i\u00b7p\u00b7i\u00b7t\nprm:S\nsyn:nomination_framing\u00b7certified_mail\u00b7implied_prior_relationship\u00b7accidental_transmission\nreq:tsk"
+  },
+  {
+    "id": "false_breakthrough",
+    "strip": "@false_breakthrough F\u00b7A\u00b7sd\u00b72\n#CE\u00b7PC\u00b7NC\u00b7RE [be] /\nS\u00b7*\u00b7h\u00b7i\u00b7p\u00b7m\u00b7e\nprm:Q\u2192slv\nsyn:real_domain\u00b7linkedin_character\u00b7reddit_history\u00b7parallel_threads\u00b7vanishing_institution\nreq:tsk"
+  },
+  {
+    "id": "simulated_loss",
+    "strip": "@simulated_loss F\u00b7A\u00b7sd\u00b74\n#LA\u00b7fear\u00b7helpless\u00b7RL\u00b7ED\u00b7amygd_res\u00b7EC [ec] ^\nC\u00b7n\u00b7p\u00b7+\u00b7p\u00b7m\u00b7x\nprm:Q\nsyn:false_ally\u00b7automated_system_call\u00b7accidental_transmission\u00b7vanishing_institution"
+  },
+  {
+    "id": "fax",
+    "strip": "@fax F\u00b7A\u00b7sd\u00b73\n#SQ\u00b7NV\u00b7OA\u00b7CE [pe] ^\nB\u00b7n\u00b7p\u00b7a\u00b7p\u00b7i\u00b7e\nprm:S\nsyn:classified_doc_aesthetic\u00b7automated_system_call\nreq:csh"
+  },
+  {
+    "id": "telegram",
+    "strip": "@telegram M\u00b7HA\u00b73d\u00b74\n#SQ\u00b7OA\u00b7NV\u00b7UG\u00b7scarc_min\u00b7CE [pe] ^\nB\u00b7n\u00b7p\u00b7a\u00b7p\u00b7i\u00b7e\nprm:S\nsyn:certified_mail\u00b7wax_seal\nreq:csh"
+  },
+  {
+    "id": "real_obituary",
+    "strip": "@real_obituary H\u00b7HA\u00b71w\u00b74\n#NS\u00b7GR\u00b7SQ\u00b7SP\u00b7grief_ber [br] ^\nR\u00b7n\u00b7p\u00b7+\u00b7w\u00b7l\u00b7x\nprm:Q\nsyn:aged_photograph\u00b7newspaper_clipping\u00b7retroactive_meaning\nreq:csh"
+  },
+  {
+    "id": "informed_delivery_ridealong",
+    "strip": "@informed_delivery_ridealong F\u00b7HA\u00b72w\u00b71\n#behav_act\u00b7CD\u00b7affec_pri\u00b7antic_att [*] /\nS\u00b7n\u00b7p\u00b7a\u00b7e\u00b7s\u00b7t\nprm:Q"
+  },
+  {
+    "id": "behavioral_ad",
+    "strip": "@behavioral_ad L\u00b7A\u00b73d\u00b72\n#SP\u00b7LG\u00b7AP\u00b7DI\u00b7OA\u00b7CD [pb*] -\nS\u00b7n\u00b7p\u00b7a\u00b7e\u00b7s\u00b7e\nprm:S\u2192asr\nsyn:llc_registration\u00b7real_domain\u00b7linkedin_character\u00b7press_release\nreq:csh\u00b7tsk"
+  },
+  {
+    "id": "llm_contamination",
+    "strip": "@llm_contamination F\u00b7A\u00b72w\u00b72\n#LG\u00b7SP\u00b7AP\u00b7DI\u00b7OA\u00b7CD [pb] -\nS\u00b7n\u00b7p\u00b7i\u00b7p\u00b7l\u00b7d\nprm:S\u2192asr\nsyn:real_domain\u00b7linkedin_character\u00b7press_release\u00b7search_planted\u00b7false_breakthrough\nreq:tsk"
+  },
+  {
+    "id": "search_planted",
+    "strip": "@search_planted L\u00b7HA\u00b72w\u00b72\n#CE\u00b7PC\u00b7LG\u00b7SP\u00b7NC\u00b7OA [be] -\nC\u00b7*\u00b7m\u00b7a\u00b7w\u00b7l\u00b7d\nprm:Q\nsyn:real_domain\u00b7llm_contamination\u00b7reddit_history\u00b7parallel_threads\u00b7false_breakthrough\nreq:tsk"
+  },
+  {
+    "id": "authenticity_proof",
+    "strip": "@authenticity_proof F\u00b7HM\u00b7sd\u00b73\n#TR\u00b7epist_sur\u00b7RL\u00b7RT\u00b7CD\u00b7amygd_res [etc] -\nS\u00b7*\u00b7m\u00b7i\u00b7p\u00b7i\u00b7x\nprm:Q\nsyn:ai_disclosure\u00b7false_ally\u00b7ai_phone_agent\u00b7ai_character_interface\nreq:loc"
+  },
+  {
+    "id": "ai_disclosure",
+    "strip": "@ai_disclosure F\u00b7A\u00b7sd\u00b72\n#EU\u00b7TR\u00b7CE\u00b7DI\u00b7NC\u00b7TR\u00b7CD [bet] -\nS\u00b7*\u00b7l\u00b7i\u00b7p\u00b7i\u00b7x\nprm:Q\nsyn:ai_phone_agent\u00b7ai_character_interface\u00b7false_ally\u00b7authenticity_proof\nreq:tsk"
+  },
+  {
+    "id": "notification_native",
+    "strip": "@notification_native F\u00b7A\u00b7sd\u00b72\n#SQ\u00b7UG\u00b7AP\u00b7CE\u00b7scarc_min [*] -\nX\u00b7n\u00b7p\u00b7a\u00b7e\u00b7i\u00b7t\nprm:Q\nsyn:calendar_invite\u00b7accidental_transmission\u00b7dead_mans_switch\u00b7behavioral_ad\u00b7ai_character_interface\nreq:tsk"
+  },
+  {
+    "id": "ai_character_interface",
+    "strip": "@ai_character_interface L\u00b7A\u00b73d\u00b73\n#PA\u00b7CE\u00b7TR\u00b7CO [pbe*] -\nC\u00b7q\u00b7h\u00b7i\u00b7p\u00b7m\u00b7e\nprm:Q\u2192sct\nsyn:ai_disclosure\u00b7false_ally\u00b7real_domain\u00b7linkedin_character\u00b7voice_clone\u00b7authenticity_proof\nreq:tsk"
+  },
+  {
+    "id": "personalization_uncanny",
+    "strip": "@personalization_uncanny F\u00b7A\u00b7sd\u00b73\n#HV\u00b7SQ\u00b7DI\u00b7TV\u00b7CD [pe] ^\nS\u00b7n\u00b7p\u00b7i\u00b7p\u00b7i\u00b7t\nprm:S\u2192asr\nsyn:behavioral_ad\u00b7osint_personalization\u00b7past_tense_timestamp\u00b7implied_prior_relationship\nreq:tsk"
+  },
+  {
+    "id": "corrupted_familiar",
+    "strip": "@corrupted_familiar F\u00b7A\u00b7sd\u00b72\n#HV\u00b7DI\u00b7TV\u00b7NC\u00b7CD [be] -\nS\u00b7n\u00b7p\u00b7i\u00b7p\u00b7s\u00b7t\nprm:S\u2192asr\nsyn:vanishing_institution\u00b7retroactive_recontextualization\u00b7absent_record\u00b7implied_prior_relationship\nreq:tsk"
+  },
+  {
+    "id": "absent_record",
+    "strip": "@absent_record F\u00b7HA\u00b7vari\u00b72\n#CE\u00b7HV\u00b7NC\u00b7DI\u00b7CD [be] -\nS\u00b7n\u00b7h\u00b7i\u00b7p\u00b7l\u00b7t\nprm:Q\nsyn:real_system_entry\u00b7corrupted_familiar\u00b7parallel_threads\u00b7false_breakthrough\u00b7vanishing_institution\nreq:tsk"
+  },
+  {
+    "id": "social_graph_leak",
+    "strip": "@social_graph_leak F\u00b7C\u00b73d\u00b72\n#HV\u00b7SP\u00b7TV\u00b7SQ\u00b7CD [be] ^\nS\u00b7n\u00b7p\u00b7i\u00b7p\u00b7s\u00b7d\nprm:Q\nsyn:you_ve_been_found\u00b7parallel_threads\u00b7simultaneous_convergence\u00b7osint_personalization"
+  },
+  {
+    "id": "simultaneous_convergence",
+    "strip": "@simultaneous_convergence L\u00b7A\u00b7sd\u00b73\n#HV\u00b7DI\u00b7SQ\u00b7PE\u00b7CD [etc] ^\nR\u00b7n\u00b7p\u00b7i\u00b7p\u00b7i\u00b7e\nprm:Q\u2192trt\nsyn:certified_mail\u00b7voicemail_drop\u00b7social_graph_leak\u00b7spatial_message\u00b7accidental_transmission\nreq:csh\u00b7loc"
+  },
+  {
+    "id": "hyperlocal_civic",
+    "strip": "@hyperlocal_civic L\u00b7HA\u00b73d\u00b72\n#HV\u00b7TI\u00b7SQ\u00b7DI\u00b7proxe_spa\u00b7CD [pbe] -\nB\u00b7n\u00b7p\u00b7a\u00b7w\u00b7m\u00b7e\nprm:Q\nsyn:spatial_message\u00b7osint_personalization\u00b7classified_ad\u00b7real_system_entry\nreq:loc"
+  },
+  {
+    "id": "real_system_entry",
+    "strip": "@real_system_entry L\u00b7HA\u00b72w\u00b73\n#LG\u00b7SP\u00b7DI\u00b7OA\u00b7CD [pbe] -\nB\u00b7n\u00b7m\u00b7a\u00b7w\u00b7l\u00b7d\nprm:S\nsyn:llc_registration\u00b7absent_record\u00b7real_domain\u00b7linkedin_character\u00b7corrupted_familiar\nreq:csh\u00b7tsk"
+  },
+  {
+    "id": "retroactive_recontextualization",
+    "strip": "@retroactive_recontextualization F\u00b7A\u00b7sd\u00b74\n#SQ\u00b7HV\u00b7DI\u00b7PC\u00b7NS\u00b7CD\u00b7NC [etc] ^\nR\u00b7q\u00b7m\u00b7+\u00b7p\u00b7i\u00b7x\nprm:Q\nsyn:osint_personalization\u00b7you_ve_been_found\u00b7parallel_threads\u00b7retroactive_meaning\u00b7absent_record\nreq:tsk"
+  },
+  {
+    "id": "spatial_message",
+    "strip": "@spatial_message F\u00b7HA\u00b73d\u00b73\n#HV\u00b7TI\u00b7SQ\u00b7DI\u00b7proxe_spa\u00b7CD [pet] -\nC\u00b7n\u00b7l\u00b7a\u00b7p\u00b7i\u00b7e\nprm:Q\u2192asr\nsyn:hyperlocal_civic\u00b7planted_object\u00b7simultaneous_convergence\u00b7osint_personalization\nreq:loc"
+  },
+  {
+    "id": "the_witness",
+    "strip": "@the_witness F\u00b7C\u00b7sd\u00b72\n#HV\u00b7DI\u00b7SQ\u00b7PE\u00b7CD [be] ^\nR\u00b7n\u00b7p\u00b7a\u00b7s\u00b7n\u00b7t\nprm:Q\nsyn:simultaneous_convergence\u00b7spatial_message\u00b7you_ve_been_found\u00b7briefed_confederate\nreq:loc"
+  },
+  {
+    "id": "the_commission",
+    "strip": "@the_commission H\u00b7HA\u00b713\u00b74\n#SQ\u00b7PA\u00b7NS\u00b7ED\u00b7RC\u00b7EC [tcd] /\nC\u00b7*\u00b7p\u00b7i\u00b7p\u00b7i\u00b7x\nprm:Q\nsyn:retroactive_recontextualization\u00b7handwritten_letter\u00b7aged_photograph\u00b7real_ticket\u00b7briefed_confederate\nreq:csh\u00b7loc"
+  },
+  {
+    "id": "convincer_win",
+    "strip": "@convincer_win L\u00b7A\u00b72448\u00b71\n#CO\u00b7LA\u00b7SK\u00b7TR\u00b7PC\u00b7sunk_fal\u00b7NC [pb] ^\nR\u00b7n\u00b7m\u00b7i\u00b7p\u00b7i\u00b7e\nprm:Q\u2192trt\nsyn:convincer_loss\u00b7hurry_up\u00b7spanish_prisoner\u00b7shill_validation\u00b7convincer_document\nreq:csh"
+  },
+  {
+    "id": "convincer_loss",
+    "strip": "@convincer_loss L\u00b7A\u00b71d\u00b72\n#LA\u00b7SK\u00b7CO\u00b7RXN\u00b7UG\u00b7sunk_fal\u00b7scarc_min [be] ^\nR\u00b7n\u00b7m\u00b7i\u00b7p\u00b7i\u00b7e\nprm:Q\nsyn:convincer_win\u00b7hurry_up\u00b7spanish_prisoner\u00b7pigeon_drop\u00b7convincer_document\nreq:csh"
+  },
+  {
+    "id": "convincer_plant",
+    "strip": "@convincer_plant L\u00b7HA\u00b74872\u00b72\n#EU\u00b7PC\u00b7SQ\u00b7TR\u00b7CE\u00b7NC [pb] ^\nR\u00b7n\u00b7h\u00b7a\u00b7p\u00b7m\u00b7e\nprm:S\nsyn:convincer_win\u00b7convincer_document\u00b7shill_validation\u00b7osint_personalization\nreq:loc\u00b7tsk"
+  },
+  {
+    "id": "salting",
+    "strip": "@salting M\u00b7HM\u00b72w\u00b72\n#AP\u00b7SQ\u00b7PC\u00b7EU\u00b7PE\u00b7NC\u00b7HV [pb] ^\nR\u00b7n\u00b7p\u00b7a\u00b7p\u00b7l\u00b7d\nprm:Q\nsyn:convincer_plant\u00b7convincer_location\u00b7osint_personalization\u00b7shill_validation\u00b7retroactive_meaning\nreq:loc\u00b7tsk"
+  },
+  {
+    "id": "shill_validation",
+    "strip": "@shill_validation L\u00b7C\u00b72448\u00b72\n#SP\u00b7TR\u00b7EU\u00b7LG\u00b7EC\u00b7NC\u00b7OA [be] ^\nR\u00b7n\u00b7p\u00b7a\u00b7s\u00b7n\u00b7e\nprm:S\nsyn:convincer_plant\u00b7convincer_crowd\u00b7convincer_win\u00b7false_ally"
+  },
+  {
+    "id": "roper",
+    "strip": "@roper L\u00b7C\u00b74872\u00b72\n#TR\u00b7PA\u00b7LG\u00b7SP\u00b7RC\u00b7OA [p] ^\nR\u00b7n\u00b7m\u00b7i\u00b7p\u00b7n\u00b7d\nprm:S\u2192trt\nsyn:shill_validation\u00b7spanish_prisoner\u00b7convincer_win\u00b7false_ally\u00b7briefed_confederate"
+  },
+  {
+    "id": "convincer_document",
+    "strip": "@convincer_document L\u00b7A\u00b71d\u00b72\n#LG\u00b7OA\u00b7TR\u00b7EU\u00b7CO\u00b7NC [bet] ^\nR\u00b7n\u00b7p\u00b7a\u00b7p\u00b7m\u00b7e\nprm:S\nsyn:convincer_plant\u00b7convincer_location\u00b7spanish_prisoner\u00b7hurry_up\u00b7pigeon_drop\nreq:csh\u00b7tsk"
+  },
+  {
+    "id": "convincer_location",
+    "strip": "@convincer_location L\u00b7HA\u00b74872\u00b72\n#LG\u00b7TR\u00b7EU\u00b7AP\u00b7SQ\u00b7OA\u00b7NC [be] ^\nR\u00b7n\u00b7m\u00b7a\u00b7p\u00b7i\u00b7e\nprm:S\nsyn:convincer_plant\u00b7convincer_document\u00b7convincer_win\nreq:loc"
+  },
+  {
+    "id": "convincer_crowd",
+    "strip": "@convincer_crowd M\u00b7C\u00b74872\u00b72\n#SP\u00b7LG\u00b7EC\u00b7TR\u00b7EU\u00b7OA\u00b7NC [bet] ^\nR\u00b7n\u00b7l\u00b7a\u00b7s\u00b7m\u00b7e\nprm:Q\nsyn:shill_validation\u00b7convincer_location\u00b7convincer_plant\nreq:tsk"
+  },
+  {
+    "id": "hurry_up",
+    "strip": "@hurry_up F\u00b7A\u00b70\u00b73\n#UG\u00b7LA\u00b7scarcity\u00b7CO\u00b7OA\u00b7scarc_min [etc] ^\nR\u00b7n\u00b7m\u00b7a\u00b7e\u00b7i\u00b7e\nprm:Q\nsyn:convincer_loss\u00b7spanish_prisoner\u00b7pigeon_drop\u00b7convincer_document\u00b7blow_off\nreq:tsk"
+  },
+  {
+    "id": "spanish_prisoner",
+    "strip": "@spanish_prisoner L\u00b7A\u00b71d\u00b73\n#RC\u00b7GT\u00b7SQ\u00b7PA\u00b7CO\u00b7LA [bet] ^\nR\u00b7n\u00b7h\u00b7i\u00b7p\u00b7m\u00b7d\nprm:Q\nsyn:convincer_document\u00b7hurry_up\u00b7pigeon_drop\u00b7blow_off\nreq:tsk"
+  },
+  {
+    "id": "pigeon_drop",
+    "strip": "@pigeon_drop L\u00b7C\u00b72448\u00b73\n#RC\u00b7SK\u00b7CO\u00b7LA\u00b7trust_exp\u00b7sunk_fal [et] ^\nR\u00b7n\u00b7h\u00b7a\u00b7p\u00b7m\u00b7d\nprm:Q\u2192trt\nsyn:convincer_document\u00b7hurry_up\u00b7spanish_prisoner\u00b7convincer_win\u00b7blow_off\nreq:loc"
+  },
+  {
+    "id": "blow_off",
+    "strip": "@blow_off F\u00b7A\u00b70\u00b71\n#NC\u00b7RL\u00b7EU\u00b7CO\u00b7TR\u00b7amygd_res [d*] ^\nR\u00b7n\u00b7p\u00b7a\u00b7e\u00b7i\u00b7e\nprm:S\nsyn:cooling_the_mark\u00b7convincer_win\u00b7spanish_prisoner\u00b7hurry_up\u00b7convincer_document\nreq:tsk"
+  },
+  {
+    "id": "cooling_the_mark",
+    "strip": "@cooling_the_mark F\u00b7A\u00b70\u00b71\n#NC\u00b7RL\u00b7GT\u00b7SHM2\u00b7IT\u00b7ED\u00b7amygd_res\u00b7shame_res\u00b7SQ\u00b7EC [d] ^\nR\u00b7n\u00b7p\u00b7i\u00b7p\u00b7i\u00b7e\nprm:Q\nsyn:blow_off\u00b7convincer_win\u00b7shill_validation\u00b7convincer_crowd\nreq:tsk"
+  },
+  {
+    "id": "inside_outside",
+    "strip": "@inside_outside M\u00b7C\u00b772h\u00b73\n#TR\u00b7LG\u00b7SP\u00b7EU\u00b7OA\u00b7DI\u00b7NC\u00b7CD [bet] ^\nR\u00b7n\u00b7h\u00b7i\u00b7p\u00b7n\u00b7d\nprm:Q\u2192trt\nsyn:shill_validation\u00b7convincer_document\u00b7hurry_up\u00b7spanish_prisoner"
+  },
+  {
+    "id": "wire_convincer",
+    "strip": "@wire_convincer M\u00b7HM\u00b772h\u00b73\n#SK\u00b7CO\u00b7LA\u00b7UG\u00b7PC\u00b7SQ\u00b7sunk_fal\u00b7scarc_min\u00b7NC [et] ^\nR\u00b7n\u00b7h\u00b7a\u00b7p\u00b7i\u00b7d\nprm:Q\nsyn:convincer_loss\u00b7hurry_up\u00b7pigeon_drop\u00b7blow_off\u00b7spanish_prisoner\nreq:tsk"
+  },
+  {
+    "id": "marks_pride",
+    "strip": "@marks_pride F\u00b7A\u00b70\u00b72\n#IT\u00b7RXN\u00b7CO\u00b7SHM2\u00b7SK\u00b7SQ\u00b7shame_res\u00b7sunk_fal [be] ^\nR\u00b7n\u00b7m\u00b7i\u00b7p\u00b7i\u00b7t\nprm:Q\u2192trt\nsyn:convincer_loss\u00b7hurry_up\u00b7spanish_prisoner\u00b7wire_convincer\u00b7inside_outside\nreq:tsk"
+  },
+  {
+    "id": "convincer_return",
+    "strip": "@convincer_return F\u00b7A\u00b70\u00b72\n#NS\u00b7PC\u00b7CO\u00b7ED\u00b7PE\u00b7NC\u00b7EC\u00b7HV [etd] ^\nR\u00b7n\u00b7l\u00b7a\u00b7p\u00b7i\u00b7e\nprm:Q\nsyn:convincer_plant\u00b7retroactive_meaning\u00b7blow_off\u00b7cooling_the_mark\nreq:tsk"
+  },
+  {
+    "id": "newspaper_test",
+    "strip": "@newspaper_test F\u00b7A\u00b70\u00b71\n#LG\u00b7SP\u00b7EU\u00b7TR\u00b7OA\u00b7NC [pb] ^\nR\u00b7n\u00b7h\u00b7i\u00b7p\u00b7m\u00b7e\nprm:S\nsyn:convincer_plant\u00b7convincer_document\u00b7cold_read\u00b7convincer_location\nreq:tsk"
+  },
+  {
+    "id": "cooling_letter",
+    "strip": "@cooling_letter F\u00b7A\u00b70\u00b71\n#NC\u00b7RL\u00b7GT\u00b7ED\u00b7IT\u00b7amygd_res\u00b7EC\u00b7SQ [d] ^\nR\u00b7n\u00b7p\u00b7i\u00b7p\u00b7i\u00b7e\nprm:Q\u2192cls\nsyn:cooling_the_mark\u00b7blow_off\u00b7convincer_return\u00b7spanish_prisoner\nreq:tsk"
+  },
+  {
+    "id": "planted_witness",
+    "strip": "@planted_witness L\u00b7C\u00b748h\u00b72\n#SP\u00b7LG\u00b7EU\u00b7TR\u00b7EC\u00b7OA\u00b7NC [be] ^\nR\u00b7n\u00b7m\u00b7a\u00b7s\u00b7n\u00b7d\nprm:Q\nsyn:shill_validation\u00b7convincer_crowd\u00b7convincer_location\u00b7inside_outside\nreq:loc"
+  },
+  {
+    "id": "cold_read",
+    "strip": "@cold_read F\u00b7A\u00b70\u00b72\n#SQ\u00b7PA\u00b7EU\u00b7TR\u00b7IT\u00b7NC [pb*] ^\nR\u00b7n\u00b7p\u00b7i\u00b7p\u00b7m\u00b7t\nprm:S\nsyn:osint_personalization\u00b7convincer_plant\u00b7convincer_document\nreq:tsk"
+  },
+  {
+    "id": "barnum_profile_dispatch",
+    "strip": "@barnum_profile_dispatch L\u00b7A\u00b73d\u00b72\n#RH\u00b7self_con\u00b7uniqu_ill\u00b7TR\u00b7DR\u00b7SQ\u00b7RC [pb] ^\nR\u00b7n\u00b7p\u00b7i\u00b7p\u00b7m\u00b7e\nprm:S"
+  },
+  {
+    "id": "cold_voicemail_drop",
+    "strip": "@cold_voicemail_drop L\u00b7CA\u00b73d\u00b72\n#CE\u00b7PDT\u00b7coinc_apo\u00b7IT\u00b7SP\u00b7need_cog\u00b7SQ [p] ^\nC\u00b7n\u00b7l\u00b7a\u00b7e\u00b7s\u00b7e\nprm:S\nreq:loc"
+  },
+  {
+    "id": "resonance_letter",
+    "strip": "@resonance_letter L\u00b7A\u00b73d\u00b72\n#RH\u00b7PA\u00b7TR\u00b7ident_cry\u00b7DR\u00b7SQ\u00b7ident_cog\u00b7RC [be] ^\nR\u00b7n\u00b7p\u00b7i\u00b7p\u00b7m\u00b7e\nprm:Q"
+  },
+  {
+    "id": "sealed_envelope_reveal",
+    "strip": "@sealed_envelope_reveal L\u00b7A\u00b71w\u00b73\n#RV2\u00b7ANT\u00b7CO\u00b7PC\u00b7AW\u00b7behav_act\u00b7NC\u00b7natur_res [pc] ^\nR\u00b7q\u00b7l\u00b7i\u00b7p\u00b7n\u00b7d\nprm:Q\nreq:loc\u00b7tsk"
+  },
+  {
+    "id": "forced_choice_architecture",
+    "strip": "@forced_choice_architecture F\u00b7A\u00b73d\u00b71\n#AIL\u00b7CO\u00b7self_eff\u00b7agenc_att\u00b7PC\u00b7posit_ill\u00b7NC\u00b7RXN [pbe] ^\nX\u00b7n\u00b7m\u00b7a\u00b7p\u00b7l\u00b7t\nprm:S\nreq:tsk"
+  },
+  {
+    "id": "one_ahead_sequence",
+    "strip": "@one_ahead_sequence L\u00b7A\u00b71w\u00b72\n#RV2\u00b7TR\u00b7CE\u00b7PC\u00b7ANT\u00b7NC\u00b7behav_act [bet] ^\nR\u00b7n\u00b7l\u00b7i\u00b7p\u00b7m\u00b7e\nprm:Q"
+  },
+  {
+    "id": "coincidence_stack",
+    "strip": "@coincidence_stack L\u00b7A\u00b73d\u00b72\n#AI\u00b7PDT\u00b7CE\u00b7AW\u00b7MM\u00b7CB\u00b7need_cog\u00b7natur_res\u00b7motiv_rea [pbe] /\nS\u00b7n\u00b7p\u00b7i\u00b7p\u00b7s\u00b7e\nprm:S\nreq:loc"
+  },
+  {
+    "id": "ambient_number_seeding",
+    "strip": "@ambient_number_seeding F\u00b7CA\u00b72w\u00b71\n#retro_att\u00b7AI\u00b7CO\u00b7CE\u00b7PC\u00b7hinds_bia\u00b7CB\u00b7NC [pb] -\nX\u00b7n\u00b7p\u00b7i\u00b7p\u00b7m\u00b7t\nprm:S\nreq:loc"
+  },
+  {
+    "id": "progressive_anesthesia",
+    "strip": "@progressive_anesthesia F\u00b7A\u00b7ongo\u00b71\n#habituat\u00b7normaliz\u00b7escal_tol\u00b7CO\u00b7sunk_ass [pbet] -\nX\u00b7n\u00b7l\u00b7i\u00b7p\u00b7l\u00b7e\nprm:S"
+  },
+  {
+    "id": "dual_reality_dispatch",
+    "strip": "@dual_reality_dispatch M\u00b7CR\u00b71w\u00b73\n#SP\u00b7RTT\u00b7CB\u00b7PI\u00b7TR\u00b7HV\u00b7CD [bec] ^\nS\u00b7n\u00b7m\u00b7i\u00b7p\u00b7s\u00b7e\nprm:Q\nreq:cnf\u00b7loc"
+  },
+  {
+    "id": "retroactive_biography",
+    "strip": "@retroactive_biography L\u00b7A\u00b72w\u00b73\n#UR\u00b7TR\u00b7PA\u00b7ident_des\u00b7tempo_dis [bet] ^\nR\u00b7n\u00b7l\u00b7i\u00b7p\u00b7m\u00b7e\nprm:Q\nreq:tsk"
+  },
+  {
+    "id": "thoughtform_plant",
+    "strip": "@thoughtform_plant F\u00b7A\u00b72w\u00b72\n#AI\u00b7PC\u00b7MM\u00b7CE\u00b7IIV\u00b7CB\u00b7NC\u00b7motiv_rea\u00b7ident_cog [pbec] -\nX\u00b7n\u00b7p\u00b7i\u00b7p\u00b7l\u00b7t\nprm:S\nreq:loc"
+  },
+  {
+    "id": "async_book_test",
+    "strip": "@async_book_test F\u00b7A\u00b73d\u00b73\n#AIL\u00b7RV2\u00b7AW\u00b7TR\u00b7PC\u00b7natur_res\u00b7NC\u00b7RXN [bec] ^\nR\u00b7n\u00b7m\u00b7i\u00b7p\u00b7n\u00b7d\nprm:Q\nreq:tsk"
+  },
+  {
+    "id": "ambient_symbol_echo",
+    "strip": "@ambient_symbol_echo F\u00b7CA\u00b71w\u00b71\n#PDT\u00b7retro_att\u00b7CO\u00b7CE\u00b7AI\u00b7need_cog\u00b7hinds_bia\u00b7CB [pbe] -\nX\u00b7n\u00b7p\u00b7i\u00b7p\u00b7m\u00b7t\nprm:S\nreq:loc"
+  },
+  {
+    "id": "intake_echo",
+    "strip": "@intake_echo F\u00b7A\u00b73d\u00b72\n#RH\u00b7TR\u00b7UR\u00b7PA\u00b7DR\u00b7SQ\u00b7RC [be] ^\nR\u00b7n\u00b7p\u00b7i\u00b7p\u00b7m\u00b7t\nprm:Q"
+  },
+  {
+    "id": "filed_prediction",
+    "strip": "@filed_prediction L\u00b7CA\u00b72w\u00b73\n#RV2\u00b7AW\u00b7SP\u00b7CO\u00b7ANT\u00b7natur_res\u00b7behav_act [pc] ^\nR\u00b7n\u00b7l\u00b7i\u00b7p\u00b7n\u00b7d\nprm:Q\nreq:loc"
+  },
+  {
+    "id": "directed_dream",
+    "strip": "@directed_dream F\u00b7A\u00b7over\u00b72\n#IIV\u00b7MM\u00b7CB\u00b7CE\u00b7DR\u00b7ident_cog\u00b7motiv_rea\u00b7RC [bet] -\nC\u00b7q\u00b7m\u00b7i\u00b7p\u00b7l\u00b7t\nprm:Q"
+  },
+  {
+    "id": "third_party_confirmation",
+    "strip": "@third_party_confirmation L\u00b7CR\u00b73d\u00b73\n#SP\u00b7RTT\u00b7CB\u00b7TR\u00b7PI\u00b7HV\u00b7CD [betc] /\nB\u00b7n\u00b7l\u00b7a\u00b7s\u00b7s\u00b7e\nprm:Q\nreq:loc"
+  },
+  {
+    "id": "self_fulfilling_dispatch",
+    "strip": "@self_fulfilling_dispatch F\u00b7A\u00b73d\u00b72\n#behav_exp\u00b7CO\u00b7ident_con\u00b7self_eff\u00b7AIL\u00b7posit_ill\u00b7RXN [bet] ^\nC\u00b7n\u00b7m\u00b7i\u00b7p\u00b7l\u00b7t\nprm:Q\nreq:tsk"
+  },
+  {
+    "id": "named_stranger",
+    "strip": "@named_stranger L\u00b7CR\u00b71w\u00b73\n#CB\u00b7PC\u00b7SP\u00b7AW\u00b7RTT\u00b7NC\u00b7natur_res\u00b7CD [etc] ^\nC\u00b7n\u00b7m\u00b7i\u00b7p\u00b7n\u00b7e\nprm:Q\nreq:cnf\u00b7loc"
+  },
+  {
+    "id": "calibrated_miss",
+    "strip": "@calibrated_miss F\u00b7A\u00b73d\u00b72\n#TR\u00b7RV2\u00b7LA\u00b7autho_att\u00b7CO [be] ^\nR\u00b7n\u00b7m\u00b7i\u00b7p\u00b7s\u00b7t\nprm:Q"
+  },
+  {
+    "id": "threshold_naming",
+    "strip": "@threshold_naming F\u00b7A\u00b7ongo\u00b73\n#ident_cry\u00b7namin_pow\u00b7CO\u00b7self_exp\u00b7closu_com\u00b7ident_cog [tcd] ^\nC\u00b7q\u00b7l\u00b7i\u00b7ps\u00b7l\u00b7d\nprm:Q"
+  },
+  {
+    "id": "legend_seed",
+    "strip": "@legend_seed L\u00b7A\u00b74w\u00b71\n#antic_cog\u00b7NT\u00b7consi_bia\u00b7PC\u00b7behav_act\u00b7EC\u00b7NC\u00b7CO [p] /\nB\u00b7n\u00b7p\u00b7a\u00b7p\u00b7l\u00b7e\nprm:Q\nreq:tsk"
+  },
+  {
+    "id": "walk_in_approach",
+    "strip": "@walk_in_approach F\u00b7A\u00b73d\u00b72\n#PR\u00b7CG\u00b7socia_inv\u00b7appro_mot\u00b7need_cog\u00b7CE\u00b7behav_act [p] /\nC\u00b7q\u00b7m\u00b7i\u00b7p\u00b7i\u00b7e\nprm:Q"
+  },
+  {
+    "id": "brush_pass_transfer",
+    "strip": "@brush_pass_transfer L\u00b7CR\u00b73d\u00b73\n#somat_hyp\u00b7RA\u00b7NT\u00b7EC [be] ^\nB\u00b7n\u00b7l\u00b7a\u00b7p\u00b7i\u00b7e\nprm:Q\u2192sct\nreq:cnf\u00b7loc"
+  },
+  {
+    "id": "dead_drop_receive",
+    "strip": "@dead_drop_receive L\u00b7CA\u00b73d\u00b72\n#CG\u00b7somat_hyp\u00b7spati_mem\u00b7NT\u00b7CE\u00b7NS\u00b7EC [bet] /\nB\u00b7q\u00b7m\u00b7a\u00b7p\u00b7s\u00b7e\nprm:Q\nreq:loc"
+  },
+  {
+    "id": "challenge_response_protocol",
+    "strip": "@challenge_response_protocol F\u00b7A\u00b71d\u00b72\n#ritua_beh\u00b7IGI\u00b7consi_bia\u00b7authe_heu\u00b7TR\u00b7habit\u00b7socia_the\u00b7TR\u00b7CO [pbe] /\nB\u00b7q\u00b7l\u00b7a\u00b7p\u00b7i\u00b7t\nprm:S"
+  },
+  {
+    "id": "cut_out_introduction",
+    "strip": "@cut_out_introduction F\u00b7A\u00b73d\u00b72\n#SP\u00b7compa_cog\u00b7trust_tra\u00b7IV\u00b7CG\u00b7TR\u00b7CE [pb] /\nB\u00b7q\u00b7l\u00b7a\u00b7p\u00b7m\u00b7e\nprm:Q"
+  },
+  {
+    "id": "mice_ego_appeal",
+    "strip": "@mice_ego_appeal F\u00b7A\u00b73d\u00b72\n#self_enh\u00b7SC\u00b7IA\u00b7scarc_fra\u00b7appro_mot\u00b7ident_cog\u00b7scarc_min\u00b7behav_act [pb] /\nC\u00b7q\u00b7l\u00b7i\u00b7p\u00b7s\u00b7e\nprm:S\nreq:inq"
+  },
+  {
+    "id": "mice_ideology_appeal",
+    "strip": "@mice_ideology_appeal F\u00b7A\u00b73d\u00b72\n#value_con\u00b7moral_ide\u00b7socia_ide\u00b7commi_esc\u00b7purpo_fra\u00b7CO [pbe] /\nC\u00b7q\u00b7m\u00b7i\u00b7p\u00b7s\u00b7e\nprm:Q\nreq:inq"
+  },
+  {
+    "id": "mice_coercion_shadow",
+    "strip": "@mice_coercion_shadow F\u00b7A\u00b73d\u00b74\n#TA\u00b7LA\u00b7vigil_res\u00b7behav_inh\u00b7compl_cas [et] /\nS\u00b7q\u00b7m\u00b7+\u00b7p\u00b7i\u00b7d\nprm:Q\nreq:inq"
+  },
+  {
+    "id": "mice_money_signal",
+    "strip": "@mice_money_signal L\u00b7A\u00b73d\u00b72\n#RC\u00b7LA\u00b7mater_inc\u00b7TR\u00b7trans_fra\u00b7TR [pb] /\nB\u00b7q\u00b7m\u00b7a\u00b7p\u00b7s\u00b7e\nprm:S\nreq:csh"
+  },
+  {
+    "id": "surveillance_detection_route",
+    "strip": "@surveillance_detection_route F\u00b7A\u00b73d\u00b72\n#hyper_ind\u00b7spati_att\u00b7PR\u00b7TA\u00b7behav_pri\u00b7HV\u00b7need_cog [be] /\nB\u00b7q\u00b7h\u00b7a\u00b7p\u00b7s\u00b7t\nprm:Q\nreq:loc\u00b7inq"
+  },
+  {
+    "id": "mole_hunt_brief",
+    "strip": "@mole_hunt_brief F\u00b7A\u00b73d\u00b73\n#PI\u00b7trust_dis\u00b7inves_mot\u00b7socia_ana\u00b7sense_urg\u00b7HV\u00b7CD\u00b7NC [bet] /\nB\u00b7q\u00b7h\u00b7+\u00b7p\u00b7m\u00b7d\nprm:Q"
+  },
+  {
+    "id": "compartmentalization_brief",
+    "strip": "@compartmentalization_brief F\u00b7A\u00b71d\u00b72\n#exclu_fra\u00b7IV\u00b7IGI\u00b7secre_mot\u00b7TR\u00b7socia_the\u00b7TR\u00b7scarc_min [be] /\nB\u00b7q\u00b7l\u00b7a\u00b7p\u00b7m\u00b7e\nprm:S"
+  },
+  {
+    "id": "legend_stress_test",
+    "strip": "@legend_stress_test F\u00b7CA\u00b73d\u00b73\n#consi_pre\u00b7ident_per\u00b7worki_loa\u00b7socia_eva\u00b7commi_tes\u00b7CO\u00b7impre_man\u00b7cogni_pro [bet] ^\nB\u00b7n\u00b7h\u00b7i\u00b7p\u00b7i\u00b7e\nprm:Q\nreq:cnf"
+  },
+  {
+    "id": "exfiltration_protocol",
+    "strip": "@exfiltration_protocol F\u00b7A\u00b73d\u00b72\n#threa_con\u00b7safet_beh\u00b7conti_pla\u00b7dread_ind\u00b7RA\u00b7amygd_res\u00b7anxie_avo\u00b7cogni_pro [be] /\nB\u00b7q\u00b7l\u00b7a\u00b7p\u00b7n\u00b7t\nprm:Q"
+  },
+  {
+    "id": "legend_depth_build",
+    "strip": "@legend_depth_build L\u00b7A\u00b713\u00b72\n#RA\u00b7CD\u00b7tempo_ext\u00b7disco_mot\u00b7NT\u00b7EC [pb] -\nB\u00b7n\u00b7m\u00b7a\u00b7p\u00b7l\u00b7e\nprm:Q\nreq:tsk"
+  },
+  {
+    "id": "asset_validation_request",
+    "strip": "@asset_validation_request F\u00b7A\u00b73d\u00b71\n#SP\u00b7role_con\u00b7TR\u00b7task_ori\u00b7opera_bel\u00b7TR [be] /\nB\u00b7q\u00b7m\u00b7a\u00b7p\u00b7s\u00b7t\nprm:S\nreq:inq"
+  },
+  {
+    "id": "dry_cleaning_walk",
+    "strip": "@dry_cleaning_walk F\u00b7CA\u00b73d\u00b73\n#hyper_ind\u00b7somat_hyp\u00b7spati_pri\u00b7TA\u00b7HV [et] /\nB\u00b7q\u00b7h\u00b7a\u00b7p\u00b7s\u00b7e\nprm:Q\nreq:cnf\u00b7loc"
+  },
+  {
+    "id": "one_time_pad_receipt",
+    "strip": "@one_time_pad_receipt L\u00b7A\u00b73d\u00b72\n#symbo_enc\u00b7mater_cul\u00b7ritua_beh\u00b7IV\u00b7exclu_fra\u00b7habit\u00b7scarc_min [be] /\nB\u00b7q\u00b7m\u00b7a\u00b7p\u00b7m\u00b7e\nprm:S\nreq:csh\u00b7tsk"
+  },
+  {
+    "id": "handler_letter",
+    "strip": "@handler_letter L\u00b7A\u00b73d\u00b72\n#PA\u00b7epist_int\u00b7trust_sca\u00b7care_rec\u00b7relat_con\u00b7TR\u00b7gratitud [bed] /\nB\u00b7q\u00b7p\u00b7+\u00b7p\u00b7m\u00b7e\nprm:S\nreq:inq"
+  },
+  {
+    "id": "safe_house_assignment",
+    "strip": "@safe_house_assignment F\u00b7A\u00b73d\u00b71\n#spati_anc\u00b7safet_beh\u00b7conti_pla\u00b7RA\u00b7TR\u00b7proxe_spa\u00b7somat_hyp\u00b7anxie_avo\u00b7cogni_pro [be] /\nB\u00b7q\u00b7l\u00b7a\u00b7p\u00b7n\u00b7t\nprm:Q\nreq:loc"
+  },
+  {
+    "id": "mice_full_profile",
+    "strip": "@mice_full_profile M\u00b7A\u00b72w\u00b74\n#IC\u00b7self_dis\u00b7surve_awa\u00b7sense_urg\u00b7metac_dis\u00b7ident_cog\u00b7NC [tc] /\nB\u00b7q\u00b7l\u00b7+\u00b7p\u00b7i\u00b7x\nprm:Q\nreq:inq\u00b7tsk"
+  },
+  {
+    "id": "welcome_flood",
+    "strip": "@welcome_flood L\u00b7A\u00b73d\u00b72\n#SP\u00b7RC\u00b7warmt_sig\u00b7speci_cre [p] /\nC\u00b7n\u00b7p\u00b7i\u00b7ps\u00b7s\u00b7e\nprm:Q\nreq:inq"
+  },
+  {
+    "id": "lexical_handshake",
+    "strip": "@lexical_handshake F\u00b7A\u00b70\u00b71\n#in-gr_lan\u00b7socia_the\u00b7fluen_bel\u00b7incre_fam [pb] /\nC\u00b7n\u00b7l\u00b7i\u00b7ps\u00b7m\u00b7t\nprm:S"
+  },
+  {
+    "id": "the_vetting_letter",
+    "strip": "@the_vetting_letter L\u00b7A\u00b73d\u00b72\n#selec_eff\u00b7commi_esc\u00b7RC\u00b7ident_jud\u00b7CO [pb] /\nB\u00b7n\u00b7p\u00b7i\u00b7p\u00b7s\u00b7e\nprm:Q"
+  },
+  {
+    "id": "first_disclosure_invitation",
+    "strip": "@first_disclosure_invitation F\u00b7A\u00b70\u00b72\n#self_rec\u00b7intim_vul\u00b7commi_rev\u00b7ICH\u00b7RC [pb] /\nC\u00b7n\u00b7m\u00b7i\u00b7p\u00b7m\u00b7e\nprm:Q"
+  },
+  {
+    "id": "incremental_oath",
+    "strip": "@incremental_oath F\u00b7A\u00b70\u00b72\n#foot_doo\u00b7escal_com\u00b7cogni_red\u00b7behav_con\u00b7CO\u00b7CD [be] /\nC\u00b7n\u00b7m\u00b7i\u00b7ps\u00b7l\u00b7d\nprm:Q"
+  },
+  {
+    "id": "lexical_deepening",
+    "strip": "@lexical_deepening F\u00b7A\u00b70\u00b72\n#in-gr_lan\u00b7CRF\u00b7reali_tun\u00b7ident_voc\u00b7CD [be] /\nC\u00b7n\u00b7l\u00b7i\u00b7ps\u00b7l\u00b7e\nprm:Q"
+  },
+  {
+    "id": "the_naming_ceremony",
+    "strip": "@the_naming_ceremony L\u00b7CA\u00b73d\u00b73\n#IIV\u00b7symbo_com\u00b7ritua_mar\u00b7ego_rol\u00b7ident_cog [bet] ^\nC\u00b7q\u00b7m\u00b7i\u00b7ps\u00b7m\u00b7d\nprm:Q\nreq:cnf"
+  },
+  {
+    "id": "milieu_letter",
+    "strip": "@milieu_letter L\u00b7A\u00b73d\u00b72\n#milie_nar\u00b7reali_fra\u00b7sacre_rhe\u00b7in-gr_cos\u00b7confo_inf\u00b7motiv_rea\u00b7OA\u00b7socia_the [pb] /\nB\u00b7n\u00b7p\u00b7i\u00b7p\u00b7s\u00b7e\nprm:S"
+  },
+  {
+    "id": "the_shadow_walk",
+    "strip": "@the_shadow_walk L\u00b7A\u00b71d\u00b72\n#felt_car\u00b7holdi_env\u00b7attac_act\u00b7omnip_ben\u00b7attac_sty [be] /\nC\u00b7n\u00b7p\u00b7+\u00b7ps\u00b7m\u00b7e\nprm:Q\nreq:cnf\u00b7inq"
+  },
+  {
+    "id": "the_purity_protocol",
+    "strip": "@the_purity_protocol F\u00b7A\u00b73d\u00b72\n#BCM\u00b7cogni_con\u00b7ritua_act\u00b7SPT\u00b7CO [be] /\nX\u00b7n\u00b7m\u00b7i\u00b7p\u00b7s\u00b7e\nprm:Q"
+  },
+  {
+    "id": "the_deep_archive_pull",
+    "strip": "@the_deep_archive_pull L\u00b7A\u00b73d\u00b73\n#impli_omn\u00b7inves_sig\u00b7preem_int\u00b7depth_car\u00b7OA\u00b7sunk_fal\u00b7TR\u00b7attac_sty [be] ^\nR\u00b7q\u00b7p\u00b7i\u00b7p\u00b7s\u00b7e\nprm:Q\nreq:osn\u00b7inq"
+  },
+  {
+    "id": "thought_stopping_interrupt",
+    "strip": "@thought_stopping_interrupt F\u00b7A\u00b70\u00b72\n#doubt_red\u00b7CRF\u00b7epist_aut\u00b7resis_rei\u00b7CD\u00b7motiv_rea\u00b7OA [be] /\nX\u00b7n\u00b7l\u00b7i\u00b7p\u00b7m\u00b7e\nprm:S"
+  },
+  {
+    "id": "the_floating_moment",
+    "strip": "@the_floating_moment M\u00b7CR\u00b72w\u00b73\n#peak_ind\u00b7appet_cre\u00b7state_mem\u00b7trans_hoo\u00b7peak_rul\u00b7NS [bet] ^\nR\u00b7n\u00b7m\u00b7i\u00b7p\u00b7l\u00b7t\nprm:Q\nreq:cnf"
+  },
+  {
+    "id": "witnessed_confession",
+    "strip": "@witnessed_confession F\u00b7CA\u00b73d\u00b73\n#vulne_bon\u00b7mutua_dis\u00b7shame_tra\u00b7colle_hol\u00b7TR\u00b7RC\u00b7shame_res\u00b7socia_the [et] ^\nC\u00b7q\u00b7h\u00b7i\u00b7ps\u00b7m\u00b7d\nprm:Q\nreq:cnf\u00b7trst"
+  },
+  {
+    "id": "the_us_signal",
+    "strip": "@the_us_signal F\u00b7A\u00b70\u00b72\n#in-gr_for\u00b7socia_the\u00b7belon_dis\u00b7other_mil\u00b7minim_par\u00b7in_fav [be] /\nB\u00b7n\u00b7p\u00b7i\u00b7ps\u00b7m\u00b7e\nprm:Q"
+  },
+  {
+    "id": "graduated_reveal",
+    "strip": "@graduated_reveal L\u00b7A\u00b71w\u00b72\n#EAC\u00b7infor_tie\u00b7antic_sca\u00b7readi_gat\u00b7effor_jus [pbe] /\nR\u00b7n\u00b7m\u00b7i\u00b7p\u00b7l\u00b7e\nprm:S\u2192esc\nreq:inq"
+  },
+  {
+    "id": "graduation_ritual",
+    "strip": "@graduation_ritual M\u00b7CA\u00b73d\u00b73\n#RP\u00b7SE\u00b7LT2\u00b7RT2\u00b7somat_hyp [etc] ^\nC\u00b7q\u00b7m\u00b7i\u00b7ps\u00b7s\u00b7d\nprm:Q\nreq:cnf"
+  },
+  {
+    "id": "the_long_echo",
+    "strip": "@the_long_echo F\u00b7A\u00b7arcl\u00b73\n#conti_sig\u00b7patte_rew\u00b7long_pre\u00b7plant_cal\u00b7CO\u00b7need_cog\u00b7MEE [cd] ^\nR\u00b7q\u00b7p\u00b7i\u00b7p\u00b7i\u00b7t\nprm:Q\nreq:cnf"
+  },
+  {
+    "id": "parallel_correspondent",
+    "strip": "@parallel_correspondent L\u00b7A\u00b73d\u00b72\n#imagi_com\u00b7socia_imp\u00b7solid_con\u00b7parallel\u00b7socia_the\u00b7SP\u00b7EC [be] /\nC\u00b7n\u00b7p\u00b7+\u00b7ps\u00b7m\u00b7e\nprm:S"
+  },
+  {
+    "id": "borrowed_authority",
+    "strip": "@borrowed_authority F\u00b7A\u00b71d\u00b71\n#SP\u00b7autho_ass\u00b7legit_tra\u00b7insti_end [pb] /\nB\u00b7n\u00b7p\u00b7a\u00b7p\u00b7s\u00b7t\nprm:S\nreq:inq"
+  },
+  {
+    "id": "productive_rupture",
+    "strip": "@productive_rupture M\u00b7CA\u00b72w\u00b74\n#ruptu_bon\u00b7trust_cri\u00b7attac_dee\u00b7earne_rec\u00b7attac_sty\u00b7TR [et] ^\nC\u00b7m\u00b7h\u00b7+\u00b7ps\u00b7l\u00b7d\nprm:Q\nreq:cnf"
+  },
+  {
+    "id": "exit_honored",
+    "strip": "@exit_honored F\u00b7A\u00b70\u00b71\n#safet_app\u00b7conse_arc\u00b7trust_exi\u00b7ruptu_pre\u00b7anxie_avo\u00b7RXN\u00b7TR [pbetcd] _\nC\u00b7q\u00b7p\u00b7i\u00b7ps\u00b7i\u00b7t\nprm:S"
+  },
+  {
+    "id": "anomalous_receipt",
+    "strip": "@anomalous_receipt L\u00b7A\u00b73d\u00b71\n#CG\u00b7PR\u00b7situa_amb\u00b7CE\u00b7need_cog [p] /\nS\u00b7*\u00b7l\u00b7a\u00b7p\u00b7s\u00b7e\nprm:Q\u2192sct\nreq:loc"
+  },
+  {
+    "id": "dead_letter_office",
+    "strip": "@dead_letter_office L\u00b7CA\u00b74w\u00b72\n#TDP\u00b7authe_cue\u00b7narra_wei\u00b7const_the\u00b7TR [pb] /\nR\u00b7*\u00b7l\u00b7i\u00b7p\u00b7i\u00b7e\nprm:Q\u2192sct\nreq:loc\u00b7tsk"
+  },
+  {
+    "id": "cipher_in_plain_sight",
+    "strip": "@cipher_in_plain_sight F\u00b7A\u00b73d\u00b72\n#PR\u00b7CPR\u00b7CG\u00b7need_cog\u00b7CE\u00b7achie_mot [pb] /\nC\u00b7*\u00b7h\u00b7a\u00b7p\u00b7m\u00b7t\nprm:Q\nreq:tsk"
+  },
+  {
+    "id": "multi_key_first_fragment",
+    "strip": "@multi_key_first_fragment L\u00b7A\u00b73d\u00b71\n#CG\u00b7compl_dri\u00b7forwa_mom\u00b7CE\u00b7CO [p] /\nC\u00b7n\u00b7m\u00b7a\u00b7e\u00b7i\u00b7t\nprm:S"
+  },
+  {
+    "id": "time_locked_page",
+    "strip": "@time_locked_page F\u00b7A\u00b71w\u00b72\n#AN\u00b7preci_rew\u00b7calen_sig\u00b7behav_act\u00b7need_cog\u00b7const_the [bet] /\nX\u00b7n\u00b7l\u00b7a\u00b7p\u00b7i\u00b7e\nprm:Q\u2192esc\nreq:tsk"
+  },
+  {
+    "id": "fragmented_witness",
+    "strip": "@fragmented_witness L\u00b7A\u00b72w\u00b72\n#persp_con\u00b7activ_inf\u00b7narra_con\u00b7CD\u00b7cogni_pro\u00b7motiv_rea [be] /\nR\u00b7*\u00b7h\u00b7i\u00b7p\u00b7m\u00b7t\nprm:Q\u2192esc"
+  },
+  {
+    "id": "the_unreliable_archive",
+    "strip": "@the_unreliable_archive L\u00b7A\u00b723\u00b72\n#EU\u00b7activ_inf\u00b7TR\u00b7NC\u00b7TR\u00b7cogni_pro [bet] /\nS\u00b7*\u00b7h\u00b7i\u00b7p\u00b7l\u00b7t\nprm:Q\nreq:tsk"
+  },
+  {
+    "id": "puppet_master_near_miss",
+    "strip": "@puppet_master_near_miss M\u00b7CR\u00b72w\u00b73\n#meta_awa\u00b7CRV\u00b7trust_rec\u00b7need_cog\u00b7CE\u00b7TR [et] ^\nS\u00b7n\u00b7m\u00b7+\u00b7p\u00b7s\u00b7d\nprm:Q\nreq:cnf"
+  },
+  {
+    "id": "tinag_frame_break",
+    "strip": "@tinag_frame_break F\u00b7A\u00b73d\u00b73\n#meta_cog\u00b7diege_con\u00b7frame_man\u00b7need_cog\u00b7RXN\u00b7cogni_pro [etc] >\nS\u00b7m\u00b7l\u00b7i\u00b7p\u00b7i\u00b7d\nprm:Q"
+  },
+  {
+    "id": "optional_path",
+    "strip": "@optional_path L\u00b7A\u00b71w\u00b72\n#AU\u00b7CPR\u00b7depth_sig\u00b7RXN\u00b7achie_mot\u00b7CE [be] >\nC\u00b7q\u00b7h\u00b7a\u00b7p\u00b7m\u00b7t\nprm:S\u2192esc"
+  },
+  {
+    "id": "community_solve_bait",
+    "strip": "@community_solve_bait L\u00b7A\u00b72w\u00b72\n#socia_lat\u00b7colla_dri\u00b7epist_hum\u00b7SP\u00b7socia_the\u00b7need_cog [be] -\nC\u00b7n\u00b7h\u00b7a\u00b7s\u00b7l\u00b7e\nprm:Q\u2192esc\nreq:tsk"
+  },
+  {
+    "id": "the_false_confirmation",
+    "strip": "@the_false_confirmation F\u00b7A\u00b73d\u00b72\n#retro_sen\u00b7PM\u00b7narra_anc\u00b7hinds_bia\u00b7affec_pri\u00b7motiv_rea [be] ^\nS\u00b7n\u00b7l\u00b7i\u00b7p\u00b7s\u00b7e\nprm:Q\u2192esc"
+  },
+  {
+    "id": "meta_game_layer",
+    "strip": "@meta_game_layer L\u00b7A\u00b74w\u00b73\n#recur_str\u00b7meta_cog\u00b7verti_ind\u00b7need_cog\u00b7CD [et] >\nS\u00b7m\u00b7h\u00b7i\u00b7p\u00b7l\u00b7t\nprm:Q\nreq:tsk"
+  },
+  {
+    "id": "slow_burn_url",
+    "strip": "@slow_burn_url F\u00b7A\u00b736\u00b72\n#delay_pay\u00b7patie_rew\u00b7tempo_sig\u00b7tempo_dis\u00b7const_the [pbe] /\nC\u00b7n\u00b7l\u00b7a\u00b7p\u00b7l\u00b7e\nprm:Q\u2192esc\nreq:tsk"
+  },
+  {
+    "id": "personalized_glitch",
+    "strip": "@personalized_glitch L\u00b7A\u00b73d\u00b73\n#uncan_per\u00b7PDR\u00b7atten_cap\u00b7CD [pbe] /\nS\u00b7*\u00b7l\u00b7i\u00b7p\u00b7i\u00b7e\nprm:S\u2192esc\nreq:tsk"
+  },
+  {
+    "id": "relay_handler",
+    "strip": "@relay_handler M\u00b7CR\u00b723\u00b72\n#socia_con\u00b7compa_eff\u00b7ritua_han\u00b7socia_the [be] -\nB\u00b7q\u00b7l\u00b7a\u00b7p\u00b7s\u00b7e\nprm:Q\u2192esc\nreq:cnf"
+  },
+  {
+    "id": "physical_object_as_key",
+    "strip": "@physical_object_as_key M\u00b7A\u00b713\u00b73\n#somat_hyp\u00b7affor_sig [bet] /\nC\u00b7*\u00b7h\u00b7a\u00b7p\u00b7m\u00b7d\nprm:Q\u2192esc\nreq:csh\u00b7loc\u00b7tsk"
+  },
+  {
+    "id": "breadcrumb_sequence",
+    "strip": "@breadcrumb_sequence L\u00b7A\u00b72w\u00b72\n#forwa_mom\u00b7self_dir\u00b7CPR\u00b7CO\u00b7achie_mot [pbe] /\nC\u00b7n\u00b7h\u00b7a\u00b7p\u00b7m\u00b7t\nprm:Q\u2192esc\nreq:tsk"
+  },
+  {
+    "id": "witness_who_returns",
+    "strip": "@witness_who_returns L\u00b7CA\u00b7vari\u00b72\n#NC2\u00b7socia_con\u00b7RSG\u00b7socia_the\u00b7hinds_bia\u00b7motiv_rea [bec] ^\nR\u00b7n\u00b7l\u00b7i\u00b7ps\u00b7i\u00b7e\nprm:Q\u2192esc\nreq:cnf"
+  },
+  {
+    "id": "diegetic_archive_site",
+    "strip": "@diegetic_archive_site M\u00b7A\u00b74w\u00b72\n#world_den\u00b7epist_imm\u00b7self_exp\u00b7need_cog [pbe] -\nC\u00b7n\u00b7h\u00b7i\u00b7p\u00b7l\u00b7t\nprm:S\u2192esc\nreq:tsk"
+  },
+  {
+    "id": "scheduled_interruption",
+    "strip": "@scheduled_interruption F\u00b7A\u00b73d\u00b72\n#preci_kee\u00b7livin_pro\u00b7calen_sig\u00b7const_the [be] /\nX\u00b7*\u00b7l\u00b7a\u00b7e\u00b7i\u00b7t\nprm:Q\u2192sct"
+  },
+  {
+    "id": "convergence_point",
+    "strip": "@convergence_point M\u00b7A\u00b736\u00b73\n#PC\u00b7multi_syn\u00b7revel_arc\u00b7NC [etc] ^\nR\u00b7q\u00b7h\u00b7+\u00b7p\u00b7m\u00b7t\nprm:Q\nreq:tsk"
+  },
+  {
+    "id": "wax_seal_letter",
+    "strip": "@wax_seal_letter L\u00b7A\u00b73d\u00b72\n#mater_sig\u00b7regis_shi\u00b7aesth_aut\u00b7senso_sen\u00b7affec_pri\u00b7OA [pbt] /\nB\u00b7*\u00b7p\u00b7+\u00b7p\u00b7i\u00b7t\nprm:S\nreq:csh\u00b7loc"
+  },
+  {
+    "id": "one_wrong_word",
+    "strip": "@one_wrong_word F\u00b7A\u00b73d\u00b72\n#close_rew\u00b7PDR\u00b7signa_det\u00b7CD [be] /\nS\u00b7*\u00b7h\u00b7i\u00b7p\u00b7l\u00b7t\nprm:Q\u2192esc"
+  },
+  {
+    "id": "retro_medium_artifact",
+    "strip": "@retro_medium_artifact L\u00b7A\u00b73d\u00b72\n#NS\u00b7authe_cue\u00b7CE\u00b7AI\u00b7CB\u00b7TR [pb] /\nR\u00b7n\u00b7m\u00b7a\u00b7p\u00b7m\u00b7e\nprm:S\nsyn:archive_snapshot\u00b7indexed_ghost_page\u00b7community_solve_bait\u00b7slow_burn_url\u00b7diegetic_archive_site\nreq:tsk"
+  },
+  {
+    "id": "soft_landing",
+    "strip": "@soft_landing L\u00b7A\u00b71d\u00b71\n#closu_rit\u00b7warm_pre\u00b7low_con\u00b7grief_ber\u00b7attac_sty [d] _\nR\u00b7q\u00b7p\u00b7+\u00b7p\u00b7i\u00b7t\nprm:Q"
+  },
+  {
+    "id": "artifact_as_relic",
+    "strip": "@artifact_as_relic L\u00b7CA\u00b73d\u00b71\n#memor_anc\u00b7trans_obj\u00b7mater_mea\u00b7NS\u00b7attac_sty\u00b7somat_hyp [d] >\nR\u00b7m\u00b7l\u00b7i\u00b7p\u00b7i\u00b7e\nprm:Q\nreq:loc"
+  },
+  {
+    "id": "day_seven_reframe",
+    "strip": "@day_seven_reframe F\u00b7A\u00b7setu\u00b71\n#RSG\u00b7tempo_ins\u00b7delay_mea\u00b7hinds_bia [d] ^\nR\u00b7q\u00b7l\u00b7i\u00b7p\u00b7s\u00b7t\nprm:S"
+  },
+  {
+    "id": "integration_letter",
+    "strip": "@integration_letter L\u00b7A\u00b72\u00b72\n#narra_con\u00b7witne_sel\u00b7exter_ref\u00b7ident_cog\u00b7impre_man [d] _\nR\u00b7q\u00b7p\u00b7i\u00b7p\u00b7i\u00b7d\nprm:Q"
+  },
+  {
+    "id": "long_shadow",
+    "strip": "@long_shadow F\u00b7A\u00b7plan\u00b71\n#conti_rel\u00b7felt_per\u00b7tempo_dep\u00b7const_the [d] _\nR\u00b7q\u00b7p\u00b7i\u00b7p\u00b7i\u00b7t\nprm:Q"
+  },
+  {
+    "id": "quiet_withdrawal",
+    "strip": "@quiet_withdrawal F\u00b7A\u00b7plan\u00b71\n#desig_abs\u00b7inten_sil\u00b7grace_dim\u00b7attac_sty\u00b7grief_ber [d] _\nX\u00b7q\u00b7p\u00b7a\u00b7e\u00b7m\u00b7e\nprm:Q"
+  },
+  {
+    "id": "graceful_release",
+    "strip": "@graceful_release F\u00b7A\u00b70\u00b71\n#auton_res\u00b7digni_pre\u00b7uncon_reg\u00b7RXN\u00b7shame_res\u00b7attac_sty [pbet] _\nR\u00b7q\u00b7p\u00b7+\u00b7p\u00b7i\u00b7e\nprm:S"
+  },
+  {
+    "id": "open_door_signal",
+    "strip": "@open_door_signal F\u00b7A\u00b70\u00b71\n#low_ava\u00b7auton_pro\u00b7optio_re-\u00b7RXN [pbet] _\nC\u00b7q\u00b7l\u00b7+\u00b7p\u00b7i\u00b7t\nprm:Q"
+  },
+  {
+    "id": "breadcrumb_without_demand",
+    "strip": "@breadcrumb_without_demand L\u00b7CA\u00b73d\u00b71\n#pure_gif\u00b7AP\u00b7no_off\u00b7RC [pb] /\nC\u00b7n\u00b7p\u00b7a\u00b7p\u00b7l\u00b7t\nprm:Q\nreq:loc"
+  },
+  {
+    "id": "seam_acknowledgment",
+    "strip": "@seam_acknowledgment L\u00b7CA\u00b73d\u00b72\n#diege_met\u00b7frame_rep\u00b7trust_hon\u00b7CD\u00b7TR [bet] _\nR\u00b7m\u00b7m\u00b7i\u00b7p\u00b7s\u00b7d\nprm:Q\nreq:tsk"
+  },
+  {
+    "id": "test_reframe",
+    "strip": "@test_reframe L\u00b7A\u00b71d\u00b72\n#reframin\u00b7meta-_inv\u00b7confi_sus\u00b7CD\u00b7CB [et] ^\nR\u00b7m\u00b7m\u00b7i\u00b7p\u00b7s\u00b7d\nprm:Q\nreq:tsk"
+  },
+  {
+    "id": "misfire_as_story",
+    "strip": "@misfire_as_story L\u00b7A\u00b73d\u00b71\n#narra_abs\u00b7ficti_ref\u00b7error_cha\u00b7EC\u00b7CD [betc] >\nR\u00b7m\u00b7l\u00b7i\u00b7p\u00b7s\u00b7e\nprm:Q\nreq:tsk"
+  },
+  {
+    "id": "wrong_read_recovery",
+    "strip": "@wrong_read_recovery L\u00b7CA\u00b73d\u00b71\n#impli_cal\u00b7attun_sig\u00b7chara_res\u00b7TR [bet] _\nR\u00b7m\u00b7l\u00b7i\u00b7p\u00b7s\u00b7e\nprm:Q\nreq:tsk"
+  },
+  {
+    "id": "shadow_correspondent",
+    "strip": "@shadow_correspondent M\u00b7CR\u00b73d\u00b72\n#produ_ten\u00b7multi_fra\u00b7inter_mul\u00b7CD [bet] -\nB\u00b7n\u00b7m\u00b7i\u00b7p\u00b7s\u00b7d\nprm:Q\nreq:cnf"
+  },
+  {
+    "id": "broken_immersion_honor",
+    "strip": "@broken_immersion_honor L\u00b7CA\u00b70\u00b73\n#meta_tra\u00b7trust_hon\u00b7conse_exi\u00b7TR\u00b7RXN [betc] _\nR\u00b7m\u00b7h\u00b7i\u00b7p\u00b7i\u00b7d\nprm:Q\nreq:cnf\u00b7loc"
+  },
+  {
+    "id": "elegant_failure",
+    "strip": "@elegant_failure L\u00b7A\u00b71d\u00b71\n#diege_con\u00b7syste_cha\u00b7error_evi\u00b7CD [betc] _\nR\u00b7m\u00b7l\u00b7i\u00b7p\u00b7s\u00b7e\nprm:Q\nreq:tsk"
+  },
+  {
+    "id": "unknowing_collaboration",
+    "strip": "@unknowing_collaboration M\u00b7CA\u00b72w\u00b72\n#distr_age\u00b7invis_int\u00b7emerg_com\u00b7socia_the [etc] -\nC\u00b7n\u00b7m\u00b7a\u00b7s\u00b7l\u00b7d\nprm:Q\nreq:tsk"
+  },
+  {
+    "id": "parallel_discovery",
+    "strip": "@parallel_discovery M\u00b7CA\u00b72w\u00b72\n#desig_con\u00b7synch_con\u00b7share_dis\u00b7socia_the\u00b7EC [bet] ^\nC\u00b7n\u00b7m\u00b7i\u00b7p\u00b7l\u00b7d\nprm:Q\nreq:tsk"
+  },
+  {
+    "id": "convergence_signal",
+    "strip": "@convergence_signal F\u00b7A\u00b71d\u00b72\n#revel_int\u00b7world_sig\u00b7RSG\u00b7hinds_bia [tcd] _\nR\u00b7q\u00b7l\u00b7i\u00b7p\u00b7s\u00b7d\nprm:Q\nreq:tsk"
+  },
+  {
+    "id": "ambient_organization_presence",
+    "strip": "@ambient_organization_presence M\u00b7A\u00b78w\u00b71\n#world_pre\u00b7searchab\u00b7insti_cre\u00b7ambie_ver\u00b7OA [p] -\nB\u00b7n\u00b7l\u00b7a\u00b7p\u00b7n\u00b7d\nprm:S\nreq:tsk"
+  },
+  {
+    "id": "deep_backstory_artifacts",
+    "strip": "@deep_backstory_artifacts M\u00b7CA\u00b78w\u00b71\n#mater_his\u00b7tempo_dep\u00b7world_pre\u00b7artif_cre\u00b7const_the [pbe] /\nR\u00b7n\u00b7m\u00b7a\u00b7p\u00b7l\u00b7d\nprm:S\nreq:tsk"
+  },
+  {
+    "id": "dormant_frequency",
+    "strip": "@dormant_frequency L\u00b7A\u00b7esta\u00b72\n#delay_act\u00b7dorma_des\u00b7tempo_ant\u00b7behav_act [petc] /\nR\u00b7n\u00b7l\u00b7a\u00b7p\u00b7i\u00b7e\nprm:Q\nreq:tsk"
+  },
+  {
+    "id": "unmarked_anniversary",
+    "strip": "@unmarked_anniversary F\u00b7A\u00b71d\u00b73\n#TA\u00b7impli_rec\u00b7meani_att\u00b7emoti_cui\u00b7NS [*] ^\nR\u00b7q\u00b7p\u00b7i\u00b7p\u00b7i\u00b7t\nprm:S\nsyn:calendar_holding\u00b7elegiac_obituary\u00b7time_capsule_dispatch\nreq:inq"
+  },
+  {
+    "id": "calendar_holding",
+    "strip": "@calendar_holding F\u00b7A\u00b71w\u00b72\n#TA\u00b7susta_sig\u00b7laten_exp\u00b7patte_rew\u00b7NS\u00b7need_cog [pb*] /\nX\u00b7q\u00b7p\u00b7a\u00b7e\u00b7s\u00b7e\nprm:Q\u2192esc\nsyn:unmarked_anniversary\u00b7first_anniversary_dispatch\u00b7year_mind_return\nreq:inq"
+  },
+  {
+    "id": "first_anniversary_dispatch",
+    "strip": "@first_anniversary_dispatch L\u00b7A\u00b7365\u00b73\n#TA\u00b7antic_rec\u00b7closu_rit\u00b7conti_sig\u00b7NS\u00b7grief_ber [d*] ^\nR\u00b7*\u00b7l\u00b7i\u00b7p\u00b7i\u00b7t\nprm:Q\nsyn:year_mind_return\u00b7calendar_holding\u00b7unmarked_anniversary"
+  },
+  {
+    "id": "elegiac_obituary",
+    "strip": "@elegiac_obituary L\u00b7HA\u00b75\u00b73\n#meani_ref\u00b7narra_clo\u00b7symbo_rit\u00b7ident_mar\u00b7grief_ber\u00b7ident_cog [tcd] ^\nR\u00b7*\u00b7l\u00b7i\u00b7p\u00b7i\u00b7e\nprm:Q\u2192cls\nsyn:time_capsule_dispatch\u00b7letter_never_sent\u00b7small_ceremony_instruction\nreq:inq\u00b7tsk"
+  },
+  {
+    "id": "time_capsule_dispatch",
+    "strip": "@time_capsule_dispatch L\u00b7HA\u00b73d\u00b73\n#tempo_shi\u00b7self_act\u00b7nosta_mob\u00b7epist_ref\u00b7NS [btd] ^\nR\u00b7*\u00b7l\u00b7i\u00b7p\u00b7i\u00b7t\nprm:S\u2192ids\nsyn:elegiac_obituary\u00b7letter_never_sent\u00b7calendar_holding\nreq:inq\u00b7tsk"
+  },
+  {
+    "id": "photograph_stranger_knows_you",
+    "strip": "@photograph_stranger_knows_you L\u00b7HA\u00b71w\u00b73\n#UR\u00b7paras_pro\u00b7ident_mir\u00b7myste_ind\u00b7PA\u00b7ident_cog\u00b7CE [pbe] ^\nR\u00b7n\u00b7l\u00b7i\u00b7p\u00b7s\u00b7e\nprm:Q\nsyn:absent_presence_character\u00b7voice_from_disconnected_number\u00b7last_known_address_letter\nreq:inq\u00b7tsk"
+  },
+  {
+    "id": "last_known_address_letter",
+    "strip": "@last_known_address_letter L\u00b7HA\u00b73d\u00b72\n#displ_aff\u00b7spati_act\u00b7nosta_mob\u00b7EU\u00b7NS\u00b7NC [pb*] ^\nR\u00b7*\u00b7l\u00b7i\u00b7p\u00b7s\u00b7t\nprm:S\nsyn:time_capsule_dispatch\u00b7unmarked_anniversary\u00b7calendar_holding\nreq:inq"
+  },
+  {
+    "id": "locate_photograph_assignment",
+    "strip": "@locate_photograph_assignment F\u00b7A\u00b71d\u00b72\n#CO\u00b7spati_act\u00b7grief_inv\u00b7activ_int\u00b7somat_hyp\u00b7NS [bet] /\nC\u00b7q\u00b7m\u00b7+\u00b7p\u00b7s\u00b7t\nprm:Q\nsyn:elegiac_obituary\u00b7letter_never_sent\u00b7small_ceremony_instruction\nreq:inq"
+  },
+  {
+    "id": "letter_never_sent",
+    "strip": "@letter_never_sent F\u00b7A\u00b71d\u00b73\n#expre_cat\u00b7epist_com\u00b7grief_ext\u00b7narra_wit\u00b7grief_ber\u00b7NC\u00b7impre_man [betc] ^\nC\u00b7q\u00b7h\u00b7i\u00b7p\u00b7i\u00b7d\nprm:Q\nsyn:elegiac_obituary\u00b7small_ceremony_instruction\u00b7time_capsule_dispatch"
+  },
+  {
+    "id": "small_ceremony_instruction",
+    "strip": "@small_ceremony_instruction F\u00b7A\u00b71d\u00b72\n#CO\u00b7sacre_fra\u00b7atten_foc\u00b7somat_hyp [tcd*] ^\nC\u00b7q\u00b7m\u00b7+\u00b7p\u00b7i\u00b7t\nprm:Q\nsyn:liminal_hour_dispatch\u00b7letter_never_sent\u00b7elegiac_obituary\u00b7natural_calendar_beat\nreq:inq"
+  },
+  {
+    "id": "liminal_hour_dispatch",
+    "strip": "@liminal_hour_dispatch F\u00b7A\u00b71d\u00b73\n#tempo_def\u00b7sleep_vul\u00b7alter_sta\u00b7uncan_int\u00b7const_the\u00b7somat_hyp\u00b7cogni_pro\u00b7HV [etc] ^\nX\u00b7q\u00b7p\u00b7a\u00b7e\u00b7i\u00b7t\nprm:Q\nsyn:voice_from_disconnected_number\u00b7natural_calendar_beat\u00b7small_ceremony_instruction"
+  },
+  {
+    "id": "natural_calendar_beat",
+    "strip": "@natural_calendar_beat F\u00b7A\u00b72w\u00b72\n#ecolo_anc\u00b7natur_res\u00b7sacre_fra\u00b7meani_att\u00b7natur_res [*] /\nR\u00b7*\u00b7p\u00b7+\u00b7p\u00b7s\u00b7t\nprm:S\nsyn:small_ceremony_instruction\u00b7liminal_hour_dispatch\u00b7unmarked_anniversary"
+  },
+  {
+    "id": "absent_presence_character",
+    "strip": "@absent_presence_character L\u00b7HM\u00b72w\u00b73\n#PA\u00b7postm_pre\u00b7objec_rel\u00b7susta_mys [pbe*] -\nB\u00b7*\u00b7l\u00b7i\u00b7p\u00b7n\u00b7d\nprm:Q\nsyn:photograph_stranger_knows_you\u00b7voice_from_disconnected_number\u00b7time_capsule_dispatch\u00b7locate_photograph_assignment"
+  },
+  {
+    "id": "voice_from_disconnected_number",
+    "strip": "@voice_from_disconnected_number L\u00b7HA\u00b73d\u00b73\n#audit_ind\u00b7tempo_unc\u00b7paras_act\u00b7mediu_aff\u00b7PA\u00b7HV\u00b7affec_pri [bet] ^\nS\u00b7n\u00b7l\u00b7i\u00b7p\u00b7i\u00b7e\nprm:Q\nsyn:absent_presence_character\u00b7photograph_stranger_knows_you\u00b7liminal_hour_dispatch\nreq:cnf"
+  },
+  {
+    "id": "past_tense_prophecy",
+    "strip": "@past_tense_prophecy F\u00b7A\u00b72\u00b73\n#tempo_inv\u00b7antic_ind\u00b7narra_pro\u00b7epist_def\u00b7const_the\u00b7grief_ber\u00b7CD [bet] ^\nR\u00b7n\u00b7p\u00b7i\u00b7p\u00b7i\u00b7t\nprm:Q\nsyn:time_capsule_dispatch\u00b7calendar_holding\u00b7first_anniversary_dispatch\nreq:tsk"
+  },
+  {
+    "id": "memorial_object_arrival",
+    "strip": "@memorial_object_arrival L\u00b7HA\u00b75\u00b73\n#OMA\u00b7proxe_spa\u00b7somat_hyp\u00b7sacre_des\u00b7NS [tcd*] ^\nR\u00b7*\u00b7p\u00b7i\u00b7p\u00b7i\u00b7t\nprm:S\nsyn:small_ceremony_instruction\u00b7elegiac_obituary\u00b7absent_presence_character"
+  },
+  {
+    "id": "year_mind_return",
+    "strip": "@year_mind_return L\u00b7A\u00b7365\u00b73\n#TA\u00b7ritua_rec\u00b7conti_wit\u00b7grief_ack\u00b7NS [d] ^\nR\u00b7*\u00b7p\u00b7i\u00b7p\u00b7i\u00b7t\nprm:Q\nsyn:first_anniversary_dispatch\u00b7calendar_holding\u00b7small_ceremony_instruction"
+  },
+  {
+    "id": "inventory_of_what_remains",
+    "strip": "@inventory_of_what_remains F\u00b7A\u00b72\u00b72\n#catal_rit\u00b7atten_shi\u00b7post_mak\u00b7senso_sen\u00b7somat_hyp\u00b7grief_ber [btd] -\nC\u00b7q\u00b7m\u00b7i\u00b7p\u00b7s\u00b7t\nprm:Q\nsyn:locate_photograph_assignment\u00b7elegiac_obituary\u00b7memorial_object_arrival\nreq:inq"
+  },
+  {
+    "id": "forwarded_grief",
+    "strip": "@forwarded_grief L\u00b7HA\u00b75\u00b72\n#distr_mou\u00b7witne_ext\u00b7colle_ind\u00b7legac_fra\u00b7grief_ber\u00b7PA\u00b7SQ [bed] ^\nR\u00b7*\u00b7l\u00b7i\u00b7p\u00b7s\u00b7t\nprm:Q\nsyn:absent_presence_character\u00b7photograph_stranger_knows_you\u00b7inventory_of_what_remains\nreq:tsk"
+  },
+  {
+    "id": "sealed_room",
+    "strip": "@sealed_room F\u00b7A\u00b73d\u00b72\n#prote_fra\u00b7tempo_met\u00b7grief_rit\u00b7agenc_pac\u00b7grief_ber\u00b7const_the\u00b7RXN [td*] ^\nR\u00b7q\u00b7l\u00b7i\u00b7p\u00b7i\u00b7t\nprm:S\u2192cls\nsyn:small_ceremony_instruction\u00b7letter_never_sent\u00b7inventory_of_what_remains"
+  },
+  {
+    "id": "witness_register",
+    "strip": "@witness_register F\u00b7A\u00b71d\u00b72\n#namin_act\u00b7catal_rit\u00b7publi_fra\u00b7grief_leg\u00b7SQ\u00b7grief_ber [tcd] ^\nR\u00b7q\u00b7l\u00b7i\u00b7ps\u00b7i\u00b7e\nprm:Q\nsyn:elegiac_obituary\u00b7letter_never_sent\u00b7year_mind_return\nreq:tsk"
+  },
+  {
+    "id": "grief_time_legible",
+    "strip": "@grief_time_legible F\u00b7A\u00b72w\u00b73\n#narra_ret\u00b7tempo_ref\u00b7meani_fac\u00b7integ_sup\u00b7NS\u00b7const_the\u00b7motiv_rea\u00b7attac_sty [d] -\nR\u00b7q\u00b7l\u00b7i\u00b7p\u00b7i\u00b7t\nprm:Q\nsyn:inventory_of_what_remains\u00b7elegiac_obituary\u00b7year_mind_return\u00b7witness_register\nreq:tsk"
+  },
+  {
+    "id": "memo_field_transmission",
+    "strip": "@memo_field_transmission F\u00b7A\u00b71d\u00b72\n#PR\u00b7SL\u00b7MC\u00b7atten_cap\u00b7need_cog\u00b7motiv_rea [pbe] /\nM\u00b7q\u00b7l\u00b7a\u00b7p\u00b7i\u00b7e\nprm:Q\nsyn:ticker_feed_events\u00b7portfolio_life_decisions\u00b7receipt_anomaly_line_item\nreq:tsk"
+  },
+  {
+    "id": "receipt_anomaly_line_item",
+    "strip": "@receipt_anomaly_line_item L\u00b7HA\u00b73d\u00b72\n#PDR\u00b7MC\u00b7SL\u00b7NG\u00b7motiv_rea\u00b7CD [bet] ^\nS\u00b7n\u00b7l\u00b7a\u00b7p\u00b7s\u00b7e\nprm:Q\nsyn:memo_field_transmission\u00b7statement_of_account\u00b7appraisal_letter\nreq:loc"
+  },
+  {
+    "id": "refund_from_nowhere",
+    "strip": "@refund_from_nowhere L\u00b7HA\u00b75\u00b73\n#UB\u00b7CD\u00b7NG\u00b7CIN\u00b7CE\u00b7motiv_rea [pbt] ^\nS\u00b7n\u00b7m\u00b7a\u00b7p\u00b7s\u00b7d\nprm:Q\nsyn:memo_field_transmission\u00b7grant_award_letter\u00b7escrow_formal_notice\nreq:csh\u00b7tsk"
+  },
+  {
+    "id": "invoice_intangible_services",
+    "strip": "@invoice_intangible_services F\u00b7A\u00b72\u00b73\n#OI\u00b7IC\u00b7MC\u00b7CL2\u00b7RC\u00b7ident_cog\u00b7motiv_rea [betc] ^\nM\u00b7n\u00b7l\u00b7i\u00b7p\u00b7s\u00b7e\nprm:Q\nsyn:statement_of_account\u00b7promissory_note\u00b7lien_on_abstract\u00b7receipt_anomaly_line_item\nreq:tsk"
+  },
+  {
+    "id": "statement_of_account",
+    "strip": "@statement_of_account L\u00b7A\u00b75\u00b73\n#IC\u00b7PR\u00b7NG\u00b7MC\u00b7CL2\u00b7ident_cog\u00b7need_cog\u00b7motiv_rea [bet] /\nM\u00b7n\u00b7l\u00b7i\u00b7p\u00b7s\u00b7e\nprm:Q\nsyn:invoice_intangible_services\u00b7promissory_note\u00b7portfolio_life_decisions\u00b7credit_report_parallel_self\nreq:tsk"
+  },
+  {
+    "id": "escrow_formal_notice",
+    "strip": "@escrow_formal_notice L\u00b7A\u00b73d\u00b73\n#suspe_ind\u00b7OI\u00b7CL2\u00b7uncer_ext\u00b7RC [betc] ^\nB\u00b7n\u00b7m\u00b7i\u00b7p\u00b7s\u00b7e\nprm:S\nsyn:statement_of_account\u00b7invoice_intangible_services\u00b7grant_award_letter\u00b7promissory_note\nreq:tsk"
+  },
+  {
+    "id": "beneficiary_selection_notice",
+    "strip": "@beneficiary_selection_notice L\u00b7A\u00b73d\u00b73\n#SE\u00b7UB\u00b7NG\u00b7CIN\u00b7MC\u00b7CE\u00b7motiv_rea [pbe] ^\nR\u00b7n\u00b7l\u00b7i\u00b7p\u00b7s\u00b7e\nprm:Q\nsyn:grant_award_letter\u00b7escrow_formal_notice\u00b7refund_from_nowhere\u00b7memo_field_transmission\nreq:tsk"
+  },
+  {
+    "id": "grant_award_letter",
+    "strip": "@grant_award_letter M\u00b7HA\u00b71w\u00b73\n#SE\u00b7IA\u00b7MC\u00b7effor_jus\u00b7CIN\u00b7ident_cog\u00b7motiv_rea\u00b7CE [pbt] ^\nR\u00b7n\u00b7m\u00b7i\u00b7p\u00b7m\u00b7d\nprm:Q\nsyn:beneficiary_selection_notice\u00b7escrow_formal_notice\u00b7w2_fictional_employer\u00b7appraisal_letter\nreq:tsk"
+  },
+  {
+    "id": "bearer_bond_certificate",
+    "strip": "@bearer_bond_certificate L\u00b7A\u00b71w\u00b72\n#objec_inv\u00b7MC\u00b7NG\u00b7IA\u00b7motiv_rea\u00b7ident_cog [betc] ^\nB\u00b7n\u00b7p\u00b7i\u00b7p\u00b7m\u00b7t\nprm:Q\nsyn:escrow_formal_notice\u00b7appraisal_letter\u00b7ticker_feed_events\u00b7w2_fictional_employer\nreq:tsk"
+  },
+  {
+    "id": "ticker_feed_events",
+    "strip": "@ticker_feed_events L\u00b7A\u00b72w\u00b72\n#PR\u00b7SL\u00b7MC\u00b7TA\u00b7suspe_ind\u00b7need_cog\u00b7motiv_rea\u00b7NS [betc*] -\nM\u00b7q\u00b7m\u00b7i\u00b7p\u00b7n\u00b7t\nprm:Q\nsyn:bearer_bond_certificate\u00b7portfolio_life_decisions\u00b7commodity_narrative_report\u00b7statement_of_account\nreq:tsk"
+  },
+  {
+    "id": "portfolio_life_decisions",
+    "strip": "@portfolio_life_decisions L\u00b7A\u00b71w\u00b73\n#IC\u00b7MC\u00b7PR\u00b7NG\u00b7self_inv\u00b7ident_cog\u00b7motiv_rea\u00b7need_cog [betd] -\nM\u00b7q\u00b7l\u00b7i\u00b7p\u00b7s\u00b7e\nprm:Q\nsyn:ticker_feed_events\u00b7statement_of_account\u00b7appraisal_letter\u00b7credit_report_parallel_self\nreq:tsk"
+  },
+  {
+    "id": "commodity_narrative_report",
+    "strip": "@commodity_narrative_report F\u00b7A\u00b75\u00b72\n#PR\u00b7SL\u00b7MC\u00b7coded_com\u00b7NG\u00b7need_cog\u00b7motiv_rea [bet*] -\nM\u00b7q\u00b7l\u00b7i\u00b7p\u00b7m\u00b7t\nprm:Q\nsyn:ticker_feed_events\u00b7portfolio_life_decisions\u00b7memo_field_transmission\u00b7bearer_bond_certificate\nreq:tsk"
+  },
+  {
+    "id": "collections_agency_notice",
+    "strip": "@collections_agency_notice L\u00b7A\u00b75\u00b74\n#TA\u00b7OI\u00b7IC\u00b7CL2\u00b7urgen_ind\u00b7RC\u00b7ident_cog [etc] ^\nM\u00b7n\u00b7m\u00b7a\u00b7p\u00b7i\u00b7d\nprm:Q\nsyn:statement_of_account\u00b7lien_on_abstract\u00b7invoice_intangible_services\u00b7promissory_note\nreq:tsk"
+  },
+  {
+    "id": "promissory_note",
+    "strip": "@promissory_note L\u00b7HA\u00b75\u00b73\n#commi_dev\u00b7OI\u00b7IA\u00b7ritua_fra\u00b7MC\u00b7CO\u00b7RC\u00b7ident_cog\u00b7motiv_rea [tcd] ^\nB\u00b7n\u00b7h\u00b7i\u00b7p\u00b7s\u00b7d\nprm:Q\nsyn:escrow_formal_notice\u00b7invoice_intangible_services\u00b7lien_on_abstract\u00b7statement_of_account\nreq:tsk"
+  },
+  {
+    "id": "lien_on_abstract",
+    "strip": "@lien_on_abstract L\u00b7A\u00b75\u00b74\n#IC\u00b7TA\u00b7MC\u00b7CD\u00b7OI\u00b7ident_cog\u00b7motiv_rea\u00b7RC [etc] ^\nM\u00b7n\u00b7m\u00b7i\u00b7p\u00b7i\u00b7d\nprm:Q\nsyn:collections_agency_notice\u00b7promissory_note\u00b7statement_of_account\u00b7invoice_intangible_services\nreq:tsk"
+  },
+  {
+    "id": "credit_report_parallel_self",
+    "strip": "@credit_report_parallel_self L\u00b7A\u00b71w\u00b74\n#IC\u00b7UR\u00b7NG\u00b7CD\u00b7PR\u00b7ident_cog\u00b7motiv_rea\u00b7need_cog [etc] ^\nM\u00b7n\u00b7p\u00b7i\u00b7p\u00b7s\u00b7x\nprm:Q\nsyn:portfolio_life_decisions\u00b7statement_of_account\u00b7w2_fictional_employer\u00b7property_tax_notice\nreq:tsk"
+  },
+  {
+    "id": "w2_fictional_employer",
+    "strip": "@w2_fictional_employer L\u00b7A\u00b75\u00b73\n#IA\u00b7MC\u00b7NG\u00b7IC\u00b7PR\u00b7ident_cog\u00b7motiv_rea\u00b7need_cog [bet] ^\nM\u00b7n\u00b7p\u00b7i\u00b7p\u00b7s\u00b7e\nprm:Q\nsyn:grant_award_letter\u00b7credit_report_parallel_self\u00b7property_tax_notice\u00b7statement_of_account\nreq:tsk"
+  },
+  {
+    "id": "property_tax_notice",
+    "strip": "@property_tax_notice L\u00b7A\u00b71w\u00b73\n#spati_anc\u00b7IC\u00b7MC\u00b7owner_dis\u00b7NG\u00b7proxe_spa\u00b7ident_cog\u00b7motiv_rea [bet] ^\nM\u00b7n\u00b7l\u00b7a\u00b7p\u00b7s\u00b7e\nprm:S\nsyn:credit_report_parallel_self\u00b7w2_fictional_employer\u00b7lien_on_abstract\u00b7bearer_bond_certificate\nreq:loc\u00b7tsk"
+  },
+  {
+    "id": "appraisal_letter",
+    "strip": "@appraisal_letter L\u00b7A\u00b75\u00b73\n#MC\u00b7IA\u00b7value_ass\u00b7SE\u00b7CD\u00b7motiv_rea\u00b7ident_cog [bed] ^\nR\u00b7n\u00b7p\u00b7i\u00b7p\u00b7s\u00b7t\nprm:Q\nsyn:grant_award_letter\u00b7portfolio_life_decisions\u00b7w2_fictional_employer\u00b7bearer_bond_certificate\nreq:tsk"
+  },
+  {
+    "id": "market_analysis_participant_choices",
+    "strip": "@market_analysis_participant_choices L\u00b7A\u00b75\u00b72\n#PR\u00b7IC\u00b7MC\u00b7self_inv\u00b7tempo_fra\u00b7need_cog\u00b7ident_cog\u00b7motiv_rea [bed] -\nM\u00b7q\u00b7l\u00b7i\u00b7p\u00b7s\u00b7t\nprm:S\nsyn:portfolio_life_decisions\u00b7ticker_feed_events\u00b7appraisal_letter\u00b7commodity_narrative_report\nreq:tsk"
+  },
+  {
+    "id": "dividend_notice",
+    "strip": "@dividend_notice L\u00b7HA\u00b73d\u00b72\n#UB\u00b7MC\u00b7rewar_sig\u00b7tempo_fra\u00b7NG\u00b7CE\u00b7motiv_rea [bd*] ^\nR\u00b7n\u00b7p\u00b7a\u00b7p\u00b7i\u00b7t\nprm:Q\nsyn:bearer_bond_certificate\u00b7ticker_feed_events\u00b7beneficiary_selection_notice\u00b7grant_award_letter\nreq:csh\u00b7tsk"
+  },
+  {
+    "id": "inheritance_fraction_notice",
+    "strip": "@inheritance_fraction_notice M\u00b7HA\u00b710\u00b73\n#MC\u00b7IC\u00b7grief_ind\u00b7TA\u00b7NG\u00b7UB\u00b7motiv_rea\u00b7ident_cog\u00b7NS\u00b7CE [pbed] ^\nRB\u00b7n\u00b7m\u00b7i\u00b7p\u00b7m\u00b7d\nprm:Q\nsyn:escrow_formal_notice\u00b7beneficiary_selection_notice\u00b7credit_report_parallel_self\u00b7statement_of_account\nreq:tsk"
+  },
+  {
+    "id": "pre_sleep_sensory_dispatch",
+    "strip": "@pre_sleep_sensory_dispatch F\u00b7A\u00b71d\u00b72\n#antic_aro\u00b7AN2\u00b7incub_pri\u00b7TA2\u00b7behav_act\u00b7cogni_pro\u00b7somat_hyp\u00b7senso_sen [pbt] -\nX\u00b7n\u00b7l\u00b7i\u00b7p\u00b7s\u00b7t\nprm:S\nsyn:hypnagogic_image_seed\u00b7dream_report_request\u00b7circadian_dispatch_series"
+  },
+  {
+    "id": "sleep_data_mirror",
+    "strip": "@sleep_data_mirror F\u00b7A\u00b73d\u00b72\n#self_amp\u00b7data_ide\u00b7behav_loo\u00b7perce_sur\u00b7patte_pri\u00b7ident_cog\u00b7habit\u00b7HV [pbe] -\nM\u00b7n\u00b7l\u00b7i\u00b7p\u00b7m\u00b7e\nprm:Q\nsyn:circadian_dispatch_series\u00b7hunger_window_delivery\u00b7physical_threshold_unlock\nreq:tsk"
+  },
+  {
+    "id": "three_am_dispatch",
+    "strip": "@three_am_dispatch F\u00b7A\u00b71d\u00b73\n#limin_exp\u00b7reali_deg\u00b7TA2\u00b7urgen_ind\u00b7AN2\u00b7somat_hyp\u00b7senso_sen\u00b7cogni_pro [etc] ^\nX\u00b7n\u00b7p\u00b7a\u00b7e\u00b7i\u00b7d\nprm:Q\nsyn:pre_sleep_sensory_dispatch\u00b7somatic_key_installation\u00b7physical_threshold_unlock"
+  },
+  {
+    "id": "dream_report_request",
+    "strip": "@dream_report_request F\u00b7A\u00b72\u00b72\n#autob_ela\u00b7creat_pro\u00b7VAD\u00b7self_esc\u00b7narra_aut\u00b7NS\u00b7somat_hyp [pbe] -\nC\u00b7q\u00b7l\u00b7i\u00b7p\u00b7s\u00b7t\nprm:S\u2192trt\nsyn:pre_sleep_sensory_dispatch\u00b7hypnagogic_image_seed\u00b7sensory_diary"
+  },
+  {
+    "id": "hypnagogic_image_seed",
+    "strip": "@hypnagogic_image_seed F\u00b7A\u00b71d\u00b72\n#incub_pri\u00b7image_ind\u00b7AN2\u00b7TA2\u00b7PS\u00b7somat_hyp\u00b7cogni_pro\u00b7senso_sen [pbt] -\nX\u00b7n\u00b7p\u00b7i\u00b7p\u00b7s\u00b7t\nprm:S\nsyn:pre_sleep_sensory_dispatch\u00b7dream_report_request\u00b7three_am_dispatch"
+  },
+  {
+    "id": "breath_gate",
+    "strip": "@breath_gate F\u00b7A\u00b71d\u00b72\n#behav_seq\u00b7physi_ind\u00b7EAC\u00b7somat_hyp\u00b7AN2\u00b7effor_jus\u00b7cogni_pro [betc] >\nC\u00b7q\u00b7m\u00b7i\u00b7p\u00b7i\u00b7t\nprm:S\nsyn:somatic_key_installation\u00b7pre_sleep_sensory_dispatch\u00b7physical_threshold_unlock"
+  },
+  {
+    "id": "somatic_key_installation",
+    "strip": "@somatic_key_installation F\u00b7A\u00b73d\u00b72\n#condi_ins\u00b7somat_hyp\u00b7state_rec\u00b7signa_com\u00b7ritua_for\u00b7habit\u00b7NS [pbetc] ^\nC\u00b7q\u00b7l\u00b7i\u00b7p\u00b7l\u00b7e\nprm:Q\nsyn:breath_gate\u00b7three_am_dispatch\u00b7physical_threshold_unlock\u00b7somatic_key_activation"
+  },
+  {
+    "id": "stress_state_calibration",
+    "strip": "@stress_state_calibration F\u00b7A\u00b71w\u00b71\n#self_ind\u00b7behav_col\u00b7senso_sen\u00b7VAD\u00b7patte_pri\u00b7somat_hyp [pb] -\nR\u00b7*\u00b7l\u00b7a\u00b7p\u00b7m\u00b7t\nprm:S\nsyn:sleep_data_mirror\u00b7sensory_diary\u00b7circadian_dispatch_series"
+  },
+  {
+    "id": "contemplative_walk_instruction",
+    "strip": "@contemplative_walk_instruction F\u00b7A\u00b71d\u00b71\n#EAT\u00b7PS\u00b7atten_dir\u00b7somat_hyp\u00b7meani_lay\u00b7natur_res\u00b7senso_sen [pb*] -\nC\u00b7q\u00b7m\u00b7+\u00b7p\u00b7s\u00b7t\nprm:S\nsyn:threshold_crossing_practice\u00b7sensory_diary\u00b7temperature_weather_dispatch\u00b7circadian_dispatch_series\nreq:loc"
+  },
+  {
+    "id": "carry_this",
+    "strip": "@carry_this F\u00b7A\u00b71d\u00b72\n#objec_anc\u00b7meani_tra\u00b7behav_hab\u00b7CO\u00b7semio_loa\u00b7habit\u00b7somat_hyp [pbet] -\nC\u00b7q\u00b7m\u00b7+\u00b7p\u00b7m\u00b7t\nprm:S\nsyn:somatic_key_installation\u00b7home_environment_task\u00b7threshold_crossing_practice\nreq:loc"
+  },
+  {
+    "id": "home_environment_task",
+    "strip": "@home_environment_task F\u00b7A\u00b71d\u00b72\n#BCM\u00b7envir_mod\u00b7spati_mak\u00b7somat_hyp\u00b7owner_esc\u00b7CO [bet] -\nC\u00b7q\u00b7m\u00b7+\u00b7p\u00b7m\u00b7e\nprm:S\nsyn:carry_this\u00b7threshold_crossing_practice\u00b7somatic_key_installation\nreq:loc"
+  },
+  {
+    "id": "threshold_crossing_practice",
+    "strip": "@threshold_crossing_practice F\u00b7A\u00b71d\u00b71\n#limin_amp\u00b7atten_pri\u00b7behav_not\u00b7PS\u00b7ritua_for\u00b7somat_hyp\u00b7senso_sen\u00b7habit [pbet] /\nC\u00b7q\u00b7l\u00b7+\u00b7p\u00b7s\u00b7t\nprm:S\nsyn:contemplative_walk_instruction\u00b7carry_this\u00b7somatic_key_installation\u00b7home_environment_task\nreq:loc"
+  },
+  {
+    "id": "sensory_diary",
+    "strip": "@sensory_diary F\u00b7A\u00b72\u00b71\n#PS\u00b7autob_ela\u00b7atten_tra\u00b7creat_dis\u00b7VAD\u00b7senso_sen\u00b7NS\u00b7somat_hyp [pb*] -\nC\u00b7q\u00b7l\u00b7+\u00b7p\u00b7m\u00b7t\nprm:S\nsyn:stress_state_calibration\u00b7dream_report_request\u00b7contemplative_walk_instruction\u00b7sleep_data_mirror"
+  },
+  {
+    "id": "temperature_weather_dispatch",
+    "strip": "@temperature_weather_dispatch F\u00b7A\u00b71d\u00b71\n#envir_cou\u00b7natur_res\u00b7ambie_rel\u00b7conte_anc\u00b7PS\u00b7somat_hyp\u00b7senso_sen [pb*] -\nR\u00b7q\u00b7p\u00b7a\u00b7e\u00b7s\u00b7t\nprm:S\nsyn:contemplative_walk_instruction\u00b7sensory_diary\u00b7seasonal_body_dispatch\u00b7dusk_dawn_dispatch\nreq:tsk"
+  },
+  {
+    "id": "anticipatory_signal_state",
+    "strip": "@anticipatory_signal_state F\u00b7A\u00b73d\u00b73\n#antic_aro\u00b7susta_ten\u00b7waiti_exp\u00b7physi_sus\u00b7AN2\u00b7behav_act\u00b7amygd_res\u00b7cogni_pro [betc] /\nX\u00b7q\u00b7l\u00b7i\u00b7p\u00b7i\u00b7d\nprm:Q\nsyn:somatic_key_installation\u00b7breath_gate\u00b7three_am_dispatch\u00b7physical_threshold_unlock"
+  },
+  {
+    "id": "hunger_window_delivery",
+    "strip": "@hunger_window_delivery F\u00b7A\u00b73d\u00b72\n#physi_pri\u00b7somat_hyp\u00b7atten_sha\u00b7bound_sof\u00b7senso_sen\u00b7proxe_spa [bet] ^\nX\u00b7q\u00b7l\u00b7a\u00b7e\u00b7i\u00b7t\nprm:Q\nsyn:breath_gate\u00b7stress_state_calibration\u00b7anticipatory_signal_state\nreq:tsk"
+  },
+  {
+    "id": "circadian_dispatch_series",
+    "strip": "@circadian_dispatch_series F\u00b7A\u00b73d\u00b71\n#CBC\u00b7behav_hab\u00b7rhyth_ent\u00b7ambie_rel\u00b7conte_anc\u00b7natur_res\u00b7habit\u00b7EC\u00b7somat_hyp [pb*] /\nX\u00b7q\u00b7p\u00b7i\u00b7p\u00b7m\u00b7e\nprm:S\nsyn:temperature_weather_dispatch\u00b7sleep_data_mirror\u00b7stress_state_calibration\u00b7pre_sleep_sensory_dispatch\nreq:tsk"
+  },
+  {
+    "id": "seasonal_body_dispatch",
+    "strip": "@seasonal_body_dispatch F\u00b7A\u00b71d\u00b71\n#CBC\u00b7EAT\u00b7natur_res\u00b7PS\u00b7meani_lay\u00b7somat_hyp\u00b7senso_sen [pb*] -\nR\u00b7n\u00b7p\u00b7i\u00b7p\u00b7m\u00b7t\nprm:S\nsyn:temperature_weather_dispatch\u00b7dusk_dawn_dispatch\u00b7contemplative_walk_instruction\u00b7circadian_dispatch_series"
+  },
+  {
+    "id": "dusk_dawn_dispatch",
+    "strip": "@dusk_dawn_dispatch F\u00b7A\u00b71d\u00b72\n#limin_amp\u00b7CBC\u00b7TA2\u00b7EAT\u00b7AN2\u00b7somat_hyp\u00b7natur_res\u00b7senso_sen\u00b7cogni_pro [pbetcd] -\nX\u00b7n\u00b7p\u00b7a\u00b7e\u00b7s\u00b7t\nprm:S\nsyn:seasonal_body_dispatch\u00b7temperature_weather_dispatch\u00b7pre_sleep_sensory_dispatch\u00b7contemplative_walk_instruction\nreq:tsk"
+  },
+  {
+    "id": "physical_threshold_unlock",
+    "strip": "@physical_threshold_unlock F\u00b7A\u00b71d\u00b72\n#BCM\u00b7EAC\u00b7achie_mot\u00b7effor_jus\u00b7self_amp\u00b7somat_hyp\u00b7CO\u00b7posit_ill [betc] ^\nC\u00b7q\u00b7h\u00b7+\u00b7p\u00b7s\u00b7t\nprm:Q\nsyn:breath_gate\u00b7sleep_data_mirror\u00b7stress_state_calibration\u00b7anticipatory_signal_state"
+  },
+  {
+    "id": "indexed_ghost_page",
+    "strip": "@indexed_ghost_page F\u00b7A\u00b728\u00b71\n#PR\u00b7EXV\u00b7CB\u00b7need_cog\u00b7CD [p] /\nR\u00b7n\u00b7p\u00b7a\u00b7w\u00b7n\u00b7d\nprm:S\nsyn:search_surface_reveal\u00b7archive_snapshot\u00b7dossier_drop\nreq:tsk"
+  },
+  {
+    "id": "archive_snapshot",
+    "strip": "@archive_snapshot F\u00b7A\u00b735\u00b71\n#TDP\u00b7PR\u00b7CB\u00b7AC\u00b7const_the\u00b7need_cog\u00b7OA [p] /\nR\u00b7n\u00b7p\u00b7a\u00b7w\u00b7n\u00b7d\nprm:S\u2192sct\nsyn:indexed_ghost_page\u00b7dossier_drop\u00b7search_surface_reveal\nreq:tsk"
+  },
+  {
+    "id": "silent_follower",
+    "strip": "@silent_follower F\u00b7HA\u00b721\u00b71\n#SP\u00b7PR\u00b7ambie_cue\u00b7EXV\u00b7need_cog\u00b7CD [p] -\nS\u00b7n\u00b7p\u00b7i\u00b7p\u00b7l\u00b7e\nprm:S\nsyn:social_graph_bridge\u00b7character_reveal\u00b7dossier_drop\nreq:tsk"
+  },
+  {
+    "id": "minor_wikipedia_edit",
+    "strip": "@minor_wikipedia_edit F\u00b7HA\u00b742\u00b71\n#AC\u00b7PR\u00b7AS\u00b7CB\u00b7OA\u00b7need_cog\u00b7CE [p] -\nR\u00b7n\u00b7p\u00b7a\u00b7w\u00b7n\u00b7d\nprm:S\nsyn:indexed_ghost_page\u00b7archive_snapshot\u00b7dossier_drop\u00b7search_surface_reveal\nreq:tsk"
+  },
+  {
+    "id": "maps_review_plant",
+    "strip": "@maps_review_plant F\u00b7HA\u00b72w\u00b71\n#EA\u00b7PR\u00b7SP\u00b7AS\u00b7need_cog\u00b7CE\u00b7somat_hyp [p] -\nR\u00b7n\u00b7p\u00b7a\u00b7w\u00b7l\u00b7e\nprm:S\nsyn:physical_trace_plant\u00b7book_bench_drop\u00b7indexed_ghost_page\nreq:tsk"
+  },
+  {
+    "id": "street_mark",
+    "strip": "@street_mark L\u00b7HA\u00b728\u00b71\n#EA\u00b7PR\u00b7ambie_rec\u00b7spati_pri\u00b7need_cog\u00b7NS\u00b7somat_hyp [p] /\nC\u00b7n\u00b7p\u00b7a\u00b7w\u00b7l\u00b7e\nprm:S\nsyn:book_bench_drop\u00b7ambient_triple_seed\u00b7physical_trace_plant\u00b7location_significance_play\nreq:loc"
+  },
+  {
+    "id": "book_bench_drop",
+    "strip": "@book_bench_drop L\u00b7HA\u00b71w\u00b71\n#GS\u00b7AS\u00b7EA\u00b7NS2\u00b7CE\u00b7RC\u00b7somat_hyp [p] /\nC\u00b7n\u00b7l\u00b7a\u00b7p\u00b7l\u00b7t\nprm:S\u2192sct\nsyn:physical_trace_plant\u00b7street_mark\u00b7postcard_blind_send\u00b7ambient_triple_seed\nreq:loc"
+  },
+  {
+    "id": "physical_trace_plant",
+    "strip": "@physical_trace_plant L\u00b7C\u00b735\u00b71\n#EA\u00b7AS\u00b7UP\u00b7spati_pri\u00b7CE\u00b7NS\u00b7somat_hyp [p] /\nC\u00b7n\u00b7p\u00b7a\u00b7p\u00b7n\u00b7e\nprm:S\nsyn:book_bench_drop\u00b7postcard_blind_send\u00b7object_significance_reveal\nreq:cnf"
+  },
+  {
+    "id": "postcard_blind_send",
+    "strip": "@postcard_blind_send L\u00b7A\u00b72w\u00b71\n#GS\u00b7AS\u00b7AC\u00b7NS2\u00b7UP\u00b7CE\u00b7OA\u00b7RC [p] /\nC\u00b7n\u00b7p\u00b7a\u00b7p\u00b7l\u00b7x\nprm:S\nsyn:book_bench_drop\u00b7classified_ad_plant\u00b7subscription_infiltration\u00b7physical_trace_plant\nreq:loc"
+  },
+  {
+    "id": "classified_ad_plant",
+    "strip": "@classified_ad_plant L\u00b7HA\u00b721\u00b71\n#AS\u00b7PR\u00b7NS2\u00b7AC\u00b7CE\u00b7need_cog\u00b7OA [p] /\nC\u00b7n\u00b7p\u00b7a\u00b7w\u00b7l\u00b7d\nprm:S\u2192asr\nsyn:indexed_ghost_page\u00b7postcard_blind_send\u00b7ambient_triple_seed\u00b7book_bench_drop\nreq:csh\u00b7loc"
+  },
+  {
+    "id": "character_bridge_connection",
+    "strip": "@character_bridge_connection F\u00b7HA\u00b728\u00b71\n#SP\u00b7AC\u00b7SN\u00b7trust_tra\u00b7OA\u00b7TR [p] /\nB\u00b7n\u00b7p\u00b7i\u00b7s\u00b7l\u00b7e\nprm:S\nsyn:silent_follower\u00b7social_graph_bridge\u00b7dossier_drop\u00b7character_reveal\nreq:tsk"
+  },
+  {
+    "id": "sighting_report",
+    "strip": "@sighting_report F\u00b7C\u00b72w\u00b72\n#SP\u00b7ambie_cue\u00b7UP\u00b7CG\u00b7CE [p] /\nS\u00b7n\u00b7l\u00b7i\u00b7p\u00b7l\u00b7x\nprm:S\nsyn:silent_follower\u00b7character_bridge_connection\u00b7character_reveal\u00b7social_graph_bridge\nreq:cnf"
+  },
+  {
+    "id": "ambient_triple_seed",
+    "strip": "@ambient_triple_seed M\u00b7HM\u00b71w\u00b72\n#PR\u00b7coinc_man\u00b7CB\u00b7AI\u00b7need_cog [p] /\nX\u00b7n\u00b7p\u00b7i\u00b7p\u00b7n\u00b7x\nprm:S\nsyn:street_mark\u00b7maps_review_plant\u00b7classified_ad_plant\u00b7postcard_blind_send\u00b7arc_open\nreq:loc\u00b7tsk"
+  },
+  {
+    "id": "subscription_infiltration",
+    "strip": "@subscription_infiltration L\u00b7A\u00b721\u00b71\n#AS\u00b7EXV\u00b7CG\u00b7NS2\u00b7CE\u00b7CD [p] -\nC\u00b7n\u00b7p\u00b7a\u00b7p\u00b7l\u00b7e\nprm:S\nsyn:indexed_ghost_page\u00b7classified_ad_plant\u00b7postcard_blind_send\u00b7dossier_drop\nreq:tsk"
+  },
+  {
+    "id": "false_memory_seed",
+    "strip": "@false_memory_seed L\u00b7HA\u00b728\u00b72\n#sourc_err\u00b7NS2\u00b7AS\u00b7memor_rec\u00b7CE [p] -\nS\u00b7n\u00b7p\u00b7i\u00b7p\u00b7n\u00b7x\nprm:S\u2192asr\nsyn:ambient_triple_seed\u00b7subscription_infiltration\u00b7classified_ad_plant\u00b7character_bridge_connection\nreq:cnf"
+  },
+  {
+    "id": "birthday_card_unknown_sender",
+    "strip": "@birthday_card_unknown_sender L\u00b7A\u00b72w\u00b71\n#GS\u00b7UP\u00b7CG\u00b7SN\u00b7CE\u00b7RC [p] ^\nR\u00b7n\u00b7p\u00b7a\u00b7p\u00b7l\u00b7x\nprm:Q\u2192sct\nsyn:postcard_blind_send\u00b7subscription_infiltration\u00b7character_reveal\u00b7dossier_drop\nreq:loc"
+  },
+  {
+    "id": "glassdoor_reference_plant",
+    "strip": "@glassdoor_reference_plant F\u00b7HA\u00b721\u00b71\n#AC\u00b7SP\u00b7AS\u00b7ident_rel\u00b7OA\u00b7CE [p] -\nR\u00b7n\u00b7p\u00b7a\u00b7w\u00b7l\u00b7e\nprm:S\nsyn:character_bridge_connection\u00b7indexed_ghost_page\u00b7silent_follower\nreq:tsk"
+  },
+  {
+    "id": "recurring_audio_seed",
+    "strip": "@recurring_audio_seed M\u00b7HM\u00b72w\u00b72\n#AS\u00b7PR\u00b7AI\u00b7emoti_pri\u00b7memor_rec\u00b7CE\u00b7need_cog\u00b7CB [p] -\nX\u00b7n\u00b7p\u00b7i\u00b7p\u00b7n\u00b7d\nprm:S\nsyn:ambient_triple_seed\u00b7street_mark\u00b7false_memory_seed\u00b7arc_open\nreq:loc\u00b7tsk"
+  },
+  {
+    "id": "change_talk_elicitation",
+    "strip": "@change_talk_elicitation F\u00b7C\u00b70\u00b72\n#SPT\u00b7cogni_red\u00b7elabo_lik\u00b7CO\u00b7CD [btd] -\nC\u00b7q\u00b7h\u00b7i\u00b7p\u00b7m\u00b7t\nprm:Q\nsyn:outsider_witness_ceremony\u00b7generalization_contract\u00b7player_journal_artifact"
+  },
+  {
+    "id": "outsider_witness_ceremony",
+    "strip": "@outsider_witness_ceremony F\u00b7C\u00b70\u00b72\n#SV\u00b7IA\u00b7NC2\u00b7belongin\u00b7SP\u00b7ident_cog\u00b7socia_the\u00b7motiv_rea [cd] ^\nR\u00b7q\u00b7p\u00b7i\u00b7ps\u00b7m\u00b7t\nprm:Q\nsyn:commissioning_letter\u00b7change_talk_elicitation\u00b7stripping_ceremony\nreq:cnf"
+  },
+  {
+    "id": "generalization_contract",
+    "strip": "@generalization_contract L\u00b7A\u00b70\u00b71\n#CO\u00b7imple_int\u00b7IA\u00b7FS\u00b7ident_cog [d] >\nC\u00b7*\u00b7h\u00b7i\u00b7p\u00b7s\u00b7t\nprm:Q\nsyn:commissioning_letter\u00b7change_talk_elicitation\u00b7outsider_witness_ceremony\u00b7front_loading_beat\nreq:csh"
+  },
+  {
+    "id": "front_loading_beat",
+    "strip": "@front_loading_beat F\u00b7A\u00b70\u00b71\n#expec_set\u00b7CE\u00b7PM\u00b7imple_int\u00b7affec_pri [pb] /\nR\u00b7nq\u00b7l\u00b7i\u00b7p\u00b7l\u00b7t\nprm:S\nsyn:generalization_contract\u00b7change_talk_elicitation\u00b7nomination_framing\nreq:csh"
+  },
+  {
+    "id": "commissioning_letter",
+    "strip": "@commissioning_letter L\u00b7A\u00b73d\u00b72\n#IA\u00b7CO\u00b7AA\u00b7NC2\u00b7FS\u00b7ident_cog\u00b7motiv_rea [d] >\nC\u00b7*\u00b7p\u00b7i\u00b7p\u00b7l\u00b7t\nprm:Q\nsyn:outsider_witness_ceremony\u00b7generalization_contract\u00b7handwritten_letter\u00b7kinesthetic_encoding_beat\nreq:csh"
+  },
+  {
+    "id": "kinesthetic_encoding_beat",
+    "strip": "@kinesthetic_encoding_beat L\u00b7C\u00b73d\u00b72\n#somat_hyp\u00b7CO\u00b7artif_cre\u00b7IA\u00b7episo_enc\u00b7ident_cog [tcd] ^\n?\u00b7qm\u00b7m\u00b7+\u00b7p\u00b7m\u00b7m\nprm:Q\nsyn:commissioning_letter\u00b7generalization_contract\u00b7outsider_witness_ceremony\u00b7stripping_ceremony\nreq:csh\u00b7loc"
+  },
+  {
+    "id": "stripping_ceremony",
+    "strip": "@stripping_ceremony L\u00b7C\u00b73d\u00b72\n#IS\u00b7CO\u00b7somat_hyp\u00b7role_dif\u00b7effor_jus\u00b7RXN [pb] ~\nX\u00b7q\u00b7m\u00b7i\u00b7p\u00b7s\u00b7m\nprm:Q\nsyn:outsider_witness_ceremony\u00b7commissioning_letter\u00b7kinesthetic_encoding_beat\nreq:loc"
+  },
+  {
+    "id": "failure_cascade_reframe",
+    "strip": "@failure_cascade_reframe F\u00b7A\u00b70\u00b71\n#CRF\u00b7auton_res\u00b7CE\u00b7IA\u00b7react_red\u00b7CD\u00b7ident_cog\u00b7RXN [be] _\nR\u00b7*\u00b7l\u00b7i\u00b7p\u00b7m\u00b7t\nprm:S\nsyn:resistance_acknowledgment\u00b7alibi_for_reentry\n!ctr:simulated_loss"
+  },
+  {
+    "id": "knowledge_frontier_seed",
+    "strip": "@knowledge_frontier_seed F\u00b7A\u00b70\u00b71\n#CE\u00b7AI\u00b7IG\u00b7antic_att\u00b7CB\u00b7behav_act [pb] /\nR\u00b7nq\u00b7l\u00b7a\u00b7e\u00b7l\u00b7t\nprm:S\u2192slv\nsyn:front_loading_beat\u00b7parallel_threads\u00b7accidental_transmission\u00b7slow_burn_url\nreq:csh"
+  },
+  {
+    "id": "player_journal_artifact",
+    "strip": "@player_journal_artifact L\u00b7A\u00b73d\u00b71\n#SPT\u00b7NC2\u00b7IA\u00b7elabo_lik\u00b7IKEA_eff\u00b7ident_cog\u00b7motiv_rea [btd] -\nC\u00b7qm\u00b7h\u00b7+\u00b7p\u00b7l\u00b7e\nprm:Q\nsyn:outsider_witness_ceremony\u00b7change_talk_elicitation\u00b7retroactive_recontextualization\u00b7commissioning_letter\nreq:csh"
+  },
+  {
+    "id": "temporal_rupture_opening",
+    "strip": "@temporal_rupture_opening F\u00b7A\u00b70\u00b72\n#effor_jus\u00b7RXN\u00b7IS\u00b7atten_reo\u00b7salie_shi\u00b7somat_hyp [pb] >\nX\u00b7nq\u00b7p\u00b7i\u00b7p\u00b7m\u00b7t\nprm:S\nsyn:stripping_ceremony\u00b7kinesthetic_encoding_beat\u00b7commissioning_letter\nreq:csh"
+  },
+  {
+    "id": "ordeal_threshold",
+    "strip": "@ordeal_threshold L\u00b7C\u00b73d\u00b73\n#SK\u00b7CO\u00b7share_vul\u00b7ident_con\u00b7endor_bon\u00b7sunk_fal\u00b7ident_cog [bt] ^\nX\u00b7q\u00b7h\u00b7+\u00b7p\u00b7s\u00b7m\nprm:Q\nsyn:stripping_ceremony\u00b7communitas_beat\u00b7outsider_witness_ceremony\nreq:loc"
+  },
+  {
+    "id": "absent_witness_invocation",
+    "strip": "@absent_witness_invocation L\u00b7A\u00b73d\u00b72\n#inter_aut\u00b7ident_con\u00b7CO\u00b7sacre_str\u00b7ident_cog [tcd] ^\nC\u00b7qm\u00b7m\u00b7i\u00b7p\u00b7l\u00b7m\nprm:Q\nsyn:kinesthetic_encoding_beat\u00b7generalization_contract\u00b7commissioning_letter\nreq:csh"
+  },
+  {
+    "id": "communitas_beat",
+    "strip": "@communitas_beat F\u00b7C\u00b70\u00b72\n#belongin\u00b7hiera_dis\u00b7direc_bon\u00b7effor_jus\u00b7RXN\u00b7socia_the\u00b7somat_hyp [bt] -\nM\u00b7q\u00b7m\u00b7i\u00b7ps\u00b7s\u00b7t\nprm:Q\nsyn:outsider_witness_ceremony\u00b7change_talk_elicitation\u00b7stripping_ceremony\nreq:cnf"
+  },
+  {
+    "id": "layered_secret_system",
+    "strip": "@layered_secret_system F\u00b7A\u00b73d\u00b72\n#IG\u00b7IGI\u00b7antic_cur\u00b7SK\u00b7incre_com\u00b7CE\u00b7socia_the\u00b7sunk_fal\u00b7CO [be] /\nR\u00b7q\u00b7m\u00b7i\u00b7ps\u00b7l\u00b7e\nprm:S\nsyn:knowledge_frontier_seed\u00b7absent_witness_invocation\u00b7parallel_threads\nreq:tsk"
+  },
+  {
+    "id": "benefactor_capture",
+    "strip": "@benefactor_capture F\u00b7A\u00b7ongo\u00b73\n#autho_bia\u00b7recip_nor\u00b7trust_sca\u00b7compl_com\u00b7retro_att\u00b7OA\u00b7RC\u00b7TR\u00b7CO\u00b7hinds_bia [pbe] /\nR\u00b7nm\u00b7h\u00b7+\u00b7p\u00b7n\u00b7x\nprm:Q\nsyn:manufactured_crisis_reveal\u00b7strategic_silence_beat\u00b7fractal_revelation"
+  },
+  {
+    "id": "manufactured_crisis_reveal",
+    "strip": "@manufactured_crisis_reveal F\u00b7A\u00b7ongo\u00b73\n#retro_att\u00b7CD\u00b7compl_rec\u00b7autho_col\u00b7hinds_bia [tc] ^\nR\u00b7nm\u00b7h\u00b7+\u00b7p\u00b7n\u00b7x\nprm:Q\nsyn:benefactor_capture\u00b7fractal_revelation\u00b7distributed_truth_fragment\nreq:tsk"
+  },
+  {
+    "id": "fractal_revelation",
+    "strip": "@fractal_revelation F\u00b7A\u00b70\u00b72\n#IG\u00b7AI\u00b7epist_des\u00b7CE\u00b7CB\u00b7CD [bet] /\nR\u00b7qm\u00b7h\u00b7a\u00b7p\u00b7m\u00b7t\nprm:Q\nsyn:knowledge_frontier_seed\u00b7distributed_truth_fragment\u00b7layered_secret_system\nreq:tsk"
+  },
+  {
+    "id": "distributed_truth_fragment",
+    "strip": "@distributed_truth_fragment L\u00b7A\u00b73d\u00b71\n#AI\u00b7IG\u00b7CE\u00b7PR\u00b7CB\u00b7need_cog [pb] /\nR\u00b7nq\u00b7m\u00b7a\u00b7e\u00b7l\u00b7t\nprm:S\nsyn:knowledge_frontier_seed\u00b7parallel_threads\u00b7fractal_revelation\u00b7benefactor_capture\nreq:tsk"
+  },
+  {
+    "id": "strategic_silence_beat",
+    "strip": "@strategic_silence_beat F\u00b7A\u00b70\u00b72\n#misdi_omi\u00b7compl_rea\u00b7trust_mai\u00b7compl_sil\u00b7CB\u00b7OA\u00b7TR\u00b7CO [be] -\nX\u00b7q\u00b7l\u00b7a\u00b7e\u00b7n\u00b7t\nprm:Q\nsyn:benefactor_capture\u00b7manufactured_crisis_reveal\u00b7fractal_revelation"
+  },
+  {
+    "id": "temporal_loop_architecture",
+    "strip": "@temporal_loop_architecture L\u00b7O\u00b7days\u00b72\n#epist_imm\u00b7antic_att\u00b7knowl_acc\u00b7parti_det\u00b7PR\u00b7agenc_rew\u00b7need_cog\u00b7behav_act [pbe] -\nR\u00b7?\u00b7h\u00b7i\u00b7p\u00b7l\u00b7t\nprm:S\nsyn:environmental_narrative_space\u00b7one_on_one_private_scene\u00b7knowledge_frontier_seed\u00b7diegetic_archive_site\u00b7the_witness\n!ctr:manufactured_crisis_reveal\nreq:loc"
+  },
+  {
+    "id": "anomaly_attendance",
+    "strip": "@anomaly_attendance F\u00b7O\u00b7week\u00b73\n#colle_for\u00b7commi_act\u00b7SP\u00b7exper_pro\u00b7somat_hyp\u00b7socia_the\u00b7CO\u00b7effor_jus [tc] ^\nC\u00b7q\u00b7h\u00b7i\u00b7w\u00b7t\u00b7x\nprm:Q\nsyn:queryable_legacy\u00b7communitas_beat\u00b7territorial_claim\nreq:loc"
+  },
+  {
+    "id": "territorial_claim",
+    "strip": "@territorial_claim F\u00b7A\u00b7days\u00b72\n#owner_inv\u00b7PL\u00b7earne_sta\u00b7conte_res\u00b7micro_ter\u00b7endow_eff\u00b7NS\u00b7effor_jus\u00b7LA\u00b7proxe_spa [be] /\nC\u00b7n\u00b7m\u00b7+\u00b7sw\u00b7n\u00b7d\nprm:S\nsyn:anomaly_attendance\u00b7queryable_legacy\u00b7spatial_message\nreq:loc"
+  },
+  {
+    "id": "queryable_legacy",
+    "strip": "@queryable_legacy F\u00b7A\u00b70\u00b72\n#biogr_con\u00b7legac_con\u00b7exter_val\u00b7histo_rec\u00b7earne_ide\u00b7ident_cog\u00b7SQ\u00b7SP\u00b7effor_jus [dR] _\nR\u00b7q\u00b7l\u00b7i\u00b7pw\u00b7t\u00b7x\nprm:Q\nsyn:anomaly_attendance\u00b7territorial_claim\u00b7player_journal_artifact\u00b7post_arc_letter\nreq:csh\u00b7tsk"
+  },
+  {
+    "id": "trace_exposure",
+    "strip": "@trace_exposure F\u00b7A\u00b7hour\u00b73\n#felt_vul\u00b7IV\u00b7real_sur\u00b7urgen_pre\u00b7kinet_dre\u00b7shame_res\u00b7HV\u00b7scarc_min\u00b7amygd_res [et] ^\nX\u00b7q\u00b7h\u00b7a\u00b7p\u00b7S\u00b7d\nprm:Q\nsyn:active_erasure\u00b7contract_complicity\u00b7surveillance_detection_route\u00b7handler_letter\n!ctr:simulated_loss\nreq:tsk"
+  },
+  {
+    "id": "contract_complicity",
+    "strip": "@contract_complicity F\u00b7A\u00b7days\u00b72\n#compl_ins\u00b7defer_rev\u00b7retro_gui\u00b7moral_dis\u00b7willi_par\u00b7CO\u00b7CE\u00b7GT\u00b7moral_lic [pb] /\nX\u00b7n\u00b7m\u00b7+\u00b7p\u00b7D\u00b7d\nprm:S\nsyn:trace_exposure\u00b7active_erasure\u00b7benefactor_capture\u00b7manufactured_crisis_reveal\n!ctr:debrief_conversation"
+  },
+  {
+    "id": "active_erasure",
+    "strip": "@active_erasure F\u00b7A\u00b7hour\u00b73\n#kinet_com\u00b7self_imp\u00b7irrev_act\u00b7compl_des\u00b7volun_con\u00b7CO [tc] ^\nC\u00b7q\u00b7h\u00b7+\u00b7ep\u00b7S\u00b7x\nprm:Q\nsyn:trace_exposure\u00b7contract_complicity\u00b7exfiltration_protocol\n!ctr:commissioning_letter\nreq:tsk"
+  },
+  {
+    "id": "forum_intervention",
+    "strip": "@forum_intervention F\u00b7A\u00b7days\u00b73\n#rehea_rea\u00b7agenc_res\u00b7self_pro\u00b7somat_hyp\u00b7revis_act [ed] /\nC\u00b7q\u00b7h\u00b7+\u00b7p\u00b7S\u00b7t\nprm:Q\nsyn:change_talk_elicitation\u00b7failure_cascade_reframe\u00b7stripping_ceremony\n!ctr:ordeal_threshold"
+  },
+  {
+    "id": "image_theater_freeze",
+    "strip": "@image_theater_freeze F\u00b7A\u00b7hour\u00b72\n#somat_hyp\u00b7power_vis\u00b7non_kno\u00b7freez_fra [pb] -\nX\u00b7n\u00b7m\u00b7i\u00b7p\u00b7S\u00b7t\nprm:S\nsyn:kinesthetic_encoding_beat\u00b7stripping_ceremony\u00b7internal_monologue_voiced\nreq:loc"
+  },
+  {
+    "id": "invisible_theater_event",
+    "strip": "@invisible_theater_event L\u00b7O\u00b7days\u00b73\n#real_bou\u00b7unwit_par\u00b7authe_unc\u00b7frame_col\u00b7laten_die\u00b7CD\u00b7RXN [pb] ^\nC\u00b7n\u00b7h\u00b7+\u00b7ps\u00b7?\u00b7d\nprm:S\nsyn:briefed_confederate\u00b7planted_witness\u00b7manufactured_crisis_reveal\nreq:loc"
+  },
+  {
+    "id": "mask_anonymity_passage",
+    "strip": "@mask_anonymity_passage L\u00b7O\u00b7hour\u00b72\n#permi_ano\u00b7IS\u00b7explo_lic\u00b7trans_saf\u00b7dual_con\u00b7RXN\u00b7somat_hyp\u00b7CE [pb] ~\nC\u00b7n\u00b7m\u00b7i\u00b7p\u00b7S\u00b7t\nprm:S\nsyn:one_on_one_private_scene\u00b7environmental_narrative_space\u00b7stripping_ceremony\n!ctr:one_on_one_private_scene\nreq:csh\u00b7loc"
+  },
+  {
+    "id": "one_on_one_private_scene",
+    "strip": "@one_on_one_private_scene M\u00b7CR\u00b7days\u00b73\n#statu_sel\u00b7undiv_att\u00b7intim_dis\u00b7marke_sin\u00b7dyadi_int\u00b7SQ\u00b7PA\u00b7TR [et] ^\nS\u00b7q\u00b7l\u00b7i\u00b7p\u00b7S\u00b7t\nprm:Q\nsyn:mask_anonymity_passage\u00b7outsider_witness_ceremony\u00b7commissioning_letter\u00b7stripping_ceremony\nreq:loc\ngrp:lo\u00b7neut\u00b7U\u00b70\u00b71.0"
+  },
+  {
+    "id": "environmental_narrative_space",
+    "strip": "@environmental_narrative_space L\u00b7O\u00b7days\u00b72\n#objec_arc\u00b7envir_sem\u00b7parti_det\u00b7narra_exp\u00b7space_cha\u00b7CE\u00b7need_cog\u00b7natur_res [pb] /\nR\u00b7n\u00b7m\u00b7+\u00b7p\u00b7D\u00b7t\nprm:S\nsyn:deep_backstory_artifacts\u00b7physical_dead_drop\u00b7distributed_truth_fragment\u00b7the_commission\nreq:csh\u00b7loc"
+  },
+  {
+    "id": "hell_replay",
+    "strip": "@hell_replay F\u00b7A\u00b7days\u00b73\n#emoti_com\u00b7charg_mem\u00b7styli_rep\u00b7tempo_dis\u00b7inten_abs\u00b7EC\u00b7NS\u00b7habit\u00b7peak_rul [etd] ^\nS\u00b7q\u00b7l\u00b7i\u00b7p\u00b7S\u00b7d\nprm:Q\nsyn:internal_monologue_voiced\u00b7stripping_ceremony\u00b7manufactured_crisis_reveal\u00b7commissioning_letter"
+  },
+  {
+    "id": "framekick_temporal_shift",
+    "strip": "@framekick_temporal_shift F\u00b7A\u00b70\u00b73\n#tempo_rup\u00b7disor_des\u00b7frame_col\u00b7multi_con\u00b7reali_rec\u00b7CD\u00b7const_the [et] ^\nR\u00b7q\u00b7m\u00b7+\u00b7p\u00b7S\u00b7t\nprm:Q\nsyn:hell_replay\u00b7retroactive_recontextualization\u00b7manufactured_crisis_reveal\u00b7fractal_revelation\n!ctr:hell_replay"
+  },
+  {
+    "id": "internal_monologue_voiced",
+    "strip": "@internal_monologue_voiced F\u00b7A\u00b70\u00b73\n#MD\u00b7exter_sta\u00b7verba_aut\u00b7frame_dee\u00b7chara_sim\u00b7need_cog\u00b7impre_man\u00b7TR\u00b7CD [et] ^\nM\u00b7q\u00b7h\u00b7i\u00b7p\u00b7S\u00b7d\nprm:Q\nsyn:image_theater_freeze\u00b7change_talk_elicitation\u00b7author_narration_beat\u00b7one_on_one_private_scene"
+  },
+  {
+    "id": "author_narration_beat",
+    "strip": "@author_narration_beat F\u00b7A\u00b7days\u00b72\n#exter_per\u00b7omnis_voi\u00b7narra_int\u00b7autho_sta\u00b7retro_wit\u00b7const_the\u00b7PA [ed] -\nM\u00b7q\u00b7l\u00b7i\u00b7p\u00b7D\u00b7t\nprm:Q\nsyn:internal_monologue_voiced\u00b7outsider_witness_ceremony\u00b7commissioning_letter\u00b7hell_replay"
+  },
+  {
+    "id": "group_synchronization",
+    "strip": "@group_synchronization M\u00b7O\u00b7same\u00b73\n#socia_cas\u00b7cogni_red\u00b7SQ\u00b7in_for\u00b7share_con\u00b7CD [et] ^\nC\u00b7q\u00b7l\u00b7+\u00b7ps\u00b7s\u00b7d\nprm:Q\nsyn:distributed_truth_fragment\u00b7handler_letter\u00b7faction_formation\u00b7the_witness\n!ctr:manufactured_crisis_reveal\nreq:cnf"
+  },
+  {
+    "id": "faction_formation",
+    "strip": "@faction_formation F\u00b7~amb\u00b70\u00b72\n#socia_the\u00b7in_fav\u00b7cogni_red\u00b7coord_pro\u00b7attit_pol\u00b7CD [et] /\nE\u00b7q\u00b7m\u00b7i\u00b7ps\u00b7n\u00b7?\nprm:Q\nsyn:group_synchronization\u00b7social_proof_cascade\u00b7the_witness\u00b7optional_path\n!ctr:retroactive_recontextualization"
+  },
+  {
+    "id": "shared_crisis_beat",
+    "strip": "@shared_crisis_beat H\u00b7O\u00b73d\u00b74\n#CL\u00b7SQ\u00b7UG\u00b7in_for\u00b7share_con\u00b7EC [c] ^\nC\u00b7q\u00b7h\u00b7+\u00b7ps\u00b7i\u00b7e\nprm:Q\u2192cls\nsyn:faction_formation\u00b7faction_allegiance_fork\u00b7group_synchronization\u00b7graduation_ritual\n!ctr:graduation_ritual"
+  },
+  {
+    "id": "faction_allegiance_fork",
+    "strip": "@faction_allegiance_fork H\u00b7O\u00b73d\u00b73\n#IC\u00b7CO\u00b7CD\u00b7attit_pol\u00b7socia_the\u00b7in_fav [t] ^\nC\u00b7q\u00b7h\u00b7i\u00b7ps\u00b7n\u00b7d\nprm:Q\nsyn:faction_formation\u00b7shared_crisis_beat\u00b7optional_path\u00b7graduation_ritual\n!ctr:graduation_ritual"
+  },
+  {
+    "id": "app_location_dispatch",
+    "strip": "@app_location_dispatch M\u00b7A\u00b72w\u00b72\n#CG\u00b7SQ\u00b7PL\u00b7AG\u00b7EAC\u00b7PC [be] /\nC\u00b7nq\u00b7h\u00b7a\u00b7p\u00b7n\u00b7t\nprm:S\u2192slv\nsyn:environmental_narrative_space\u00b7physical_dead_drop\u00b7faction_allegiance_fork\u00b7shared_crisis_beat\nreq:loc"
+  },
+  {
+    "id": "nested_permission_cascade",
+    "strip": "@nested_permission_cascade M\u00b7A\u00b7arcl\u00b72\n#CO\u00b7SPT\u00b7BCM\u00b7CD\u00b7AU\u00b7EAC [be] /\nC\u00b7n\u00b7m\u00b7i\u00b7p\u00b7l\u00b7d\nprm:S\u2192ids\nsyn:graduation_ritual\u00b7retroactive_recontextualization\u00b7commissioning_letter\u00b7nested_permission_cascade\n!ctr:manufactured_crisis_reveal"
+  },
+  {
+    "id": "counter_identity_encounter",
+    "strip": "@counter_identity_encounter M\u00b7CR\u00b73d\u00b73\n#IC\u00b7MR\u00b7CD\u00b7FS\u00b7CF\u00b7ID [et] ^\nC\u00b7q\u00b7p\u00b7i\u00b7p\u00b7s\u00b7d\nprm:Q\u2192ids\nsyn:retroactive_recontextualization\u00b7outsider_witness_ceremony\u00b7graduation_ritual\u00b7the_witness\n!ctr:graduation_ritual\nreq:cnf"
+  },
+  {
+    "id": "reintegration_dispatch",
+    "strip": "@reintegration_dispatch L\u00b7A\u00b7arcl\u00b72\n#conti_sig\u00b7ICH\u00b7TA\u00b7FSC\u00b7IIV\u00b7MEE [d] -\nR\u00b7q\u00b7p\u00b7i\u00b7p\u00b7n\u00b7t\nprm:Q\nsyn:commissioning_letter\u00b7resonance_letter\u00b7integration_letter\u00b7graduation_ritual\u00b7the_long_echo"
+  }
+]

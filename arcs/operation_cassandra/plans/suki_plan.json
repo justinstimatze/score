@@ -1,0 +1,645 @@
+{
+  "participant": "Suki Park",
+  "total_plays": 14,
+  "avg_engagement_pct": 49,
+  "weakest_play": "retroactive_recontextualization",
+  "weakest_play_pct": 38,
+  "bail_days": [
+    22
+  ],
+  "operator_hold_days": [
+    0,
+    7,
+    10,
+    14,
+    15,
+    21,
+    24,
+    30
+  ],
+  "plays": [
+    {
+      "id": "knowledge_frontier_seed",
+      "day": 0,
+      "phase": "p",
+      "beat": "/",
+      "beat_name": "ramp",
+      "intensity": 1,
+      "detection": "l",
+      "reversibility": "a",
+      "requires_confederate": false,
+      "grants": "slv",
+      "engagement_pct": 52,
+      "failure_modes": {
+        "cold": 18,
+        "over_engaged": 16,
+        "confused": 14,
+        "distressed": 0
+      },
+      "recovery_plays": {
+        "cold": [
+          "wrong_read_recovery",
+          "breadcrumb_without_demand",
+          "open_door_signal",
+          "anomalous_receipt"
+        ],
+        "over_engaged": [
+          "optional_path",
+          "open_door_signal",
+          "OPERATOR_PAUSE"
+        ],
+        "confused": [
+          "elegant_failure",
+          "misfire_as_story",
+          "seam_acknowledgment"
+        ]
+      },
+      "bail": {
+        "is_bail_point": false,
+        "bail_type": "operator_hold",
+        "bail_note": "Operator must confirm participant engagement before releasing 'osint_personalization' (irreversible or high-detection)."
+      }
+    },
+    {
+      "id": "osint_personalization",
+      "day": 0,
+      "phase": "p",
+      "beat": "/",
+      "beat_name": "ramp",
+      "intensity": 2,
+      "detection": "p",
+      "reversibility": "i",
+      "requires_confederate": false,
+      "grants": "asr",
+      "engagement_pct": 51,
+      "failure_modes": {
+        "over_engaged": 15,
+        "cold": 15,
+        "confused": 13,
+        "distressed": 6
+      },
+      "recovery_plays": {
+        "over_engaged": [
+          "optional_path",
+          "open_door_signal",
+          "OPERATOR_PAUSE"
+        ],
+        "cold": [
+          "wrong_read_recovery",
+          "breadcrumb_without_demand",
+          "open_door_signal",
+          "anomalous_receipt"
+        ],
+        "confused": [
+          "elegant_failure",
+          "misfire_as_story",
+          "seam_acknowledgment"
+        ],
+        "distressed": [
+          "seam_acknowledgment",
+          "graceful_release",
+          "OPERATOR_PAUSE"
+        ]
+      },
+      "bail": {
+        "is_bail_point": false,
+        "bail_type": null,
+        "bail_note": ""
+      }
+    },
+    {
+      "id": "handler_letter",
+      "day": 3,
+      "phase": "b",
+      "beat": "/",
+      "beat_name": "ramp",
+      "intensity": 2,
+      "detection": "p",
+      "reversibility": "+",
+      "requires_confederate": false,
+      "grants": "",
+      "engagement_pct": 51,
+      "failure_modes": {
+        "cold": 18,
+        "over_engaged": 17,
+        "confused": 14,
+        "distressed": 0
+      },
+      "recovery_plays": {
+        "cold": [
+          "wrong_read_recovery",
+          "breadcrumb_without_demand",
+          "open_door_signal",
+          "anomalous_receipt"
+        ],
+        "over_engaged": [
+          "optional_path",
+          "open_door_signal",
+          "OPERATOR_PAUSE"
+        ],
+        "confused": [
+          "elegant_failure",
+          "misfire_as_story",
+          "seam_acknowledgment"
+        ]
+      },
+      "bail": {
+        "is_bail_point": false,
+        "bail_type": null,
+        "bail_note": ""
+      }
+    },
+    {
+      "id": "distributed_truth_fragment",
+      "day": 7,
+      "phase": "b",
+      "beat": "/",
+      "beat_name": "ramp",
+      "intensity": 1,
+      "detection": "m",
+      "reversibility": "a",
+      "requires_confederate": false,
+      "grants": "",
+      "engagement_pct": 56,
+      "failure_modes": {
+        "cold": 17,
+        "over_engaged": 15,
+        "confused": 12,
+        "distressed": 0
+      },
+      "recovery_plays": {
+        "cold": [
+          "wrong_read_recovery",
+          "breadcrumb_without_demand",
+          "open_door_signal",
+          "anomalous_receipt"
+        ],
+        "over_engaged": [
+          "optional_path",
+          "open_door_signal",
+          "OPERATOR_PAUSE"
+        ],
+        "confused": [
+          "elegant_failure",
+          "misfire_as_story",
+          "seam_acknowledgment"
+        ]
+      },
+      "bail": {
+        "is_bail_point": false,
+        "bail_type": "operator_hold",
+        "bail_note": "Operator must confirm participant engagement before releasing 'graduated_reveal' (irreversible or high-detection)."
+      }
+    },
+    {
+      "id": "graduated_reveal",
+      "day": 10,
+      "phase": "b",
+      "beat": "/",
+      "beat_name": "ramp",
+      "intensity": 2,
+      "detection": "m",
+      "reversibility": "i",
+      "requires_confederate": false,
+      "grants": "esc",
+      "engagement_pct": 51,
+      "failure_modes": {
+        "over_engaged": 15,
+        "cold": 15,
+        "confused": 13,
+        "distressed": 6
+      },
+      "recovery_plays": {
+        "over_engaged": [
+          "optional_path",
+          "open_door_signal",
+          "OPERATOR_PAUSE"
+        ],
+        "cold": [
+          "wrong_read_recovery",
+          "breadcrumb_without_demand",
+          "open_door_signal",
+          "anomalous_receipt"
+        ],
+        "confused": [
+          "elegant_failure",
+          "misfire_as_story",
+          "seam_acknowledgment"
+        ],
+        "distressed": [
+          "seam_acknowledgment",
+          "graceful_release",
+          "OPERATOR_PAUSE"
+        ]
+      },
+      "bail": {
+        "is_bail_point": false,
+        "bail_type": "operator_hold",
+        "bail_note": "Operator must confirm participant engagement before releasing 'false_breakthrough' (irreversible or high-detection)."
+      }
+    },
+    {
+      "id": "false_breakthrough",
+      "day": 14,
+      "phase": "e",
+      "beat": "/",
+      "beat_name": "ramp",
+      "intensity": 2,
+      "detection": "h",
+      "reversibility": "i",
+      "requires_confederate": false,
+      "grants": "slv",
+      "engagement_pct": 74,
+      "failure_modes": {
+        "confused": 10,
+        "over_engaged": 7,
+        "cold": 5,
+        "distressed": 4
+      },
+      "recovery_plays": {
+        "confused": [
+          "elegant_failure",
+          "misfire_as_story",
+          "seam_acknowledgment"
+        ],
+        "over_engaged": [
+          "optional_path",
+          "open_door_signal",
+          "OPERATOR_PAUSE"
+        ],
+        "cold": [
+          "wrong_read_recovery",
+          "breadcrumb_without_demand",
+          "open_door_signal",
+          "anomalous_receipt"
+        ],
+        "distressed": [
+          "seam_acknowledgment",
+          "graceful_release",
+          "OPERATOR_PAUSE"
+        ]
+      },
+      "bail": {
+        "is_bail_point": false,
+        "bail_type": "operator_hold",
+        "bail_note": "Operator must confirm participant engagement before releasing 'parallel_threads' (irreversible or high-detection)."
+      }
+    },
+    {
+      "id": "parallel_threads",
+      "day": 15,
+      "phase": "e",
+      "beat": "_",
+      "beat_name": "hold",
+      "intensity": 3,
+      "detection": "h",
+      "reversibility": "i",
+      "requires_confederate": false,
+      "grants": "",
+      "engagement_pct": 39,
+      "failure_modes": {
+        "confused": 24,
+        "over_engaged": 17,
+        "cold": 12,
+        "distressed": 8
+      },
+      "recovery_plays": {
+        "confused": [
+          "elegant_failure",
+          "misfire_as_story",
+          "seam_acknowledgment"
+        ],
+        "over_engaged": [
+          "optional_path",
+          "open_door_signal",
+          "OPERATOR_PAUSE"
+        ],
+        "cold": [
+          "wrong_read_recovery",
+          "breadcrumb_without_demand",
+          "open_door_signal",
+          "anomalous_receipt"
+        ],
+        "distressed": [
+          "seam_acknowledgment",
+          "graceful_release",
+          "OPERATOR_PAUSE"
+        ]
+      },
+      "bail": {
+        "is_bail_point": false,
+        "bail_type": "operator_hold",
+        "bail_note": "Operator must confirm participant engagement before releasing 'the_false_confirmation' (irreversible or high-detection)."
+      }
+    },
+    {
+      "id": "the_false_confirmation",
+      "day": 17,
+      "phase": "e",
+      "beat": "^",
+      "beat_name": "spike",
+      "intensity": 2,
+      "detection": "l",
+      "reversibility": "i",
+      "requires_confederate": false,
+      "grants": "esc",
+      "engagement_pct": 45,
+      "failure_modes": {
+        "over_engaged": 17,
+        "cold": 17,
+        "confused": 14,
+        "distressed": 7
+      },
+      "recovery_plays": {
+        "over_engaged": [
+          "optional_path",
+          "open_door_signal",
+          "OPERATOR_PAUSE"
+        ],
+        "cold": [
+          "wrong_read_recovery",
+          "breadcrumb_without_demand",
+          "open_door_signal",
+          "anomalous_receipt"
+        ],
+        "confused": [
+          "elegant_failure",
+          "misfire_as_story",
+          "seam_acknowledgment"
+        ],
+        "distressed": [
+          "seam_acknowledgment",
+          "graceful_release",
+          "OPERATOR_PAUSE"
+        ]
+      },
+      "bail": {
+        "is_bail_point": false,
+        "bail_type": null,
+        "bail_note": ""
+      }
+    },
+    {
+      "id": "the_witness",
+      "day": 21,
+      "phase": "e",
+      "beat": "^",
+      "beat_name": "spike",
+      "intensity": 2,
+      "detection": "p",
+      "reversibility": "a",
+      "requires_confederate": true,
+      "grants": "",
+      "engagement_pct": 49,
+      "failure_modes": {
+        "cold": 19,
+        "over_engaged": 17,
+        "confused": 14,
+        "distressed": 1
+      },
+      "recovery_plays": {
+        "cold": [
+          "wrong_read_recovery",
+          "breadcrumb_without_demand",
+          "open_door_signal",
+          "anomalous_receipt"
+        ],
+        "over_engaged": [
+          "optional_path",
+          "open_door_signal",
+          "OPERATOR_PAUSE"
+        ],
+        "confused": [
+          "elegant_failure",
+          "misfire_as_story",
+          "seam_acknowledgment"
+        ]
+      },
+      "bail": {
+        "is_bail_point": false,
+        "bail_type": "operator_hold",
+        "bail_note": "Operator must confirm participant engagement before releasing 'optional_path' (irreversible or high-detection)."
+      }
+    },
+    {
+      "id": "optional_path",
+      "day": 22,
+      "phase": "e",
+      "beat": ">",
+      "beat_name": "transition",
+      "intensity": 2,
+      "detection": "h",
+      "reversibility": "a",
+      "requires_confederate": false,
+      "grants": "esc",
+      "engagement_pct": 52,
+      "failure_modes": {
+        "confused": 21,
+        "over_engaged": 15,
+        "cold": 12,
+        "distressed": 0
+      },
+      "recovery_plays": {
+        "confused": [
+          "elegant_failure",
+          "misfire_as_story",
+          "seam_acknowledgment"
+        ],
+        "over_engaged": [
+          "optional_path",
+          "open_door_signal",
+          "OPERATOR_PAUSE"
+        ],
+        "cold": [
+          "wrong_read_recovery",
+          "breadcrumb_without_demand",
+          "open_door_signal",
+          "anomalous_receipt"
+        ]
+      },
+      "bail": {
+        "is_bail_point": true,
+        "bail_type": "natural",
+        "bail_note": "Transition beat \u2014 clean pivot point if participant is not engaging. Arc can end here or reroute."
+      }
+    },
+    {
+      "id": "benefactor_capture",
+      "day": 24,
+      "phase": "t",
+      "beat": "/^",
+      "beat_name": "/^",
+      "intensity": 3,
+      "detection": "h",
+      "reversibility": "+",
+      "requires_confederate": false,
+      "grants": "",
+      "engagement_pct": 39,
+      "failure_modes": {
+        "confused": 26,
+        "over_engaged": 19,
+        "cold": 16,
+        "distressed": 0
+      },
+      "recovery_plays": {
+        "confused": [
+          "elegant_failure",
+          "misfire_as_story",
+          "seam_acknowledgment"
+        ],
+        "over_engaged": [
+          "optional_path",
+          "open_door_signal",
+          "OPERATOR_PAUSE"
+        ],
+        "cold": [
+          "wrong_read_recovery",
+          "breadcrumb_without_demand",
+          "open_door_signal",
+          "anomalous_receipt"
+        ]
+      },
+      "bail": {
+        "is_bail_point": false,
+        "bail_type": "operator_hold",
+        "bail_note": "Operator must confirm participant engagement before releasing 'manufactured_crisis_reveal' (irreversible or high-detection)."
+      }
+    },
+    {
+      "id": "manufactured_crisis_reveal",
+      "day": 28,
+      "phase": "c",
+      "beat": "^",
+      "beat_name": "spike",
+      "intensity": 3,
+      "detection": "h",
+      "reversibility": "+",
+      "requires_confederate": false,
+      "grants": "",
+      "engagement_pct": 39,
+      "failure_modes": {
+        "confused": 26,
+        "over_engaged": 19,
+        "cold": 16,
+        "distressed": 0
+      },
+      "recovery_plays": {
+        "confused": [
+          "elegant_failure",
+          "misfire_as_story",
+          "seam_acknowledgment"
+        ],
+        "over_engaged": [
+          "optional_path",
+          "open_door_signal",
+          "OPERATOR_PAUSE"
+        ],
+        "cold": [
+          "wrong_read_recovery",
+          "breadcrumb_without_demand",
+          "open_door_signal",
+          "anomalous_receipt"
+        ]
+      },
+      "bail": {
+        "is_bail_point": false,
+        "bail_type": null,
+        "bail_note": ""
+      }
+    },
+    {
+      "id": "retroactive_recontextualization",
+      "day": 30,
+      "phase": "c",
+      "beat": "^",
+      "beat_name": "spike",
+      "intensity": 4,
+      "detection": "m",
+      "reversibility": "+",
+      "requires_confederate": false,
+      "grants": "",
+      "engagement_pct": 38,
+      "failure_modes": {
+        "over_engaged": 19,
+        "cold": 16,
+        "confused": 16,
+        "distressed": 11
+      },
+      "recovery_plays": {
+        "over_engaged": [
+          "optional_path",
+          "open_door_signal",
+          "OPERATOR_PAUSE"
+        ],
+        "cold": [
+          "wrong_read_recovery",
+          "breadcrumb_without_demand",
+          "open_door_signal",
+          "anomalous_receipt"
+        ],
+        "confused": [
+          "elegant_failure",
+          "misfire_as_story",
+          "seam_acknowledgment"
+        ],
+        "distressed": [
+          "seam_acknowledgment",
+          "graceful_release",
+          "OPERATOR_PAUSE"
+        ]
+      },
+      "bail": {
+        "is_bail_point": false,
+        "bail_type": "operator_hold",
+        "bail_note": "Operator must confirm participant engagement before releasing 'integration_letter' (irreversible or high-detection)."
+      }
+    },
+    {
+      "id": "integration_letter",
+      "day": 35,
+      "phase": "d",
+      "beat": "-",
+      "beat_name": "rest",
+      "intensity": 2,
+      "detection": "p",
+      "reversibility": "i",
+      "requires_confederate": false,
+      "grants": "",
+      "engagement_pct": 45,
+      "failure_modes": {
+        "over_engaged": 17,
+        "cold": 17,
+        "confused": 14,
+        "distressed": 7
+      },
+      "recovery_plays": {
+        "over_engaged": [
+          "optional_path",
+          "open_door_signal",
+          "OPERATOR_PAUSE"
+        ],
+        "cold": [
+          "wrong_read_recovery",
+          "breadcrumb_without_demand",
+          "open_door_signal",
+          "anomalous_receipt"
+        ],
+        "confused": [
+          "elegant_failure",
+          "misfire_as_story",
+          "seam_acknowledgment"
+        ],
+        "distressed": [
+          "seam_acknowledgment",
+          "graceful_release",
+          "OPERATOR_PAUSE"
+        ]
+      },
+      "bail": {
+        "is_bail_point": false,
+        "bail_type": null,
+        "bail_note": ""
+      }
+    }
+  ]
+}

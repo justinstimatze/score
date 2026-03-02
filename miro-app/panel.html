@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ScoreImmersive — Arc Designer</title>
+    <link rel="stylesheet" href="/styles.css" />
+    <script src="https://miro.com/app/static/sdk/v2/miro.js"></script>
+  </head>
+  <body>
+    <main id="app">
+
+      <header class="top-bar">
+        <span class="app-name">Score</span>
+        <span id="data-status" class="data-loading" aria-live="polite">Loading library…</span>
+      </header>
+
+      <nav class="tab-bar" role="tablist">
+        <button class="tab-btn active" id="tab-btn-library" data-tab="library" role="tab" aria-selected="true"  aria-controls="tab-library">Plays</button>
+        <button class="tab-btn"        id="tab-btn-lint"    data-tab="lint"    role="tab" aria-selected="false" aria-controls="tab-lint">Check</button>
+        <button class="tab-btn"        id="tab-btn-plan"    data-tab="plan"    role="tab" aria-selected="false" aria-controls="tab-plan">Analyze</button>
+        <button class="tab-btn"        id="tab-btn-help"    data-tab="help"    role="tab" aria-selected="false" aria-controls="tab-help">Guide</button>
+      </nav>
+
+      <!-- ── STANDALONE ARC INPUT (hidden in Miro, shown when running standalone) ── -->
+      <div class="arc-input-wrap" id="arc-input-wrap" hidden>
+        <label class="arc-input-label" for="arc-input">Arc — one play ID per line</label>
+        <textarea id="arc-input" class="arc-input" rows="5" placeholder="knowledge_frontier_seed&#10;briefed_confederate&#10;cold_read&#10;graduation_ritual" spellcheck="false" autocomplete="off" aria-label="Arc: one play ID per line"></textarea>
+        <p class="arc-input-hint">Use the Plays tab to browse. Drag a play name into this box, or load a demo from the Guide tab.</p>
+        <div id="demo-notes" hidden></div>
+      </div>
+
+      <!-- ── CHECK TAB ── -->
+      <section class="tab-panel" id="tab-lint" role="tabpanel" aria-labelledby="tab-btn-lint">
+        <div class="arc-meta">
+          <div class="field-row">
+            <label>Arc type</label>
+            <div class="custom-select" id="arc-type" data-value="investigation">
+              <button class="cs-trigger" type="button" aria-haspopup="listbox" aria-expanded="false">
+                <span class="cs-label">Investigation</span>
+                <span class="cs-chevron">▾</span>
+              </button>
+              <ul class="cs-menu" role="listbox" hidden>
+                <li class="cs-option cs-selected" data-value="investigation" role="option">Investigation</li>
+                <li class="cs-option" data-value="initiation" role="option">Initiation</li>
+                <li class="cs-option" data-value="persecution" role="option">Persecution</li>
+                <li class="cs-option" data-value="reckoning" role="option">Reckoning</li>
+                <li class="cs-option" data-value="conspiracy" role="option">Conspiracy</li>
+                <li class="cs-option" data-value="test" role="option">Test</li>
+              </ul>
+            </div>
+          </div>
+          <div class="field-row">
+            <label>Group size</label>
+            <div class="custom-select" id="audience-scale" data-value="intimate">
+              <button class="cs-trigger" type="button" aria-haspopup="listbox" aria-expanded="false">
+                <span class="cs-label">Solo (1)</span>
+                <span class="cs-chevron">▾</span>
+              </button>
+              <ul class="cs-menu" role="listbox" hidden>
+                <li class="cs-option cs-selected" data-value="intimate" role="option">Solo (1)</li>
+                <li class="cs-option" data-value="small_group" role="option">Small group (2–6)</li>
+                <li class="cs-option" data-value="medium_group" role="option">Medium group (7–20)</li>
+                <li class="cs-option" data-value="large_group" role="option">Large group (20+)</li>
+              </ul>
+            </div>
+          </div>
+          <div class="field-row">
+            <label for="early-exit">Early exit</label>
+            <input type="text" id="early-exit" placeholder="Play ID if operator needs to close early" />
+          </div>
+        </div>
+
+        <div class="toolbar">
+          <button id="lint-btn" class="btn-primary">Check Arc</button>
+          <span id="play-count" class="play-count" aria-live="polite"></span>
+        </div>
+
+        <div id="lint-output" class="output-area" aria-live="polite" aria-label="Arc check results"></div>
+      </section>
+
+      <!-- ── ANALYZE TAB ── -->
+      <section class="tab-panel" id="tab-plan" role="tabpanel" aria-labelledby="tab-btn-plan">
+
+        <!-- Collapsible profile drawer -->
+        <details class="profile-drawer" id="profile-details">
+          <summary class="profile-drawer-summary">
+            <span class="profile-drawer-label">Profile</span>
+            <span id="profile-status" class="profile-empty" aria-live="polite">No profile in slot</span>
+          </summary>
+
+          <!-- Slot bar -->
+          <div class="slot-bar" role="radiogroup" aria-label="Profile slots">
+            <button class="slot-btn slot-empty active" data-slot="0" role="radio" aria-checked="true">Slot 1</button>
+            <button class="slot-btn slot-empty" data-slot="1" role="radio" aria-checked="false">Slot 2</button>
+            <button class="slot-btn slot-empty" data-slot="2" role="radio" aria-checked="false">Slot 3</button>
+          </div>
+
+          <!-- Template strip -->
+          <div class="tpl-row">
+            <span class="tpl-label">Load template:</span>
+            <button class="tpl-btn" data-tpl="pattern_seeker">Pattern Seeker</button>
+            <button class="tpl-btn" data-tpl="sensualist">Sensualist</button>
+            <button class="tpl-btn" data-tpl="social_being">Social Being</button>
+          </div>
+
+          <!-- Scrollable form -->
+          <div class="profile-form">
+
+            <!-- Name -->
+            <div class="pf-row">
+              <label class="pf-label" for="pf-name">Name</label>
+              <input type="text" id="pf-name" class="pf-input" placeholder="Participant name…" autocomplete="off" />
+            </div>
+
+            <!-- Sensitivity -->
+            <div class="pf-row">
+              <label class="pf-label" id="pf-sensitivity-label">Sensitivity</label>
+              <div class="pf-seg" id="pf-sensitivity" role="radiogroup" aria-labelledby="pf-sensitivity-label">
+                <button class="pf-seg-btn" data-val="low" role="radio" aria-checked="false">Low</button>
+                <button class="pf-seg-btn active" data-val="medium" role="radio" aria-checked="true">Medium</button>
+                <button class="pf-seg-btn" data-val="high" role="radio" aria-checked="false">High</button>
+              </div>
+            </div>
+
+            <!-- Register -->
+            <div class="pf-row">
+              <label class="pf-label">Register</label>
+              <!-- naive=fresh/unaware, unsettled=questioning, wonder=open, opened=shifted, rewired=transformed -->
+              <div class="custom-select pf-cs" id="pf-register" data-value="naive">
+                <button class="cs-trigger" type="button" aria-haspopup="listbox" aria-expanded="false">
+                  <span class="cs-label">Naive</span>
+                  <span class="cs-chevron">▾</span>
+                </button>
+                <ul class="cs-menu" role="listbox" hidden>
+                  <li class="cs-option cs-selected" data-value="naive" role="option">Naive</li>
+                  <li class="cs-option" data-value="unsettled" role="option">Unsettled</li>
+                  <li class="cs-option" data-value="wonder" role="option">Wonder</li>
+                  <li class="cs-option" data-value="opened" role="option">Opened</li>
+                  <li class="cs-option" data-value="rewired" role="option">Rewired</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Identity invite -->
+            <div class="pf-row">
+              <label class="pf-label">Identity invite</label>
+              <div class="custom-select pf-cs" id="pf-identity" data-value="">
+                <button class="cs-trigger" type="button" aria-haspopup="listbox" aria-expanded="false">
+                  <span class="cs-label">— none —</span>
+                  <span class="cs-chevron">▾</span>
+                </button>
+                <ul class="cs-menu" role="listbox" hidden>
+                  <li class="cs-option cs-selected" data-value="" role="option">— none —</li>
+                  <li class="cs-option" data-value="seeker_pattern_finder" role="option">Seeker / pattern finder</li>
+                  <li class="cs-option" data-value="protagonist" role="option">Protagonist</li>
+                  <li class="cs-option" data-value="interesting" role="option">Interesting</li>
+                  <li class="cs-option" data-value="creative" role="option">Creative</li>
+                  <li class="cs-option" data-value="good" role="option">Good</li>
+                  <li class="cs-option" data-value="brave" role="option">Brave</li>
+                  <li class="cs-option" data-value="dependable" role="option">Dependable</li>
+                  <li class="cs-option" data-value="perceptive" role="option">Perceptive</li>
+                  <li class="cs-option" data-value="influential" role="option">Influential</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Big Five -->
+            <div class="pf-section">
+              <div class="pf-section-head">
+                <span class="pf-section-label">Big Five</span>
+              </div>
+              <div class="big5-grid">
+                <div class="big5-row">
+                  <span class="big5-label" aria-hidden="true">O</span>
+                  <input type="range" class="big5-slider" data-dim="O" min="-1" max="1" step="0.05" value="0" aria-label="Openness" />
+                  <span class="big5-val">0.00</span>
+                </div>
+                <div class="big5-row">
+                  <span class="big5-label" aria-hidden="true">C</span>
+                  <input type="range" class="big5-slider" data-dim="C" min="-1" max="1" step="0.05" value="0" aria-label="Conscientiousness" />
+                  <span class="big5-val">0.00</span>
+                </div>
+                <div class="big5-row">
+                  <span class="big5-label" aria-hidden="true">N</span>
+                  <input type="range" class="big5-slider" data-dim="N" min="-1" max="1" step="0.05" value="0" aria-label="Neuroticism" />
+                  <span class="big5-val">0.00</span>
+                </div>
+                <div class="big5-row">
+                  <span class="big5-label" aria-hidden="true">E</span>
+                  <input type="range" class="big5-slider" data-dim="E" min="-1" max="1" step="0.05" value="0" aria-label="Extraversion" />
+                  <span class="big5-val">0.00</span>
+                </div>
+                <div class="big5-row">
+                  <span class="big5-label" aria-hidden="true">A</span>
+                  <input type="range" class="big5-slider" data-dim="A" min="-1" max="1" step="0.05" value="0" aria-label="Agreeableness" />
+                  <span class="big5-val">0.00</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Mechanisms -->
+            <div class="pf-section">
+              <div class="pf-section-head">
+                <span class="pf-section-label">Mechanisms</span>
+                <button class="pf-add-btn" id="pf-add-mech" aria-controls="pf-picker" aria-expanded="false">+ Add mechanism</button>
+              </div>
+              <div class="pf-picker" id="pf-picker" hidden>
+                <input type="search" class="pf-picker-search" id="pf-mech-query" placeholder="Search mechanisms…" autocomplete="off" spellcheck="false" aria-label="Search mechanisms" />
+                <div class="pf-picker-list" id="pf-mech-opts"></div>
+              </div>
+              <div class="pf-mech-list" id="pf-mechs"></div>
+            </div>
+
+            <!-- Hard constraints -->
+            <div class="pf-section">
+              <div class="pf-section-head">
+                <span class="pf-section-label">Blocked plays</span>
+              </div>
+              <div class="pf-chips" id="pf-constraints"></div>
+              <input type="text" class="pf-chip-input" id="pf-constraint-input" placeholder="Play ID to exclude, press Enter…" autocomplete="off" aria-label="Add excluded play ID, press Enter to confirm" />
+            </div>
+
+          </div><!-- /profile-form -->
+
+        </details><!-- /profile-drawer -->
+
+        <div class="toolbar">
+          <button id="plan-btn" class="btn-primary">Analyze for Profile</button>
+        </div>
+        <div id="plan-output" class="output-area" aria-live="polite" aria-label="Arc analysis results"></div>
+      </section>
+
+      <!-- ── PLAYS TAB ── -->
+      <section class="tab-panel active" id="tab-library" role="tabpanel" aria-labelledby="tab-btn-library">
+        <div class="lib-controls">
+          <input type="search" id="lib-search" class="lib-search" placeholder="Search plays…" autocomplete="off" spellcheck="false" aria-label="Search plays" />
+          <div class="lib-filter-group">
+            <span class="filter-label" id="filter-label-beat">Pacing</span>
+            <div class="lib-filter-btns" role="radiogroup" aria-labelledby="filter-label-beat">
+              <button class="filter-btn active" data-filter="beat" data-value="" aria-checked="true" role="radio">All</button>
+              <button class="filter-btn" data-filter="beat" data-value="/" aria-checked="false" role="radio">Ramp</button>
+              <button class="filter-btn" data-filter="beat" data-value="^" aria-checked="false" role="radio">Spike</button>
+              <button class="filter-btn" data-filter="beat" data-value="-" aria-checked="false" role="radio">Hold</button>
+              <button class="filter-btn" data-filter="beat" data-value="_" aria-checked="false" role="radio">Rest</button>
+              <button class="filter-btn" data-filter="beat" data-value="&gt;" aria-checked="false" role="radio">Transition</button>
+              <button class="filter-btn" data-filter="beat" data-value="~" aria-checked="false" role="radio">Liminal</button>
+            </div>
+          </div>
+          <div class="lib-filter-group">
+            <span class="filter-label" id="filter-label-phase">Phase</span>
+            <div class="lib-filter-btns" role="radiogroup" aria-labelledby="filter-label-phase">
+              <button class="filter-btn active" data-filter="phase" data-value="" aria-checked="true" role="radio">All</button>
+              <button class="filter-btn" data-filter="phase" data-value="p" aria-checked="false" role="radio">Pre-arc</button>
+              <button class="filter-btn" data-filter="phase" data-value="b" aria-checked="false" role="radio">Build</button>
+              <button class="filter-btn" data-filter="phase" data-value="e" aria-checked="false" role="radio">Escalation</button>
+              <button class="filter-btn" data-filter="phase" data-value="t" aria-checked="false" role="radio">Threshold</button>
+              <button class="filter-btn" data-filter="phase" data-value="c" aria-checked="false" role="radio">Climax</button>
+              <button class="filter-btn" data-filter="phase" data-value="r" aria-checked="false" role="radio">Reveal</button>
+              <button class="filter-btn" data-filter="phase" data-value="d" aria-checked="false" role="radio">Denouement</button>
+            </div>
+          </div>
+          <div class="lib-filter-group">
+            <span class="filter-label" id="filter-label-favs">Favorites</span>
+            <div class="lib-filter-btns" role="radiogroup" aria-labelledby="filter-label-favs">
+              <button class="filter-btn active" data-filter="favs" data-value="" aria-checked="true" role="radio">All</button>
+              <button class="filter-btn" data-filter="favs" data-value="1" aria-checked="false" role="radio">★ Only</button>
+            </div>
+          </div>
+          <div class="lib-filter-group">
+            <span class="filter-label" id="filter-label-sort">Sort</span>
+            <div class="lib-filter-btns" role="radiogroup" aria-labelledby="filter-label-sort">
+              <button class="sort-btn active" data-sort="beat" aria-checked="true" role="radio">Beat type</button>
+              <button class="sort-btn" data-sort="frecency" aria-checked="false" role="radio">Recently used</button>
+            </div>
+          </div>
+        </div>
+        <div class="lib-count-bar">
+          <span id="lib-count" class="lib-count"></span>
+        </div>
+        <div id="lib-output" class="lib-output" aria-live="polite" aria-label="Plays library"></div>
+      </section>
+
+      <!-- ── GUIDE TAB ── -->
+      <section class="tab-panel" id="tab-help" role="tabpanel" aria-labelledby="tab-btn-help">
+        <div class="help-content">
+          <h3>Demo arrangements</h3>
+          <p class="miro-only">Drop a reference arc onto the board to see what a real sequence looks like. Cards are placed left → right in arc order.</p>
+          <p class="standalone-only">Load a reference arc into the arc input, then use Check or Analyze to explore it.</p>
+          <label class="demo-sticky-label">
+            <input type="checkbox" id="demo-sticky-notes" checked>
+            Add annotation sticky notes
+          </label>
+          <p class="demo-spoiler-note">⚠ Demos marked * contain spoilers.</p>
+          <div class="demo-row">
+            <button class="demo-btn tpl-btn" data-arc="snm_seeker">Sleep No More — Seeker *</button>
+            <button class="demo-btn tpl-btn" data-arc="latitude">House of the Latitude *</button>
+            <button class="demo-btn tpl-btn" data-arc="the_game">The Game (Fincher) *</button>
+            <button class="demo-btn tpl-btn" data-arc="meow_wolf">Meow Wolf</button>
+            <button class="demo-btn tpl-btn" data-arc="then_she_fell">Then She Fell</button>
+            <button class="demo-btn tpl-btn" data-arc="jejune_institute">The Jejune Institute *</button>
+            <button class="demo-btn tpl-btn" data-arc="ymbt">You Me Bum Bum Train</button>
+            <button class="demo-btn tpl-btn" data-arc="westworld">Westworld S1 *</button>
+          </div>
+
+          <h3>How to use this tool</h3>
+          <ol class="miro-only">
+            <li>Browse the <strong>Plays</strong> tab to find plays. Click a play to expand its metadata. Drag or click the ⠿ handle to add it as a card on the board.</li>
+            <li>Arrange cards <strong>left → right</strong> in arc order.</li>
+            <li>Select cards (or leave none selected to use all) and click <strong>Check Arc</strong> to validate the sequence.</li>
+            <li>In the <strong>Analyze</strong> tab, expand the Profile section to set up a participant profile, then click <strong>Analyze for Profile</strong> to score each play. Click any play name in the results to jump back to its library entry.</li>
+          </ol>
+          <ol class="standalone-only">
+            <li>Browse the <strong>Plays</strong> tab to find plays. Click to expand any play's metadata.</li>
+            <li>Type or paste play IDs into the arc input, one per line — or load a demo arc above.</li>
+            <li>Click <strong>Check Arc</strong> to validate the sequence against the linter rules.</li>
+            <li>In the <strong>Analyze</strong> tab, load a participant profile, then click <strong>Analyze for Profile</strong> to score each beat.</li>
+          </ol>
+
+          <h3>Card titles</h3>
+          <p>Start the title with the play name — capitalisation and spaces are fine. Anything after a dash, bracket, or other separator is ignored: <code>Certified Mail — day 3</code>, <code>certified_mail (act 1)</code>.</p>
+
+          <h3>Optional card metadata</h3>
+          <p>Add any of these to the card's <strong>description</strong> field, space-separated:</p>
+          <table class="help-table">
+            <thead><tr><th>Key</th><th>Example</th><th>What it does</th></tr></thead>
+            <tbody>
+              <tr><td><code>phase</code></td><td><code>phase=b</code></td><td>Arc phase hint (pre/build/esc/thresh/climax/reveal/close)</td></tr>
+              <tr><td><code>day</code></td><td><code>day=21</code></td><td>Calendar day (for lead time checks)</td></tr>
+              <tr><td><code>gm</code></td><td><code>gm=e</code></td><td>Group mode override (solo/ensemble/lottery)</td></tr>
+              <tr><td><code>ep</code></td><td><code>ep=0.15</code></td><td>Expected participation rate (0–1)</td></tr>
+              <tr><td><code>early_exit</code></td><td><code>early_exit=graceful_release</code></td><td>Graceful close play for initiation arcs</td></tr>
+            </tbody>
+          </table>
+
+          <h3>Arc types</h3>
+          <p>
+            <strong>Investigation</strong> — participant discovers a hidden truth<br>
+            <strong>Initiation</strong> — threshold crossing; must define an early exit<br>
+            <strong>Persecution</strong> — participant is pursued or tested<br>
+            <strong>Reckoning</strong> — confrontation with something from the past<br>
+            <strong>Conspiracy</strong> — uncovering a hidden structure<br>
+            <strong>Test</strong> — skill or courage ordeal
+          </p>
+
+          <h3>Pacing (beat types)</h3>
+          <table class="help-table">
+            <thead><tr><th>Type</th><th>What it means</th></tr></thead>
+            <tbody>
+              <tr><td>Ramp</td><td>Build tension — increases stakes gradually</td></tr>
+              <tr><td>Spike</td><td>High-intensity peak — the moments that matter most</td></tr>
+              <tr><td>Hold</td><td>Dwell — let the experience settle</td></tr>
+              <tr><td>Rest</td><td>Decompress — release tension before the next build</td></tr>
+              <tr><td>Transition</td><td>Frame shift — move between registers</td></tr>
+              <tr><td>Liminal</td><td>Threshold crossing — always lands (mask, ceremony)</td></tr>
+            </tbody>
+          </table>
+
+        </div>
+      </section>
+
+    </main>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

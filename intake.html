@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Intake</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #1a1a1a;
+    background: #f5f4f0;
+    min-height: 100vh;
+  }
+
+  .shell {
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 32px 24px 80px;
+  }
+
+  h1 {
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: -0.3px;
+    margin-bottom: 4px;
+  }
+
+  .subtitle {
+    font-size: 12px;
+    color: #888;
+    margin-bottom: 28px;
+  }
+
+  /* Tabs */
+  .tabs {
+    display: flex;
+    gap: 2px;
+    margin-bottom: 28px;
+    border-bottom: 1px solid #ddd;
+  }
+  .tab {
+    padding: 8px 18px;
+    font-size: 13px;
+    cursor: pointer;
+    border: none;
+    background: none;
+    color: #888;
+    border-bottom: 2px solid transparent;
+    margin-bottom: -1px;
+    transition: color 0.15s;
+  }
+  .tab:hover { color: #333; }
+  .tab.active { color: #1a1a1a; border-bottom-color: #1a1a1a; font-weight: 500; }
+
+  .panel { display: none; }
+  .panel.active { display: block; }
+
+  /* Sections */
+  .section {
+    margin-bottom: 36px;
+  }
+  .section-label {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    color: #888;
+    margin-bottom: 16px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #e0e0e0;
+  }
+
+  /* Questions */
+  .q {
+    margin-bottom: 22px;
+  }
+  .q-label {
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 8px;
+    color: #1a1a1a;
+  }
+  .q-label span.qnum {
+    color: #aaa;
+    font-weight: 400;
+    margin-right: 4px;
+  }
+  .q-note {
+    font-size: 11px;
+    color: #aaa;
+    margin-bottom: 8px;
+    font-style: italic;
+  }
+
+  /* Radio / checkbox options */
+  .options {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .option {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    cursor: pointer;
+  }
+  .option input[type="radio"],
+  .option input[type="checkbox"] {
+    margin-top: 2px;
+    flex-shrink: 0;
+    accent-color: #1a1a1a;
+    width: 14px;
+    height: 14px;
+    cursor: pointer;
+  }
+  .option-text {
+    font-size: 13px;
+    color: #333;
+    line-height: 1.5;
+  }
+
+  /* Scale */
+  .scale {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .scale label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    cursor: pointer;
+    font-size: 11px;
+    color: #888;
+  }
+  .scale input[type="radio"] {
+    accent-color: #1a1a1a;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+  }
+  .scale-caps {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    font-size: 11px;
+    color: #aaa;
+    flex-wrap: wrap;
+  }
+  .scale-caps span { padding: 0 2px; }
+
+  /* Textarea */
+  textarea {
+    width: 100%;
+    min-height: 72px;
+    padding: 10px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 13px;
+    font-family: inherit;
+    color: #1a1a1a;
+    background: #fff;
+    resize: vertical;
+    transition: border-color 0.15s;
+    line-height: 1.5;
+  }
+  textarea:focus {
+    outline: none;
+    border-color: #888;
+  }
+
+  /* Short text */
+  input[type="text"] {
+    width: 100%;
+    padding: 9px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 13px;
+    font-family: inherit;
+    color: #1a1a1a;
+    background: #fff;
+    transition: border-color 0.15s;
+  }
+  input[type="text"]:focus { outline: none; border-color: #888; }
+
+  /* Actions */
+  .actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 36px;
+    flex-wrap: wrap;
+  }
+  button.primary {
+    padding: 10px 20px;
+    background: #1a1a1a;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.15s;
+  }
+  button.primary:hover { background: #333; }
+  button.secondary {
+    padding: 10px 20px;
+    background: #fff;
+    color: #1a1a1a;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 13px;
+    cursor: pointer;
+    transition: border-color 0.15s;
+  }
+  button.secondary:hover { border-color: #888; }
+
+  .save-note {
+    font-size: 11px;
+    color: #aaa;
+    margin-top: 8px;
+  }
+  #save-status {
+    font-size: 11px;
+    color: #888;
+    margin-top: 6px;
+    min-height: 16px;
+    transition: opacity 0.3s;
+  }
+</style>
+</head>
+<body>
+<div class="shell">
+  <h1>Intake</h1>
+  <div class="subtitle">Participant profiling — saves to browser automatically</div>
+
+  <div class="tabs">
+    <button class="tab active" onclick="switchTab('sponsor', this)">Pass 1 — Sponsor</button>
+    <button class="tab" onclick="switchTab('participant', this)">Pass 2 — Participant</button>
+  </div>
+
+  <!-- ───────────────── SPONSOR FORM ───────────────── -->
+  <div id="panel-sponsor" class="panel active">
+
+    <div class="section">
+      <div class="section-label">A — Basics</div>
+
+      <div class="q">
+        <div class="q-label"><span class="qnum">A1</span>Your name and relationship to the recipient.</div>
+        <input type="text" data-key="s_a1" placeholder="e.g. Jamie Chen — older sibling">
+      </div>
+
+      <div class="q">
+        <div class="q-label"><span class="qnum">A2</span>Recipient's name. Age (approximate). City / region.</div>
+        <input type="text" data-key="s_a2" placeholder="e.g. Marcus, ~38, San Francisco">
+      </div>
+
+      <div class="q">
+        <div class="q-label"><span class="qnum">A3</span>How long have you known them, and how did you meet?</div>
+        <textarea data-key="s_a3" rows="2"></textarea>
+      </div>
+
+      <div class="q">
+        <div class="q-label"><span class="qnum">A4</span>How well do you know their inner life — not just preferences, but how they actually process things?</div>
+        <div class="scale-caps">
+          <span>1 acquaintance</span>
+          <div class="scale">
+            <label><input type="radio" name="s_a4" value="1" data-key="s_a4"> 1</label>
+            <label><input type="radio" name="s_a4" value="2" data-key="s_a4"> 2</label>
+            <label><input type="radio" name="s_a4" value="3" data-key="s_a4"> 3</label>
+            <label><input type="radio" name="s_a4" value="4" data-key="s_a4"> 4</label>
+            <label><input type="radio" name="s_a4" value="5" data-key="s_a4"> 5</label>
+          </div>
+          <span>5 finish their sentences</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-label">B — Their World</div>
+
+      <div class="q">
+        <div class="q-label"><span class="qnum">B1</span>Describe how they actually spend their time — work, what they do when they're not working, who they're around. Be concrete.</div>
+        <textarea data-key="s_b1" rows="4" placeholder="A paragraph. Specifics are more useful than categories."></textarea>
+      </div>
+
+      <div class="q">
+        <div class="q-label"><span class="qnum">B2</span>Their social world — how many people, how close, how central is it to them? Has that changed in the last few years?</div>
+        <textarea data-key="s_b2" rows="2"></textarea>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-label">C — How They Move</div>
+      <div class="q-note" style="margin-bottom:12px; color:#666;">For each question, predict their behavior — not what they'd say about themselves, but what they actually do.</div>
+
+      <div class="q">
+        <div class="q-label"><span class="qnum">C1</span>When unexpected changes occur in plans they were looking forward to, they typically:</div>
+        <div class="options">
+          <label class="option"><input type="radio" name="s_c1" value="adapt" data-key="s_c1"><span class="option-text">Adapt quickly — find something good in the new plan</span></label>
+          <label class="option"><input type="radio" name="s_c1" value="adjust" data-key="s_c1"><span class="option-text">Need a beat to adjust, but get there — mild disruption, not lasting</span></label>
+          <label class="option"><input type="radio" name="s_c1" value="difficult" data-key="s_c1"><span class="option-text">Find it genuinely difficult — the disruption lingers for a day or more</span></label>
+          <label class="option"><input type="radio" name="s_c1" value="depends" data-key="s_c1"><span class="option-text">Depends heavily on how invested they were in the original plan</span></label>
+        </div>
+      </div>
+
+      <div class="q">
+        <div class="q-label"><span class="qnum">C2</span>When they encounter something they can't explain — an odd coincidence, a gap in someone's story, an anomaly — their most natural response:</div>
+        <div class="options">
+          <label class="option"><input type="radio" name="s_c2" value="nagged" data-key="s_c2"><span class="option-text">Tried to find an explanation — it nagged at them until they did</span></label>
+          <label class="option"><input type="radio" name="s_c2" value="noted" data-key="s_c2"><span class="option-text">Noted it and moved on without much concern</span></label>
+          <label class="option"><input type="radio" name="s_c2" value="excited" data-key="s_c2"><span class="option-text">Got actively excited about the mystery</span></label>
+          <label class="option"><input type="radio" name="s_c2" value="uncomfortable" data-key="s_c2"><span class="option-text">Felt uncomfortable until it resolved somehow</span></label>
+        </div>
+      </div>
+
+      <div class="q">
+        <div class="q-label"><span class="qnum">C3</span>If they received a handwritten letter addressed to them with no return address, their most likely first move:</div>
+        <div class="options">
+          <label class="option"><input type="radio" name="s_c3" value="open" data-key="s_c3"><span class="option-text">Open it immediately and read everything</span></label>
+          <label class="option"><input type="radio" name="s_c3" value="clues" data-key="s_c3"><span class="option-text">Look for clues about the sender before opening</span></label>
+          <label class="option"><input type="radio" name="s_c3" value="someone" data-key="s_c3"><span class="option-text">Show it to someone close before opening</span></label>
+          <label class="option"><input type="radio" name="s_c3" value="aside" data-key="s_c3"><span class="option-text">Set it aside — come back to it when the moment is right</span></label>
+          <label class="option"><input type="radio" name="s_c3" value="unnerved" data-key="s_c3"><span class="option-text">Feel genuinely unnerved — not sure they want to open it at all</span></label>
+        </div>
+      </div>
+
+      <div class="q">
+        <div class="q-label"><span class="qnum">C4</span>When given complex instructions for something they want to do:</div>
+        <div class="options">
+          <label class="option"><input type="radio" name="s_c4" value="read_all" data-key="s_c4"><span class="option-text">Read everything carefully before starting — they want the full picture</span></label>
+          <label class="option"><input type="radio" name="s_c4" value="skim" data-key="s_c4"><span class="option-text">Skim for key information, then dive in and figure it out</span></label>
+          <label class="option"><input type="radio" name="s_c4" value="start" data-key="s_c4"><span class="option-text">Start immediately and consult instructions only when stuck</span></label>
+          <label class="option"><input type="radio" name="s_c4" value="ask" data-key="s_c4"><span class="option-text">Ask someone to explain it rather than reading</span></label>
+        </div>
+      </div>
+
+      <div class="q">
+        <div class="q-label"><span class="qnum">C5</span>In disagreements with authority — managers, institutions, officials — their natural posture:</div>
+        <div class="options">
+          <label class="option"><input type="radio" name="s_c5" value="defer" data-key="s_c5"><span class="option-text">Defer — they generally trust that systems work for a reason</span></label>
+          <label class="option"><input type="radio" name="s_c5" value="comply_reservations" data-key="s_c5"><span class="option-text">Comply outwardly but maintain private reservations</span></label>
+          <label class="option"><input type="radio" name="s_c5" value="push_back" data-key="s_c5"><span class="option-text">Push back — they'd rather say what they think, even if it costs something</span></label>
+          <label class="option"><input type="radio" name="s_c5" value="case_by_case" data-key="s_c5"><span class="option-text">Assess case-by-case — depends on whether they respect the authority</span></label>
+        </div>
+      </div>
+
+      <div class="q">
+        <div class="q-label"><span class="qnum">C6</span>After a day of significant social interaction — meetings, gatherings, conversations:</div>
+        <div class="options">
+          <label class="option"><input type="radio" name="s_c6" value="energized" data-key="s_c6"><span class="option-text">Energized — they want more; social time fills them up</span></label>
+          <label class="option"><input type="radio" name="s_c6" value="satisfied" data-key="s_c6"><span class="option-text">Satisfied — good day, now ready to wind down</span></label>
+          <label class="option"><input type="radio" name="s_c6" value="drained" data-key="s_c6"><span class="option-text">Drained — they need alone time to recover, even from good interactions</span></label>
+          <label class="option"><input type="radio" name="s_c6" value="meaningful" data-key="s_c6"><span class="option-text">Depends entirely on whether the interactions felt meaningful</span></label>
+        </div>
+      </div>
+
+      <div class="q">
+        <div class="q-label"><span class="qnum">C7</span>When they've committed to something and it becomes clear it's not working:</div>
+        <div class="options">
+          <label class="option"><input type="radio" name="s_c7" value="persist" data-key="s_c7"><span class="option-text">Persist and try harder — they believe in seeing things through</span></label>
+          <label class="option"><input type="radio" name="s_c7" value="struggle" data-key="s_c7"><span class="option-text">Acknowledge it but struggle to let go — pivoting is uncomfortable</span></label>
+          <label class="option"><input type="radio" name="s_c7" value="assess" data-key="s_c7"><span class="option-text">Assess the evidence and pivot when it's clearly not serving them</span></label>
+          <label class="option"><input type="radio" name="s_c7" value="exit" data-key="s_c7"><span class="option-text">Exit relatively quickly once the signal is there</span></label>
+        </div>
+      </div>
+
+      <div class="q">
+        <div class="q-label"><span class="qnum">C8</span>Their general relationship to risk — financial, physical, social:</div>
+        <div class="options">
+          <label class="option"><input type="radio" name="s_c8" value="research" data-key="s_c8"><span class="option-text">They research before committing — they want to know what they're getting into</span></label>
+          <label class="option"><input type="radio" name="s_c8" value="calculated" data-key="s_c8"><span class="option-text">They'll take a calculated bet — risk is fine if the logic holds up</span></label>
+          <label class="option"><input type="radio" name="s_c8" value="toward" data-key="s_c8"><span class="option-text">They move toward uncertainty — the unknown is often part of the appeal</span></label>
+          <label class="option"><input type="radio" name="s_c8" value="domain" data-key="s_c8"><span class="option-text">Domain-dependent — careful in some areas, quite willing to risk in others</span></label>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-label">D — What Moves Them</div>
+
+      <div class="q">
+        <div class="q-label"><span class="qnum">D1</span>Describe a specific moment they found genuinely moving or profound — not a category of things, an actual instance. What happened, and how did they respond?</div>
+        <textarea data-key="s_d1" rows="4" placeholder="A specific story. 'They love music' is not this — 'when X happened and they did Y' is."></textarea>
+      </div>
+
+      <div class="q">
+        <div class="q-label"><span class="qnum">D2</span>What subjects or domains does their curiosity run deepest?</div>
+        <textarea data-key="s_d2" rows="2" placeholder="2–3 sentences"></textarea>
+      </div>
+
+      <div class="q">
+        <div class="q-label"><span class="qnum">D3</span>Is there a story — from their life, from fiction, from history — that they return to, reference often, or that means something to them?</div>
+        <textarea data-key="s_d3" rows="2"></textarea>
+      </div>
+
+      <div class="q">
+        <div class="q-label"><span class="qnum">D4</span>What would they most want to be seen as, by people who know them well?</div>
+        <div class="options">
+          <label class="option"><input type="radio" name="s_d4" value="dependable" data-key="s_d4"><span class="option-text">Dependable — someone who follows through</span></label>
+          <label class="option"><input type="radio" name="s_d4" value="perceptive" data-key="s_d4"><span class="option-text">Perceptive — someone who sees what others miss</span></label>
+          <label class="option"><input type="radio" name="s_d4" value="creative" data-key="s_d4"><span class="option-text">Creative — someone who makes things that didn't exist</span></label>
+          <label class="option"><input type="radio" name="s_d4" value="influential" data-key="s_d4"><span class="option-text">Influential — someone whose thinking or work matters</span></label>
+          <label class="option"><input type="radio" name="s_d4" value="good" data-key="s_d4"><span class="option-text">Good — someone of integrity and care</span></label>
+          <label class="option"><input type="radio" name="s_d4" value="interesting" data-key="s_d4"><span class="option-text">Interesting — someone with a specific and irreplaceable point of view</span></label>
+          <label class="option"><input type="radio" name="s_d4" value="brave" data-key="s_d4"><span class="option-text">Brave — someone who does hard things</span></label>
+        </div>
+        <div style="margin-top:8px;">
+          <input type="text" data-key="s_d4_other" placeholder="Or describe — something else">
+        </div>
+      </div>
+
+      <div class="q">
+        <div class="q-label"><span class="qnum">D4b</span>And which of these would they most reject? The one that would make them say "that's not me."</div>
+        <div class="options">
+          <label class="option"><input type="radio" name="s_d4b" value="dependable" data-key="s_d4b"><span class="option-text">Dependable</span></label>
+          <label class="option"><input type="radio" name="s_d4b" value="perceptive" data-key="s_d4b"><span class="option-text">Perceptive</span></label>
+          <label class="option"><input type="radio" name="s_d4b" value="creative" data-key="s_d4b"><span class="option-text">Creative</span></label>
+          <label class="option"><input type="radio" name="s_d4b" value="influential" data-key="s_d4b"><span class="option-text">Influential</span></label>
+          <label class="option"><input type="radio" name="s_d4b" value="good" data-key="s_d4b"><span class="option-text">Good</span></label>
+          <label class="option"><input type="radio" name="s_d4b" value="interesting" data-key="s_d4b"><span class="option-text">Interesting</span></label>
+          <label class="option"><input type="radio" name="s_d4b" value="brave" data-key="s_d4b"><span class="option-text">Brave</span></label>
+        </div>
+      </div>
+
+      <div class="q">
+        <div class="q-label"><span class="qnum">D5</span>What is [name] definitely not? The personality description or style of engaging with the world that would make them say "that's not me at all."</div>
+        <textarea data-key="s_d5" rows="2"></textarea>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-label">E — Calibration &amp; Limits</div>
+
+      <div class="q">
+        <div class="q-label"><span class="qnum">E1</span>What do you want them to be able to do, feel, or understand after this experience that they can't — or don't — right now?</div>
+        <div class="q-note">Most important question on this form. Be as specific as you can — "feel better" is not enough.</div>
+        <textarea data-key="s_e1" rows="3" placeholder='e.g. "Make a decision she has been avoiding for two years" or "Believe his work actually matters"'></textarea>
+      </div>
+
+      <div class="q">
+        <div class="q-label"><span class="qnum">E2</span>Is there anything that would be particularly wrong for them? Content, contexts, types of experience to categorically avoid.</div>
+        <textarea data-key="s_e2" rows="3" placeholder="Consider: physical intensity; strangers contacting them directly; workplace scenarios; family references; financial content; loss or grief; religious or political themes; anything that would feel like surveillance"></textarea>
+      </div>
+
+      <div class="q">
+        <div class="q-label"><span class="qnum">E3</span>What's happening in their life right now that we should know about?</div>
+        <textarea data-key="s_e3" rows="2" placeholder="Stressors, transitions, ongoing projects, live relationships"></textarea>
+      </div>
+
+      <div class="q">
+        <div class="q-label"><span class="qnum">E4</span>Setting aside the transformation you described above — what shape of experience would feel exactly right for them? Not the outcome, but the form: the setting, the pace, the degree of involvement.</div>
+        <textarea data-key="s_e4" rows="2" placeholder="e.g. something slow and epistolary, something physical, something that happens in their actual city"></textarea>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-label">F — Free Recall</div>
+
+      <div class="q">
+        <div class="q-label"><span class="qnum">F1</span>Describe a time they were genuinely surprised by something in their own life — not just a nice surprise, but something that shifted their perspective or expectation. What happened, and how did they respond?</div>
+        <textarea data-key="s_f1" rows="4"></textarea>
+      </div>
+
+      <div class="q">
+        <div class="q-label"><span class="qnum">F2</span>What's something they've wanted for a long time but haven't moved toward?</div>
+        <textarea data-key="s_f2" rows="2"></textarea>
+      </div>
+
+      <div class="q">
+        <div class="q-label"><span class="qnum">F3</span>What would constitute a genuinely perfect gift for them — not an object, but an experience? Your own best guess at what they'd want most.</div>
+        <textarea data-key="s_f3" rows="2"></textarea>
+      </div>
+
+      <div class="q">
+        <div class="q-label"><span class="qnum">F4</span>Describe a time they were wrong about something — and how they handled it.</div>
+        <textarea data-key="s_f4" rows="3" placeholder="A specific instance. How they respond to being wrong is more useful than whether they have been."></textarea>
+      </div>
+    </div>
+
+    <div class="actions">
+      <button class="primary" onclick="exportJSON('sponsor')">Export sponsor JSON</button>
+      <button class="secondary" onclick="clearForm('sponsor')">Clear</button>
+    </div>
+    <div id="save-status-sponsor" class="save-note"></div>
+
+  </div><!-- end panel-sponsor -->
+
+
+  <!-- ───────────────── PARTICIPANT FORM ───────────────── -->
+  <div id="panel-participant" class="panel">
+
+    <div class="section">
+      <div class="section-label">Context</div>
+      <div class="q">
+        <div class="q-label">Participant name</div>
+        <input type="text" data-key="p_name" placeholder="Name">
+      </div>
+      <div class="q">
+        <div class="q-label">Arc type framing</div>
+        <div class="q-note">Sets the cover story for this form. (For your records — not shown to participant.)</div>
+        <div class="options">
+          <label class="option"><input type="radio" name="p_arc" value="investigation" data-key="p_arc"><span class="option-text">Investigation — preference calibration for a personalized investigation experience</span></label>
+          <label class="option"><input type="radio" name="p_arc" value="initiation" data-key="p_arc"><span class="option-text">Initiation — application / vetting questionnaire</span></label>
+          <label class="option"><input type="radio" name="p_arc" value="conspiracy" data-key="p_arc"><span class="option-text">Conspiracy — security clearance / compatibility assessment</span></label>
+          <label class="option"><input type="radio" name="p_arc" value="test" data-key="p_arc"><span class="option-text">Test — readiness assessment</span></label>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-label">P — Participant Questions</div>
+
+      <div class="q">
+        <div class="q-label"><span class="qnum">P1</span>When you encounter a story — in fiction, in a film, in real life — that you find genuinely compelling, what makes it compelling?</div>
+        <div class="options">
+          <label class="option"><input type="radio" name="p_p1" value="mystery" data-key="p_p1"><span class="option-text">The mystery — I want to know what happened and why</span></label>
+          <label class="option"><input type="radio" name="p_p1" value="character" data-key="p_p1"><span class="option-text">The character — I care about what happens to a specific person</span></label>
+          <label class="option"><input type="radio" name="p_p1" value="stakes" data-key="p_p1"><span class="option-text">The stakes — something important is genuinely at risk</span></label>
+          <label class="option"><input type="radio" name="p_p1" value="ideas" data-key="p_p1"><span class="option-text">The ideas — it makes me think differently about something real</span></label>
+          <label class="option"><input type="radio" name="p_p1" value="texture" data-key="p_p1"><span class="option-text">The texture — I want to feel inside the world; sensation and atmosphere matter more than meaning</span></label>
+          <label class="option"><input type="radio" name="p_p1" value="surprise" data-key="p_p1"><span class="option-text">The surprise — I didn't see it coming and it changed my understanding</span></label>
+        </div>
+      </div>
+
+      <div class="q">
+        <div class="q-label"><span class="qnum">P2</span>When you're receiving something important — a briefing, an explanation, a decision — which of these sounds <em>least</em> like how you want it delivered?</div>
+        <div class="options">
+          <label class="option"><input type="radio" name="p_p2" value="headline" data-key="p_p2"><span class="option-text">The headline first, details only if I ask — I'll decide what I need to know</span></label>
+          <label class="option"><input type="radio" name="p_p2" value="context_first" data-key="p_p2"><span class="option-text">Full context before the point — I want to understand before I respond</span></label>
+          <label class="option"><input type="radio" name="p_p2" value="show_me" data-key="p_p2"><span class="option-text">Show me, let me arrive at it — don't explain what I haven't seen yet</span></label>
+          <label class="option"><input type="radio" name="p_p2" value="ask_questions" data-key="p_p2"><span class="option-text">Let me ask my own questions — I'll drive the conversation</span></label>
+        </div>
+      </div>
+
+      <div class="q">
+        <div class="q-label"><span class="qnum">P3</span>Think of someone you trust completely. How did you know you could trust them?</div>
+        <textarea data-key="p_p3" rows="2" placeholder="A specific person — how it happened, not a general rule"></textarea>
+      </div>
+
+      <div class="q">
+        <div class="q-label"><span class="qnum">P4</span>Something you understood or saw coming before most people around you did.</div>
+        <textarea data-key="p_p4" rows="2" placeholder="1–2 sentences"></textarea>
+      </div>
+
+      <div class="q">
+        <div class="q-label"><span class="qnum">P5</span>Name one experience — a film, book, game, real event — from the last few years that genuinely affected you and has stayed with you.</div>
+        <input type="text" data-key="p_p5_name" placeholder="Name it — one line">
+        <div style="margin-top:12px;">
+          <div class="q-label" style="font-size:12px; color:#555; margin-bottom:6px;">What made it stay?</div>
+          <div class="options">
+            <label class="option"><input type="radio" name="p_p5" value="unsettled" data-key="p_p5"><span class="option-text">It unsettled me — pushed me somewhere I didn't expect; the discomfort was the point</span></label>
+            <label class="option"><input type="radio" name="p_p5" value="wonder" data-key="p_p5"><span class="option-text">It filled me with wonder — the world got larger; I felt awed</span></label>
+            <label class="option"><input type="radio" name="p_p5" value="rewired" data-key="p_p5"><span class="option-text">It rewired how I think — I understood something differently afterward</span></label>
+            <label class="option"><input type="radio" name="p_p5" value="opened" data-key="p_p5"><span class="option-text">It opened me emotionally — I felt connected, raw, moved</span></label>
+            <label class="option"><input type="radio" name="p_p5" value="activated" data-key="p_p5"><span class="option-text">It activated me — something was at stake and I felt it</span></label>
+          </div>
+        </div>
+      </div>
+
+      <div class="q">
+        <div class="q-label"><span class="qnum">P6</span>Is there anything you'd want us to know before we begin — hard limits, contexts to avoid, or anything that should not come near this?</div>
+        <textarea data-key="p_p6_limits" rows="2" placeholder="Optional — but read carefully if filled"></textarea>
+      </div>
+
+      <div class="q">
+        <div class="q-label"><span class="qnum">P7</span>Of these descriptions, which sounds <em>least</em> like you?</div>
+        <div class="options">
+          <label class="option"><input type="radio" name="p_p7" value="dependable" data-key="p_p7"><span class="option-text">Dependable — someone who follows through</span></label>
+          <label class="option"><input type="radio" name="p_p7" value="perceptive" data-key="p_p7"><span class="option-text">Perceptive — someone who sees what others miss</span></label>
+          <label class="option"><input type="radio" name="p_p7" value="creative" data-key="p_p7"><span class="option-text">Creative — someone who makes things that didn't exist</span></label>
+          <label class="option"><input type="radio" name="p_p7" value="influential" data-key="p_p7"><span class="option-text">Influential — someone whose thinking or work matters</span></label>
+          <label class="option"><input type="radio" name="p_p7" value="good" data-key="p_p7"><span class="option-text">Good — someone of integrity and care</span></label>
+          <label class="option"><input type="radio" name="p_p7" value="interesting" data-key="p_p7"><span class="option-text">Interesting — someone with a specific and irreplaceable point of view</span></label>
+          <label class="option"><input type="radio" name="p_p7" value="brave" data-key="p_p7"><span class="option-text">Brave — someone who does hard things</span></label>
+        </div>
+      </div>
+    </div>
+
+    <div class="actions">
+      <button class="primary" onclick="exportJSON('participant')">Export participant JSON</button>
+      <button class="secondary" onclick="clearForm('participant')">Clear</button>
+    </div>
+    <div id="save-status-participant" class="save-note"></div>
+
+  </div><!-- end panel-participant -->
+
+</div><!-- end shell -->
+
+<script>
+// ── storage ──────────────────────────────────────────────────────────────────
+
+const STORE_KEY = 'intake_v1';
+
+function load() {
+  try { return JSON.parse(localStorage.getItem(STORE_KEY) || '{}'); }
+  catch(e) { return {}; }
+}
+
+function save(data) {
+  localStorage.setItem(STORE_KEY, JSON.stringify(data));
+}
+
+// ── init ─────────────────────────────────────────────────────────────────────
+
+function init() {
+  const data = load();
+
+  // Restore text inputs + textareas
+  document.querySelectorAll('[data-key]').forEach(el => {
+    const key = el.dataset.key;
+    const val = data[key];
+    if (val === undefined) return;
+    if (el.type === 'radio' || el.type === 'checkbox') {
+      if (el.value === val) el.checked = true;
+    } else {
+      el.value = val;
+    }
+  });
+
+  // Attach listeners
+  document.querySelectorAll('[data-key]').forEach(el => {
+    const evt = (el.type === 'radio' || el.type === 'checkbox') ? 'change' : 'input';
+    el.addEventListener(evt, () => {
+      const d = load();
+      if (el.type === 'radio' || el.type === 'checkbox') {
+        if (el.checked) d[el.dataset.key] = el.value;
+      } else {
+        d[el.dataset.key] = el.value;
+      }
+      save(d);
+    });
+  });
+}
+
+// ── tabs ──────────────────────────────────────────────────────────────────────
+
+function switchTab(name, btn) {
+  document.querySelectorAll('.panel').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+  document.getElementById('panel-' + name).classList.add('active');
+  btn.classList.add('active');
+}
+
+// ── export ────────────────────────────────────────────────────────────────────
+
+function exportJSON(which) {
+  const data = load();
+  const prefix = which === 'sponsor' ? 's_' : 'p_';
+  const out = { _form: which, _exported: new Date().toISOString() };
+  Object.keys(data).forEach(k => {
+    if (k.startsWith(prefix)) out[k] = data[k];
+  });
+
+  const blob = new Blob([JSON.stringify(out, null, 2)], { type: 'application/json' });
+  const url  = URL.createObjectURL(blob);
+  const a    = document.createElement('a');
+  const name = data[(which === 'sponsor' ? 's_a2' : 'p_name')] || which;
+  // extract first word as filename fragment
+  const slug = name.trim().split(/\s+/)[0].toLowerCase().replace(/[^a-z0-9]/g,'') || which;
+  a.href     = url;
+  a.download = `intake_${which}_${slug}.json`;
+  a.click();
+  URL.revokeObjectURL(url);
+}
+
+// ── clear ─────────────────────────────────────────────────────────────────────
+
+function clearForm(which) {
+  if (!confirm('Clear all ' + which + ' answers?')) return;
+  const data = load();
+  const prefix = which === 'sponsor' ? 's_' : 'p_';
+  Object.keys(data).forEach(k => { if (k.startsWith(prefix)) delete data[k]; });
+  save(data);
+
+  document.querySelectorAll('[data-key]').forEach(el => {
+    if (!el.dataset.key.startsWith(prefix)) return;
+    if (el.type === 'radio' || el.type === 'checkbox') el.checked = false;
+    else el.value = '';
+  });
+}
+
+// ── run ───────────────────────────────────────────────────────────────────────
+init();
+</script>
+</body>
+</html>

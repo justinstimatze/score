@@ -1,0 +1,2760 @@
+{
+  "certified_mail": [
+    "significance_quest",
+    "obedience_authority",
+    "curiosity_exploration"
+  ],
+  "informed_delivery_gap": [
+    "anticipation",
+    "duality",
+    "priming",
+    "behavioral_inhibition_activation",
+    "cognitive_dissonance",
+    "affective_priming"
+  ],
+  "notarized_doc": [
+    "obedience_authority",
+    "significance_quest",
+    "trust_formation"
+  ],
+  "llc_registration": [
+    "social_proof",
+    "trust_formation"
+  ],
+  "mailbox_address": [
+    "social_proof",
+    "trust_formation"
+  ],
+  "wax_seal": [
+    "significance_quest",
+    "novelty",
+    "priming",
+    "curiosity_exploration"
+  ],
+  "classified_doc_aesthetic": [
+    "obedience_authority",
+    "significance_quest",
+    "curiosity_exploration"
+  ],
+  "osint_personalization": [
+    "hypervigilance",
+    "significance_quest",
+    "curiosity_exploration"
+  ],
+  "local_area_code": [
+    "mere_exposure_effect",
+    "trust_formation"
+  ],
+  "voicemail_drop": [
+    "significance_quest",
+    "hypervigilance",
+    "curiosity_exploration"
+  ],
+  "micro_transaction": [
+    "reciprocity",
+    "commitment_consistency",
+    "reality_threshold_crossing",
+    "cognitive_dissonance"
+  ],
+  "matched_prefix": [
+    "hypervigilance",
+    "uncanny_recognition"
+  ],
+  "implied_prior_relationship": [
+    "hypervigilance",
+    "hot_cold_empathy_gap",
+    "curiosity_exploration"
+  ],
+  "planted_object": [
+    "hypervigilance",
+    "significance_quest",
+    "curiosity_exploration",
+    "territorial_instinct",
+    "proxemics_personal_space"
+  ],
+  "accidental_transmission": [
+    "curiosity_exploration",
+    "confirmation_bias",
+    "significance_quest"
+  ],
+  "real_domain": [
+    "social_proof",
+    "trust_formation",
+    "curiosity_exploration"
+  ],
+  "classified_ad": [
+    "curiosity_exploration",
+    "significance_quest"
+  ],
+  "physical_dead_drop": [
+    "hypervigilance",
+    "curiosity_exploration",
+    "you_ve_been_found"
+  ],
+  "qr_code": [
+    "curiosity_exploration",
+    "commitment_consistency"
+  ],
+  "annotation_layer": [
+    "curiosity_exploration",
+    "social_proof",
+    "significance_quest"
+  ],
+  "linkedin_character": [
+    "social_proof",
+    "trust_formation",
+    "parasocial_attachment"
+  ],
+  "google_maps": [
+    "social_proof",
+    "trust_formation"
+  ],
+  "press_release": [
+    "social_proof",
+    "illusory_truth_effect"
+  ],
+  "aged_social_media": [
+    "social_proof",
+    "parasocial_attachment",
+    "trust_formation"
+  ],
+  "ai_generated_face": [
+    "mere_exposure_effect",
+    "trust_formation"
+  ],
+  "reddit_history": [
+    "social_proof",
+    "curiosity_exploration",
+    "parasocial_attachment"
+  ],
+  "github_repo": [
+    "curiosity_exploration",
+    "social_proof",
+    "significance_quest"
+  ],
+  "goodreads_profile": [
+    "parasocial_attachment",
+    "curiosity_exploration"
+  ],
+  "weather_message": [
+    "hypervigilance",
+    "significance_quest"
+  ],
+  "calendar_invite": [
+    "commitment_consistency",
+    "significance_quest"
+  ],
+  "fedex_tracking": [
+    "anticipation",
+    "significance_quest",
+    "curiosity_exploration",
+    "behavioral_inhibition_activation"
+  ],
+  "past_tense_timestamp": [
+    "hypervigilance",
+    "hot_cold_empathy_gap",
+    "significance_quest"
+  ],
+  "timed_delivery": [
+    "significance_quest",
+    "hypervigilance"
+  ],
+  "restaurant_reservation": [
+    "commitment_consistency",
+    "reality_threshold_crossing",
+    "reciprocity",
+    "cognitive_dissonance"
+  ],
+  "briefed_confederate": [
+    "emotional_contagion",
+    "social_proof",
+    "reality_threshold_crossing",
+    "cognitive_dissonance"
+  ],
+  "real_ticket": [
+    "commitment_consistency",
+    "reality_threshold_crossing",
+    "anticipation",
+    "cognitive_dissonance",
+    "behavioral_inhibition_activation"
+  ],
+  "gift_card": [
+    "reciprocity",
+    "commitment_consistency",
+    "reality_threshold_crossing",
+    "cognitive_dissonance"
+  ],
+  "library_hold": [
+    "reciprocity",
+    "curiosity_exploration",
+    "significance_quest"
+  ],
+  "false_ally": [
+    "parasocial_attachment",
+    "trust_formation",
+    "betrayal",
+    "emotional_deepening",
+    "emotional_contagion"
+  ],
+  "ai_phone_agent": [
+    "parasocial_attachment",
+    "trust_formation",
+    "emotional_contagion"
+  ],
+  "voice_clone": [
+    "emotional_contagion",
+    "reality_threshold_crossing",
+    "significance_quest",
+    "cognitive_dissonance"
+  ],
+  "ringless_voicemail": [
+    "significance_quest",
+    "hypervigilance",
+    "curiosity_exploration"
+  ],
+  "video_message": [
+    "parasocial_attachment",
+    "emotional_contagion",
+    "significance_quest"
+  ],
+  "deepfake": [
+    "reality_threshold_crossing",
+    "emotional_contagion",
+    "significance_quest",
+    "cognitive_dissonance"
+  ],
+  "aged_photograph": [
+    "nostalgia",
+    "trust_formation",
+    "significance_quest"
+  ],
+  "polaroid": [
+    "nostalgia",
+    "trust_formation",
+    "significance_quest"
+  ],
+  "torn_journal_page": [
+    "nostalgia",
+    "curiosity_exploration",
+    "parasocial_attachment"
+  ],
+  "newspaper_clipping": [
+    "social_proof",
+    "significance_quest",
+    "curiosity_exploration"
+  ],
+  "redacted_document": [
+    "curiosity_exploration",
+    "need_for_closure",
+    "significance_quest"
+  ],
+  "handwritten_letter": [
+    "parasocial_attachment",
+    "nostalgia",
+    "trust_formation",
+    "emotional_contagion"
+  ],
+  "altered_book": [
+    "nostalgia",
+    "curiosity_exploration",
+    "significance_quest",
+    "parasocial_attachment"
+  ],
+  "wrong_person_contact": [
+    "curiosity_exploration",
+    "significance_quest",
+    "hot_cold_empathy_gap"
+  ],
+  "misdelivered_package": [
+    "curiosity_exploration",
+    "significance_quest",
+    "commitment_consistency"
+  ],
+  "unsolicited_subscription": [
+    "significance_quest",
+    "curiosity_exploration",
+    "commitment_consistency"
+  ],
+  "returned_letter": [
+    "curiosity_exploration",
+    "nostalgia",
+    "significance_quest"
+  ],
+  "vanishing_institution": [
+    "hypervigilance",
+    "disorientation",
+    "isolation",
+    "paranoia_escalation",
+    "cognitive_dissonance"
+  ],
+  "loyalty_program": [
+    "significance_quest",
+    "commitment_consistency",
+    "curiosity_exploration"
+  ],
+  "missed_appointment": [
+    "obedience_authority",
+    "significance_quest",
+    "anxiety",
+    "curiosity_exploration"
+  ],
+  "receipt_unknown_purchase": [
+    "loss_aversion",
+    "curiosity_exploration",
+    "significance_quest"
+  ],
+  "automated_system_call": [
+    "obedience_authority",
+    "significance_quest",
+    "curiosity_exploration"
+  ],
+  "you_ve_been_found": [
+    "hypervigilance",
+    "significance_quest",
+    "fear_then_relief"
+  ],
+  "retroactive_meaning": [
+    "curiosity_exploration",
+    "confirmation_bias",
+    "significance_quest"
+  ],
+  "parallel_threads": [
+    "curiosity_exploration",
+    "significance_quest",
+    "pattern_recognition_satisfaction"
+  ],
+  "nomination_framing": [
+    "need_for_uniqueness",
+    "significance_quest",
+    "curiosity_exploration"
+  ],
+  "dead_mans_switch": [
+    "loss_aversion",
+    "time_pressure",
+    "obedience_authority"
+  ],
+  "incomplete_sequence": [
+    "need_for_closure",
+    "curiosity_exploration",
+    "zeigarnik_effect"
+  ],
+  "profiling_survey": [
+    "commitment_consistency",
+    "compliance",
+    "self_perception"
+  ],
+  "reference_check_play": [
+    "significance_quest",
+    "social_proof",
+    "hypervigilance",
+    "in_group_favoritism"
+  ],
+  "spotify_playlist": [
+    "emotional_contagion",
+    "parasocial_attachment",
+    "nostalgia",
+    "curiosity_exploration"
+  ],
+  "rejection_gambit": [
+    "curiosity_exploration",
+    "ambiguity_tolerance",
+    "false_closure",
+    "significance_quest"
+  ],
+  "false_breakthrough": [
+    "curiosity_exploration",
+    "pattern_completion",
+    "need_for_closure",
+    "reward_escalation"
+  ],
+  "simulated_loss": [
+    "loss_aversion",
+    "fear",
+    "helplessness",
+    "relief",
+    "emotional_deepening",
+    "amygdala_threat_response",
+    "emotional_contagion"
+  ],
+  "fax": [
+    "significance_quest",
+    "novelty",
+    "obedience_authority",
+    "curiosity_exploration"
+  ],
+  "telegram": [
+    "significance_quest",
+    "obedience_authority",
+    "novelty",
+    "urgency",
+    "scarcity_mindset",
+    "curiosity_exploration"
+  ],
+  "real_obituary": [
+    "nostalgia",
+    "grief",
+    "significance_quest",
+    "social_proof",
+    "grief_bereavement"
+  ],
+  "informed_delivery_ridealong": [
+    "behavioral_inhibition_activation",
+    "cognitive_dissonance",
+    "affective_priming",
+    "anticipatory_attention"
+  ],
+  "behavioral_ad": [
+    "social_proof",
+    "legitimacy",
+    "ambient_presence",
+    "disorientation",
+    "obedience_authority",
+    "cognitive_dissonance"
+  ],
+  "llm_contamination": [
+    "legitimacy",
+    "social_proof",
+    "ambient_presence",
+    "disorientation",
+    "obedience_authority",
+    "cognitive_dissonance"
+  ],
+  "search_planted": [
+    "curiosity_exploration",
+    "pattern_completion",
+    "legitimacy",
+    "social_proof",
+    "need_for_closure",
+    "obedience_authority"
+  ],
+  "authenticity_proof": [
+    "trust_formation",
+    "epistemic_surprise",
+    "relief",
+    "reality_threshold_crossing",
+    "cognitive_dissonance",
+    "amygdala_threat_response"
+  ],
+  "ai_disclosure": [
+    "epistemic_uncertainty",
+    "trust_calibration",
+    "curiosity_exploration",
+    "disorientation",
+    "need_for_closure",
+    "trust_formation",
+    "cognitive_dissonance"
+  ],
+  "notification_native": [
+    "significance_quest",
+    "urgency",
+    "ambient_presence",
+    "curiosity_exploration",
+    "scarcity_mindset"
+  ],
+  "ai_character_interface": [
+    "parasocial_attachment",
+    "curiosity_exploration",
+    "trust_formation",
+    "commitment_consistency"
+  ],
+  "personalization_uncanny": [
+    "hypervigilance",
+    "significance_quest",
+    "disorientation",
+    "trust_violation",
+    "cognitive_dissonance"
+  ],
+  "corrupted_familiar": [
+    "hypervigilance",
+    "disorientation",
+    "trust_violation",
+    "need_for_closure",
+    "cognitive_dissonance"
+  ],
+  "absent_record": [
+    "curiosity_exploration",
+    "hypervigilance",
+    "need_for_closure",
+    "disorientation",
+    "cognitive_dissonance"
+  ],
+  "social_graph_leak": [
+    "hypervigilance",
+    "social_proof",
+    "trust_violation",
+    "significance_quest",
+    "cognitive_dissonance"
+  ],
+  "simultaneous_convergence": [
+    "hypervigilance",
+    "disorientation",
+    "significance_quest",
+    "paranoia_escalation",
+    "cognitive_dissonance"
+  ],
+  "hyperlocal_civic": [
+    "hypervigilance",
+    "territorial_instinct",
+    "significance_quest",
+    "disorientation",
+    "proxemics_personal_space",
+    "cognitive_dissonance"
+  ],
+  "real_system_entry": [
+    "legitimacy",
+    "social_proof",
+    "disorientation",
+    "obedience_authority",
+    "cognitive_dissonance"
+  ],
+  "retroactive_recontextualization": [
+    "significance_quest",
+    "hypervigilance",
+    "disorientation",
+    "pattern_completion",
+    "nostalgia",
+    "cognitive_dissonance",
+    "need_for_closure"
+  ],
+  "spatial_message": [
+    "hypervigilance",
+    "territorial_instinct",
+    "significance_quest",
+    "disorientation",
+    "proxemics_personal_space",
+    "cognitive_dissonance"
+  ],
+  "the_witness": [
+    "hypervigilance",
+    "disorientation",
+    "significance_quest",
+    "paranoia_escalation",
+    "cognitive_dissonance"
+  ],
+  "the_commission": [
+    "significance_quest",
+    "parasocial_attachment",
+    "nostalgia",
+    "emotional_deepening",
+    "reciprocity",
+    "emotional_contagion"
+  ],
+  "convincer_win": [
+    "commitment_consistency",
+    "loss_aversion",
+    "sunk_cost",
+    "trust_formation",
+    "pattern_completion",
+    "sunk_cost_fallacy",
+    "need_for_closure"
+  ],
+  "convincer_loss": [
+    "loss_aversion",
+    "sunk_cost",
+    "commitment_consistency",
+    "reactance",
+    "urgency",
+    "sunk_cost_fallacy",
+    "scarcity_mindset"
+  ],
+  "convincer_plant": [
+    "epistemic_uncertainty",
+    "pattern_completion",
+    "significance_quest",
+    "trust_formation",
+    "curiosity_exploration",
+    "need_for_closure"
+  ],
+  "salting": [
+    "ambient_presence",
+    "significance_quest",
+    "pattern_completion",
+    "epistemic_uncertainty",
+    "paranoia_escalation",
+    "need_for_closure",
+    "hypervigilance"
+  ],
+  "shill_validation": [
+    "social_proof",
+    "trust_formation",
+    "epistemic_uncertainty",
+    "legitimacy",
+    "emotional_contagion",
+    "need_for_closure",
+    "obedience_authority"
+  ],
+  "roper": [
+    "trust_formation",
+    "parasocial_attachment",
+    "legitimacy",
+    "social_proof",
+    "reciprocity",
+    "obedience_authority"
+  ],
+  "convincer_document": [
+    "legitimacy",
+    "obedience_authority",
+    "trust_formation",
+    "epistemic_uncertainty",
+    "commitment_consistency",
+    "need_for_closure"
+  ],
+  "convincer_location": [
+    "legitimacy",
+    "trust_formation",
+    "epistemic_uncertainty",
+    "ambient_presence",
+    "significance_quest",
+    "obedience_authority",
+    "need_for_closure"
+  ],
+  "convincer_crowd": [
+    "social_proof",
+    "legitimacy",
+    "emotional_contagion",
+    "trust_formation",
+    "epistemic_uncertainty",
+    "obedience_authority",
+    "need_for_closure"
+  ],
+  "hurry_up": [
+    "urgency",
+    "loss_aversion",
+    "scarcity",
+    "commitment_consistency",
+    "obedience_authority",
+    "scarcity_mindset"
+  ],
+  "spanish_prisoner": [
+    "reciprocity",
+    "guilt",
+    "significance_quest",
+    "parasocial_attachment",
+    "commitment_consistency",
+    "loss_aversion"
+  ],
+  "pigeon_drop": [
+    "reciprocity",
+    "sunk_cost",
+    "commitment_consistency",
+    "loss_aversion",
+    "trust_exploitation",
+    "sunk_cost_fallacy"
+  ],
+  "blow_off": [
+    "need_for_closure",
+    "relief",
+    "epistemic_uncertainty",
+    "commitment_consistency",
+    "trust_formation",
+    "amygdala_threat_response"
+  ],
+  "cooling_the_mark": [
+    "need_for_closure",
+    "relief",
+    "guilt",
+    "shame",
+    "identity_threat",
+    "emotional_deepening",
+    "amygdala_threat_response",
+    "shame_response",
+    "significance_quest",
+    "emotional_contagion"
+  ],
+  "inside_outside": [
+    "trust_formation",
+    "legitimacy",
+    "social_proof",
+    "epistemic_uncertainty",
+    "obedience_authority",
+    "disorientation",
+    "need_for_closure",
+    "cognitive_dissonance"
+  ],
+  "wire_convincer": [
+    "sunk_cost",
+    "commitment_consistency",
+    "loss_aversion",
+    "urgency",
+    "pattern_completion",
+    "significance_quest",
+    "sunk_cost_fallacy",
+    "scarcity_mindset",
+    "need_for_closure"
+  ],
+  "marks_pride": [
+    "identity_threat",
+    "reactance",
+    "commitment_consistency",
+    "shame",
+    "sunk_cost",
+    "significance_quest",
+    "shame_response",
+    "sunk_cost_fallacy"
+  ],
+  "convincer_return": [
+    "nostalgia",
+    "pattern_completion",
+    "commitment_consistency",
+    "emotional_deepening",
+    "paranoia_escalation",
+    "need_for_closure",
+    "emotional_contagion",
+    "hypervigilance"
+  ],
+  "newspaper_test": [
+    "legitimacy",
+    "social_proof",
+    "epistemic_uncertainty",
+    "trust_formation",
+    "obedience_authority",
+    "need_for_closure"
+  ],
+  "cooling_letter": [
+    "need_for_closure",
+    "relief",
+    "guilt",
+    "emotional_deepening",
+    "identity_threat",
+    "amygdala_threat_response",
+    "emotional_contagion",
+    "significance_quest"
+  ],
+  "planted_witness": [
+    "social_proof",
+    "legitimacy",
+    "epistemic_uncertainty",
+    "trust_formation",
+    "emotional_contagion",
+    "obedience_authority",
+    "need_for_closure"
+  ],
+  "cold_read": [
+    "significance_quest",
+    "parasocial_attachment",
+    "epistemic_uncertainty",
+    "trust_formation",
+    "identity_threat",
+    "need_for_closure"
+  ],
+  "barnum_profile_dispatch": [
+    "recognition_hunger",
+    "self_concept_confirmation",
+    "uniqueness_illusion",
+    "trust_formation",
+    "disclosure_reciprocity",
+    "significance_quest",
+    "reciprocity"
+  ],
+  "cold_voicemail_drop": [
+    "curiosity_exploration",
+    "pattern_detection",
+    "coincidence_apophenia",
+    "identity_threat",
+    "social_proof",
+    "need_for_cognition",
+    "significance_quest"
+  ],
+  "resonance_letter": [
+    "recognition_hunger",
+    "parasocial_attachment",
+    "trust_formation",
+    "identity_crystallization",
+    "disclosure_reciprocity",
+    "significance_quest",
+    "identity_protective_cognition",
+    "reciprocity"
+  ],
+  "sealed_envelope_reveal": [
+    "retrospective_validation",
+    "anticipatory_tension",
+    "commitment_consistency",
+    "pattern_completion",
+    "awe_induction",
+    "behavioral_inhibition_activation",
+    "need_for_closure",
+    "nature_exposure_restoration"
+  ],
+  "forced_choice_architecture": [
+    "autonomy_illusion",
+    "commitment_consistency",
+    "self_efficacy",
+    "agency_attribution",
+    "pattern_completion",
+    "positive_illusions",
+    "need_for_closure",
+    "reactance"
+  ],
+  "one_ahead_sequence": [
+    "retrospective_validation",
+    "trust_formation",
+    "curiosity_exploration",
+    "pattern_completion",
+    "anticipatory_tension",
+    "need_for_closure",
+    "behavioral_inhibition_activation"
+  ],
+  "coincidence_stack": [
+    "apophenia_induction",
+    "pattern_detection",
+    "curiosity_exploration",
+    "awe_induction",
+    "meaning_making",
+    "confirmation_bias",
+    "need_for_cognition",
+    "nature_exposure_restoration",
+    "motivated_reasoning"
+  ],
+  "ambient_number_seeding": [
+    "retroactive_meaning_attribution",
+    "apophenia_induction",
+    "commitment_consistency",
+    "curiosity_exploration",
+    "pattern_completion",
+    "hindsight_bias",
+    "confirmation_bias",
+    "need_for_closure"
+  ],
+  "progressive_anesthesia": [
+    "habituation",
+    "normalization",
+    "escalation_tolerance",
+    "commitment_consistency",
+    "sunk_cost_assimilation"
+  ],
+  "dual_reality_dispatch": [
+    "social_proof",
+    "reality_testing",
+    "confirmation_bias",
+    "paranoia_induction",
+    "trust_formation",
+    "hypervigilance",
+    "cognitive_dissonance"
+  ],
+  "retroactive_biography": [
+    "uncanny_recognition",
+    "trust_formation",
+    "parasocial_attachment",
+    "identity_destabilization",
+    "temporal_disorientation"
+  ],
+  "thoughtform_plant": [
+    "apophenia_induction",
+    "pattern_completion",
+    "meaning_making",
+    "curiosity_exploration",
+    "identity_investment",
+    "confirmation_bias",
+    "need_for_closure",
+    "motivated_reasoning",
+    "identity_protective_cognition"
+  ],
+  "async_book_test": [
+    "autonomy_illusion",
+    "retrospective_validation",
+    "awe_induction",
+    "trust_formation",
+    "pattern_completion",
+    "nature_exposure_restoration",
+    "need_for_closure",
+    "reactance"
+  ],
+  "ambient_symbol_echo": [
+    "pattern_detection",
+    "retroactive_meaning_attribution",
+    "commitment_consistency",
+    "curiosity_exploration",
+    "apophenia_induction",
+    "need_for_cognition",
+    "hindsight_bias",
+    "confirmation_bias"
+  ],
+  "intake_echo": [
+    "recognition_hunger",
+    "trust_formation",
+    "uncanny_recognition",
+    "parasocial_attachment",
+    "disclosure_reciprocity",
+    "significance_quest",
+    "reciprocity"
+  ],
+  "filed_prediction": [
+    "retrospective_validation",
+    "awe_induction",
+    "social_proof",
+    "commitment_consistency",
+    "anticipatory_tension",
+    "nature_exposure_restoration",
+    "behavioral_inhibition_activation"
+  ],
+  "directed_dream": [
+    "identity_investment",
+    "meaning_making",
+    "confirmation_bias",
+    "curiosity_exploration",
+    "disclosure_reciprocity",
+    "identity_protective_cognition",
+    "motivated_reasoning",
+    "reciprocity"
+  ],
+  "third_party_confirmation": [
+    "social_proof",
+    "reality_testing",
+    "confirmation_bias",
+    "trust_formation",
+    "paranoia_induction",
+    "hypervigilance",
+    "cognitive_dissonance"
+  ],
+  "self_fulfilling_dispatch": [
+    "behavioral_expectation",
+    "commitment_consistency",
+    "identity_consistency",
+    "self_efficacy",
+    "autonomy_illusion",
+    "positive_illusions",
+    "reactance"
+  ],
+  "named_stranger": [
+    "confirmation_bias",
+    "pattern_completion",
+    "social_proof",
+    "awe_induction",
+    "reality_testing",
+    "need_for_closure",
+    "nature_exposure_restoration",
+    "cognitive_dissonance"
+  ],
+  "calibrated_miss": [
+    "trust_formation",
+    "retrospective_validation",
+    "loss_aversion",
+    "authority_attribution",
+    "commitment_consistency"
+  ],
+  "threshold_naming": [
+    "identity_crystallization",
+    "naming_power",
+    "commitment_consistency",
+    "self_concept_expansion",
+    "closure_completion",
+    "identity_protective_cognition"
+  ],
+  "legend_seed": [
+    "anticipatory_cognition",
+    "narrative_transportation",
+    "consistency_bias",
+    "pattern_completion",
+    "behavioral_inhibition_activation",
+    "emotional_contagion",
+    "need_for_closure",
+    "commitment_consistency"
+  ],
+  "walk_in_approach": [
+    "pattern_recognition",
+    "curiosity_gap",
+    "social_proof_inversion",
+    "approach_motivation",
+    "need_for_cognition",
+    "curiosity_exploration",
+    "behavioral_inhibition_activation"
+  ],
+  "brush_pass_transfer": [
+    "somatic_marker_hypothesis",
+    "reality_anchoring",
+    "narrative_transportation",
+    "emotional_contagion"
+  ],
+  "dead_drop_receive": [
+    "curiosity_gap",
+    "somatic_marker_hypothesis",
+    "spatial_memory",
+    "narrative_transportation",
+    "curiosity_exploration",
+    "nostalgia",
+    "emotional_contagion"
+  ],
+  "challenge_response_protocol": [
+    "ritual_behavior",
+    "in_group_identity",
+    "consistency_bias",
+    "authentication_heuristic",
+    "trust_calibration",
+    "habit",
+    "social_identity_theory",
+    "trust_formation",
+    "commitment_consistency"
+  ],
+  "cut_out_introduction": [
+    "social_proof",
+    "compartmentalization_cognition",
+    "trust_transfer",
+    "information_asymmetry",
+    "curiosity_gap",
+    "trust_formation",
+    "curiosity_exploration"
+  ],
+  "mice_ego_appeal": [
+    "self_enhancement",
+    "social_comparison",
+    "identity_affirmation",
+    "scarcity_framing",
+    "approach_motivation",
+    "identity_protective_cognition",
+    "scarcity_mindset",
+    "behavioral_inhibition_activation"
+  ],
+  "mice_ideology_appeal": [
+    "value_consistency",
+    "moral_identity",
+    "social_identity",
+    "commitment_escalation",
+    "purpose_framing",
+    "commitment_consistency"
+  ],
+  "mice_coercion_shadow": [
+    "threat_appraisal",
+    "loss_aversion",
+    "vigilance_response",
+    "behavioral_inhibition",
+    "compliance_cascade"
+  ],
+  "mice_money_signal": [
+    "reciprocity",
+    "loss_aversion",
+    "material_incentive",
+    "trust_calibration",
+    "transactional_framing",
+    "trust_formation"
+  ],
+  "surveillance_detection_route": [
+    "hypervigilance_induction",
+    "spatial_attention",
+    "pattern_recognition",
+    "threat_appraisal",
+    "behavioral_priming",
+    "hypervigilance",
+    "need_for_cognition"
+  ],
+  "mole_hunt_brief": [
+    "paranoia_induction",
+    "trust_disruption",
+    "investigative_motivation",
+    "social_network_analysis",
+    "sensemaking_urgency",
+    "hypervigilance",
+    "cognitive_dissonance",
+    "need_for_closure"
+  ],
+  "compartmentalization_brief": [
+    "exclusivity_framing",
+    "information_asymmetry",
+    "in_group_identity",
+    "secret_keeping_motivation",
+    "trust_calibration",
+    "social_identity_theory",
+    "trust_formation",
+    "scarcity_mindset"
+  ],
+  "legend_stress_test": [
+    "consistency_pressure",
+    "identity_performance",
+    "working_memory_load",
+    "social_evaluation",
+    "commitment_testing",
+    "commitment_consistency",
+    "impression_management",
+    "cognitive_load_dual_process"
+  ],
+  "exfiltration_protocol": [
+    "threat_construal",
+    "safety_behavior",
+    "contingency_planning",
+    "dread_induction",
+    "reality_anchoring",
+    "amygdala_threat_response",
+    "anxiety_avoidance",
+    "cognitive_load_dual_process"
+  ],
+  "legend_depth_build": [
+    "reality_anchoring",
+    "cognitive_dissonance",
+    "temporal_extension",
+    "discovery_motivation",
+    "narrative_transportation",
+    "emotional_contagion"
+  ],
+  "asset_validation_request": [
+    "social_proof",
+    "role_confirmation",
+    "trust_calibration",
+    "task_orientation",
+    "operational_belonging",
+    "trust_formation"
+  ],
+  "dry_cleaning_walk": [
+    "hypervigilance_induction",
+    "somatic_marker_hypothesis",
+    "spatial_priming",
+    "threat_appraisal",
+    "hypervigilance"
+  ],
+  "one_time_pad_receipt": [
+    "symbolic_encryption",
+    "material_culture",
+    "ritual_behavior",
+    "information_asymmetry",
+    "exclusivity_framing",
+    "habit",
+    "scarcity_mindset"
+  ],
+  "handler_letter": [
+    "parasocial_attachment",
+    "epistolary_intimacy",
+    "trust_scaffolding",
+    "care_receipt",
+    "relational_continuity",
+    "trust_formation",
+    "gratitude"
+  ],
+  "safe_house_assignment": [
+    "spatial_anchoring",
+    "safety_behavior",
+    "contingency_planning",
+    "reality_anchoring",
+    "trust_formation",
+    "proxemics_personal_space",
+    "somatic_marker_hypothesis",
+    "anxiety_avoidance",
+    "cognitive_load_dual_process"
+  ],
+  "mice_full_profile": [
+    "identity_confrontation",
+    "self_discrepancy",
+    "surveillance_awareness",
+    "sensemaking_urgency",
+    "metacognitive_disruption",
+    "identity_protective_cognition",
+    "need_for_closure"
+  ],
+  "welcome_flood": [
+    "social_proof",
+    "reciprocity",
+    "warmth_signaling",
+    "specificity_as_credibility"
+  ],
+  "lexical_handshake": [
+    "ingroup_language",
+    "social_identity_theory",
+    "fluency_as_belonging",
+    "incremental_familiarity"
+  ],
+  "the_vetting_letter": [
+    "selection_effect",
+    "commitment_escalation",
+    "reciprocity",
+    "identity_via_external_judgment",
+    "commitment_consistency"
+  ],
+  "first_disclosure_invitation": [
+    "self_disclosure_reciprocity",
+    "intimacy_through_vulnerability",
+    "commitment_via_revelation",
+    "identity_coherence",
+    "reciprocity"
+  ],
+  "incremental_oath": [
+    "foot_in_the_door",
+    "escalating_commitment",
+    "cognitive_dissonance_reduction",
+    "behavioral_consistency",
+    "commitment_consistency",
+    "cognitive_dissonance"
+  ],
+  "lexical_deepening": [
+    "ingroup_language",
+    "cognitive_reframing",
+    "reality_tunneling",
+    "identity_drift_via_vocabulary",
+    "cognitive_dissonance"
+  ],
+  "the_naming_ceremony": [
+    "identity_investment",
+    "symbolic_commitment",
+    "ritual_marking",
+    "ego_extension_to_role",
+    "identity_protective_cognition"
+  ],
+  "milieu_letter": [
+    "milieu_control_narrative",
+    "reality_framing",
+    "sacred_science_rhetoric",
+    "ingroup_cosmology",
+    "conformity_social_influence",
+    "motivated_reasoning",
+    "obedience_authority",
+    "social_identity_theory"
+  ],
+  "the_shadow_walk": [
+    "felt_surveillance_as_care",
+    "holding_environment",
+    "attachment_activation",
+    "omnipresence_benevolent",
+    "attachment_styles"
+  ],
+  "the_purity_protocol": [
+    "behavioral_commitment",
+    "cognitive_consonance",
+    "ritual_action",
+    "self_perception_theory",
+    "commitment_consistency"
+  ],
+  "the_deep_archive_pull": [
+    "implied_omniscience",
+    "investment_signaling",
+    "preemptive_intimacy",
+    "depth_of_attention_as_care",
+    "obedience_authority",
+    "sunk_cost_fallacy",
+    "trust_formation",
+    "attachment_styles"
+  ],
+  "thought_stopping_interrupt": [
+    "doubt_redirection",
+    "cognitive_reframing",
+    "epistemic_authority",
+    "resistance_reinterpretation",
+    "cognitive_dissonance",
+    "motivated_reasoning",
+    "obedience_authority"
+  ],
+  "the_floating_moment": [
+    "peak_experience_induction",
+    "appetite_creation",
+    "state_dependent_memory",
+    "transcendence_as_hook",
+    "peak_end_rule",
+    "nostalgia"
+  ],
+  "witnessed_confession": [
+    "vulnerability_bonding",
+    "mutual_disclosure",
+    "shame_transmutation",
+    "collective_holding",
+    "trust_formation",
+    "reciprocity",
+    "shame_response",
+    "social_identity_theory"
+  ],
+  "the_us_signal": [
+    "ingroup_outgroup_formation",
+    "social_identity_theory",
+    "belonging_via_distinction",
+    "othering_mild",
+    "minimal_group_paradigm",
+    "in_group_favoritism"
+  ],
+  "graduated_reveal": [
+    "earned_access",
+    "information_tiers",
+    "anticipation_scaffolding",
+    "readiness_gatekeeping",
+    "effort_justification"
+  ],
+  "graduation_ritual": [
+    "rite_of_passage",
+    "status_elevation",
+    "liminal_transition",
+    "ritual_marking_of_threshold",
+    "somatic_marker_hypothesis"
+  ],
+  "the_long_echo": [
+    "continuity_signaling",
+    "pattern_recognition_reward",
+    "long_game_presence",
+    "planted_callback",
+    "commitment_consistency",
+    "need_for_cognition",
+    "mere_exposure_effect"
+  ],
+  "parallel_correspondent": [
+    "imagined_community",
+    "social_proof_by_implication",
+    "solidarity_without_contact",
+    "paralleling",
+    "social_identity_theory",
+    "social_proof",
+    "emotional_contagion"
+  ],
+  "borrowed_authority": [
+    "social_proof",
+    "authority_by_association",
+    "legitimacy_transfer",
+    "institutional_endorsement"
+  ],
+  "productive_rupture": [
+    "rupture_repair_bonding",
+    "trust_through_crisis",
+    "attachment_deepening",
+    "earned_reconciliation",
+    "attachment_styles",
+    "trust_formation"
+  ],
+  "exit_honored": [
+    "safety_apparatus",
+    "consent_architecture",
+    "trust_through_genuine_exit",
+    "rupture_prevention",
+    "anxiety_avoidance",
+    "reactance",
+    "trust_formation"
+  ],
+  "anomalous_receipt": [
+    "curiosity_gap",
+    "pattern_recognition",
+    "situational_ambiguity",
+    "curiosity_exploration",
+    "need_for_cognition"
+  ],
+  "dead_letter_office": [
+    "temporal_displacement",
+    "authenticity_cues",
+    "narrative_weight",
+    "construal_level_theory",
+    "trust_formation"
+  ],
+  "cipher_in_plain_sight": [
+    "pattern_recognition",
+    "competence_reward",
+    "curiosity_gap",
+    "need_for_cognition",
+    "curiosity_exploration",
+    "achievement_motivation"
+  ],
+  "multi_key_first_fragment": [
+    "curiosity_gap",
+    "completion_drive",
+    "forward_momentum",
+    "curiosity_exploration",
+    "commitment_consistency"
+  ],
+  "time_locked_page": [
+    "anticipation",
+    "precision_reward",
+    "calendrical_significance",
+    "behavioral_inhibition_activation",
+    "need_for_cognition",
+    "construal_level_theory"
+  ],
+  "fragmented_witness": [
+    "perspective_conflict",
+    "active_inference",
+    "narrative_construction",
+    "cognitive_dissonance",
+    "cognitive_load_dual_process",
+    "motivated_reasoning"
+  ],
+  "the_unreliable_archive": [
+    "epistemic_uncertainty",
+    "active_inference",
+    "trust_calibration",
+    "need_for_closure",
+    "trust_formation",
+    "cognitive_load_dual_process"
+  ],
+  "puppet_master_near_miss": [
+    "meta_awareness",
+    "controlled_revelation",
+    "trust_recalibration",
+    "need_for_cognition",
+    "curiosity_exploration",
+    "trust_formation"
+  ],
+  "tinag_frame_break": [
+    "meta_cognition",
+    "diegetic_consent",
+    "frame_management",
+    "need_for_cognition",
+    "reactance",
+    "cognitive_load_dual_process"
+  ],
+  "optional_path": [
+    "autonomy_support",
+    "competence_reward",
+    "depth_signaling",
+    "reactance",
+    "achievement_motivation",
+    "curiosity_exploration"
+  ],
+  "community_solve_bait": [
+    "social_proof_latent",
+    "collaboration_drive",
+    "epistemic_humility",
+    "social_proof",
+    "social_identity_theory",
+    "need_for_cognition"
+  ],
+  "the_false_confirmation": [
+    "retroactive_sensemaking",
+    "priming",
+    "narrative_anchoring",
+    "hindsight_bias",
+    "affective_priming",
+    "motivated_reasoning"
+  ],
+  "meta_game_layer": [
+    "recursive_structure",
+    "meta_cognition",
+    "vertigo_induction",
+    "need_for_cognition",
+    "cognitive_dissonance"
+  ],
+  "slow_burn_url": [
+    "delayed_payoff",
+    "patience_reward",
+    "temporal_depth_signaling",
+    "temporal_discounting",
+    "construal_level_theory"
+  ],
+  "personalized_glitch": [
+    "uncanny_personalization",
+    "pattern_disruption",
+    "attention_capture",
+    "cognitive_dissonance"
+  ],
+  "relay_handler": [
+    "social_continuity",
+    "compartmentalization_effect",
+    "ritual_handoff",
+    "social_identity_theory"
+  ],
+  "physical_object_as_key": [
+    "somatic_marker_hypothesis",
+    "affordance_signaling"
+  ],
+  "breadcrumb_sequence": [
+    "forward_momentum",
+    "self_direction",
+    "competence_reward",
+    "commitment_consistency",
+    "achievement_motivation"
+  ],
+  "witness_who_returns": [
+    "narrative_coherence",
+    "social_continuity",
+    "retroactive_significance",
+    "social_identity_theory",
+    "hindsight_bias",
+    "motivated_reasoning"
+  ],
+  "diegetic_archive_site": [
+    "world_density",
+    "epistemic_immersion",
+    "self_directed_exploration",
+    "need_for_cognition"
+  ],
+  "scheduled_interruption": [
+    "precision_keeping",
+    "living_system_proof",
+    "calendrical_significance",
+    "construal_level_theory"
+  ],
+  "convergence_point": [
+    "pattern_completion",
+    "multi_thread_synthesis",
+    "revelation_architecture",
+    "need_for_closure"
+  ],
+  "wax_seal_letter": [
+    "materiality_signal",
+    "register_shift",
+    "aesthetic_authority",
+    "sensory_processing_sensitivity",
+    "affective_priming",
+    "obedience_authority"
+  ],
+  "one_wrong_word": [
+    "close_reading_reward",
+    "pattern_disruption",
+    "signal_detection",
+    "cognitive_dissonance"
+  ],
+  "retro_medium_artifact": [
+    "nostalgia",
+    "authenticity_cues",
+    "curiosity_exploration",
+    "apophenia_induction",
+    "confirmation_bias",
+    "trust_formation"
+  ],
+  "soft_landing": [
+    "closure_ritual",
+    "warm_presence",
+    "low_demand_contact",
+    "grief_bereavement",
+    "attachment_styles"
+  ],
+  "artifact_as_relic": [
+    "memory_anchoring",
+    "transitional_object",
+    "materiality_as_meaning",
+    "nostalgia",
+    "attachment_styles",
+    "somatic_marker_hypothesis"
+  ],
+  "day_seven_reframe": [
+    "retroactive_significance",
+    "temporal_distance_insight",
+    "delayed_meaning",
+    "hindsight_bias"
+  ],
+  "integration_letter": [
+    "narrative_identity_consolidation",
+    "witnessed_selfhood",
+    "externalized_reflection",
+    "identity_protective_cognition",
+    "impression_management"
+  ],
+  "long_shadow": [
+    "continuity_of_relationship",
+    "felt_persistence",
+    "temporal_depth",
+    "construal_level_theory"
+  ],
+  "quiet_withdrawal": [
+    "designed_absence",
+    "intentional_silence",
+    "graceful_diminuendo",
+    "attachment_styles",
+    "grief_bereavement"
+  ],
+  "graceful_release": [
+    "autonomy_restoration",
+    "dignity_preservation",
+    "unconditional_positive_regard",
+    "reactance",
+    "shame_response",
+    "attachment_styles"
+  ],
+  "open_door_signal": [
+    "low_demand_availability",
+    "autonomy_protection",
+    "optional_reentry",
+    "reactance"
+  ],
+  "breadcrumb_without_demand": [
+    "pure_gift",
+    "ambient_presence",
+    "no_ask_offering",
+    "reciprocity"
+  ],
+  "seam_acknowledgment": [
+    "diegetic_metaawareness",
+    "frame_repair",
+    "trust_through_honesty",
+    "cognitive_dissonance",
+    "trust_formation"
+  ],
+  "test_reframe": [
+    "reframing",
+    "metanarrative_inversion",
+    "confirmed_suspicion",
+    "cognitive_dissonance",
+    "confirmation_bias"
+  ],
+  "misfire_as_story": [
+    "narrative_absorption",
+    "fictional_reframing",
+    "error_as_characterization",
+    "emotional_contagion",
+    "cognitive_dissonance"
+  ],
+  "wrong_read_recovery": [
+    "implicit_calibration",
+    "attunement_signal",
+    "character_responsiveness",
+    "trust_formation"
+  ],
+  "shadow_correspondent": [
+    "productive_tension",
+    "multiple_perspective_frame",
+    "interpretive_multiplicity",
+    "cognitive_dissonance"
+  ],
+  "broken_immersion_honor": [
+    "meta_transparency",
+    "trust_through_radical_honesty",
+    "consensual_frame_exit",
+    "trust_formation",
+    "reactance"
+  ],
+  "elegant_failure": [
+    "diegetic_contingency",
+    "system_characterization",
+    "error_as_evidence",
+    "cognitive_dissonance"
+  ],
+  "unknowing_collaboration": [
+    "distributed_agency",
+    "invisible_interdependence",
+    "emergent_completion",
+    "social_identity_theory"
+  ],
+  "parallel_discovery": [
+    "designed_convergence",
+    "synchrony_without_contact",
+    "shared_meaning_at_distance",
+    "social_identity_theory",
+    "emotional_contagion"
+  ],
+  "convergence_signal": [
+    "revelation_of_interdependence",
+    "world_population_signal",
+    "retroactive_significance",
+    "hindsight_bias"
+  ],
+  "ambient_organization_presence": [
+    "world_precedence",
+    "searchability",
+    "institutional_credibility",
+    "ambient_verification",
+    "obedience_authority"
+  ],
+  "deep_backstory_artifacts": [
+    "material_history",
+    "temporal_depth",
+    "world_precedence",
+    "artifact_credibility",
+    "construal_level_theory"
+  ],
+  "dormant_frequency": [
+    "delayed_activation",
+    "dormancy_as_design",
+    "temporal_anticipation",
+    "behavioral_inhibition_activation"
+  ],
+  "unmarked_anniversary": [
+    "temporal_anchoring",
+    "implicit_recognition",
+    "meaning_attribution",
+    "emotional_salience_cuing",
+    "nostalgia"
+  ],
+  "calendar_holding": [
+    "temporal_anchoring",
+    "sustained_attention_signaling",
+    "latent_expectation",
+    "pattern_recognition_reward",
+    "nostalgia",
+    "need_for_cognition"
+  ],
+  "first_anniversary_dispatch": [
+    "temporal_anchoring",
+    "anticipated_recurrence",
+    "closure_ritual",
+    "continuity_of_care_signal",
+    "nostalgia",
+    "grief_bereavement"
+  ],
+  "elegiac_obituary": [
+    "meaning_reframing",
+    "narrative_closure",
+    "symbolic_death_ritual",
+    "identity_transition_marking",
+    "grief_bereavement",
+    "identity_protective_cognition"
+  ],
+  "time_capsule_dispatch": [
+    "temporal_perspective_shift",
+    "self_continuity_activation",
+    "nostalgia_mobilization",
+    "epistemic_reframing",
+    "nostalgia"
+  ],
+  "photograph_stranger_knows_you": [
+    "uncanny_recognition",
+    "parasocial_projection",
+    "identity_mirroring",
+    "mystery_induction",
+    "parasocial_attachment",
+    "identity_protective_cognition",
+    "curiosity_exploration"
+  ],
+  "last_known_address_letter": [
+    "displacement_affect",
+    "spatial_memory_activation",
+    "nostalgia_mobilization",
+    "epistemic_uncertainty",
+    "nostalgia",
+    "need_for_closure"
+  ],
+  "locate_photograph_assignment": [
+    "commitment_consistency",
+    "spatial_memory_activation",
+    "grief_as_investigation",
+    "active_integration",
+    "somatic_marker_hypothesis",
+    "nostalgia"
+  ],
+  "letter_never_sent": [
+    "expressive_writing_catharsis",
+    "epistemic_completion",
+    "grief_externalization",
+    "narrative_witness",
+    "grief_bereavement",
+    "need_for_closure",
+    "impression_management"
+  ],
+  "small_ceremony_instruction": [
+    "commitment_consistency",
+    "sacred_action_framing",
+    "attention_focusing",
+    "somatic_marker_hypothesis"
+  ],
+  "liminal_hour_dispatch": [
+    "temporal_defamiliarization",
+    "sleep_boundary_vulnerability",
+    "altered_attention_state",
+    "uncanny_intrusion",
+    "construal_level_theory",
+    "somatic_marker_hypothesis",
+    "cognitive_load_dual_process",
+    "hypervigilance"
+  ],
+  "natural_calendar_beat": [
+    "ecological_temporal_anchoring",
+    "natural_cycle_resonance",
+    "sacred_time_framing",
+    "meaning_attribution",
+    "nature_exposure_restoration"
+  ],
+  "absent_presence_character": [
+    "parasocial_attachment",
+    "postmortem_narrative_presence",
+    "object_mediated_relationship",
+    "sustained_mystery"
+  ],
+  "voice_from_disconnected_number": [
+    "auditory_presence_induction",
+    "temporal_uncanny",
+    "parasocial_activation",
+    "medium_specificity_affect",
+    "parasocial_attachment",
+    "hypervigilance",
+    "affective_priming"
+  ],
+  "past_tense_prophecy": [
+    "temporal_perspective_inversion",
+    "anticipatory_grief_induction",
+    "narrative_prolepsis",
+    "epistemic_defamiliarization",
+    "construal_level_theory",
+    "grief_bereavement",
+    "cognitive_dissonance"
+  ],
+  "memorial_object_arrival": [
+    "object_mediated_affect",
+    "proxemics_personal_space",
+    "somatic_marker_hypothesis",
+    "sacred_object_designation",
+    "nostalgia"
+  ],
+  "year_mind_return": [
+    "temporal_anchoring",
+    "ritual_recurrence",
+    "continuity_of_witness",
+    "grief_cycle_acknowledgment",
+    "nostalgia"
+  ],
+  "inventory_of_what_remains": [
+    "cataloguing_as_mourning_ritual",
+    "attention_granularity_shift",
+    "post_loss_meaning_making",
+    "sensory_processing_sensitivity",
+    "somatic_marker_hypothesis",
+    "grief_bereavement"
+  ],
+  "forwarded_grief": [
+    "distributed_mourning",
+    "witness_extension",
+    "collective_grief_induction",
+    "legacy_transmission_framing",
+    "grief_bereavement",
+    "parasocial_attachment",
+    "significance_quest"
+  ],
+  "sealed_room": [
+    "protective_enclosure_framing",
+    "temporal_suspension_metaphor",
+    "grief_containment_ritual",
+    "agency_over_mourning_pace",
+    "grief_bereavement",
+    "construal_level_theory",
+    "reactance"
+  ],
+  "witness_register": [
+    "naming_as_sacred_act",
+    "cataloguing_as_mourning_ritual",
+    "public_record_framing",
+    "grief_legitimation",
+    "significance_quest",
+    "grief_bereavement"
+  ],
+  "grief_time_legible": [
+    "narrative_retrospection",
+    "temporal_distance_reframe",
+    "meaning_emergence_facilitation",
+    "integration_support",
+    "nostalgia",
+    "construal_level_theory",
+    "motivated_reasoning",
+    "attachment_styles"
+  ],
+  "memo_field_transmission": [
+    "pattern_recognition",
+    "signal_salience",
+    "meaning_construction",
+    "attentional_capture",
+    "need_for_cognition",
+    "motivated_reasoning"
+  ],
+  "receipt_anomaly_line_item": [
+    "pattern_disruption",
+    "meaning_construction",
+    "signal_salience",
+    "narrative_gap_filling",
+    "motivated_reasoning",
+    "cognitive_dissonance"
+  ],
+  "refund_from_nowhere": [
+    "unexplained_benefit",
+    "cognitive_dissonance",
+    "narrative_gap_filling",
+    "curiosity_induction",
+    "curiosity_exploration",
+    "motivated_reasoning"
+  ],
+  "invoice_intangible_services": [
+    "obligation_induction",
+    "identity_confrontation",
+    "meaning_construction",
+    "cognitive_load",
+    "reciprocity",
+    "identity_protective_cognition",
+    "motivated_reasoning"
+  ],
+  "statement_of_account": [
+    "identity_confrontation",
+    "pattern_recognition",
+    "narrative_gap_filling",
+    "meaning_construction",
+    "cognitive_load",
+    "identity_protective_cognition",
+    "need_for_cognition",
+    "motivated_reasoning"
+  ],
+  "escrow_formal_notice": [
+    "suspense_induction",
+    "obligation_induction",
+    "cognitive_load",
+    "uncertainty_extension",
+    "reciprocity"
+  ],
+  "beneficiary_selection_notice": [
+    "status_elevation",
+    "unexplained_benefit",
+    "narrative_gap_filling",
+    "curiosity_induction",
+    "meaning_construction",
+    "curiosity_exploration",
+    "motivated_reasoning"
+  ],
+  "grant_award_letter": [
+    "status_elevation",
+    "identity_affirmation",
+    "meaning_construction",
+    "effort_justification",
+    "curiosity_induction",
+    "identity_protective_cognition",
+    "motivated_reasoning",
+    "curiosity_exploration"
+  ],
+  "bearer_bond_certificate": [
+    "object_investment",
+    "meaning_construction",
+    "narrative_gap_filling",
+    "identity_affirmation",
+    "motivated_reasoning",
+    "identity_protective_cognition"
+  ],
+  "ticker_feed_events": [
+    "pattern_recognition",
+    "signal_salience",
+    "meaning_construction",
+    "temporal_anchoring",
+    "suspense_induction",
+    "need_for_cognition",
+    "motivated_reasoning",
+    "nostalgia"
+  ],
+  "portfolio_life_decisions": [
+    "identity_confrontation",
+    "meaning_construction",
+    "pattern_recognition",
+    "narrative_gap_filling",
+    "self_as_investment",
+    "identity_protective_cognition",
+    "motivated_reasoning",
+    "need_for_cognition"
+  ],
+  "commodity_narrative_report": [
+    "pattern_recognition",
+    "signal_salience",
+    "meaning_construction",
+    "coded_communication",
+    "narrative_gap_filling",
+    "need_for_cognition",
+    "motivated_reasoning"
+  ],
+  "collections_agency_notice": [
+    "threat_appraisal",
+    "obligation_induction",
+    "identity_confrontation",
+    "cognitive_load",
+    "urgency_induction",
+    "reciprocity",
+    "identity_protective_cognition"
+  ],
+  "promissory_note": [
+    "commitment_device",
+    "obligation_induction",
+    "identity_affirmation",
+    "ritual_framing",
+    "meaning_construction",
+    "commitment_consistency",
+    "reciprocity",
+    "identity_protective_cognition",
+    "motivated_reasoning"
+  ],
+  "lien_on_abstract": [
+    "identity_confrontation",
+    "threat_appraisal",
+    "meaning_construction",
+    "cognitive_dissonance",
+    "obligation_induction",
+    "identity_protective_cognition",
+    "motivated_reasoning",
+    "reciprocity"
+  ],
+  "credit_report_parallel_self": [
+    "identity_confrontation",
+    "uncanny_recognition",
+    "narrative_gap_filling",
+    "cognitive_dissonance",
+    "pattern_recognition",
+    "identity_protective_cognition",
+    "motivated_reasoning",
+    "need_for_cognition"
+  ],
+  "w2_fictional_employer": [
+    "identity_affirmation",
+    "meaning_construction",
+    "narrative_gap_filling",
+    "identity_confrontation",
+    "pattern_recognition",
+    "identity_protective_cognition",
+    "motivated_reasoning",
+    "need_for_cognition"
+  ],
+  "property_tax_notice": [
+    "spatial_anchoring",
+    "identity_confrontation",
+    "meaning_construction",
+    "ownership_disruption",
+    "narrative_gap_filling",
+    "proxemics_personal_space",
+    "identity_protective_cognition",
+    "motivated_reasoning"
+  ],
+  "appraisal_letter": [
+    "meaning_construction",
+    "identity_affirmation",
+    "value_assignment",
+    "status_elevation",
+    "cognitive_dissonance",
+    "motivated_reasoning",
+    "identity_protective_cognition"
+  ],
+  "market_analysis_participant_choices": [
+    "pattern_recognition",
+    "identity_confrontation",
+    "meaning_construction",
+    "self_as_investment",
+    "temporal_framing",
+    "need_for_cognition",
+    "identity_protective_cognition",
+    "motivated_reasoning"
+  ],
+  "dividend_notice": [
+    "unexplained_benefit",
+    "meaning_construction",
+    "reward_signal",
+    "temporal_framing",
+    "narrative_gap_filling",
+    "curiosity_exploration",
+    "motivated_reasoning"
+  ],
+  "inheritance_fraction_notice": [
+    "meaning_construction",
+    "identity_confrontation",
+    "grief_induction",
+    "temporal_anchoring",
+    "narrative_gap_filling",
+    "unexplained_benefit",
+    "motivated_reasoning",
+    "identity_protective_cognition",
+    "nostalgia",
+    "curiosity_exploration"
+  ],
+  "pre_sleep_sensory_dispatch": [
+    "anticipatory_arousal",
+    "attentional_narrowing",
+    "incubation_priming",
+    "threshold_amplification",
+    "behavioral_inhibition_activation",
+    "cognitive_load_dual_process",
+    "somatic_marker_hypothesis",
+    "sensory_processing_sensitivity"
+  ],
+  "sleep_data_mirror": [
+    "self_reflection_amplification",
+    "data_as_identity",
+    "behavioral_feedback_loops",
+    "perceived_surveillance",
+    "pattern_recognition_priming",
+    "identity_protective_cognition",
+    "habit",
+    "hypervigilance"
+  ],
+  "three_am_dispatch": [
+    "liminal_state_exploitation",
+    "reality_testing_degradation",
+    "threshold_amplification",
+    "urgency_induction",
+    "attentional_narrowing",
+    "somatic_marker_hypothesis",
+    "sensory_processing_sensitivity",
+    "cognitive_load_dual_process"
+  ],
+  "dream_report_request": [
+    "autobiographical_elaboration",
+    "creative_projection",
+    "vulnerability_as_data",
+    "self_disclosure_escalation",
+    "narrative_co_authorship",
+    "nostalgia",
+    "somatic_marker_hypothesis"
+  ],
+  "hypnagogic_image_seed": [
+    "incubation_priming",
+    "imagery_induction",
+    "attentional_narrowing",
+    "threshold_amplification",
+    "perceptual_sensitization",
+    "somatic_marker_hypothesis",
+    "cognitive_load_dual_process",
+    "sensory_processing_sensitivity"
+  ],
+  "breath_gate": [
+    "behavioral_sequencing",
+    "physiological_state_induction",
+    "earned_access",
+    "somatic_marker_hypothesis",
+    "attentional_narrowing",
+    "effort_justification",
+    "cognitive_load_dual_process"
+  ],
+  "somatic_key_installation": [
+    "conditioned_response_installation",
+    "somatic_marker_hypothesis",
+    "state_dependent_recall",
+    "signal_compression",
+    "ritual_formation",
+    "habit",
+    "nostalgia"
+  ],
+  "stress_state_calibration": [
+    "self_monitoring_induction",
+    "behavioral_data_collection",
+    "sensory_processing_sensitivity",
+    "vulnerability_as_data",
+    "pattern_recognition_priming",
+    "somatic_marker_hypothesis"
+  ],
+  "contemplative_walk_instruction": [
+    "environmental_attunement",
+    "perceptual_sensitization",
+    "attention_direction",
+    "somatic_marker_hypothesis",
+    "meaning_layering",
+    "nature_exposure_restoration",
+    "sensory_processing_sensitivity"
+  ],
+  "carry_this": [
+    "object_as_anchor",
+    "meaning_transfer",
+    "behavioral_habituation",
+    "commitment_consistency",
+    "semiotic_loading",
+    "habit",
+    "somatic_marker_hypothesis"
+  ],
+  "home_environment_task": [
+    "behavioral_commitment",
+    "environmental_modification",
+    "spatial_meaning_making",
+    "somatic_marker_hypothesis",
+    "ownership_escalation",
+    "commitment_consistency"
+  ],
+  "threshold_crossing_practice": [
+    "liminal_state_amplification",
+    "attentional_priming",
+    "behavioral_notation",
+    "perceptual_sensitization",
+    "ritual_formation",
+    "somatic_marker_hypothesis",
+    "sensory_processing_sensitivity",
+    "habit"
+  ],
+  "sensory_diary": [
+    "perceptual_sensitization",
+    "autobiographical_elaboration",
+    "attentional_training",
+    "creative_self_disclosure",
+    "vulnerability_as_data",
+    "sensory_processing_sensitivity",
+    "nostalgia",
+    "somatic_marker_hypothesis"
+  ],
+  "temperature_weather_dispatch": [
+    "environmental_coupling",
+    "nature_exposure_restoration",
+    "ambient_relevance",
+    "contextual_anchoring",
+    "perceptual_sensitization",
+    "somatic_marker_hypothesis",
+    "sensory_processing_sensitivity"
+  ],
+  "anticipatory_signal_state": [
+    "anticipatory_arousal",
+    "sustained_tension",
+    "waiting_as_experience",
+    "physiological_suspense",
+    "attentional_narrowing",
+    "behavioral_inhibition_activation",
+    "amygdala_threat_response",
+    "cognitive_load_dual_process"
+  ],
+  "hunger_window_delivery": [
+    "physiological_state_priming",
+    "somatic_marker_hypothesis",
+    "attentional_sharpening",
+    "boundary_softening",
+    "sensory_processing_sensitivity",
+    "proxemics_personal_space"
+  ],
+  "circadian_dispatch_series": [
+    "chronobiological_coupling",
+    "behavioral_habituation",
+    "rhythm_entrainment",
+    "ambient_relevance",
+    "contextual_anchoring",
+    "nature_exposure_restoration",
+    "habit",
+    "emotional_contagion",
+    "somatic_marker_hypothesis"
+  ],
+  "seasonal_body_dispatch": [
+    "chronobiological_coupling",
+    "environmental_attunement",
+    "nature_exposure_restoration",
+    "perceptual_sensitization",
+    "meaning_layering",
+    "somatic_marker_hypothesis",
+    "sensory_processing_sensitivity"
+  ],
+  "dusk_dawn_dispatch": [
+    "liminal_state_amplification",
+    "chronobiological_coupling",
+    "threshold_amplification",
+    "environmental_attunement",
+    "attentional_narrowing",
+    "somatic_marker_hypothesis",
+    "nature_exposure_restoration",
+    "sensory_processing_sensitivity",
+    "cognitive_load_dual_process"
+  ],
+  "physical_threshold_unlock": [
+    "behavioral_commitment",
+    "earned_access",
+    "achievement_motivation",
+    "effort_justification",
+    "self_efficacy_amplification",
+    "somatic_marker_hypothesis",
+    "commitment_consistency",
+    "positive_illusions"
+  ],
+  "indexed_ghost_page": [
+    "pattern_recognition",
+    "expectation_violation",
+    "confirmation_bias",
+    "need_for_cognition",
+    "cognitive_dissonance"
+  ],
+  "archive_snapshot": [
+    "temporal_displacement",
+    "pattern_recognition",
+    "confirmation_bias",
+    "authority_cue",
+    "construal_level_theory",
+    "need_for_cognition",
+    "obedience_authority"
+  ],
+  "silent_follower": [
+    "social_proof",
+    "pattern_recognition",
+    "ambient_surveillance_cue",
+    "expectation_violation",
+    "need_for_cognition",
+    "cognitive_dissonance"
+  ],
+  "minor_wikipedia_edit": [
+    "authority_cue",
+    "pattern_recognition",
+    "ambient_information_seeding",
+    "confirmation_bias",
+    "obedience_authority",
+    "need_for_cognition",
+    "curiosity_exploration"
+  ],
+  "maps_review_plant": [
+    "environmental_anchoring",
+    "pattern_recognition",
+    "social_proof",
+    "ambient_information_seeding",
+    "need_for_cognition",
+    "curiosity_exploration",
+    "somatic_marker_hypothesis"
+  ],
+  "street_mark": [
+    "environmental_anchoring",
+    "pattern_recognition",
+    "ambient_symbol_recognition",
+    "spatial_memory_priming",
+    "need_for_cognition",
+    "nostalgia",
+    "somatic_marker_hypothesis"
+  ],
+  "book_bench_drop": [
+    "gift_surprise",
+    "ambient_information_seeding",
+    "environmental_anchoring",
+    "narrative_seeding",
+    "curiosity_exploration",
+    "reciprocity",
+    "somatic_marker_hypothesis"
+  ],
+  "physical_trace_plant": [
+    "environmental_anchoring",
+    "ambient_information_seeding",
+    "unexplained_presence",
+    "spatial_memory_priming",
+    "curiosity_exploration",
+    "nostalgia",
+    "somatic_marker_hypothesis"
+  ],
+  "postcard_blind_send": [
+    "gift_surprise",
+    "ambient_information_seeding",
+    "authority_cue",
+    "narrative_seeding",
+    "unexplained_presence",
+    "curiosity_exploration",
+    "obedience_authority",
+    "reciprocity"
+  ],
+  "classified_ad_plant": [
+    "ambient_information_seeding",
+    "pattern_recognition",
+    "narrative_seeding",
+    "authority_cue",
+    "curiosity_exploration",
+    "need_for_cognition",
+    "obedience_authority"
+  ],
+  "character_bridge_connection": [
+    "social_proof",
+    "authority_cue",
+    "social_network_anchoring",
+    "trust_transfer",
+    "obedience_authority",
+    "trust_formation"
+  ],
+  "sighting_report": [
+    "social_proof",
+    "ambient_surveillance_cue",
+    "unexplained_presence",
+    "curiosity_gap",
+    "curiosity_exploration"
+  ],
+  "ambient_triple_seed": [
+    "pattern_recognition",
+    "coincidence_manufacturing",
+    "confirmation_bias",
+    "apophenia_induction",
+    "need_for_cognition"
+  ],
+  "subscription_infiltration": [
+    "ambient_information_seeding",
+    "expectation_violation",
+    "curiosity_gap",
+    "narrative_seeding",
+    "curiosity_exploration",
+    "cognitive_dissonance"
+  ],
+  "false_memory_seed": [
+    "source_monitoring_error",
+    "narrative_seeding",
+    "ambient_information_seeding",
+    "memory_reconstruction",
+    "curiosity_exploration"
+  ],
+  "birthday_card_unknown_sender": [
+    "gift_surprise",
+    "unexplained_presence",
+    "curiosity_gap",
+    "social_network_anchoring",
+    "curiosity_exploration",
+    "reciprocity"
+  ],
+  "glassdoor_reference_plant": [
+    "authority_cue",
+    "social_proof",
+    "ambient_information_seeding",
+    "identity_relevance",
+    "obedience_authority",
+    "curiosity_exploration"
+  ],
+  "recurring_audio_seed": [
+    "ambient_information_seeding",
+    "pattern_recognition",
+    "apophenia_induction",
+    "emotional_priming",
+    "memory_reconstruction",
+    "curiosity_exploration",
+    "need_for_cognition",
+    "confirmation_bias"
+  ],
+  "change_talk_elicitation": [
+    "self_perception_theory",
+    "cognitive_dissonance_reduction",
+    "elaboration_likelihood",
+    "commitment_consistency",
+    "cognitive_dissonance"
+  ],
+  "outsider_witness_ceremony": [
+    "social_validation",
+    "identity_affirmation",
+    "narrative_coherence",
+    "belongingness",
+    "social_proof",
+    "identity_protective_cognition",
+    "social_identity_theory",
+    "motivated_reasoning"
+  ],
+  "generalization_contract": [
+    "commitment_consistency",
+    "implementation_intention",
+    "identity_affirmation",
+    "future_self_projection",
+    "identity_protective_cognition"
+  ],
+  "front_loading_beat": [
+    "expectation_setting",
+    "curiosity_exploration",
+    "priming",
+    "implementation_intention",
+    "affective_priming"
+  ],
+  "commissioning_letter": [
+    "identity_affirmation",
+    "commitment_consistency",
+    "artifact_as_authority",
+    "narrative_coherence",
+    "future_self_projection",
+    "identity_protective_cognition",
+    "motivated_reasoning"
+  ],
+  "kinesthetic_encoding_beat": [
+    "somatic_marker_hypothesis",
+    "commitment_consistency",
+    "artifact_creation",
+    "identity_affirmation",
+    "episodic_memory_encoding",
+    "identity_protective_cognition"
+  ],
+  "stripping_ceremony": [
+    "identity_suspension",
+    "commitment_consistency",
+    "somatic_marker_hypothesis",
+    "role_differentiation",
+    "effort_justification",
+    "reactance"
+  ],
+  "failure_cascade_reframe": [
+    "cognitive_reframing",
+    "autonomy_restoration",
+    "curiosity_exploration",
+    "identity_affirmation",
+    "reactance_reduction",
+    "cognitive_dissonance",
+    "identity_protective_cognition",
+    "reactance"
+  ],
+  "knowledge_frontier_seed": [
+    "curiosity_exploration",
+    "apophenia_induction",
+    "information_gap",
+    "anticipatory_attention",
+    "confirmation_bias",
+    "behavioral_inhibition_activation"
+  ],
+  "player_journal_artifact": [
+    "self_perception_theory",
+    "narrative_coherence",
+    "identity_affirmation",
+    "elaboration_likelihood",
+    "ikea_effect",
+    "identity_protective_cognition",
+    "motivated_reasoning"
+  ],
+  "temporal_rupture_opening": [
+    "effort_justification",
+    "reactance",
+    "identity_suspension",
+    "attention_reorientation",
+    "salience_shift",
+    "somatic_marker_hypothesis"
+  ],
+  "ordeal_threshold": [
+    "sunk_cost",
+    "commitment_consistency",
+    "shared_vulnerability",
+    "identity_consolidation",
+    "endorphin_bonding",
+    "sunk_cost_fallacy",
+    "identity_protective_cognition"
+  ],
+  "absent_witness_invocation": [
+    "internalized_authority",
+    "identity_consolidation",
+    "commitment_consistency",
+    "sacred_oath_structure",
+    "identity_protective_cognition"
+  ],
+  "communitas_beat": [
+    "belongingness",
+    "hierarchy_dissolution",
+    "direct_social_bond",
+    "effort_justification",
+    "reactance",
+    "social_identity_theory",
+    "somatic_marker_hypothesis"
+  ],
+  "layered_secret_system": [
+    "information_gap",
+    "in_group_identity",
+    "anticipatory_curiosity",
+    "sunk_cost",
+    "incremental_commitment",
+    "curiosity_exploration",
+    "social_identity_theory",
+    "sunk_cost_fallacy",
+    "commitment_consistency"
+  ],
+  "benefactor_capture": [
+    "authority_bias",
+    "reciprocity_norm",
+    "trust_scaffolding",
+    "complicity_through_competence",
+    "retroactive_attribution",
+    "obedience_authority",
+    "reciprocity",
+    "trust_formation",
+    "commitment_consistency",
+    "hindsight_bias"
+  ],
+  "manufactured_crisis_reveal": [
+    "retroactive_attribution",
+    "cognitive_dissonance",
+    "complicity_recognition",
+    "authority_collapse",
+    "hindsight_bias"
+  ],
+  "fractal_revelation": [
+    "information_gap",
+    "apophenia_induction",
+    "epistemic_destabilization",
+    "curiosity_exploration",
+    "confirmation_bias",
+    "cognitive_dissonance"
+  ],
+  "distributed_truth_fragment": [
+    "apophenia_induction",
+    "information_gap",
+    "curiosity_exploration",
+    "pattern_recognition",
+    "confirmation_bias",
+    "need_for_cognition"
+  ],
+  "strategic_silence_beat": [
+    "misdirection_by_omission",
+    "compliance_through_reasoning",
+    "trust_maintenance",
+    "complicity_through_silence",
+    "confirmation_bias",
+    "obedience_authority",
+    "trust_formation",
+    "commitment_consistency"
+  ],
+  "temporal_loop_architecture": [
+    "epistemic_immersion",
+    "anticipatory_attention",
+    "knowledge_accumulation",
+    "participatory_detection",
+    "pattern_recognition",
+    "agency_reward",
+    "need_for_cognition",
+    "behavioral_inhibition_activation"
+  ],
+  "anomaly_attendance": [
+    "collective_identity_formation",
+    "commitment_through_action",
+    "social_proof",
+    "experience_as_identity_proof",
+    "somatic_marker_hypothesis",
+    "social_identity_theory",
+    "commitment_consistency",
+    "effort_justification"
+  ],
+  "territorial_claim": [
+    "ownership_by_investment",
+    "place_attachment",
+    "earned_status",
+    "contested_resource",
+    "micro_territory",
+    "endowment_effect",
+    "nostalgia",
+    "effort_justification",
+    "loss_aversion",
+    "proxemics_personal_space"
+  ],
+  "queryable_legacy": [
+    "biographical_continuity",
+    "legacy_construction",
+    "external_validation",
+    "historical_record",
+    "earned_identity",
+    "identity_protective_cognition",
+    "significance_quest",
+    "social_proof",
+    "effort_justification"
+  ],
+  "trace_exposure": [
+    "felt_vulnerability",
+    "information_asymmetry",
+    "real_time_surveillance",
+    "urgency_pressure",
+    "kinetic_dread",
+    "shame_response",
+    "hypervigilance",
+    "scarcity_mindset",
+    "amygdala_threat_response"
+  ],
+  "contract_complicity": [
+    "complicity_through_instruction",
+    "deferred_revelation",
+    "retroactive_guilt",
+    "moral_distance",
+    "willing_participation",
+    "commitment_consistency",
+    "curiosity_exploration",
+    "guilt",
+    "moral_licensing"
+  ],
+  "active_erasure": [
+    "kinetic_commitment",
+    "self_implication",
+    "irreversible_action",
+    "complicity_through_destruction",
+    "voluntary_concealment",
+    "commitment_consistency"
+  ],
+  "forum_intervention": [
+    "rehearsal_for_reality",
+    "agency_restoration",
+    "self_as_protagonist",
+    "somatic_marker_hypothesis",
+    "revised_action"
+  ],
+  "image_theater_freeze": [
+    "somatic_marker_hypothesis",
+    "power_relation_visibility",
+    "non_verbal_knowledge",
+    "freeze_frame"
+  ],
+  "invisible_theater_event": [
+    "real_world_fiction_boundary",
+    "unwitting_participation",
+    "authentic_choice_under_uncertainty",
+    "frame_collapse",
+    "latent_diegesis",
+    "cognitive_dissonance",
+    "reactance"
+  ],
+  "mask_anonymity_passage": [
+    "permission_through_anonymity",
+    "identity_suspension",
+    "exploration_license",
+    "transgression_safety",
+    "dual_consciousness",
+    "reactance",
+    "somatic_marker_hypothesis",
+    "curiosity_exploration"
+  ],
+  "one_on_one_private_scene": [
+    "status_elevation_through_selection",
+    "undivided_attention",
+    "intimate_disclosure",
+    "marked_singularity",
+    "dyadic_intensity",
+    "significance_quest",
+    "parasocial_attachment",
+    "trust_formation"
+  ],
+  "environmental_narrative_space": [
+    "object_archaeology",
+    "environmental_semiotics",
+    "participant_as_detective",
+    "narrative_without_exposition",
+    "space_as_character",
+    "curiosity_exploration",
+    "need_for_cognition",
+    "nature_exposure_restoration"
+  ],
+  "hell_replay": [
+    "emotional_compression",
+    "charged_memory",
+    "stylized_repetition",
+    "temporal_distillation",
+    "intensity_through_abstraction",
+    "emotional_contagion",
+    "nostalgia",
+    "habit",
+    "peak_end_rule"
+  ],
+  "framekick_temporal_shift": [
+    "temporal_rupture",
+    "disorientation_as_design",
+    "frame_collapse",
+    "multi_temporal_consciousness",
+    "reality_recontextualization",
+    "cognitive_dissonance",
+    "construal_level_theory"
+  ],
+  "internal_monologue_voiced": [
+    "metacognitive_doubling",
+    "externalized_inner_state",
+    "verbal_authenticity",
+    "frame_break_as_deepening",
+    "character_and_self_simultaneously",
+    "need_for_cognition",
+    "impression_management",
+    "trust_formation",
+    "cognitive_dissonance"
+  ],
+  "author_narration_beat": [
+    "external_perspective",
+    "omniscient_voice",
+    "narrative_distance_as_intimacy",
+    "author_stance",
+    "retrospective_witness",
+    "construal_level_theory",
+    "parasocial_attachment"
+  ],
+  "group_synchronization": [
+    "social_proof_cascade",
+    "cognitive_dissonance_reduction",
+    "significance_quest",
+    "in_group_formation",
+    "shared_reality_construction",
+    "cognitive_dissonance"
+  ],
+  "faction_formation": [
+    "social_identity_theory",
+    "in_group_favoritism",
+    "cognitive_dissonance_reduction",
+    "coordination_problem",
+    "attitude_polarization",
+    "cognitive_dissonance"
+  ],
+  "shared_crisis_beat": [
+    "collective_effervescence",
+    "significance_quest",
+    "urgency",
+    "in_group_formation",
+    "shared_reality_construction",
+    "emotional_contagion"
+  ],
+  "faction_allegiance_fork": [
+    "identity_confrontation",
+    "commitment_consistency",
+    "cognitive_dissonance",
+    "attitude_polarization",
+    "social_identity_theory",
+    "in_group_favoritism"
+  ],
+  "app_location_dispatch": [
+    "curiosity_gap",
+    "significance_quest",
+    "place_attachment",
+    "agency_confirm",
+    "earned_access",
+    "pattern_completion"
+  ],
+  "nested_permission_cascade": [
+    "commitment_consistency",
+    "self_perception_theory",
+    "behavioral_commitment",
+    "cognitive_dissonance",
+    "autonomy_support",
+    "earned_access"
+  ],
+  "counter_identity_encounter": [
+    "identity_confrontation",
+    "mirror_recognition",
+    "cognitive_dissonance",
+    "future_self_projection",
+    "counterfactual",
+    "identity_dissonance"
+  ],
+  "reintegration_dispatch": [
+    "continuity_signaling",
+    "identity_coherence",
+    "temporal_anchoring",
+    "future_self_continuity",
+    "identity_investment",
+    "mere_exposure_effect"
+  ]
+}

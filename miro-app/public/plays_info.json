@@ -1,0 +1,1426 @@
+{
+  "certified_mail": {
+    "invite": "person whose affairs have caught the attention of something with legal standing",
+    "desc": "USPS Certified Mail ($4.35 + postage) requires a signature. That signature is the mechanic \u2014 the participant must actively receive it; it becomes an event, not a passive delivery."
+  },
+  "informed_delivery_gap": {
+    "invite": "person being managed by something that works inside bureaucratic infrastructure",
+    "desc": "USPS Informed Delivery sends participants a morning email with grayscale scans of incoming mail."
+  },
+  "notarized_doc": {
+    "invite": "person with legal standing in something larger than themselves",
+    "desc": "Notarization verifies the signing event, not the content or the organization. The embossed seal and wet signature are completely real and legally valid."
+  },
+  "llc_registration": {
+    "invite": "person dealing with an organization that has real public standing",
+    "desc": "Wyoming (~$100/year) or Delaware (~$90/year). The fictional organization has a real state registration number, articles of incorporation, a registered agent address."
+  },
+  "mailbox_address": {
+    "invite": "investigator finding the edges of a real-seeming organizational structure",
+    "desc": "Regus virtual office (~$49\u201389/month) gives a \"suite\" address in a real building. UPS Store PMB ($20\u201340/month) is cheaper but the \"PMB\" designation is recognizable."
+  },
+  "wax_seal": {
+    "invite": "recipient of correspondence from something with gravitas \u2014 a tradition, a society, an institution with ceremony",
+    "desc": "A wax-sealed envelope is categorically different before it's opened. Nobody receives one in ordinary life. The anachronism signals: ordinary rules don't apply here."
+  },
+  "classified_doc_aesthetic": {
+    "invite": "person cleared to see what others aren't \u2014 an insider by selection",
+    "desc": "The visual language of classified and official documents carries weight far beyond its informational content. Key elements:"
+  },
+  "osint_personalization": {
+    "invite": "person who has been seen and studied before they knew it",
+    "desc": "Sources: LinkedIn, Twitter/X, Instagram (public), Strava/fitness (if public), Yelp reviews they've written, Nextdoor, Google Maps reviews, voter registration, property records, loc"
+  },
+  "local_area_code": {
+    "invite": "person receiving a call from their own world \u2014 something that knows where they are",
+    "desc": "Buy via Twilio with area code matching participant's city. Assign one number per fictional character for consistency."
+  },
+  "voicemail_drop": {
+    "invite": "person whose life is being quietly tracked by something patient",
+    "desc": "Services: Slybroadcast, Drop Cowboy, Straight To Voicemail. Deposits voicemail without ringing."
+  },
+  "micro_transaction": {
+    "invite": "person whose actual financial life has been touched by the narrative",
+    "desc": "Money crossing from fiction into the participant's real financial history is the strongest reality-threshold play in the library. The note field is the narrative payload."
+  },
+  "matched_prefix": {
+    "invite": "person being called by something that knows their specific world \u2014 not just their city, their neighborhood",
+    "desc": "Same area code AND same 3-digit prefix as participant's own number. Twilio number search supports pattern matching."
+  },
+  "implied_prior_relationship": {
+    "invite": "person re-entering a relationship they don't remember making \u2014 someone with a history they're only now discovering",
+    "desc": "An email or message framed as a continuation of something that hasn't happened yet."
+  },
+  "planted_object": {
+    "invite": "person whose physical world has been entered \u2014 not just their inbox",
+    "desc": "An unexplained object appears in the participant's personal space. Not at a designated pickup location \u2014 in their home, on their car, at their desk."
+  },
+  "accidental_transmission": {
+    "invite": "person who accidentally found themselves behind a curtain",
+    "desc": "The most effective pure-email technique. A message that appears to have been sent to the participant by mistake shifts them from passive receiver to active discoverer."
+  },
+  "real_domain": {
+    "invite": "investigator finding a real trail \u2014 not just a message, but an organization with infrastructure",
+    "desc": "Domain (~$15/year) + hosting (Netlify/Vercel free tiers work for static sites) + Let's Encrypt SSL (free). The organization holds up to Googling."
+  },
+  "classified_ad": {
+    "invite": "person who found what the ad was placed for them to find \u2014 the intended recipient",
+    "desc": "Something findable but not pushed. The act of finding it is the payload. Digital classifieds get indexed; print creates a permanent physical artifact."
+  },
+  "physical_dead_drop": {
+    "invite": "operative retrieving something left specifically for them by someone who knew they'd come",
+    "desc": "An object at a location they actually go implies prior surveillance of their movements. The experience has been in their physical world before they knew about it."
+  },
+  "qr_code": {
+    "invite": "person who follows threads on their own initiative \u2014 an active participant rather than a passive recipient",
+    "desc": "URL behind the code can serve time-gated content: before the arc beat, a single cryptic line or holding image; after, the full revelation. Same physical code, living digital layer."
+  },
+  "annotation_layer": {
+    "invite": "person who found what others reading the same document missed",
+    "desc": "Hypothesis (hypothes.is) is a web annotation platform that allows public annotations on any webpage."
+  },
+  "linkedin_character": {
+    "invite": "person interacting with someone who has verifiable professional standing in the real world",
+    "desc": "Build at least 4 weeks before the experience. Key elements: posting history (irregular timing, mix of professional and personal), 50+ connections including mutual connections with "
+  },
+  "google_maps": {
+    "invite": "investigator confirming a real physical location for the organization",
+    "desc": "A pin on the map. Participant who looks up the address finds a real business listing with photos, hours, description, and potentially reviews."
+  },
+  "press_release": {
+    "invite": "person dealing with something that has had real media coverage",
+    "desc": "EIN Presswire ($50\u2013100) indexes in Google News within 24\u201348 hours. The fictional organization's name now returns real news results."
+  },
+  "aged_social_media": {
+    "invite": "investigator finding the character's social history \u2014 a public record of a person who has existed",
+    "desc": "Twitter/X or Instagram. Post at irregular, human-seeming intervals. Content ratio: ~80% mundane professional/personal, ~20% narrative-adjacent."
+  },
+  "ai_generated_face": {
+    "invite": "investigator trying to place a face that doesn't quite connect to anyone they know",
+    "desc": "Generate with fixed seed parameter. Save the seed + full prompt \u2014 consistency requires identical parameters."
+  },
+  "reddit_history": {
+    "invite": "researcher who found the character's candid voice \u2014 not the official one",
+    "desc": "A fictional character's Reddit comment history is a window into their inner life that LinkedIn and Instagram don't provide."
+  },
+  "github_repo": {
+    "invite": "investigator finding the technical footprint of something real and active",
+    "desc": "A GitHub account with a real commit history creates a character who works in code. The repository itself can contain:"
+  },
+  "goodreads_profile": {
+    "invite": "person catching a glimpse of a character's intellectual and emotional interior",
+    "desc": "A character's Goodreads or Letterboxd profile is among the most intimate self-portrait available online \u2014 what someone reads or watches reveals how they think and what they care ab"
+  },
+  "weather_message": {
+    "invite": "person whose immediate physical environment is being watched \u2014 not just their digital behavior",
+    "desc": "OpenWeatherMap free tier. Query at send time and insert one accurate real-time detail. One specific detail does disproportionate work."
+  },
+  "calendar_invite": {
+    "invite": "person whose schedule is known and is being scheduled against by something",
+    "desc": "Send via SMTP with iCal attachment \u2014 works with Google, Outlook, Apple Calendar. The fictional character appears in the participant's actual calendar."
+  },
+  "fedex_tracking": {
+    "invite": "recipient of a real delivery from a real organization with real logistics",
+    "desc": "Real tracking number given before arrival turns the logistics system into narrative pacing."
+  },
+  "past_tense_timestamp": {
+    "invite": "person who has been observed for longer than they knew",
+    "desc": "A message written as though observation began before this moment."
+  },
+  "timed_delivery": {
+    "invite": "person whose daily life has been studied in enough detail to know when they're most likely to be reached",
+    "desc": "Something arriving right before or right after a known real event reads as fated."
+  },
+  "restaurant_reservation": {
+    "invite": "guest of an organization that can make things happen in the physical world",
+    "desc": "A real reservation, verifiable by calling the restaurant. Reserve under a name or framing meaningful in the narrative."
+  },
+  "briefed_confederate": {
+    "invite": "person whose actual life is intersecting with the narrative \u2014 not just a recipient of messages",
+    "desc": "- Sponsor \u2014 knows the participant best; most motivated; highest risk of emotional bleed for both - Regular hospitality staff (barista, server, hotel front desk) \u2014 trained in discre"
+  },
+  "real_ticket": {
+    "invite": "recipient of a curated invitation \u2014 person who has been chosen for an experience someone thought they needed",
+    "desc": "Two real tickets to a real event. The designed experience ends; the real experience it was pointing toward begins."
+  },
+  "gift_card": {
+    "invite": "person valued enough to receive a real gift \u2014 the relationship is real enough that something was given",
+    "desc": "Physical Visa/Mastercard prepaid card mailed in a well-designed envelope. The organization has real resources. Face value: $25\u201375."
+  },
+  "library_hold": {
+    "invite": "person whose interests and inner life are being tracked and curated by something",
+    "desc": "Place a real hold on a book at their local library branch using their library card info (with sponsor's help and participant's broad consent)."
+  },
+  "false_ally": {
+    "invite": "person who found an ally (pre-reveal); person who was fooled by their own judgment (post-reveal) \u2014 both identities are productive",
+    "desc": "An operative presents as a fellow participant or accidental co-conspirator \u2014 someone else caught in the same game, or someone who stumbled into the participant's situation from the"
+  },
+  "ai_phone_agent": {
+    "invite": "person receiving a call from an organization with enough resources to reach out by phone",
+    "desc": "Platforms: Vapi, Bland.ai, Retell AI. The agent knows the participant profile and the character's personality and knowledge state."
+  },
+  "voice_clone": {
+    "invite": "person receiving a message from someone they know \u2014 or believed they did",
+    "desc": "ElevenLabs voice clone from 2\u20135 minutes of clean speech. The voice of someone the participant knows and trusts \u2014 a parent, old friend, mentor \u2014 saying something that only makes sen"
+  },
+  "ringless_voicemail": {
+    "invite": "person being reached out to quietly \u2014 contacted without alarm, without intrusion",
+    "desc": "## SYNTHETIC MEDIA"
+  },
+  "video_message": {
+    "invite": "person being addressed directly and personally by someone who took the time to speak to them specifically",
+    "desc": "HeyGen or Synthesia. 30\u201345 seconds maximum. Slightly imperfect quality \u2014 mild compression, not studio lighting."
+  },
+  "deepfake": {
+    "invite": "person who witnessed something that couldn't have happened and yet did",
+    "desc": "Someone the participant knows appears to be delivering a message within the narrative. The maximum possible reality-blurring in the library."
+  },
+  "aged_photograph": {
+    "invite": "person who has a history they didn't know about \u2014 a past that was documented before they arrived",
+    "desc": "A physical photograph printed on actual photographic paper (Walgreens, CVS, Snapfish \u2014 any drugstore photo print) is categorically different from a home inkjet printout."
+  },
+  "polaroid": {
+    "invite": "recipient of something someone kept \u2014 an object that implies a prior relationship with whoever took it",
+    "desc": "Polaroid cameras (Polaroid Now, OneStep) and Fujifilm Instax cameras are both available and cheap to use. Instax Mini film is about $1/shot."
+  },
+  "torn_journal_page": {
+    "invite": "person who accidentally found someone's private thoughts",
+    "desc": "A page torn from a journal \u2014 handwritten, aged, with visible wear \u2014 implies a private document that found its way to the participant by a route they don't know."
+  },
+  "newspaper_clipping": {
+    "invite": "person who found documentary evidence that something actually happened",
+    "desc": "A physical newspaper clipping \u2014 cut or torn from a real or fake newspaper page."
+  },
+  "redacted_document": {
+    "invite": "investigator who found real documentation \u2014 but can't see everything yet",
+    "desc": "Heavy black redaction marks are more interesting than revealed text. What's hidden is always more compelling than what's shown."
+  },
+  "handwritten_letter": {
+    "invite": "person valued enough to receive correspondence by hand \u2014 someone who warranted that effort",
+    "desc": "A handwritten letter in 2026 is the rarest form of personal communication. Receiving one creates immediate priority attention."
+  },
+  "altered_book": {
+    "invite": "person who found something hidden inside a real object \u2014 insider access via a physical artifact",
+    "desc": "A physical book that appears ordinary but has been altered \u2014 containing a layer of narrative content added by the fictional character."
+  },
+  "wrong_person_contact": {
+    "invite": "accidental witness to someone else's story \u2014 or the person who was always the intended recipient",
+    "desc": "A message that's clearly intended for someone with a similar name, or sent to the participant's address for a previous tenant, or addressed to a version of their name they don't us"
+  },
+  "misdelivered_package": {
+    "invite": "person who received something not meant for them \u2014 or who was always the intended recipient",
+    "desc": "Ship a package to the participant's address, addressed to a name that isn't theirs but is meaningful in the narrative."
+  },
+  "unsolicited_subscription": {
+    "invite": "person whose identity is being used by something they don't understand yet",
+    "desc": "A magazine, newsletter, or product sample arrives in their mail for a subscription they didn't initiate."
+  },
+  "returned_letter": {
+    "invite": "recipient of correspondence meant for someone who is no longer where they were \u2014 or never was",
+    "desc": "A letter arrives at the participant's address stamped \"RETURN TO SENDER \u2014 ADDRESSEE UNKNOWN\" or \"MOVED \u2014 NO FORWARDING ADDRESS.\" It's addressed to someone who used to live there, o"
+  },
+  "vanishing_institution": {
+    "invite": "person who can see what others can't \u2014 something was real and is now gone, and only they were there for both states",
+    "desc": "At the right arc moment, the organization disappears: the website returns 404, the phone number is disconnected, the LinkedIn profiles are deactivated, the Google Maps listing is r"
+  },
+  "loyalty_program": {
+    "invite": "member of an organization that values ongoing relationship with them specifically",
+    "desc": "A \"welcome to your loyalty program\" email from the fictional organization. They have a member number. They've accumulated 3,247 points."
+  },
+  "missed_appointment": {
+    "invite": "person with existing obligations they've forgotten \u2014 someone with a history they didn't know they were building",
+    "desc": "A \"reminder\" or \"follow-up\" for an appointment that was never made. \"[Organization] Appointment Reminder: Your scheduled consultation on [recent past date] was not completed."
+  },
+  "receipt_unknown_purchase": {
+    "invite": "person whose financial identity has been touched by something outside their knowledge",
+    "desc": "A confirmation email styled exactly like a real retailer receipt \u2014 for a purchase made \"on their account\" for items that are meaningful in the narrative."
+  },
+  "automated_system_call": {
+    "invite": "account holder receiving notification from a system that knows their account exists",
+    "desc": "A call that sounds like an automated system \u2014 IVR audio quality, slight compression, the specific cadence of automated messaging."
+  },
+  "you_ve_been_found": {
+    "invite": "person who was hunting and discovers they were the one being observed all along",
+    "desc": "The most powerful structural moment available. Let the participant discover things first \u2014 the website, the organization, the character \u2014 without being acknowledged."
+  },
+  "retroactive_meaning": {
+    "invite": "person at the center of a pattern that was designed for them specifically",
+    "desc": "Plant a detail in day 1\u20133 that seems incidental. Reference it later as significant: \"Re-read the second paragraph of the letter we sent you on day 3.\" They find something they miss"
+  },
+  "parallel_threads": {
+    "invite": "person who is the link \u2014 the only one positioned to see the connection because both threads run through them",
+    "desc": "Three separate, seemingly unrelated contacts with a hidden shared element. The participant connects them before being told they're connected."
+  },
+  "nomination_framing": {
+    "invite": "person who was selected by someone who saw something in them \u2014 the chosen",
+    "desc": "\"You were recommended by someone who wishes to remain anonymous.\" / \"Based on your [specific true thing], you were identified.\" / \"Twelve people were considered."
+  },
+  "dead_mans_switch": {
+    "invite": "person whose response matters \u2014 someone that something is waiting for",
+    "desc": "\"If we don't receive confirmation by [specific date and time], the following will happen automatically.\" The impersonality \u2014 a system with its own logic that doesn't care about the"
+  },
+  "incomplete_sequence": {
+    "invite": "participant in something ongoing \u2014 person waiting for what comes next",
+    "desc": "\"Part 1 of 2\" in the subject line. An email that ends mid-sentence. A document with clearly missing sections. A voicemail that cuts off."
+  },
+  "profiling_survey": {
+    "invite": "person whose profile is being built by something \u2014 someone whose specifics have been found relevant",
+    "desc": "Typeform or Google Forms. Frame as \"required assessment before proceeding.\" Questions feel administrative; they're gathering dimensional data and calibration material."
+  },
+  "reference_check_play": {
+    "invite": "candidate under evaluation by something that does its homework",
+    "desc": "An AI phone agent (or a human caller) contacts someone in the participant's life \u2014 a colleague, a friend, ideally someone professionally adjacent \u2014 and asks about the participant."
+  },
+  "spotify_playlist": {
+    "invite": "person whose emotional state has been seen and curated \u2014 someone whose inner life was paid attention to",
+    "desc": "A Spotify or Apple Music playlist shared from the fictional character's account. The song choices, order, and titles tell a story within the story."
+  },
+  "rejection_gambit": {
+    "invite": "person who will prove they deserve access \u2014 someone with something to demonstrate",
+    "desc": "After an application or intake-like interaction (designed or real), the participant receives a formal rejection."
+  },
+  "false_breakthrough": {
+    "invite": "detective who cracked the case \u2014 and doesn't yet know there's more",
+    "desc": "A planted \"discovery\" that appears to explain the mystery \u2014 the actor behind the evaluator, the LinkedIn that seems to expose the organization, the phone number that answers and co"
+  },
+  "simulated_loss": {
+    "invite": "person who had something they cared about and lost it \u2014 and must decide what that means",
+    "desc": "The participant is shown or told that something significant has been lost, destroyed, or compromised \u2014 finances drained, accounts locked, reputation damaged, a relationship betraye"
+  },
+  "fax": {
+    "invite": "person being reached by something from a different era \u2014 something that has been operating for a long time",
+    "desc": "Receiving a fax in 2026 is so unusual it creates immediate narrative weight."
+  },
+  "telegram": {
+    "invite": "recipient of urgent, formal, official word from somewhere that still operates this way",
+    "desc": "iTelegram.com delivers actual physical telegrams in Western Union format. ALL CAPS. STOP punctuation."
+  },
+  "real_obituary": {
+    "invite": "person discovering that someone from the narrative has died \u2014 or didn't",
+    "desc": "A fictional character's obituary in a real local paper \u2014 modest local and weekly papers have minimal verification requirements."
+  },
+  "informed_delivery_ridealong": {
+    "invite": "person whose relationship with their own surveillance tool has been inverted",
+    "desc": "## AI-NATIVE & AMBIENT"
+  },
+  "behavioral_ad": {
+    "invite": "person whose digital behavior has been observed and deliberately weaponized",
+    "desc": "Upload the participant's email or phone to a Meta or Google custom audience. Run display or social ads from the narrative organization."
+  },
+  "llm_contamination": {
+    "invite": "person who can't fully trust their own research tools \u2014 whose epistemic environment has been shaped",
+    "desc": "Plant content on the public web so that when the participant queries an AI search tool about the narrative entity, they get a result."
+  },
+  "search_planted": {
+    "invite": "researcher who found the trail using the world's most trusted information channel",
+    "desc": "SEO-optimized content placed so that when the participant Googles a narrative-relevant name, phrase, or document title, they find it in the first page of results."
+  },
+  "authenticity_proof": {
+    "invite": "person who just confirmed this is real \u2014 and now can't step back from that knowledge",
+    "desc": "In an environment where everything could be AI-generated, demonstrating irrefutable realness is the counter-play."
+  },
+  "ai_disclosure": {
+    "invite": "person navigating a world where human and machine are genuinely indistinguishable",
+    "desc": "At a designed moment in a sustained character interaction, the operative (human or AI) explicitly says: \"I should be transparent with you \u2014 I'm an AI system working on behalf of [o"
+  },
+  "notification_native": {
+    "invite": "person whose notification stream has been accessed \u2014 something is in the ambient layer of their attention",
+    "desc": "Delivery via push notification in the participant's existing app or browser ecosystem rather than SMS or email."
+  },
+  "ai_character_interface": {
+    "invite": "person in an ongoing relationship with someone who is always there \u2014 an available confidant",
+    "desc": "The fictional character is deployed as an actual AI interface the participant can talk to \u2014 a chatbot on the narrative domain, a custom GPT, a deployed LLM with a character system "
+  },
+  "personalization_uncanny": {
+    "invite": "person whose everyday life has been observed with actual care",
+    "desc": "A message in a format trained to be dismissed \u2014 marketing email, promotional SMS, \"you have a new offer\" notification \u2014 that is precisely, specifically personalized in ways that fo"
+  },
+  "corrupted_familiar": {
+    "invite": "person who noticed what others reading the same document would have missed",
+    "desc": "A small, specific discrepancy in something the participant regularly encounters and trusts. Not a forgery \u2014 a discrepancy. Their address with one digit wrong."
+  },
+  "absent_record": {
+    "invite": "investigator who found where a record should exist and doesn't \u2014 witness to a deliberate absence",
+    "desc": "A gap where a record should exist. The absence is the artifact."
+  },
+  "social_graph_leak": {
+    "invite": "person whose actual social world has been touched \u2014 not just their inbox or phone",
+    "desc": "A real person already in the participant's network, briefed with exactly one detail and nothing else, who lets it surface naturally in an unrelated conversation."
+  },
+  "simultaneous_convergence": {
+    "invite": "person who can see the pattern \u2014 the one at the center of coordinated attention that implies total reach",
+    "desc": "The same reference arrives through multiple genuinely unconnected channels within a tight window \u2014 same day, sometimes the same hour."
+  },
+  "hyperlocal_civic": {
+    "invite": "person whose physical world is being watched \u2014 not just their digital behavior",
+    "desc": "A message delivered through the participant's actual neighborhood infrastructure \u2014 technically public, but specific enough to their location that coincidence is not a credible expl"
+  },
+  "real_system_entry": {
+    "invite": "investigator who found something that was already there before they looked \u2014 a record that required no one to place it for them",
+    "desc": "An actual entry created in a real public records system. Not a fake document \u2014 a genuine record in a genuine database, findable by anyone who searches, existing before the particip"
+  },
+  "retroactive_recontextualization": {
+    "invite": "person whose story was already in motion before they knew it \u2014 someone who has always been the protagonist",
+    "desc": "The participant's own real, publicly available history reframed as having been narrative-relevant before the experience began."
+  },
+  "spatial_message": {
+    "invite": "person being observed in the physical world \u2014 not just the digital",
+    "desc": "A message delivered through the participant's real physical environment with no digital component. No channel, no account, no deliverability problem."
+  },
+  "the_witness": {
+    "invite": "person who has been seen by something in the physical world \u2014 and can't confirm or deny it",
+    "desc": "A stranger in a public space who seems to recognize the participant. Doesn't approach. Doesn't speak."
+  },
+  "the_commission": {
+    "invite": "person who mattered enough to someone that they made something about them \u2014 a subject worthy of craft",
+    "desc": "An artifact that was clearly made specifically about the participant \u2014 not personalized, not customized, not addressed to them \u2014 made *about* them."
+  },
+  "convincer_win": {
+    "invite": "The person whose instincts are right. The one who recognized a real opportunity.",
+    "desc": "The foundational short-con mechanic: give the participant a small, real win early, before the stakes mean anything."
+  },
+  "convincer_loss": {
+    "invite": "The person who doesn't quit when it gets hard. The one who sees it through.",
+    "desc": "The mirror of the convincer win and equally essential to the long con's architecture."
+  },
+  "convincer_plant": {
+    "invite": "The one who finds what others miss. The investigator whose eyes are trained to see.",
+    "desc": "The art of arranging for the participant to \"independently discover\" fabricated evidence."
+  },
+  "salting": {
+    "invite": "The one who notices. The person the world is speaking to.",
+    "desc": "Named directly after the mining fraud tradition: placing valuable ore in a depleted mine so an independent assayer would \"discover\" it and certify the mine as productive."
+  },
+  "shill_validation": {
+    "invite": "The one who isn't alone in this. Part of a larger, select group who've seen the same thing.",
+    "desc": "The shill is one of the oldest tools in con artistry. In three-card monte the shill wins visibly, recruiting bystanders into belief by demonstrating the game is winnable."
+  },
+  "roper": {
+    "invite": "The one who was chosen by someone whose judgment they trust. Already inside a trusted relationship before the arc begins.",
+    "desc": "Maurer distinguishes the roper from other operatives with unusual care: the roper finds the mark and steers them toward the scenario without ever seeming to be part of it."
+  },
+  "convincer_document": {
+    "invite": "The one who has been officially designated. Named. Documented. Part of something with a paper trail.",
+    "desc": "The convincer document draws on the rich tradition of con artistry's paper infrastructure."
+  },
+  "convincer_location": {
+    "invite": "The one who checked. Who didn't just take anyone's word for it. Who went and saw.",
+    "desc": "The convincer location is the physical world's answer to document legitimacy."
+  },
+  "convincer_crowd": {
+    "invite": "Member of a select group. Not alone. Part of a larger, real movement.",
+    "desc": "In the big con's store, dozens of extras performed a convincing financial operation so the mark could see themselves as one of many sophisticated participants."
+  },
+  "hurry_up": {
+    "invite": "The one who acts. Who doesn't hesitate when it matters. Who shows up.",
+    "desc": "Maurer documents the hurry-up explicitly: \"Don't let him think, don't let him talk to a lawyer, don't let him call his wife.\" The time pressure is artificial but its function is ps"
+  },
+  "spanish_prisoner": {
+    "invite": "The one who can help. The one who matters to someone in trouble. The one who won't abandon.",
+    "desc": "One of the oldest documented frauds \u2014 appearing in European records by the late 16th century."
+  },
+  "pigeon_drop": {
+    "invite": "The trusted one. The keeper. The one who can hold something important without being told why.",
+    "desc": "The pigeon drop's essential structure: two strangers find something valuable and propose to split it, but one must put up \"good faith\" collateral while waiting."
+  },
+  "blow_off": {
+    "invite": "The one who completed something. Who saw it through. Who got out.",
+    "desc": "The blow-off is the con's exit mechanism \u2014 getting the mark away from the scene without suspicion or anger."
+  },
+  "cooling_the_mark": {
+    "invite": "The one who was chosen for an experience rare enough to require this much craft. Not a victim \u2014 a subject.",
+    "desc": "Goffman's 1952 paper \"On Cooling the Mark Out\" is the foundational analysis."
+  },
+  "inside_outside": {
+    "invite": "The one who can see both sides. The pivot point between two systems.",
+    "desc": "The inside man / outside man is the structural heartbeat of the big con."
+  },
+  "wire_convincer": {
+    "invite": "The one who is almost there. Who has come too far to stop now.",
+    "desc": "Named after the big con's climactic beat: \"the wire\" was a scheme in which the mark was convinced they had inside knowledge of delayed race results."
+  },
+  "marks_pride": {
+    "invite": "The one who doesn't back down. Who shows up even when it's hard. Proof of who they say they are.",
+    "desc": "The mark's pride is the mechanism that keeps marks from walking away at maximum doubt."
+  },
+  "convincer_return": {
+    "invite": "The one who can see how it all connects. Who was in the story from the beginning.",
+    "desc": "The callback \u2014 in improvisation, the planted callback; in narrative, Chekhov's gun; in con artistry, the moment when something the mark barely noticed returns as the key to the who"
+  },
+  "newspaper_test": {
+    "invite": "The careful one. The one who doesn't take things on faith. The one whose verification is meaningful.",
+    "desc": "Named after the journalist's fact-checking protocol \u2014 \"if your mother says she loves you, check it.\" In con artistry, the newspaper test is the moment when the mark is directed to "
+  },
+  "cooling_letter": {
+    "invite": "The one who was seen. Who mattered. Who completed something.",
+    "desc": "Maurer describes the big con's cooler as a specialist \u2014 often the most emotionally skilled person in the crew \u2014 whose job was to talk a mark down into a state where they simply wen"
+  },
+  "planted_witness": {
+    "invite": "The investigator who found a witness. The one finding real people with real knowledge.",
+    "desc": "The planted witness draws on the tradition of testimonial fraud \u2014 the use of apparently independent witnesses to corroborate a false account."
+  },
+  "cold_read": {
+    "invite": "The one who has been accurately perceived. The one whose interior is not invisible.",
+    "desc": "The foundational technique of stage mentalists, psychic readers, and confidence artists who establish intimate knowledge of a stranger."
+  },
+  "barnum_profile_dispatch": {
+    "invite": "You are someone whose inner complexity has rarely been accurately named.",
+    "desc": "The Barnum or Forer effect names the phenomenon by which people accept vague, generally applicable statements as personally accurate when delivered with authority and apparent spec"
+  },
+  "cold_voicemail_drop": {
+    "invite": "You are someone whose path has been noticed, from outside your awareness.",
+    "desc": "A voicemail is left \u2014 apparently for the wrong number \u2014 by a confederate or agent-directed caller."
+  },
+  "resonance_letter": {
+    "invite": "You are someone who has finally been seen by someone paying the right kind of attention.",
+    "desc": "The Resonance Letter is a Barnum profile in narrative disguise \u2014 delivered not as a psychological document but as a character's personal observation, written in first person, as th"
+  },
+  "sealed_envelope_reveal": {
+    "invite": "You are someone whose path was already written \u2014 and you walked it freely.",
+    "desc": "A sealed envelope is delivered to the participant \u2014 by mail, courier, or in-person handoff \u2014 before any event or decision that the arc will subsequently engineer."
+  },
+  "forced_choice_architecture": {
+    "invite": "You are someone who trusts their own instincts \u2014 your choices reveal something real about you.",
+    "desc": "Forcing is the technical backbone of mentalism: engineering a participant's \"free\" choice so they select the pre-planned option while experiencing full subjective freedom."
+  },
+  "one_ahead_sequence": {
+    "invite": "You are someone who is just now understanding that the sequence was always ahead of you.",
+    "desc": "The one-ahead principle: each piece of information the system reveals about the participant appears to have been known before it was disclosed."
+  },
+  "coincidence_stack": {
+    "invite": "You are someone whose life has a structure that is only now becoming visible.",
+    "desc": "Three unconnected coincidences, engineered to arrive within a 48-hour window, using different channels and apparent origins. Each one alone is dismissible. Two create interest."
+  },
+  "ambient_number_seeding": {
+    "invite": "You are someone beginning to notice that certain things recur in your life for reasons you haven't yet named.",
+    "desc": "A number, word, symbol, or image is placed in the participant's environment repeatedly \u2014 across different contexts, through apparently unconnected channels \u2014 in the days or weeks b"
+  },
+  "progressive_anesthesia": {
+    "invite": "You are someone who goes further than most \u2014 not recklessly, but because you recognize there is more.",
+    "desc": "Derren Brown's principle of progressive anesthesia \u2014 derived from his analysis of how compliance, disclosure, and emotional investment can be escalated without resistance when each"
+  },
+  "dual_reality_dispatch": {
+    "invite": "You are someone having an experience that others are having differently \u2014 and you are not sure what that means about what is real.",
+    "desc": "Two participants receive different versions of the same interaction."
+  },
+  "retroactive_biography": {
+    "invite": "You are someone who has been known \u2014 without your knowledge \u2014 by someone paying close, quiet attention across time.",
+    "desc": "The character running the experience delivers evidence \u2014 a photograph, a document, a letter, a reference \u2014 that they have known about the participant longer than the timeline of th"
+  },
+  "thoughtform_plant": {
+    "invite": "You are someone who, once given a lens, sees through it everywhere \u2014 because the lens was already yours.",
+    "desc": "Early in the arc, the participant is given a symbol, word, or image \u2014 apparently casually, as a small gift or curiosity \u2014 and told only that it is \"something worth holding.\" No exp"
+  },
+  "async_book_test": {
+    "invite": "You are someone whose private interior \u2014 even the random choices you make alone \u2014 is somehow legible to this system.",
+    "desc": "The classic book test \u2014 in which a mentalist appears to know the word a participant chose at random from a book \u2014 is adapted for async delivery through a combination of guided choi"
+  },
+  "ambient_symbol_echo": {
+    "invite": "You are someone in whose life certain things repeat \u2014 not by chance.",
+    "desc": "A symbol established early in the arc \u2014 in a letter, a gift, a casual communication \u2014 subsequently appears in multiple unconnected contexts throughout the arc's duration."
+  },
+  "intake_echo": {
+    "invite": "You are someone who has already told this system more than you realized \u2014 and it listened carefully.",
+    "desc": "Information disclosed during intake \u2014 by the sponsor, by the participant in calibration, or inferred from behavioral signals during early arc beats \u2014 surfaces in a later communicat"
+  },
+  "filed_prediction": {
+    "invite": "You are someone whose story was known \u2014 and confirmed \u2014 before you lived it.",
+    "desc": "A prediction is made \u2014 in writing \u2014 and filed with an apparently independent third party before the experience begins: a lawyer, a notary, a trusted institution, or a friend of the"
+  },
+  "directed_dream": {
+    "invite": "You are someone whose inner life \u2014 even the parts that operate without your direction \u2014 is part of this process.",
+    "desc": "Late in the day \u2014 optimally within two hours of the participant's typical sleep time \u2014 a communication is delivered that gives the participant an instruction, object, or prompt to "
+  },
+  "third_party_confirmation": {
+    "invite": "You are someone whose private read on the situation was right \u2014 and someone else has arrived at the same place independently.",
+    "desc": "A confederate \u2014 playing either a stranger or a character with apparent independence from the arc \u2014 confirms the participant's private suspicion without being asked."
+  },
+  "self_fulfilling_dispatch": {
+    "invite": "You are someone who will do what you are told you will do \u2014 because it is already true of you.",
+    "desc": "The participant is told \u2014 in character voice, with confidence \u2014 what they will \"naturally\" do next."
+  },
+  "named_stranger": {
+    "invite": "You are someone for whom the world has arranged this meeting \u2014 and you recognized it when it came.",
+    "desc": "The participant is told \u2014 with appropriate gravity and minimal explanation \u2014 that they will encounter a person with a specific first name or role (\"you will meet someone named Mart"
+  },
+  "calibrated_miss": {
+    "invite": "You are someone paying close enough attention to notice when something is almost right \u2014 and then to see how it corrects.",
+    "desc": "A deliberate near-miss: the agent makes a claim that is close but not quite accurate, then corrects it."
+  },
+  "threshold_naming": {
+    "invite": "You are someone who has earned a name for what you have become during this arc.",
+    "desc": "At the arc's threshold moment \u2014 when the participant has crossed the central challenge or transformation the arc was built around \u2014 they are given a word or name that describes the"
+  },
+  "legend_seed": {
+    "invite": "the person who was already being watched before they knew it",
+    "desc": "A legend is a false but documented identity \u2014 an entity with a past."
+  },
+  "walk_in_approach": {
+    "invite": "the person significant enough to be found",
+    "desc": "In real HUMINT, a walk-in is an unsolicited volunteer who presents themselves to an intelligence service with an offer."
+  },
+  "brush_pass_transfer": {
+    "invite": "the operative in the field",
+    "desc": "A brush pass is a physical exchange between two people who appear to have no relationship, executed in motion, lasting under three seconds."
+  },
+  "dead_drop_receive": {
+    "invite": "the operative who knows how to receive without being seen",
+    "desc": "The participant receives instructions directing them to a specific public location and a specific retrieval method: the third book on the second shelf from the bottom of a particul"
+  },
+  "challenge_response_protocol": {
+    "invite": "the operative who knows the codes",
+    "desc": "The participant is given a challenge phrase and its response in an early contact \u2014 framed as authentication protocol, the way two strangers who are both in the operation can verify"
+  },
+  "cut_out_introduction": {
+    "invite": "the operative who accepts that not everything is visible",
+    "desc": "A cut-out is an intermediary who operates between two parties who do not communicate directly, so that neither party can fully expose the other."
+  },
+  "mice_ego_appeal": {
+    "invite": "the person who was worth finding",
+    "desc": "The MICE framework identifies four primary recruitment vectors for human intelligence assets."
+  },
+  "mice_ideology_appeal": {
+    "invite": "the person whose values are a form of capability",
+    "desc": "The ideology recruitment vector does not appeal to what the participant wants \u2014 it appeals to what they believe."
+  },
+  "mice_coercion_shadow": {
+    "invite": "the person who knows how to move carefully",
+    "desc": "This play is the most ethically weighted in this section and should be deployed only with deliberate care."
+  },
+  "mice_money_signal": {
+    "invite": "the person who knows that everything has a price, including their particular skills",
+    "desc": "The material recruitment vector works by making the exchange explicit: the entity offers something of value in return for the participant's cooperation."
+  },
+  "surveillance_detection_route": {
+    "invite": "the operative who moves through the world like they know they might be followed",
+    "desc": "A surveillance detection route is a specific path through public space designed to expose anyone following the operative without appearing to look for surveillance."
+  },
+  "mole_hunt_brief": {
+    "invite": "the investigator who suspects everyone and must work anyway",
+    "desc": "The participant is briefed by a handler or principal: there is a leak in the operation, someone close to the participant is passing information to an adversary, and the participant"
+  },
+  "compartmentalization_brief": {
+    "invite": "the person trusted with the part others are not permitted to see",
+    "desc": "The participant is told, in specific operational terms, that they are being given information on a need-to-know basis."
+  },
+  "legend_stress_test": {
+    "invite": "the operative who can hold the legend under pressure",
+    "desc": "The participant has been given a cover story as part of their role in the operation \u2014 biographical details, a backstory, a set of facts about who they are in the context of the arc"
+  },
+  "exfiltration_protocol": {
+    "invite": "the operative who thinks ahead",
+    "desc": "The participant receives a document \u2014 brief, operationally terse \u2014 that describes what they should do if their cover is blown or contact is lost."
+  },
+  "legend_depth_build": {
+    "invite": "the person who has been part of something longer than they knew",
+    "desc": "While legend_seed plants a legend for a character, this play creates discovered evidence that the operation \u2014 or the participant's own role within it \u2014 has a history that predates "
+  },
+  "asset_validation_request": {
+    "invite": "the asset whose knowledge is worth something",
+    "desc": "The participant is asked to confirm or evaluate a specific piece of information: Does this person's description match someone they know? Is this address consistent with what they u"
+  },
+  "dry_cleaning_walk": {
+    "invite": "the operative who moves through the city as if their life depends on getting it right",
+    "desc": "Dry cleaning is the process of systematically removing surveillance before an operational meeting or dead drop."
+  },
+  "one_time_pad_receipt": {
+    "invite": "the operative who communicates in a channel no one can intercept",
+    "desc": "The participant receives a physical object: a card or small booklet containing a one-time pad \u2014 a grid of letters or numbers, or a simpler keyed system designed for the arc's techn"
+  },
+  "handler_letter": {
+    "invite": "the asset who has a handler who knows who they actually are",
+    "desc": "A handler letter is a piece of direct communication from the handler figure to the participant \u2014 warm in register, operationally grounded, implying an ongoing relationship that has"
+  },
+  "safe_house_assignment": {
+    "invite": "the operative who knows where safety is",
+    "desc": "The participant is given an address \u2014 a real, publicly accessible location in their city \u2014 and told it is a fallback point if contact is lost or their situation becomes untenable."
+  },
+  "mice_full_profile": {
+    "invite": "the subject who now knows they were studied",
+    "desc": "This is the section's highest-intensity play and must be treated as a threshold event rather than a routine deployment."
+  },
+  "welcome_flood": {
+    "invite": "someone worth attending to; someone already known and valued before they knew they were known",
+    "desc": "The play opens the arc. In a short window \u2014 24 to 72 hours after first real contact \u2014 the participant receives multiple signals of recognition across more than one channel."
+  },
+  "lexical_handshake": {
+    "invite": "someone who speaks this language; an insider",
+    "desc": "Communications begin using two to four specific terms that carry meaning within the arc's world."
+  },
+  "the_vetting_letter": {
+    "invite": "someone who has been evaluated and found to possess something real; the chosen",
+    "desc": "A formal letter \u2014 ideally physical, on stock that signals seriousness \u2014 informs the participant that they have been considered against a set of criteria and found to be someone the"
+  },
+  "first_disclosure_invitation": {
+    "invite": "someone with an interior worth knowing; someone trusted enough to receive a rare truth",
+    "desc": "The organization asks the participant to share something true about themselves that they rarely share \u2014 not their deepest secret, but something real that does not usually come up."
+  },
+  "incremental_oath": {
+    "invite": "someone who keeps their word; someone who has made a series of real choices to be here",
+    "desc": "A series of requests, each small, each slightly larger than the last, each framed as natural next steps. The first might be to respond to a question."
+  },
+  "lexical_deepening": {
+    "invite": "someone fluent in a private world; someone whose perception has been refined",
+    "desc": "Where the lexical handshake introduced two to four terms, lexical deepening introduces vocabulary that reframes."
+  },
+  "the_naming_ceremony": {
+    "invite": "someone with a title, a role, a name within this world; a person who has been formally recognized",
+    "desc": "The participant is given a name, title, designation, or epithet by the organization."
+  },
+  "milieu_letter": {
+    "invite": "someone who now understands the shape of the world they have entered",
+    "desc": "A letter \u2014 or document formatted as a letter \u2014 that describes the world the participant has entered. Not a handbook. A vision statement written for one reader."
+  },
+  "the_shadow_walk": {
+    "invite": "someone being watched over; someone worth accompanying",
+    "desc": "The participant is told, gently and warmly, that someone in the organization has been paying attention to them \u2014 not watching in a surveillance sense, but holding them in mind, not"
+  },
+  "the_purity_protocol": {
+    "invite": "someone who does what this requires; someone who has made their commitment legible",
+    "desc": "The organization asks the participant to do one specific, slightly unusual thing as a mark of their commitment: abstain from something for a defined period, perform a small ritual "
+  },
+  "the_deep_archive_pull": {
+    "invite": "someone whose history matters; someone whose story has been attended to long before they knew it",
+    "desc": "The organization demonstrates \u2014 through reference to specific, accurate, pre-arc information \u2014 that it has records, attention, or knowledge of the participant that predates first c"
+  },
+  "thought_stopping_interrupt": {
+    "invite": "someone whose doubt is a sign of depth rather than a reason to stop",
+    "desc": "When the participant expresses doubt, confusion, or resistance, the response does not engage the doubt directly. It does not argue, does not dismiss, and does not ignore."
+  },
+  "the_floating_moment": {
+    "invite": "someone who has touched something real; someone who now knows what is possible",
+    "desc": "A brief, intense, carefully staged experience that produces something close to transcendence: a moment of genuine felt connection with another person, a sudden perception of beauty"
+  },
+  "witnessed_confession": {
+    "invite": "someone who has been fully seen and not turned away from; someone whose interior was witnessed and honored",
+    "desc": "The participant is invited to share something genuinely vulnerable \u2014 not performed vulnerability, but something that carries weight, something they have not easily shared."
+  },
+  "the_us_signal": {
+    "invite": "someone who understands something most people don't; someone on the inside of something real",
+    "desc": "A communication that draws a gentle, clear line between the participant and people who have not had this experience or developed this understanding."
+  },
+  "graduated_reveal": {
+    "invite": "someone who earns their way deeper; someone whose readiness has been recognized",
+    "desc": "Information about the arc's world is released in tiers, each requiring something from the participant before it becomes available."
+  },
+  "graduation_ritual": {
+    "invite": "someone who has crossed; someone who is now different from who they were at entry",
+    "desc": "A threshold is crossed. Something marks it \u2014 a physical object delivered, a ceremony conducted, a specific phrase spoken by the right person in the right context, a document signed"
+  },
+  "the_long_echo": {
+    "invite": "someone who has been accompanied the whole time; someone whose story was known before they knew it",
+    "desc": "A phrase, image, symbol, or object from the very opening of the experience reappears, unexpectedly, near the end. Not as repetition \u2014 as return. The participant recognizes it."
+  },
+  "parallel_correspondent": {
+    "invite": "someone among others; part of something larger, even if the larger remains out of reach",
+    "desc": "The participant learns that there is someone else going through a similar journey \u2014 a correspondent, a parallel traveler, someone who has been asking similar questions or facing si"
+  },
+  "borrowed_authority": {
+    "invite": "someone participating in something that serious, credible people have taken seriously",
+    "desc": "The organization invokes a respected figure \u2014 historical, institutional, artistic, intellectual \u2014 as a witness to the questions or purposes the arc engages."
+  },
+  "productive_rupture": {
+    "invite": "someone who has tested this and found it real; someone who stayed through something difficult",
+    "desc": "Something goes wrong. The organization fails the participant in a way that is real enough to hurt \u2014 a missed communication, an apparent betrayal, a promise broken, an unexpected si"
+  },
+  "exit_honored": {
+    "invite": "someone whose choice is respected unconditionally; someone who was never trapped",
+    "desc": "When the participant uses their safety word, slows significantly, or signals in any way that they wish to disengage, the organization responds immediately and with warmth."
+  },
+  "anomalous_receipt": {
+    "invite": "the person who notices what others would discard",
+    "desc": "A piece of mail or email arrives addressed to someone else \u2014 a name close to but not the participant's, or a previous resident, or a name that will later prove meaningful."
+  },
+  "dead_letter_office": {
+    "invite": "the inheritor of an interrupted story",
+    "desc": "A package or thick envelope arrives with visible evidence of travel: multiple forwarding address labels layered over each other, a postmark dated three to six weeks prior, handling"
+  },
+  "cipher_in_plain_sight": {
+    "invite": "the analyst who sees structure where others see noise",
+    "desc": "A message is hidden inside something public and unremarkable: a classified ad in a local paper, a product description in an online shop, a public event listing, a block of legal bo"
+  },
+  "multi_key_first_fragment": {
+    "invite": "the investigator at the beginning of something real",
+    "desc": "A first piece of evidence arrives that is clearly not the whole picture."
+  },
+  "time_locked_page": {
+    "invite": "the initiate who has been granted access at the appointed time",
+    "desc": "A URL is passed to the participant \u2014 embedded in a document, spoken by a character, found at the end of a cipher \u2014 with the information that it will be accessible \"after Thursday\" "
+  },
+  "fragmented_witness": {
+    "invite": "the arbiter of truth from partial testimony",
+    "desc": "Three or more partial accounts of the same event arrive through different channels and across different time points."
+  },
+  "the_unreliable_archive": {
+    "invite": "the investigator who cannot outsource judgment",
+    "desc": "A dossier arrives \u2014 physical binder, PDF, or accessible archive site \u2014 containing documents that purport to be a complete record of something: a case file, a person's correspondenc"
+  },
+  "puppet_master_near_miss": {
+    "invite": "the witness to the seam between worlds",
+    "desc": "A moment is engineered where the participant gets a partial glimpse behind the production. A character breaks slightly from their script and then recovers."
+  },
+  "tinag_frame_break": {
+    "invite": "the participant who has been found out by the world they're investigating",
+    "desc": "A moment occurs where the experience acknowledges that the participant knows they are in an experience \u2014 but does so through a character or mechanism inside the fiction."
+  },
+  "optional_path": {
+    "invite": "the person who goes further than required",
+    "desc": "A fork appears in the material \u2014 clearly marked, or clearly implied by the structure \u2014 where one branch is the expected continuation and another is available but not required."
+  },
+  "community_solve_bait": {
+    "invite": "the analyst who may not be alone in this",
+    "desc": "A puzzle or evidence set arrives that is genuinely difficult for one person to solve alone \u2014 not impossibly so, but requiring either breadth of reference knowledge that any single "
+  },
+  "the_false_confirmation": {
+    "invite": "the investigator whose intuitions were right before they knew it",
+    "desc": "A message arrives \u2014 from a character, from a system, from an implied source \u2014 that confirms a theory the participant has not yet fully formed."
+  },
+  "meta_game_layer": {
+    "invite": "the investigator who has discovered that the map has a map",
+    "desc": "A moment in the experience reveals that there is a structural layer above the one the participant has been operating in."
+  },
+  "slow_burn_url": {
+    "invite": "the reader who held on to something before knowing why",
+    "desc": "A URL appears in the very first or second contact \u2014 embedded in a letter, visible in a photograph, listed at the bottom of a receipt as if it were a terms-of-service link."
+  },
+  "personalized_glitch": {
+    "invite": "the person who has been noticed by something vast",
+    "desc": "An anomaly appears in a system the participant uses daily \u2014 and the anomaly is specifically calibrated to them."
+  },
+  "relay_handler": {
+    "invite": "the initiated traveler passing between guides",
+    "desc": "The participant is passed from one character or handler to another."
+  },
+  "physical_object_as_key": {
+    "invite": "the holder of something that was meant to reach them",
+    "desc": "A physical object arrives \u2014 mailed or placed \u2014 that is itself functional, not representational. Not a letter about a key, but an actual key."
+  },
+  "breadcrumb_sequence": {
+    "invite": "the investigator whose own effort moves the story",
+    "desc": "A series of discoveries, each one containing the next step. The participant receives something \u2014 a document, an object, a message \u2014 that contains or implies a direction: check this"
+  },
+  "witness_who_returns": {
+    "invite": "the investigator whose earlier encounter now makes sense",
+    "desc": "A character who appeared briefly and apparently peripherally in early material \u2014 a name on a cc: list, a brief phone call from someone who said they'd be in touch, a mention in a l"
+  },
+  "diegetic_archive_site": {
+    "invite": "the researcher with access to the primary source",
+    "desc": "A website exists that is a narrative object inside the fiction \u2014 the internal document repository of a fictional organization, a character's personal archive, the case files of an "
+  },
+  "scheduled_interruption": {
+    "invite": "the person being kept in contact by something that tracks time",
+    "desc": "The participant has been told, by a character or through found material, that something will arrive on a specific day: \"Expect something Wednesday.\" Wednesday arrives."
+  },
+  "convergence_point": {
+    "invite": "the investigator who has assembled the picture",
+    "desc": "Multiple threads from different channels \u2014 letters, a website, phone calls, a physical object, a character's communications \u2014 all point to the same location, person, date, or momen"
+  },
+  "wax_seal_letter": {
+    "invite": "the recipient of serious correspondence",
+    "desc": "A letter arrives on heavy cotton paper \u2014 24lb or above, cream or off-white \u2014 with a wax seal on the back flap."
+  },
+  "one_wrong_word": {
+    "invite": "the reader whose attention is the instrument",
+    "desc": "A document, letter, or message arrives that is entirely correct \u2014 plausible, consistent, well-written \u2014 except for one word that is wrong in a specific and non-accidental way."
+  },
+  "retro_medium_artifact": {
+    "invite": "the archivist who found something that was never meant to be found; the one whose attention discovered what casual viewers missed",
+    "desc": "A digital or physical artifact that appears to come from an older, more authentic medium \u2014 VHS aesthetics with CRT scan lines and tracking errors, a GeoCities-era HTML page hosted "
+  },
+  "soft_landing": {
+    "invite": "the person who came through something real",
+    "desc": "The gap this addresses: participants emerge from climax in an altered state \u2014 adrenaline, emotion, uncertainty about what just happened \u2014 and the most common design failure is fill"
+  },
+  "artifact_as_relic": {
+    "invite": "the person who has been somewhere worth remembering",
+    "desc": "The gap this addresses: physical objects passed during the arc (a key, a letter, a photograph, a coin) are experienced in context \u2014 they mean what the arc told them to mean in the "
+  },
+  "day_seven_reframe": {
+    "invite": "the person who now understands something they didn't know they were learning",
+    "desc": "The gap this addresses: participants reflect on an immersive experience differently at seven days than they do at zero."
+  },
+  "integration_letter": {
+    "invite": "the person who demonstrated something specific and real about themselves",
+    "desc": "The gap this addresses: most immersive experiences give participants an experience but not a witness."
+  },
+  "long_shadow": {
+    "invite": "the person this character still thinks about",
+    "desc": "The gap this addresses: thirty days post-denouement, most participants have metabolized the experience and filed it \u2014 as memory, as story, as something that happened."
+  },
+  "quiet_withdrawal": {
+    "invite": "the person whose story has concluded (not been interrupted)",
+    "desc": "The gap this addresses: silence after an immersive experience reads as abandonment unless it is designed."
+  },
+  "graceful_release": {
+    "invite": "the person whose choice to leave is respected completely",
+    "desc": "The gap this addresses: most resistance-handling frameworks are implicitly about re-engagement \u2014 they treat a participant checking out as a problem to be solved."
+  },
+  "open_door_signal": {
+    "invite": "the person who can return on their own terms",
+    "desc": "The gap this addresses: there is a class of participant who is not fully out but has gone quiet \u2014 they may be overwhelmed, busy, uncertain, or processing something the arc surfaced"
+  },
+  "breadcrumb_without_demand": {
+    "invite": "the person who is still worth thinking about, even without reciprocating",
+    "desc": "The gap this addresses: a participant who has checked out but not explicitly exited is in a particular state \u2014 they have withdrawn investment but probably still have ambient awaren"
+  },
+  "seam_acknowledgment": {
+    "invite": "the person perceptive enough to notice what most people miss",
+    "desc": "The gap this addresses: a participant who finds a seam \u2014 a Google-able actor, a domain registered this year, a phone number that doesn't match the geography \u2014 is at a critical deci"
+  },
+  "test_reframe": {
+    "invite": "the person who was right \u2014 and whose rightness reveals something more interesting than they expected",
+    "desc": "The gap this addresses: \"Am I being tested?\" is one of the most common and structurally useful moments in any high-immersion experience."
+  },
+  "misfire_as_story": {
+    "invite": "the person whose experience was coherent after all",
+    "desc": "The gap this addresses: plays misfire. A letter arrives too late, a confederate improvises badly, a tone is misjudged, a contact lands in the wrong emotional window."
+  },
+  "wrong_read_recovery": {
+    "invite": "the person who is being paid close enough attention to warrant a correction",
+    "desc": "The gap this addresses: agent or confederate misread the participant's state \u2014 delivered an escalation play when the participant was depleted, sent a playful beat during grief, pus"
+  },
+  "shadow_correspondent": {
+    "invite": "the person complex enough to be read differently by different people",
+    "desc": "The gap this addresses: when the system has misread a participant and the primary character is now slightly out of alignment, the shadow correspondent appears as a second character"
+  },
+  "broken_immersion_honor": {
+    "invite": "the person brave enough to ask what's real, and steady enough to hear the answer",
+    "desc": "The gap this addresses: a participant who explicitly breaks the fourth wall \u2014 \"I know this isn't real,\" \"who are you actually,\" \"I want to talk to the person running this\" \u2014 is not"
+  },
+  "elegant_failure": {
+    "invite": "the person who now understands the system better because it showed its strain",
+    "desc": "The gap this addresses: physical and logistical failures happen \u2014 wrong envelope, letter to wrong address, call at wrong time, number no longer in service."
+  },
+  "unknowing_collaboration": {
+    "invite": "the person whose choices were consequential in ways they didn't know",
+    "desc": "The gap this addresses: single-participant arcs are inherently solipsistic \u2014 the world of the experience is organized entirely around one person."
+  },
+  "parallel_discovery": {
+    "invite": "the person who was not the only one looking",
+    "desc": "The gap this addresses: discovery in a single-participant arc is private \u2014 only this person found this thing, only this person knows this."
+  },
+  "convergence_signal": {
+    "invite": "the person whose journey was part of something larger than they knew",
+    "desc": "The gap this addresses: the convergence_signal is the delivery mechanism for the revelation that a participant's arc was not solo."
+  },
+  "ambient_organization_presence": {
+    "invite": "the person who has found something real and verifiable",
+    "desc": "The gap this addresses: an organization or character that exists only within the contacts sent to the participant collapses the moment they open a second tab."
+  },
+  "deep_backstory_artifacts": {
+    "invite": "the person who digs and finds something older than they expected",
+    "desc": "The gap this addresses: a world that only exists from first contact forward has no depth."
+  },
+  "dormant_frequency": {
+    "invite": "the person who held on to something without knowing why, and was right to",
+    "desc": "The gap this addresses: channels introduced during the arc's early stages and then silenced create an ambient background condition \u2014 the participant may periodically wonder about t"
+  },
+  "unmarked_anniversary": {
+    "invite": "the one whose history is known and held by something outside themselves",
+    "desc": "A message arrives on the exact calendar date of a significant event the participant disclosed \u2014 the day a relationship ended, the anniversary of a death, the date they left a city "
+  },
+  "calendar_holding": {
+    "invite": "someone whose timeline is a landscape someone else is also walking through",
+    "desc": "During intake, the agent assembles a private calendar of dates significant to the participant: birthdays of people they've lost, departure dates, founding dates of things they buil"
+  },
+  "first_anniversary_dispatch": {
+    "invite": "someone who has lived a year with something, and is still here",
+    "desc": "A letter or card arrives one year to the day after a significant arc event, or after a loss the participant disclosed."
+  },
+  "elegiac_obituary": {
+    "invite": "someone who loved something enough to mourn it properly",
+    "desc": "An obituary-format document arrives for something the participant has lost \u2014 not a person (that is the existing real_obituary play), but the relational and experiential losses that"
+  },
+  "time_capsule_dispatch": {
+    "invite": "someone who can stand at the hinge between who they were and who they are and find both worth addressing",
+    "desc": "A letter arrives written in the voice of the participant's past self, addressed to their present self."
+  },
+  "photograph_stranger_knows_you": {
+    "invite": "someone who is known across distances they don't understand",
+    "desc": "A photograph arrives \u2014 an archival or found-photography image of someone the participant has never met."
+  },
+  "last_known_address_letter": {
+    "invite": "someone whose former homes still hold a part of them",
+    "desc": "A letter is sent to an address the participant no longer lives at. The letter is addressed to them by name, at that address."
+  },
+  "locate_photograph_assignment": {
+    "invite": "the investigator of their own history, returning to the scene",
+    "desc": "The participant is asked to locate something that still exists from a period or relationship they have lost and to photograph it."
+  },
+  "letter_never_sent": {
+    "invite": "someone with the courage to speak to what cannot hear them \u2014 and to be witnessed doing it",
+    "desc": "The participant is asked to write a letter they never sent \u2014 to a person, a place, a former self, a lost relationship, or something they never got to say goodbye to."
+  },
+  "small_ceremony_instruction": {
+    "invite": "someone who knows how to mark what matters, who holds their own ceremonies",
+    "desc": "A set of instructions arrives for a small, specific ceremony. Light a candle at a specific time. Open a window and leave it open for one hour. Set a place at the table."
+  },
+  "liminal_hour_dispatch": {
+    "invite": "someone who receives transmissions others cannot, at hours when the boundary thins",
+    "desc": "A message is deployed at a liminal time \u2014 3:07am, or at the exact minute of local sunset, or at astronomical twilight, or at the moment the day turns."
+  },
+  "natural_calendar_beat": {
+    "invite": "someone who lives by a calendar older than the one on their phone",
+    "desc": "A message arrives timed to a natural calendrical event \u2014 the summer solstice, the winter solstice, a new moon, a full moon, an equinox \u2014 at the precise moment the event occurs at t"
+  },
+  "absent_presence_character": {
+    "invite": "someone who is trusted by the dead, or chosen by someone who cannot choose them anymore",
+    "desc": "A character exists in the arc who died before the arc began. They are not a ghost \u2014 no supernatural claims are made."
+  },
+  "voice_from_disconnected_number": {
+    "invite": "someone who receives transmissions from beyond the ordinary reach of communication",
+    "desc": "A voicemail arrives from a number the participant does not recognize. When they call it back \u2014 and they will call it back \u2014 the number is disconnected."
+  },
+  "past_tense_prophecy": {
+    "invite": "someone who has lived through the thing they are living through \u2014 who has the knowledge of having survived",
+    "desc": "A message arrives written entirely in past tense about events that have not yet happened \u2014 but which are plausible, near-future extensions of the participant's current life."
+  },
+  "memorial_object_arrival": {
+    "invite": "someone who has been thought of, who has received something made or chosen with care",
+    "desc": "A small physical object arrives with no explanation \u2014 or with only the slimmest explanation, a card with a word or a date or a brief phrase that does not fully decode what the obje"
+  },
+  "year_mind_return": {
+    "invite": "someone whose transformation was witnessed and is still held",
+    "desc": "Exactly one year after arc completion \u2014 or after a specific beat identified at arc design time as the \"year's mind moment\" \u2014 a brief communication arrives."
+  },
+  "inventory_of_what_remains": {
+    "invite": "the careful archivist of their own life \u2014 someone who notices and names what endures",
+    "desc": "The participant is asked to make a list. Not of what they have lost \u2014 but of what remains."
+  },
+  "forwarded_grief": {
+    "invite": "someone who is a link in a chain of mourning they did not start and will not end",
+    "desc": "A document arrives that appears to have passed through other hands. A letter folded with fold-marks from other openings."
+  },
+  "sealed_room": {
+    "invite": "someone who decides when they are ready \u2014 who does not have to grieve on loss's schedule",
+    "desc": "The participant is told \u2014 within the arc's fiction \u2014 that there is a room where the things that are too much to hold right now have been placed. The room is sealed."
+  },
+  "witness_register": {
+    "invite": "someone whose losses are real enough to be recorded \u2014 whose grief counts",
+    "desc": "The participant is invited to enter a loss into a register \u2014 a formal record maintained by the arc's institution, character, or system."
+  },
+  "grief_time_legible": {
+    "invite": "someone who has carried something a long way and can now see the shape of what they carried",
+    "desc": "A document arrives that looks back at the arc's grief-register beats from a point of sufficient distance. Not a summary \u2014 a retrospection."
+  },
+  "memo_field_transmission": {
+    "invite": "the person whose attention is being sought by something that knows where to reach them",
+    "desc": "A micro-payment between $0.01 and $0.99 is sent to the participant via Venmo, PayPal, Zelle, or Cash App from a freshly created account with a plausible but non-searchable name."
+  },
+  "receipt_anomaly_line_item": {
+    "invite": "the person who notices what others walk past",
+    "desc": "A cooperating vendor \u2014 coffee shop, bookstore, hardware store, any business the participant already patronizes \u2014 adds a single anomalous line item to the participant's receipt for "
+  },
+  "refund_from_nowhere": {
+    "invite": "the person someone thought to repay",
+    "desc": "A PayPal Business payment is sent to the participant labeled as a refund \u2014 using the \"refund\" transaction type where available, or a transfer with an explicit memo: \"Refund \u2014 Accou"
+  },
+  "invoice_intangible_services": {
+    "invite": "the person who has been receiving something they didn't account for",
+    "desc": "A professionally formatted invoice arrives \u2014 via email from a domain the operator controls, or as a PDF attached to a plain-text email, or printed and mailed via USPS."
+  },
+  "statement_of_account": {
+    "invite": "the person who has been running a ledger they didn't know existed",
+    "desc": "A multi-page account statement mailed or emailed as a PDF covers a fictional \"account history\" for the participant."
+  },
+  "escrow_formal_notice": {
+    "invite": "the person whose choices have monetary consequence \u2014 even their inner ones",
+    "desc": "A formal notice on institutional letterhead informs the participant that a specific sum \u2014 between $15 and $200, chosen for narrative significance \u2014 has been placed in escrow pendin"
+  },
+  "beneficiary_selection_notice": {
+    "invite": "the person who was selected \u2014 who was seen by someone keeping a longer account than they realized",
+    "desc": "A letter arrives informing the participant that they have been designated as a beneficiary for a disbursement from a named fund or trust."
+  },
+  "grant_award_letter": {
+    "invite": "the practitioner whose work has been seen and valued by the right people",
+    "desc": "A formal award letter arrives \u2014 on letterhead, in an envelope, with a real stamp \u2014 from a plausible arts, research, or community foundation."
+  },
+  "bearer_bond_certificate": {
+    "invite": "the shareholder \u2014 the one who holds a stake in something others don't know is real",
+    "desc": "A formal stock certificate or bearer bond arrives by mail \u2014 a physical document, 8.5\" \u00d7 11\" or larger, with the visual language of early-to-mid twentieth century securities: ornate"
+  },
+  "ticker_feed_events": {
+    "invite": "the investor tracking something real that no one else can see",
+    "desc": "A custom web page is built and maintained \u2014 minimal, financial-style design \u2014 that displays a market ticker for one or more fictional assets."
+  },
+  "portfolio_life_decisions": {
+    "invite": "the person whose life has been, all along, an investment strategy \u2014 one worth analyzing",
+    "desc": "A portfolio report \u2014 formatted as a private wealth management document \u2014 maps the participant's actual life decisions to notional financial performance."
+  },
+  "commodity_narrative_report": {
+    "invite": "the analyst who reads the market for what it actually means",
+    "desc": "A commodity market report arrives \u2014 formatted as an industry brief, the kind distributed to futures traders, agricultural planners, or weather derivatives desks."
+  },
+  "collections_agency_notice": {
+    "invite": "the person who must account for what they owe \u2014 even the debts they didn't know they were running",
+    "desc": "A debt collection letter arrives \u2014 formatted with full fidelity to the genre: \"NOTICE OF PAST-DUE ACCOUNT. This communication is from a debt collector."
+  },
+  "promissory_note": {
+    "invite": "the person who makes formal promises \u2014 who takes their own commitments seriously enough to sign them",
+    "desc": "A promissory note arrives by mail \u2014 formatted as a legal instrument, single page, with the spare precision of real financial notes."
+  },
+  "lien_on_abstract": {
+    "invite": "the person who must defend something they didn't know they owned",
+    "desc": "A lien notice arrives \u2014 formatted as a UCC Uniform Commercial Code filing notice or a state-level lien notification, the kind that would accompany a mechanic's lien or an encumbran"
+  },
+  "credit_report_parallel_self": {
+    "invite": "the person who chose this life, knowing another was possible",
+    "desc": "A credit report arrives \u2014 formatted as an Equifax, Experian, or TransUnion consumer disclosure."
+  },
+  "w2_fictional_employer": {
+    "invite": "the professional whose most important work was always already employment, even when it went unpaid",
+    "desc": "An IRS Form W-2 \u2014 formatted identically to the real document, using the current year's layout available from IRS.gov for reference \u2014 arrives in an envelope."
+  },
+  "property_tax_notice": {
+    "invite": "the person who has always held a claim on a particular place \u2014 even without the deed",
+    "desc": "A property tax notice arrives \u2014 formatted as a county assessor or municipal tax authority document \u2014 for a real property that the participant has a relationship to but does not own"
+  },
+  "appraisal_letter": {
+    "invite": "the person whose choices have market value \u2014 whose judgment has been assessed and found worth something",
+    "desc": "An appraisal letter arrives from a fictional appraisal or advisory firm, formatted as a professional written appraisal of a specific item."
+  },
+  "market_analysis_participant_choices": {
+    "invite": "the rational actor who has access to better information than they realized",
+    "desc": "A market analysis document arrives \u2014 formatted as a financial advisory brief, the kind distributed to private clients by boutique investment advisors or family offices."
+  },
+  "dividend_notice": {
+    "invite": "the patient investor \u2014 the person who held something and is now receiving a return",
+    "desc": "A dividend notice arrives \u2014 a brief, formal document notifying the participant that a dividend has been declared and paid on their holdings."
+  },
+  "inheritance_fraction_notice": {
+    "invite": "the inheritor \u2014 the person who carries something forward, whether they chose to or not",
+    "desc": "A letter arrives from a fictional estate attorney \u2014 on letterhead, by USPS, with a real stamp and a return address in a plausible city."
+  },
+  "pre_sleep_sensory_dispatch": {
+    "invite": "the one who pays attention to what happens at the edges",
+    "desc": "The dispatch arrives between 60 and 30 minutes before the participant's tracked or self-reported sleep time \u2014 close enough to bed that it travels with them but not so close that it"
+  },
+  "sleep_data_mirror": {
+    "invite": "someone whose inner life has a shape that can be read",
+    "desc": "If the participant uses a sleep-tracking wearable (Fitbit, Oura, Apple Watch, Garmin), the agent requests read access to their sleep data through the platform's public API with par"
+  },
+  "three_am_dispatch": {
+    "invite": "someone who receives transmissions at the edges of consciousness",
+    "desc": "Scheduled to arrive between 2:45 and 3:15 AM local time, pushed as a phone notification that is brief enough to be read half-asleep in under ten seconds."
+  },
+  "dream_report_request": {
+    "invite": "someone whose inner life produces material worth attending to",
+    "desc": "The request is made the evening before, so it travels with the participant into sleep: \"Before you sleep: if you remember anything from tonight \u2014 image, feeling, fragment \u2014 send it"
+  },
+  "hypnagogic_image_seed": {
+    "invite": "someone whose unconscious processes are in contact with something larger",
+    "desc": "The image seed is a specific, concrete visual or sensory description sent within the participant's pre-sleep window."
+  },
+  "breath_gate": {
+    "invite": "someone who prepares before entering",
+    "desc": "A message arrives that cannot be opened immediately. Instead, it contains a brief instruction: \"Before you read this, complete four cycles of the following: breathe in for four cou"
+  },
+  "somatic_key_installation": {
+    "invite": "someone who carries something the body knows",
+    "desc": "The installation happens in three stages across the arc's first third."
+  },
+  "stress_state_calibration": {
+    "invite": "someone whose physical state is worth knowing",
+    "desc": "For seven consecutive days, the participant receives a prompt at the same time daily \u2014 chosen to be the moment in their day when they are most likely to be both accessible and tran"
+  },
+  "contemplative_walk_instruction": {
+    "invite": "someone who moves through the world as a practice",
+    "desc": "The instruction specifies three parameters: time of day, pace, and one sensory constraint."
+  },
+  "carry_this": {
+    "invite": "someone who carries something that matters",
+    "desc": "The participant is asked to carry a specific small object \u2014 one they already own \u2014 for a defined period, typically one to two weeks."
+  },
+  "home_environment_task": {
+    "invite": "someone who prepares a space for what is coming",
+    "desc": "The participant is asked to make one specific, physical change to their home environment. Not their entire home \u2014 one location, one action."
+  },
+  "threshold_crossing_practice": {
+    "invite": "someone who notices when one state becomes another",
+    "desc": "For 48 hours, the participant is asked to notice every time they cross a threshold \u2014 every doorway, every curb, every elevator arrival, every gate, every transition from one space "
+  },
+  "sensory_diary": {
+    "invite": "someone who attends to the texture of experience",
+    "desc": "Each day for a week, the participant is asked to send one sensory detail: \"One thing you noticed today with your body \u2014 not your eyes."
+  },
+  "temperature_weather_dispatch": {
+    "invite": "someone whose body is in relationship with the world's body",
+    "desc": "The agent monitors the participant's local weather via a public weather API (OpenWeatherMap or equivalent) and uses three variables to time and calibrate dispatches: current temper"
+  },
+  "anticipatory_signal_state": {
+    "invite": "someone who is waiting for something real",
+    "desc": "The participant is told that a specific signal will arrive within the next 72 hours."
+  },
+  "hunger_window_delivery": {
+    "invite": "someone who receives in a state of need",
+    "desc": "The play exploits a well-documented physiological phenomenon: in a fasted state (approximately four or more hours after eating), and in the immediate post-exercise window, several "
+  },
+  "circadian_dispatch_series": {
+    "invite": "someone whose day has a rhythm that is attended to",
+    "desc": "The arc maps to the participant's circadian rhythm: wake-time dispatch, midday dispatch, evening dispatch, pre-sleep dispatch."
+  },
+  "seasonal_body_dispatch": {
+    "invite": "someone whose body is part of a larger cycle",
+    "desc": "The play establishes a relationship between the arc's content and the season's specific somatic signature."
+  },
+  "dusk_dawn_dispatch": {
+    "invite": "someone who is present at the moment of change",
+    "desc": "The dispatch is timed to arrive at the precise moment of local sunset or local sunrise, calculated via the participant's city and the date."
+  },
+  "physical_threshold_unlock": {
+    "invite": "someone whose body can do what is asked of it",
+    "desc": "A specific arc beat \u2014 a piece of content, an instruction, a revelation \u2014 is placed behind a physical threshold."
+  },
+  "indexed_ghost_page": {
+    "invite": "someone whose name or life has been noted by an unknown party",
+    "desc": "Create a real, indexable webpage on a platform the participant has no reason to monitor \u2014 a minor subdomain of a plausible organization, a GitHub Pages site for a fictional researc"
+  },
+  "archive_snapshot": {
+    "invite": "someone who finds evidence of a past they didn't know existed",
+    "desc": "The Wayback Machine at archive.org allows public URL submission via its Save Page Now feature."
+  },
+  "silent_follower": {
+    "invite": "someone whose movements have been quietly tracked",
+    "desc": "Build or age a social media account on the platform the participant is most active on \u2014 Instagram or Twitter/X for most participants, LinkedIn for professionally-oriented arcs."
+  },
+  "minor_wikipedia_edit": {
+    "invite": "someone whose world contains hidden layers of meaning they did not put there",
+    "desc": "Identify a real Wikipedia article in the long tail \u2014 not a stub, but not a major article either \u2014 that connects to the participant's actual life through geography, profession, inte"
+  },
+  "maps_review_plant": {
+    "invite": "someone whose neighborhood knows something about them, or knows something they should know",
+    "desc": "Write a Google Maps review for a location the participant frequents, posted from a Google account that belongs to or will belong to an arc character."
+  },
+  "street_mark": {
+    "invite": "someone in whose neighborhood something has been quietly present",
+    "desc": "A human operator or confederate with local presence places a small, durable mark in the participant's regular environment."
+  },
+  "book_bench_drop": {
+    "invite": "someone who finds things that seem meant for them",
+    "desc": "Select a real book whose content is either thematically adjacent to the arc or contains a specific passage the arc will later quote."
+  },
+  "physical_trace_plant": {
+    "invite": "someone in whose home something significant has been quietly sitting",
+    "desc": "A confederate with natural access to the participant's home or regular workspace places a small, innocuous object that will later be designated significant by the arc."
+  },
+  "postcard_blind_send": {
+    "invite": "someone someone else is thinking of",
+    "desc": "Purchase or commission a postcard with a real photograph \u2014 a city street, a landscape, an architectural detail \u2014 from or associated with a city that the arc will later make signifi"
+  },
+  "classified_ad_plant": {
+    "invite": "someone who notices what others scroll past",
+    "desc": "Place a small classified advertisement in a local print publication \u2014 an alt-weekly, a neighborhood newspaper, a community bulletin."
+  },
+  "character_bridge_connection": {
+    "invite": "someone who is one degree from something they did not know existed",
+    "desc": "Build or age a LinkedIn account for an arc character \u2014 a researcher, a consultant, a former colleague, a professional in a field adjacent to the arc's themes."
+  },
+  "sighting_report": {
+    "invite": "someone who is being looked for",
+    "desc": "Brief a confederate \u2014 someone in the participant's social circle who is willing to participate in a vague, socially plausible scenario \u2014 to deliver a single, casual observation in "
+  },
+  "ambient_triple_seed": {
+    "invite": "someone whose world has been quietly speaking a language they have not yet learned to read",
+    "desc": "Select a single element \u2014 an image, a color pairing, a word, a number, a brief phrase \u2014 that will be the arc's central recurring identifier."
+  },
+  "subscription_infiltration": {
+    "invite": "someone who receives things meant for them without knowing who sent them",
+    "desc": "Build or acquire a real, functional email newsletter \u2014 a Substack, a ConvertKit newsletter, a Mailchimp publication \u2014 on a topic adjacent to the arc's themes but broadly interestin"
+  },
+  "false_memory_seed": {
+    "invite": "someone who knew something before they knew they knew it",
+    "desc": "Identify the arc's central informational premise \u2014 the claim, story, or concept that the arc will introduce as its revelatory content."
+  },
+  "birthday_card_unknown_sender": {
+    "invite": "someone who is known to, and thought of by, a stranger",
+    "desc": "Mail a standard greeting card \u2014 a birthday card for a birthday, a seasonal card for a proximate holiday \u2014 to the participant at their mailing address."
+  },
+  "glassdoor_reference_plant": {
+    "invite": "someone whose professional past contains a layer they did not know was there",
+    "desc": "Create a Glassdoor account for the arc character and write a review of a company the participant has worked for or currently works at."
+  },
+  "recurring_audio_seed": {
+    "invite": "someone whose world has developed a specific emotional tone before they understood why",
+    "desc": "Select a specific song \u2014 one with emotional resonance appropriate to the arc's register, and one with low enough daily-life saturation that its recurrence over two weeks will feel "
+  },
+  "change_talk_elicitation": {
+    "invite": "the person who knows what this means for them; the one who can articulate their own story",
+    "desc": "A structured conversation designed entirely around asking questions that cause the participant to articulate the significance of their experience themselves, rather than being told"
+  },
+  "outsider_witness_ceremony": {
+    "invite": "the person whose specific action was witnessed by someone who saw it clearly",
+    "desc": "A structured moment where a character, confederate, or document witnesses a specific thing the participant did and names it back with precision."
+  },
+  "generalization_contract": {
+    "invite": "the person who takes this somewhere; the one for whom this wasn't just an experience but a change",
+    "desc": "An explicit named commitment made by the participant at arc close about what they will apply from the experience to their real life."
+  },
+  "front_loading_beat": {
+    "invite": "the participant who is about to learn something they don't know they need",
+    "desc": "A beat deployed before the transformative core of the arc that names, in the arc's language, the insight or capacity the experience is designed to produce \u2014 without naming how or w"
+  },
+  "commissioning_letter": {
+    "invite": "the person who was commissioned; the one who has been equipped for something specific and sent forward to use it",
+    "desc": "A commissioning letter is not a thank-you note, a certificate of completion, or a summary of the arc. It is a formal charge."
+  },
+  "kinesthetic_encoding_beat": {
+    "invite": "the person who made something real with their body; whose transformation has physical evidence",
+    "desc": "Physical acts produce memories with different durability and somatic integration than what is seen or heard."
+  },
+  "stripping_ceremony": {
+    "invite": "the participant stripped of ordinary role markers; the person who has entered a new frame",
+    "desc": "A beat that marks the beginning of the liminal phase through removal, exchange, or surrender of something that belongs to the participant's ordinary identity."
+  },
+  "failure_cascade_reframe": {
+    "invite": "the person who wasn't wrong to be skeptical; the one whose doubt was the most interesting response possible",
+    "desc": "Deployed when a participant has gone quiet, stopped responding, or signaled skepticism \u2014 not as a counter-move but as an acknowledgment."
+  },
+  "knowledge_frontier_seed": {
+    "invite": "the one who knows they don't know something important; the investigator who has identified a gap",
+    "desc": "Source: Outer Wilds (Mobius Digital, 2019) as the canonical model for knowledge-frontier design. The expanding edge of what you don't know yet is itself a reward."
+  },
+  "player_journal_artifact": {
+    "invite": "the archivist of their own story; the witness to their own transformation; the author, not the character",
+    "desc": "Source: EVE Online player journalism model \u2014 the players who documented their experience of EVE (blogs, player news organizations, after-action reports) created artifacts of signif"
+  },
+  "temporal_rupture_opening": {
+    "invite": "the participant who has stepped out of ordinary time; the one inside a different frame",
+    "desc": "An explicit declaration \u2014 delivered through the arc's channel \u2014 that ordinary time has suspended and a different kind of time has begun."
+  },
+  "ordeal_threshold": {
+    "invite": "the one who went through it; the one who proved something to themselves by not stopping",
+    "desc": "A calibrated physical challenge that creates genuine sunk cost and genuine self-knowledge \u2014 not theatrical difficulty but actual discomfort that requires the participant to decide "
+  },
+  "absent_witness_invocation": {
+    "invite": "the person who has sworn before something larger than the present room; the one whose commitment was witnessed by an authority no one needs to verify",
+    "desc": "The participant makes a commitment before an absent authority \u2014 the organization, the dead, the ideal future self, a principle, a figure who cannot be present."
+  },
+  "communitas_beat": {
+    "invite": "the participant who is neither above nor below the guide \u2014 the equal, briefly; the person who has access to this specific contact",
+    "desc": "Victor Turner's communitas: the temporary dissolution of hierarchy in the liminal phase, producing a direct, equal social bond between participants who are ordinarily differently-p"
+  },
+  "layered_secret_system": {
+    "invite": "the participant who has been inducted into one level and knows there are deeper ones; the initiate who is not yet fully in",
+    "desc": "A revelation structure with multiple degrees of disclosure, each of which feels conclusive until the next is accessible."
+  },
+  "benefactor_capture": {
+    "invite": "before reveal: the competent operative, the trusted agent \u00b7 after reveal: the one who must decide what to do with what they now know",
+    "desc": "The structural pattern for the deepest trust betrayal in an immersive arc: the participant's guide/handler has been the source of information, missions, and support throughout; the"
+  },
+  "manufactured_crisis_reveal": {
+    "invite": "the one who now knows the full picture; the one who must decide what to do with that knowledge",
+    "desc": "The Deus Ex Gray Death / Ambrosia structure: participant has been operating within a crisis frame \u2014 believed the threat was real, responded in good faith."
+  },
+  "fractal_revelation": {
+    "invite": "the one who keeps going even when the bottom keeps moving; the investigator who has accepted there is no final layer \u2014 until there is",
+    "desc": "A beat that resolves one layer of mystery while simultaneously opening at least two new questions at a deeper level."
+  },
+  "distributed_truth_fragment": {
+    "invite": "the investigator who triangulates; the one who reconstructs truth from fragments rather than receiving it",
+    "desc": "The datacube model from Deus Ex: a single evidence fragment planted in a context the participant accesses for non-arc reasons, which only becomes fully meaningful when cross-refere"
+  },
+  "strategic_silence_beat": {
+    "invite": "the one who trusted the partial picture; retroactively: the one who completed the false inference themselves",
+    "desc": "The JC/Manderley mechanic: the character gives a technically accurate answer that is actively misleading \u2014 not because they assert something false, but because they permit the part"
+  },
+  "temporal_loop_architecture": {
+    "invite": "the one who has been here before; the participant who has mapped the system while the naive participant is still discovering it; the strategist, not the tourist",
+    "desc": "The loop is a knowledge architecture, not a content architecture."
+  },
+  "anomaly_attendance": {
+    "invite": "the one who showed up; the participant whose physical presence was real and counted",
+    "desc": "The Niantic Anomaly mechanic: a faction event requires physical attendance at a specific real-world location during a specific window. Body presence is logged."
+  },
+  "territorial_claim": {
+    "invite": "the one who holds this ground; the keeper of a specific real place",
+    "desc": "From Ingress portal ownership: a specific real-world location is designated as a game node. Participant deploys resources to own it; ownership is recorded; others can challenge."
+  },
+  "queryable_legacy": {
+    "invite": "the participant with a history; the one whose contributions are verifiable and permanent",
+    "desc": "The queryable ledger: participant actions are logged in a persistent, externally accessible database."
+  },
+  "trace_exposure": {
+    "invite": "the one being traced; the operative whose security was imperfect; the person who left a trail they didn't know existed",
+    "desc": "From Uplink's link monitor mechanic: while performing a digital task, participant receives real-time signal that their connection is being traced \u2014 a progress indicator, a characte"
+  },
+  "contract_complicity": {
+    "invite": "the effective operative who didn't know what the mission was for; the one who did the job well before learning what the job was",
+    "desc": "From Uplink's contract structure: participant receives a formal job offer. Terms: perform tasks X, Y, Z. Payment: information or resource. The participant accepts."
+  },
+  "active_erasure": {
+    "invite": "the one who chose to cover their tracks; the operative who destroyed the evidence; the participant who made an active choice to conceal",
+    "desc": "From Uplink's cover-your-tracks mechanic: participant must actively delete logs, destroy evidence, or clean a trail."
+  },
+  "forum_intervention": {
+    "invite": "the one who intervened; the protagonist who stopped the scene and changed it; the person who knows what they'd do now",
+    "desc": "From Boal's Forum Theater adapted for single participant: a scene is reconstructed \u2014 a moment of constraint or failed agency that the participant knows from their own life or from "
+  },
+  "image_theater_freeze": {
+    "invite": "the observer who can read power through bodies; the person whose own physical stance reveals their relational position",
+    "desc": "From Boal's Image Theater: participant is asked to pose their body to represent a situation, feeling, or power dynamic \u2014 without words."
+  },
+  "invisible_theater_event": {
+    "invite": "the one who acted (or didn't) when they thought it was real; the participant who can look back at their spontaneous response as data about themselves",
+    "desc": "From Boal's Invisible Theater: a scene plays out in the participant's real environment without their knowing it was designed. The scene appears real."
+  },
+  "mask_anonymity_passage": {
+    "invite": "the anonymous explorer; the self behind the social face; the one who can ask questions they'd never ask as themselves",
+    "desc": "From Felix Barrett / Punchdrunk mask mechanic: participant is given a mask before entering the experience space."
+  },
+  "one_on_one_private_scene": {
+    "invite": "the one who was chosen; the participant whose specific presence matters; not an audience member but a protagonist",
+    "desc": "From Punchdrunk's one-on-one mechanic: a performer selects a single audience member, takes them into a private room, closes the door, and performs a 2-3 minute scene \u2014 confession, "
+  },
+  "environmental_narrative_space": {
+    "invite": "the investigator who reads space; the participant who knows how to look; the archaeologist of other lives",
+    "desc": "From Barrett's site-sympathetic approach: a physical space is pre-loaded with objects that carry narrative information but do not explain themselves."
+  },
+  "hell_replay": {
+    "invite": "the participant who carries this moment; the one for whom this was the decisive thing",
+    "desc": "From Jeepform's \"hell\" technique: a scene that was played at full realism is replayed in compressed, accelerated, or stylized form."
+  },
+  "framekick_temporal_shift": {
+    "invite": "the participant who holds multiple timelines; the one who understands that the past moment and the present moment are connected in a way not yet legible",
+    "desc": "From Jeepform's framekick: mid-scene, without warning, the frame shifts."
+  },
+  "internal_monologue_voiced": {
+    "invite": "the participant who can be both actor and observer of themselves; the self who speaks their experience rather than performing it",
+    "desc": "From Jeepform meta-technique: in a live scene, a participant pauses their character's action and speaks their character's internal state directly, in first person, as if the inner "
+  },
+  "author_narration_beat": {
+    "invite": "the protagonist of a story being told by an author who sees more than they do; the participant who discovers their experience has already been witnessed and named",
+    "desc": "From Jeepform's narrative voice-over / author stance: a narrating voice distinct from any character in the fiction speaks the participant's experience from outside."
+  },
+  "group_synchronization": {
+    "invite": "the one who thought they were working alone; now part of something larger than themselves",
+    "desc": "The first moment previously-separate participants discover each other."
+  },
+  "faction_formation": {
+    "invite": "depends on faction role \u2014 the accelerant, the anchor, the escalator, the skeptic; each participant's drivermap profile predicts their faction",
+    "desc": "Ambient ramp \u2014 no operator action required. After group_synchronization, participants are in contact with each other and have different profiles, different framings of the evidence"
+  },
+  "shared_crisis_beat": {
+    "invite": "one of us; the person who held their post when the ship went down; the one who was there",
+    "desc": "A simultaneous world-state event \u2014 ship under attack, building compromised, operation blown \u2014 that all participants experience at the same moment, requiring collective real-time response."
+  },
+  "faction_allegiance_fork": {
+    "invite": "someone who chose; the one who knew which side they were on; the person whose decision defined the arc's second half",
+    "desc": "An explicit, diegetically consequential allegiance declaration that permanently routes the participant into one of two exclusive story tracks."
+  },
+  "app_location_dispatch": {
+    "invite": "the agent dispatched into the field; the operative who reads their phone and goes",
+    "desc": "A mobile interface dispatches location-specific missions requiring physical navigation \u2014 receive dispatch, navigate to location, interact with cast or object, unlock next dispatch."
+  },
+  "nested_permission_cascade": {
+    "invite": "someone who chose this, step by step; the participant who discovers, at the arc's threshold, that they have already arrived",
+    "desc": "A deliberately designed sequence of small, low-stakes consent moments that aggregate into a major identity shift \u2014 each micro-yes diegetically coherent in isolation."
+  },
+  "counter_identity_encounter": {
+    "invite": "someone looking at a mirror with distance; the participant who meets who they might have been, or who they are becoming",
+    "desc": "An arranged meeting with a confederate who embodies a radically different possible self \u2014 someone the participant could have become, is at risk of becoming, or once feared becoming."
+  },
+  "reintegration_dispatch": {
+    "invite": "someone who is still in process; the participant who discovers the arc continues to hold them after they have left",
+    "desc": "A timed sequence of post-arc contacts dispatched at 3 days, 3 weeks, and 3 months after arc conclusion, scaffolding identity shift against re-socialization pressure."
+  }
+}

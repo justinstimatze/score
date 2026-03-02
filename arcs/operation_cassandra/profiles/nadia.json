@@ -1,0 +1,15 @@
+{
+  "name": "Nadia Osei",
+  "note": "Investigative journalist. High epistemic vigilance. Won't just accept the frame — actively probes for cracks. Low A (contrarian). Wants to be the one who debunks, not the one who was fooled.",
+  "mechanisms": {
+    "pattern_recognition": 3.0,
+    "need_for_closure": 2.5,
+    "cognitive_dissonance_reduction": 2.0,
+    "information_gap": 1.75,
+    "achievement_motivation": 1.5
+  },
+  "big_five": {"O": 1, "C": 1, "E": -1, "N": -1, "A": -2},
+  "identity_invite": "truth_seeker_debunker",
+  "avoidance": ["being_fooled", "looking_naive", "deference_to_authority"],
+  "sensitivity": "low"
+}

@@ -1,0 +1,5 @@
+[project]
+name = "score"
+version = "0.1.0"
+description = "Agentic immersive experience system — arc design, linting, planning, simulation"
+requires-python = ">=3.10"

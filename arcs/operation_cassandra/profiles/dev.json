@@ -1,0 +1,15 @@
+{
+  "name": "Dev Sharma",
+  "note": "Community organizer. High E, high A. Primarily socially motivated — the investigation is interesting but the relationships and shared experience matter more than the puzzle. Will want to compare notes, share discoveries, process with others.",
+  "mechanisms": {
+    "social_validation": 3.0,
+    "reciprocity": 2.5,
+    "belonging_need": 2.0,
+    "commitment_consistency": 1.75,
+    "status_signaling": 1.5
+  },
+  "big_five": {"O": 0, "C": 0, "E": 2, "N": 0, "A": 1},
+  "identity_invite": "community_anchor",
+  "avoidance": ["social_exclusion", "conflict", "isolation"],
+  "sensitivity": "medium"
+}

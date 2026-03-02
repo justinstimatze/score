@@ -1,0 +1,15 @@
+{
+  "name": "Suki Park",
+  "note": "Operations director. High C, low O. Approaches the investigation as a project to complete efficiently. Wants clear next steps, dislikes ambiguity. Will disengage from narrative richness but engages hard with concrete tasks and measurable progress.",
+  "mechanisms": {
+    "achievement_motivation": 3.0,
+    "pattern_completion": 2.5,
+    "need_for_closure": 2.0,
+    "reward_escalation": 1.75,
+    "commitment_consistency": 1.5
+  },
+  "big_five": {"O": -1, "C": 2, "E": 0, "N": -1, "A": 0},
+  "identity_invite": "problem_solver",
+  "avoidance": ["wasted_time", "ambiguity", "open_loops"],
+  "sensitivity": "low"
+}

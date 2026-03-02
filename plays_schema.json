@@ -1,0 +1,193 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Play",
+  "description": "A single atomic play in the Score arc design system",
+  "type": "object",
+  "required": [
+    "id", "title", "cost", "autonomy", "lead_time", "intensity",
+    "mechanisms", "arc_fit", "beat_function", "somatic", "identity_invite",
+    "reinforce", "permission", "emotional_register", "agency_demand",
+    "feedback_type", "agency_type", "frame_requirement", "trope_risk",
+    "detection_window", "reversibility", "channel", "dwell_time",
+    "requires", "synergizes_with", "contraindicated_after",
+    "witness_structure", "landscape", "legacy_scope",
+    "desc", "failure_modes"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9_]*$",
+      "description": "Unique snake_case play identifier"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Human-readable play title"
+    },
+    "cost": {
+      "type": "string",
+      "enum": ["free", "low", "mid", "high", "ongoing", "varies", "goodwill"],
+      "description": "Cost tier: free | low (<$25) | mid ($25-100) | high ($100-500) | ongoing | varies | goodwill (social/relationship cost)"
+    },
+    "autonomy": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Operational autonomy level: agent | human_assist | human_managed | confederate | confederate-assist | confederate-required | operator | ambient"
+    },
+    "lead_time": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Days of setup required before deployment"
+    },
+    "intensity": {
+      "type": "string",
+      "enum": ["low", "medium", "high", "extreme", "varies"],
+      "description": "Experiential intensity level"
+    },
+    "mechanisms": {
+      "type": "array",
+      "items": {"type": "string"},
+      "minItems": 1,
+      "description": "Behavioral/psychological mechanisms engaged (drivermap IDs)"
+    },
+    "arc_fit": {
+      "type": "array",
+      "items": {"type": "string"},
+      "minItems": 1,
+      "description": "Arc positions where this play fits (pre/open/build/escalate/threshold/climax/denouement/revelation/reinforcement/any)"
+    },
+    "beat_function": {
+      "type": "string",
+      "enum": ["spike", "ramp", "hold", "rest", "transition", "liminal"],
+      "description": "Beat shape function: spike | ramp | hold | rest | transition | liminal"
+    },
+    "somatic": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Somatic effects: what the body does; what state is required"
+    },
+    "identity_invite": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Identity invitation: who the participant becomes in this play"
+    },
+    "reinforce": {
+      "type": "string",
+      "minLength": 1,
+      "description": "How the effect reinforces over time"
+    },
+    "permission": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Permission requirements and grants"
+    },
+    "emotional_register": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Emotional register(s) activated"
+    },
+    "agency_demand": {
+      "type": "string",
+      "enum": ["passive", "low", "medium", "high"],
+      "description": "How much agency the participant must exercise"
+    },
+    "feedback_type": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Type of feedback loop: none | responsive | diegetic | environmental | etc."
+    },
+    "agency_type": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Type of agency: revealed | constructed | borrowed | suspended | constrained | mirrored | emergent"
+    },
+    "frame_requirement": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Frame requirement: naive | primed | any | meta"
+    },
+    "trope_risk": {
+      "type": "string",
+      "description": "Risk of triggering genre tropes or breaking immersion"
+    },
+    "detection_window": {
+      "type": "string",
+      "minLength": 1,
+      "description": "How quickly participant might detect the artifice: immediate | short | medium | long | never_solo | session | none | transparent"
+    },
+    "reversibility": {
+      "type": "string",
+      "minLength": 1,
+      "description": "How reversible the play is: trivial | easy | difficult | irreversible | low | moderate | high"
+    },
+    "channel": {
+      "type": "array",
+      "items": {"type": "string"},
+      "minItems": 1,
+      "description": "Delivery channels (email, phone, in_person, physical_mail, digital_ambient, etc.)"
+    },
+    "dwell_time": {
+      "type": "string",
+      "minLength": 1,
+      "description": "How long the effect dwells: brief | session | multi-day | permanent | multi-session | arc-length"
+    },
+    "requires": {
+      "type": "array",
+      "items": {"type": "string"},
+      "description": "Hard prerequisites (empty list if none)"
+    },
+    "synergizes_with": {
+      "type": "array",
+      "items": {"type": "string"},
+      "description": "Play IDs that synergize with this play (empty list if none)"
+    },
+    "contraindicated_after": {
+      "type": "array",
+      "items": {"type": "string"},
+      "description": "Play IDs that this play should not follow (empty list if none)"
+    },
+    "witness_structure": {
+      "type": "string",
+      "enum": ["none", "self", "character", "outsider", "document"],
+      "description": "Who witnesses the participant's transformation"
+    },
+    "landscape": {
+      "type": "string",
+      "enum": ["action", "identity", "both"],
+      "description": "Which plane the play operates on"
+    },
+    "legacy_scope": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": ["ephemeral", "personal", "social", "world_mark"]
+      },
+      "minItems": 1,
+      "description": "Persistence and reach of effect"
+    },
+    "desc": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Multi-paragraph implementation prose"
+    },
+    "failure_modes": {
+      "type": "array",
+      "items": {"type": "string"},
+      "description": "List of failure modes (may be empty for older plays)"
+    },
+    "participant_notes": {
+      "type": "string",
+      "description": "Notes for participant-facing calibration (optional)"
+    },
+    "section": {
+      "type": "string",
+      "description": "Library section this play belongs to (optional)"
+    },
+    "group_role": {
+      "type": "string",
+      "enum": ["solo", "ensemble", "lottery", "activated", "ambient"],
+      "description": "Group role type when play involves multiple participants (optional; solo is default)"
+    }
+  }
+}
