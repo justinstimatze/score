@@ -14,6 +14,8 @@ Works as a **standalone web app** and as a **Miro sidebar panel** that reads you
 
 **[→ Open the app](https://justinstimatze.github.io/score/panel.html)** — no Miro account needed. Browse all 356 plays, build an arc in the text box, run the linter and planner right in your browser.
 
+**[→ Browse the full plays library](plays.md)** — all 356 plays with complete metadata, readable on GitHub without opening the app.
+
 ---
 
 ## Add to Miro (3 steps, ~5 minutes)
