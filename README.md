@@ -1,6 +1,6 @@
 # ScoreImmersive
 
-A design tool for immersive experience makers. Browse a library of 356 plays — atomic experience beats drawn from immersive theater, ARGs, pervasive games, and transformative experience design — arrange them into arcs, check them for structural problems, and score them against participant profiles.
+A design tool for immersive experience makers. Browse a library of 358 plays — atomic experience beats drawn from immersive theater, ARGs, pervasive games, and transformative experience design — arrange them into arcs, check them for structural problems, and score them against participant profiles.
 
 Works as a **standalone web app** and as a **Miro sidebar panel** that reads your board and drops play cards directly onto it.
 
@@ -12,9 +12,9 @@ Works as a **standalone web app** and as a **Miro sidebar panel** that reads you
 
 ## Try it now
 
-**[→ Open the app](https://justinstimatze.github.io/score/panel.html)** — no Miro account needed. Browse all 356 plays, build an arc in the text box, run the linter and planner right in your browser.
+**[→ Open the app](https://justinstimatze.github.io/score/panel.html)** — no Miro account needed. Browse all 358 plays, build an arc in the text box, run the linter and planner right in your browser.
 
-**[→ Browse the full plays library](plays.md)** — all 356 plays with complete metadata, readable on GitHub without opening the app.
+**[→ Browse the full plays library](plays.md)** — all 358 plays with complete metadata, readable on GitHub without opening the app.
 
 ---
 
@@ -33,7 +33,7 @@ Open any board in that team. The ScoreImmersive icon appears in the left toolbar
 
 ## What's in the library
 
-356 plays across every domain that matters for immersive experience design:
+358 plays across every domain that matters for immersive experience design:
 
 - **Immersive theater** — mask mechanics, one-on-ones, environmental narrative, actor loops (Punchdrunk, Sleep No More)
 - **ARGs and pervasive games** — real domains, planted evidence, breadcrumb trails, alternate reality layers (Jejune Institute, Ingress)
@@ -118,6 +118,36 @@ Your URL will be `https://your-username.github.io/score`. Use `/panel.html` appe
 The web app lives in [`miro-app/`](miro-app/). See [`miro-app/README.md`](miro-app/README.md) for the dev setup, project structure, and how to bring your own plays library.
 
 The root of the repo contains the underlying Python toolchain — arc linter, planner, simulator, and the full plays library source (`plays.md`). These are the authoring tools used to build and maintain the library.
+
+### Arc linter CLI
+
+```sh
+# Basic lint
+python arc_linter.py play1 play2 play3 --days 0,3,7 --phases p,b,e
+
+# From JSON arc file
+python arc_linter.py -f arc.json
+
+# Action-count detection window (for interactive narrative — counts plays, not calendar days)
+python arc_linter.py -f arc.json --window-mode actions
+
+# Possibility-space mode (enumerates all paths through alternatives, lints each)
+python arc_linter.py -f arc.json --mode possibility
+```
+
+Arc JSON with alternatives:
+```json
+{
+  "arc_type": "investigation",
+  "plays": [
+    {"id": "the_vetting_letter", "day": 0, "phase": "p"},
+    {"id": "welcome_flood", "day": 3, "phase": "b", "alternatives": ["planted_object"]},
+    {"id": "the_witness", "day": 7, "phase": "e"}
+  ]
+}
+```
+
+Checks: UNKNOWN, CONTRAINDICATED, FRAME_REQ, PERMISSION, LEAD_TIME, RHYTHM, DETECTION accumulation, REVERSIBILITY, ARC_FIT, LEGACY_SCOPE timing, REQUIRES consistency, MECHANISM_SATURATION, ALTERNATIVE_BEAT/PHASE/PERMISSION.
 
 ---
 

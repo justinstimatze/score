@@ -2756,5 +2756,21 @@
     "future_self_continuity",
     "identity_investment",
     "mere_exposure_effect"
+  ],
+  "patience_reward": [
+    "anticipatory_tension",
+    "curiosity_exploration",
+    "earned_access",
+    "pattern_recognition",
+    "attentional_narrowing",
+    "competence_reward"
+  ],
+  "social_pressure_break": [
+    "reactance",
+    "autonomy_support",
+    "identity_confrontation",
+    "self_perception_theory",
+    "vulnerability_as_data",
+    "cognitive_dissonance"
   ]
 }

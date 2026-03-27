@@ -1422,5 +1422,13 @@
   {
     "id": "reintegration_dispatch",
     "strip": "@reintegration_dispatch L\u00b7A\u00b7arcl\u00b72\n#conti_sig\u00b7ICH\u00b7TA\u00b7FSC\u00b7IIV\u00b7MEE [d] -\nR\u00b7q\u00b7p\u00b7i\u00b7p\u00b7n\u00b7t\nprm:Q\nsyn:commissioning_letter\u00b7resonance_letter\u00b7integration_letter\u00b7graduation_ritual\u00b7the_long_echo"
+  },
+  {
+    "id": "patience_reward",
+    "strip": "@patience_reward F\u00b7A\u00b70\u00b72\n#ANT\u00b7CE\u00b7EAC\u00b7PR\u00b7AN2\u00b7CPR [bet] -\nC\u00b7q\u00b7h\u00b7a\u00b7p\u00b7S\u00b7e\nprm:S\u2192klg\nsyn:planted_object\u00b7environmental_narrative_space\u00b7temporal_loop_architecture\u00b7the_witness\u00b7strategic_silence_beat"
+  },
+  {
+    "id": "social_pressure_break",
+    "strip": "@social_pressure_break F\u00b7A\u00b70\u00b73\n#RXN\u00b7AU\u00b7IC\u00b7SPT\u00b7VAD\u00b7CD [etc] ^\nR\u00b7q\u00b7h\u00b7+\u00b7ps\u00b7i\u00b7d\nprm:S\u2192ids\nsyn:change_talk_elicitation\u00b7one_on_one_private_scene\u00b7the_witness\u00b7incremental_oath\u00b7stripping_ceremony\n!ctr:manufactured_crisis_reveal\nreq:cnf"
   }
 ]

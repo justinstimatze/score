@@ -219,6 +219,9 @@ def parse_permission(perm_text: str) -> str:
             grant = "sct"
         elif any(w in grants_part for w in ["solved", "victory", "won"]):
             grant = "slv"
+        elif any(w in grants_part for w in ["knowledge", "knows", "learned",
+                                             "experienced", "understanding"]):
+            grant = "klg"
     return f"prm:{mode}" + (f"→{grant}" if grant else "")
 
 
@@ -686,7 +689,7 @@ def main():
         "Detection: i=immediate s=short m=medium l=long n=never_solo",
         "Reversibility: t=trivial e=easy d=difficult x=irreversible",
         "Permission grants: sct=sustained_contact asr=ambient_surveillance slv=solved-not-done",
-        "  trt=trust_channel ids=identity_shift esc=escalation_ready cls=closure_path",
+        "  trt=trust_channel ids=identity_shift esc=escalation_ready cls=closure_path klg=knowledge",
         "",
         "[grp:GR·SM·T·PC·AR]  group_role · social_modifier · participation_tier · parallel_capable · activation_rate",
         "  GR: s=solo e=ensemble ac=activated am=ambient lo=lottery",

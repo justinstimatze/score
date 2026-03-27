@@ -2351,3 +2351,17 @@ req:cnf
 R·q·p·i·p·n·t
 prm:Q
 syn:commissioning_letter·resonance_letter·integration_letter·graduation_ritual·the_long_echo
+
+@patience_reward F·A·0·2
+#ANT·CE·EAC·PR·AN2·CPR [bet] -
+C·q·h·a·p·S·e
+prm:S→klg
+syn:planted_object·environmental_narrative_space·temporal_loop_architecture·the_witness·strategic_silence_beat
+
+@social_pressure_break F·A·0·3
+#RXN·AU·IC·SPT·VAD·CD [etc] ^
+R·q·h·+·ps·i·d
+prm:S→ids
+syn:change_talk_elicitation·one_on_one_private_scene·the_witness·incremental_oath·stripping_ceremony
+!ctr:manufactured_crisis_reveal
+req:cnf

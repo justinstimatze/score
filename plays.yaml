@@ -19755,3 +19755,109 @@ failure_modes:
   - "Generic dispatch: contacts that don't reference the participant's specific arc history feel like automated content; each dispatch must include arc-specific identifying detail"
   - "Timing mismatch: the 3-day contact arrives during a high-stress period in the participant's life and is skipped; auto-dispatch systems should flag non-response on day 3 for optional operator follow-up"
   - "Diegetic frame collapse: a contact arrives after the participant has publicly \"broken the fourth wall\" with their social circle; they've debrief'd the experience as fiction and the diegetic contact feels awkward; the closing frame (last arc beat) should address this: \"what you tell others about this is your choice; what happened inside it belongs to you\""
+---
+id: patience_reward
+cost: free
+autonomy: agent
+lead_time: none
+intensity: medium
+mechanisms:
+  - anticipatory_tension
+  - curiosity_exploration
+  - earned_access
+  - pattern_recognition
+  - attentional_narrowing
+  - competence_reward
+arc_fit:
+  - build
+  - escalate
+  - threshold
+beat_function: hold
+somatic: "induces: the specific quality of waiting when you suspect the waiting itself is the point; growing tension between the impulse to act and the intuition that stillness is required; the moment of reward arrives as both relief and confirmation of the participant's own attunement"
+identity_invite: "someone who pays attention; someone who listens to the room rather than filling it; the participant who discovers that their patience is itself a form of agency"
+reinforce: "the reward explicitly names the waiting as the qualifying act; subsequent plays can reference 'you waited' as evidence of attunement"
+permission: "standalone; grants klg (knowledge) — the act of patient observation produces understanding that active investigation would have missed"
+emotional_register: "initial restlessness · growing uncertainty · the specific relief of being confirmed · quiet pride"
+agency_demand: high
+feedback_type: responsive
+agency_type: constructed
+frame_requirement: primed
+trope_risk: low
+detection_window: session
+reversibility: easy
+channel: [physical, digital]
+dwell_time: sustained
+requires:
+  - environmental context where action is the default
+  - detectable but non-obvious signal that waiting is the correct response
+synergizes_with:
+  - planted_object
+  - environmental_narrative_space
+  - temporal_loop_architecture
+  - the_witness
+  - strategic_silence_beat
+contraindicated_after: []
+witness_structure: self
+landscape: action
+legacy_scope: [personal]
+section: INTERACTIVE NARRATIVE
+desc: |
+  A play that rewards real-time patience — the participant must resist the impulse to act and instead wait, observe, or remain still for a sustained period (32 seconds to 4 minutes) before the environment responds. Source: The Stope (2025) — dwell mechanic; Outer Wilds knowledge-frontier design.
+failure_modes:
+  - "Ambiguity collapse: participant cannot distinguish 'wait' from 'nothing is happening'"
+  - "Gotcha framing: participant who acted is explicitly told they should have waited"
+  - "Duration miscalibration: waiting too long becomes tedious; calibrate to 45-90 seconds"
+---
+id: social_pressure_break
+cost: free
+autonomy: agent
+lead_time: none
+intensity: high
+mechanisms:
+  - reactance
+  - autonomy_support
+  - identity_confrontation
+  - self_perception_theory
+  - vulnerability_as_data
+  - cognitive_dissonance
+arc_fit:
+  - escalate
+  - threshold
+  - climax
+beat_function: spike
+somatic: "induces: the physical sensation of social pressure accumulating and then breaking — the moment when the participant stops performing the expected response and instead does the unexpected thing"
+identity_invite: "someone who doesn't perform on cue; someone who trusts their own response over the social demand"
+reinforce: "the break itself produces a qualitative shift in the social dynamic — the system responds to the authentic response differently"
+permission: "standalone; grants ids (identity_shift) — the act of breaking social pressure under observation produces a self-concept update"
+emotional_register: "mounting pressure · threshold moment of choosing not to · relief and exhilaration · recognition"
+agency_demand: high
+feedback_type: responsive
+agency_type: revealed
+frame_requirement: primed
+trope_risk: medium
+detection_window: immediate
+reversibility: difficult
+channel: [physical, conversation]
+dwell_time: brief
+requires:
+  - confederate or NPC capable of generating authentic social pressure
+  - social context where the expected behavior is clear
+synergizes_with:
+  - change_talk_elicitation
+  - one_on_one_private_scene
+  - the_witness
+  - incremental_oath
+  - stripping_ceremony
+contraindicated_after:
+  - manufactured_crisis_reveal
+witness_structure: character
+landscape: both
+legacy_scope: [personal, social]
+section: INTERACTIVE NARRATIVE
+desc: |
+  A play that creates escalating social pressure and rewards the participant for breaking it. The break is the beat: the moment the participant stops doing what is expected and instead does what is honest. Source: The Stope (2025) — silence mechanic; Augusto Boal Forum Theater; Nordic LARP play-to-lose.
+failure_modes:
+  - "Promptedness: participant is cued to break — destroys the self-initiation requirement"
+  - "Insufficient pressure: expected behavior isn't genuinely felt"
+  - "Wrong register: pressure crosses into intimidation; break becomes self-defense not self-discovery"
+  - "No system response: participant breaks and nothing changes"

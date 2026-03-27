@@ -29,6 +29,7 @@ from dataclasses import dataclass, field
 from pathlib import Path
 
 STRIPS_FILE = Path(__file__).parent / "plays_strips.json"
+MECHANISMS_FILE = Path(__file__).parent / "plays_mechanisms.json"
 
 # ── LEAD TIME DECODE ─────────────────────────────────────────────────────────
 
@@ -214,6 +215,13 @@ def load_strips() -> dict[str, PlayStrip]:
         if strip:
             result[strip.id] = strip
     return result
+
+
+def load_mechanisms() -> dict[str, list[str]]:
+    """Load full mechanism names per play from plays_mechanisms.json."""
+    if MECHANISMS_FILE.exists():
+        return json.loads(MECHANISMS_FILE.read_text())
+    return {}
 
 
 # ── ARC V2 STRUCTURE ──────────────────────────────────────────────────────────
@@ -465,21 +473,27 @@ def check_detection_accumulation(
     positions: list[int],
     days: list[int | None] | None = None,
     extra_day_risks: dict[int, float] | None = None,
+    window_mode: str = "days",
 ) -> list[Issue]:
     """
     Flag windows where detection risk accumulates.
     Detection codes: i=immediate s=short m=medium l=long n=never_solo
     Risk weights: i=4 s=3 m=2 l=1 n=0
 
-    When days are provided, use a 7-calendar-day sliding window (day-indexed).
-    When days are not provided, use a 4-play positional sliding window.
+    window_mode:
+      "days" (default) — when days are provided, use a 7-calendar-day sliding window.
+      "actions" — always use positional sliding window (action-count based),
+                  even when days are provided. For interactive narrative systems
+                  where time isn't the relevant frame.
+
+    When days are not provided (regardless of mode), use a 4-play positional sliding window.
     extra_day_risks: additional risk contributions from parallel tracks, keyed by day.
     """
     WEIGHTS = {"i": 4, "s": 3, "m": 2, "l": 1, "n": 0, "S": 1, "D": 1, "t": 0, "?": 1}
     issues = []
     risk = [WEIGHTS.get(p.detection, 1) for p in plays]
 
-    has_days = days and any(d is not None for d in days)
+    has_days = days and any(d is not None for d in days) and window_mode != "actions"
 
     if has_days:
         # Build day-indexed risk map
@@ -687,6 +701,106 @@ def check_requires_consistency(plays: list[PlayStrip], positions: list[int]) -> 
         issues.append(Issue("INFO", -1, "arc", "REQUIRES",
             f"{len(needs_location)} plays require specific location access — "
             f"confirm logistics are coordinated"))
+
+    return issues
+
+
+def check_mechanism_saturation(
+    plays: list[PlayStrip],
+    positions: list[int],
+    mechanisms_index: dict[str, list[str]],
+    window: int = 3,
+    threshold: float = 0.6,
+) -> list[Issue]:
+    """
+    Flag consecutive plays with high mechanism overlap (psychological monotony).
+    Uses plays_mechanisms.json for full mechanism names.
+    Metric: |intersection_all| / min(|set_i|) across the window.
+    If the smallest play's mechanism set is >60% shared with every other play
+    in the window, the participant experiences diminishing returns.
+    """
+    issues = []
+    if len(plays) < window:
+        return issues
+
+    for i in range(len(plays) - window + 1):
+        window_plays = plays[i:i + window]
+        mech_sets = [set(mechanisms_index.get(p.id, [])) for p in window_plays]
+
+        # Skip if any play has no mechanisms
+        if not all(mech_sets):
+            continue
+
+        common = mech_sets[0]
+        for ms in mech_sets[1:]:
+            common = common & ms
+
+        min_size = min(len(ms) for ms in mech_sets)
+        if min_size == 0:
+            continue
+
+        ratio = len(common) / min_size
+        if ratio >= threshold:
+            pct = int(ratio * 100)
+            sample = sorted(common)[:3]
+            ellipsis = "..." if len(common) > 3 else ""
+            issues.append(Issue("WARN", positions[i + window - 1],
+                plays[i + window - 1].id, "MECHANISM_SATURATION",
+                f"Mechanism saturation in plays {positions[i]+1}–{positions[i+window-1]+1}: "
+                f"{pct}% overlap ({', '.join(sample)}{ellipsis}) — "
+                f"participant experiences diminishing returns; diversify mechanism types"))
+            # Skip forward to avoid overlapping warnings
+            break
+
+    return issues
+
+
+def check_alternatives(
+    arc_plays: list[dict],
+    library: dict[str, PlayStrip],
+) -> list[Issue]:
+    """
+    Validate alternatives field on arc plays.
+    Each alternative must exist in library, have compatible beat function,
+    and fit the declared phase.
+    """
+    issues: list[Issue] = []
+    for i, element in enumerate(arc_plays):
+        if not is_play_element(element):
+            continue
+        alternatives = element.get("alternatives", [])
+        if not alternatives:
+            continue
+        pid = element.get("id", "")
+        primary = library.get(pid)
+        if not primary:
+            continue
+        phase = element.get("phase")
+
+        for alt_id in alternatives:
+            alt = library.get(alt_id)
+            if not alt:
+                issues.append(Issue("ERROR", i, pid, "ALTERNATIVE_UNKNOWN",
+                    f"Alternative play '{alt_id}' not found in library"))
+                continue
+            # Beat compatibility
+            if primary.beat != alt.beat:
+                issues.append(Issue("WARN", i, pid, "ALTERNATIVE_BEAT",
+                    f"Alternative '{alt_id}' has beat '{alt.beat}' "
+                    f"but primary '{pid}' has '{primary.beat}' — "
+                    f"different beat function may alter arc shape"))
+            # Phase compatibility
+            if phase and not alt.arc_fits_phase(phase):
+                fits = "·".join(PHASE_NAMES.get(c, c) for c in alt.arc_codes) or "none"
+                issues.append(Issue("WARN", i, pid, "ALTERNATIVE_PHASE",
+                    f"Alternative '{alt_id}' fits [{fits}] "
+                    f"but declared phase is {phase!r}"))
+            # Permission compatibility
+            if primary.permission_mode != alt.permission_mode:
+                issues.append(Issue("INFO", i, pid, "ALTERNATIVE_PERMISSION",
+                    f"Alternative '{alt_id}' has prm:{alt.permission_mode} "
+                    f"but primary has prm:{primary.permission_mode} — "
+                    f"different permission requirements"))
 
     return issues
 
@@ -1231,6 +1345,154 @@ def check_recovery_blocks(
     return issues
 
 
+# ── POSSIBILITY-SPACE LINTER ──────────────────────────────────────────────────
+
+MAX_PATHS = 128  # Cap enumeration to avoid combinatorial explosion
+
+
+def _enumerate_paths(arc_plays: list[dict]) -> list[list[dict]]:
+    """
+    Generate all possible paths through an arc with alternatives.
+    Each play element with an "alternatives" field generates len(alternatives)+1
+    branches (primary + each alternative). Non-play elements pass through unchanged.
+    Returns at most MAX_PATHS paths; truncates with a warning if exceeded.
+    """
+    paths: list[list[dict]] = [[]]
+    for element in arc_plays:
+        if not is_play_element(element):
+            for path in paths:
+                path.append(element)
+            continue
+
+        alternatives = element.get("alternatives", [])
+        if not alternatives:
+            for path in paths:
+                path.append(element)
+        else:
+            new_paths: list[list[dict]] = []
+            for path in paths:
+                # Primary play (without alternatives field to avoid re-expansion)
+                primary = {k: v for k, v in element.items() if k != "alternatives"}
+                new_paths.append(path + [primary])
+                # Each alternative
+                for alt_id in alternatives:
+                    alt_element = {k: v for k, v in element.items()
+                                   if k not in ("id", "alternatives")}
+                    alt_element["id"] = alt_id
+                    new_paths.append(path + [alt_element])
+                if len(new_paths) > MAX_PATHS:
+                    break
+            paths = new_paths[:MAX_PATHS]
+
+    return paths
+
+
+def lint_possibility_space(
+    arc: "Arc",
+    window_mode: str = "days",
+) -> str:
+    """
+    Lint all possible paths through an arc with alternatives.
+    Reports per-path and aggregate findings.
+    """
+    library = load_strips()
+    mech_index = load_mechanisms()
+
+    all_paths = _enumerate_paths(arc.plays)
+    truncated = len(all_paths) >= MAX_PATHS
+
+    lines: list[str] = []
+    lines.append(f"POSSIBILITY-SPACE LINT — {arc.arc_type}")
+    lines.append("═" * 60)
+    lines.append(f"  Paths enumerated: {len(all_paths)}"
+                 + (" (TRUNCATED — increase MAX_PATHS or reduce alternatives)" if truncated else ""))
+    lines.append("")
+
+    path_results: list[tuple[str, list[Issue], list[PlayStrip]]] = []
+    worst_errors = 0
+    worst_warns = 0
+    all_codes: set[str] = set()
+
+    for pi, path_plays in enumerate(all_paths):
+        # Build a temporary Arc with this path
+        path_arc = Arc(
+            arc_type=arc.arc_type,
+            audience_scale=arc.audience_scale,
+            group=arc.group,
+            pre_arc_plays=arc.pre_arc_plays,
+            pre_arc_note=arc.pre_arc_note,
+            parallel_tracks=arc.parallel_tracks,
+            thresholds=arc.thresholds,
+            plays=path_plays,
+            early_exit=arc.early_exit,
+        )
+
+        # Reuse lint_arc internals
+        issues, plays = lint_arc(path_arc, window_mode=window_mode,
+                                 mechanisms_index=mech_index)
+
+        # Add mechanism saturation check
+        main_seq = _extract_main_sequence(path_plays)
+        known_ids = [el.get("id", "") for el in main_seq if el.get("id", "") in library]
+        known_strips = [library[pid] for pid in known_ids]
+        known_positions = list(range(len(known_strips)))
+        issues.extend(check_mechanism_saturation(
+            known_strips, known_positions, mech_index))
+
+        # Alternatives check on original arc (not per-path)
+        # Already handled at arc level
+
+        play_ids = [el.get("id", "") for el in main_seq]
+        path_label = " → ".join(play_ids)
+        path_results.append((path_label, issues, plays))
+
+        errors = sum(1 for i in issues if i.severity == "ERROR")
+        warns = sum(1 for i in issues if i.severity == "WARN")
+        worst_errors = max(worst_errors, errors)
+        worst_warns = max(worst_warns, warns)
+        for i in issues:
+            all_codes.add(i.code)
+
+    # Summary
+    pass_count = sum(1 for _, issues, _ in path_results
+                     if not any(i.severity == "ERROR" for i in issues))
+    fail_count = len(path_results) - pass_count
+
+    lines.append(f"  PASS: {pass_count}/{len(path_results)} paths")
+    lines.append(f"  FAIL: {fail_count}/{len(path_results)} paths")
+    lines.append(f"  Worst case: {worst_errors} errors, {worst_warns} warnings")
+    lines.append(f"  Issue codes seen: {', '.join(sorted(all_codes)) if all_codes else 'none'}")
+    lines.append("")
+
+    # Per-path detail (only show failing paths or first 5)
+    shown = 0
+    for path_label, issues, plays in path_results:
+        errors = [i for i in issues if i.severity == "ERROR"]
+        warns = [i for i in issues if i.severity == "WARN"]
+        if errors or shown < 3:
+            lines.append(f"  Path {shown+1}: {path_label}")
+            beats = " ".join(p.beat or "?" for p in plays) if plays else "?"
+            lines.append(f"    Beats: {beats}")
+            status = "FAIL" if errors else "PASS"
+            lines.append(f"    Status: {status} | {len(errors)}E {len(warns)}W")
+            if errors:
+                for issue in errors:
+                    lines.append(f"    {issue}")
+            lines.append("")
+            shown += 1
+            if shown >= 10:
+                remaining = len(path_results) - shown
+                if remaining > 0:
+                    lines.append(f"  ... {remaining} more paths (use --json for full output)")
+                break
+
+    lines.append(f"{'─'*60}")
+    overall = "PASS" if fail_count == 0 else "FAIL"
+    lines.append(f"Overall: {overall} | {pass_count}/{len(path_results)} paths clean")
+
+    return "\n".join(lines)
+
+
 # ── ARC SHAPE DISPLAY ─────────────────────────────────────────────────────────
 
 BEAT_NAMES = {"^": "spike", "/": "ramp", "-": "hold", "_": "rest", ">": "transition", "~": "liminal"}
@@ -1277,8 +1539,12 @@ def _lint_flat(
     play_ids: list[str],
     days: list[int | None] | None = None,
     phases: list[str | None] | None = None,
+    window_mode: str = "days",
+    mechanisms_index: dict[str, list[str]] | None = None,
 ) -> tuple[list[Issue], list[PlayStrip]]:
     library = load_strips()
+    if mechanisms_index is None:
+        mechanisms_index = load_mechanisms()
     days = days or [None] * len(play_ids)
     phases = phases or [None] * len(play_ids)
     positions = list(range(len(play_ids)))
@@ -1297,19 +1563,28 @@ def _lint_flat(
     all_issues.extend(check_permission_sequenced(plays, known_positions))
     all_issues.extend(check_lead_time(plays, known_positions, known_days))
     all_issues.extend(check_rhythm(plays, known_positions))
-    all_issues.extend(check_detection_accumulation(plays, known_positions, known_days))
+    all_issues.extend(check_detection_accumulation(
+        plays, known_positions, known_days, window_mode=window_mode))
     all_issues.extend(check_reversibility(plays, known_positions))
     all_issues.extend(check_arc_fit(plays, known_positions, known_phases))
     all_issues.extend(check_world_mark_timing(plays, known_positions))
     all_issues.extend(check_requires_consistency(plays, known_positions))
+    all_issues.extend(check_mechanism_saturation(
+        plays, known_positions, mechanisms_index))
 
     return all_issues, plays
 
 
-def lint_arc(arc: Arc) -> tuple[list[Issue], list[PlayStrip]]:
+def lint_arc(
+    arc: Arc,
+    window_mode: str = "days",
+    mechanisms_index: dict[str, list[str]] | None = None,
+) -> tuple[list[Issue], list[PlayStrip]]:
     """Structured arc linter — accepts Arc with pre_arc, parallel_tracks,
-    thresholds, branch/merge blocks, and group dynamics."""
+    thresholds, branch/merge blocks, group dynamics, and alternatives."""
     library = load_strips()
+    if mechanisms_index is None:
+        mechanisms_index = load_mechanisms()
     all_issues: list[Issue] = []
 
     # 1. Pre-arc checks (LEAD_TIME + grant accumulation)
@@ -1350,7 +1625,8 @@ def lint_arc(arc: Arc) -> tuple[list[Issue], list[PlayStrip]]:
     all_issues.extend(check_lead_time(plays, known_positions, known_days))
     all_issues.extend(check_rhythm(plays, known_positions))
     all_issues.extend(check_detection_accumulation(
-        plays, known_positions, known_days, parallel_day_risks
+        plays, known_positions, known_days, parallel_day_risks,
+        window_mode=window_mode,
     ))
     all_issues.extend(check_reversibility(plays, known_positions))
     all_issues.extend(check_arc_fit(plays, known_positions, known_phases))
@@ -1359,6 +1635,8 @@ def lint_arc(arc: Arc) -> tuple[list[Issue], list[PlayStrip]]:
     all_issues.extend(check_landscape_balance(plays, known_positions, arc.arc_type))
     all_issues.extend(check_early_exit(arc, library))
     all_issues.extend(check_participation_rate(arc.plays, library))
+    all_issues.extend(check_mechanism_saturation(
+        plays, known_positions, mechanisms_index))
 
     # 4. V2 structural checks
     all_issues.extend(check_branch_merge_blocks(arc.plays, library))
@@ -1368,6 +1646,9 @@ def lint_arc(arc: Arc) -> tuple[list[Issue], list[PlayStrip]]:
     if arc.thresholds:
         all_issues.extend(check_thresholds(arc.thresholds, arc.plays, library))
     all_issues.extend(check_recovery_blocks(arc.plays, library))
+
+    # 5. Alternatives validation
+    all_issues.extend(check_alternatives(arc.plays, library))
 
     return all_issues, plays
 
@@ -1518,14 +1799,30 @@ def main():
     parser.add_argument("--days", help="Comma-separated day numbers (e.g. 0,0,3,7,14)")
     parser.add_argument("--phases", help="Comma-separated arc phases (e.g. p,p,b,e,c)")
     parser.add_argument("--json", action="store_true", help="Output issues as JSON")
+    parser.add_argument("--window-mode", choices=["days", "actions"], default="days",
+                        help="Detection window mode: 'days' (calendar-based, default) or "
+                             "'actions' (positional, for interactive narrative)")
+    parser.add_argument("--mode", choices=["linear", "possibility"], default="linear",
+                        help="Lint mode: 'linear' (default) validates a single path; "
+                             "'possibility' enumerates all paths through alternatives "
+                             "and validates each")
     args = parser.parse_args()
+
+    wm = args.window_mode
 
     if args.file:
         data = json.loads(Path(args.file).read_text())
 
         if isinstance(data, dict):
             arc = load_arc(data)
-            issues, plays = lint_arc(arc)
+
+            # Possibility-space mode
+            if args.mode == "possibility":
+                report = lint_possibility_space(arc, window_mode=wm)
+                print(report)
+                sys.exit(0 if "Overall: PASS" in report else 1)
+
+            issues, plays = lint_arc(arc, window_mode=wm)
 
             if args.json:
                 out = [{"severity": i.severity, "position": i.position + 1,
@@ -1565,7 +1862,7 @@ def main():
             while len(phases) < len(play_ids):
                 phases.append(None)
 
-            issues, plays = _lint_flat(play_ids, days, phases)
+            issues, plays = _lint_flat(play_ids, days, phases, window_mode=wm)
 
             if args.json:
                 out = [{"severity": i.severity, "position": i.position + 1,
@@ -1592,7 +1889,7 @@ def main():
         while len(phases_raw) < len(play_ids):
             phases_raw.append(None)
 
-        issues, plays = _lint_flat(play_ids, days_raw, phases_raw)
+        issues, plays = _lint_flat(play_ids, days_raw, phases_raw, window_mode=wm)
 
         if args.json:
             out = [{"severity": i.severity, "position": i.position + 1,
