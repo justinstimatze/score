@@ -3,5 +3,5 @@
 // Registers the toolbar icon click handler and opens the panel.
 
 miro.board.ui.on("icon:click", async () => {
-  await miro.board.ui.openPanel({ url: "/panel" });
+  await miro.board.ui.openPanel({ url: "panel.html" });
 });

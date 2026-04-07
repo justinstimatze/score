@@ -92,8 +92,8 @@ Your URL will be `https://your-username.github.io/score`.
 
 1. Go to [developers.miro.com](https://developers.miro.com/) and sign in
 2. Click **Create new app** — name it whatever you like
-3. Under **App URL**, paste your URL with `/panel.html` added to the end
-   - Example: `https://wonderful-name-123.netlify.app/panel.html`
+3. Under **App URL**, paste your hosted URL (the root, **not** panel.html)
+   - Example: `https://wonderful-name-123.netlify.app/`
 4. Under **Permissions**, tick **boards:read** and **boards:write**
 5. Click **Install app and get OAuth token** → pick your team → **Add**
 
